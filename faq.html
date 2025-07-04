@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Find answers to frequently asked questions about the LLM Hackathon, including eligibility, team formation, resources, and more.">
+    <meta name="keywords" content="Hackathon FAQ, LLM Hackathon Questions, Participation, Eligibility, Team Size, Mentorship">
+    <meta name="author" content="LLM Hackathon Organizers">
+    <title>FAQ - LLM Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">LLM Hackathon</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="submission.html">Submission</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Sites</a>
+                    <div class="dropdown-content">
+                        <a href="sites/london.html">London</a>
+                        <a href="sites/new-york.html">New York</a>
+                        <a href="sites/tokyo.html">Tokyo</a>
+                    </div>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="#" class="cta-button">Register Now</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Frequently Asked <span>Questions</span></h1>
+        </section>
+
+        <section class="faq-section content-section">
+            <div class="faq-item">
+                <button class="faq-question">Who can participate?</button>
+                <div class="faq-answer">
+                    <p>Students, researchers, and professionals from all backgrounds are welcome.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">Is there a participation fee?</button>
+                <div class="faq-answer">
+                    <p>No, participation is completely free.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What is the team size?</button>
+                <div class="faq-answer">
+                    <p>You can participate solo or in a team of up to 4 members.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">What kind of mentorship will be available?</button>
+                <div class="faq-answer">
+                    <p>We will have a team of experienced mentors from both academia and industry to help you with your projects.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+             <div class="footer-col">
+                <h4>LLM Hackathon</h4>
+                <p>Innovate at the intersection of AI and molecular science.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Sites</h4>
+                <ul>
+                    <li><a href="sites/london.html">London</a></li>
+                    <li><a href="sites/new-york.html">New York</a></li>
+                    <li><a href="sites/tokyo.html">Tokyo</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@llmhackathon.com">contact@llmhackathon.com</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 LLM Hackathon Organizers</p>
+        </div>
+    </footer>
+
+    <script>
+        // Nav Toggle
+        const navSlide = () => {
+            const hamburger = document.querySelector('.hamburger');
+            const nav = document.querySelector('.nav-links');
+            const navLinks = document.querySelectorAll('.nav-links li');
+            
+            hamburger.addEventListener('click', () => {
+                nav.classList.toggle('nav-active');
+                hamburger.classList.toggle('toggle');
+
+                navLinks.forEach((link, index) => {
+                    if (link.style.animation) {
+                        link.style.animation = ''
+                    } else {
+                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+                    }
+                });
+            });
+        }
+
+        navSlide();
+
+        // FAQ Accordion
+        const faqItems = document.querySelectorAll('.faq-item');
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                const answer = item.querySelector('.faq-answer');
+                item.classList.toggle('active');
+                if(item.classList.contains('active')){
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                } else {
+                    answer.style.maxHeight = null;
+                }
+            });
+        });
+
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            loader.classList.add('loader-hidden');
+            loader.addEventListener('transitionend', () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</body>
+</html>
