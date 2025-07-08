@@ -50,7 +50,7 @@ h4 {
 }
 
 h2 span {
-    color: #e07a5f;
+    color: #027ff7;
     /* Accent Color */
 }
 
@@ -62,7 +62,7 @@ a {
 }
 
 a:hover {
-    color: #e07a5f;
+    color: #027ff7;
     /* Accent Color */
 }
 
@@ -162,19 +162,19 @@ nav a {
 }
 
 .cta-button {
-    background-color: transparent;
-    color: #3d405b;
+    background: linear-gradient(to right, #027ff7, #0259ce);
+    color: #ffffff;
     padding: 0.8rem 1.8rem;
-    border: 3px solid #e07a5f;
+    border: 0;
     border-radius: 5px;
     font-weight: 600;
     transition: all 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #e07a5f;
     color: #ffffff;
     transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(2, 127, 247, 0.4);
 }
 
 /* Hamburger Menu */
@@ -196,6 +196,16 @@ nav a {
     cursor: pointer;
 }
 
+.dropbtn .fa-chevron-down {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+}
+
+.dropdown:hover .dropbtn .fa-chevron-down {
+    transform: rotate(180deg);
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -215,7 +225,7 @@ nav a {
 }
 
 .dropdown-content a:hover {
-    background-color: #f4f1de;
+    background-color: #f2f7f9;
 }
 
 .dropdown:hover .dropdown-content {
@@ -224,12 +234,12 @@ nav a {
 
 /* --- Hero Section --- */
 .hero {
-    background: linear-gradient(to bottom, #f4f1de, #ffffff);
+    background: linear-gradient(to bottom, #f2f7f9, #ffffff);
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 3rem;
+    padding: 0 4rem;
 }
 
 .hero-content {
@@ -241,18 +251,36 @@ nav a {
     gap: 2rem;
 }
 
-.hero-text h1 {
-    font-weight: 700;
+#first-line {
+    font-weight: 900;
+    font-size: 4.5rem;
+    background: linear-gradient(to right, #1d2633, #027bfc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+#second-line {
+    font-weight: 900;
+    font-size: 5rem;
+    background: linear-gradient(to right, #1d3b68, #027bfc);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .hero-text h2 {
-    font-size: 1.8rem;
+    font-size: 2.0rem;
+    font-weight: 600;
     text-align: left;
     margin: 10px 0 20px;
 }
 
 .hero-text h2 span {
-    color: #e07a5f;
+    background: linear-gradient(to right, #027bfc, #085bce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 .tagline {
@@ -261,10 +289,10 @@ nav a {
 }
 
 .cta-button-large {
-    background-color: transparent;
-    color: #3d405b;
+    background: linear-gradient(to right, #027ff7, #0259ce);
+    color: #ffffff;
     padding: 1rem 2.5rem;
-    border: 3px solid #e07a5f;
+    border: 0;
     border-radius: 5px;
     font-size: 1.1rem;
     font-weight: 600;
@@ -274,31 +302,32 @@ nav a {
 }
 
 .cta-button-large:hover {
-    background-color: #e07a5f;
     color: #ffffff;
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(2, 127, 247, 0.4);
 }
 
 .secondary-cta {
     background-color: transparent;
     color: #3d405b;
-    padding: 1rem 2.5rem;
-    border: 3px solid #e07a5f;
-    border-radius: 5px;
-    font-size: 1.1rem;
+    padding: 0.8rem 2rem;
+    border: 3px solid #027ff7;
+    border-radius: 10px;
+    font-size: 1rem;
     font-weight: 600;
     display: inline-block;
     transition: all 0.3s ease;
 }
 
 .secondary-cta:hover {
-    background-color: #e07a5f;
-    color: #ffffff;
+    background-color: transparent;
+    color: #3d405b;
     transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(2, 127, 247, 0.4);
 }
 
 .hero-image img {
-    max-width: 500px;
+    max-width: 650px;
     border-radius: 15px;
 }
 
@@ -336,7 +365,7 @@ nav a {
 .countdown-timer span {
     display: block;
     font-size: 0.9rem;
-    color: #e07a5f;
+    color: #027ff7;
     margin-top: 5px;
     font-weight: 600;
 }
@@ -349,7 +378,7 @@ nav a {
 /* --- Sponsors Section (Cream Background) --- */
 .sponsors-section {
     padding: 80px 3rem;
-    background-color: #f4f1de;
+    background-color: #f2f7f9;
 }
 
 .sponsor-logos {
@@ -392,20 +421,20 @@ nav a {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #e07a5f;
+    background-color: #027ff7;
     border: 3px solid #ffffff;
 }
 
 .schedule-time {
     font-weight: 700;
-    color: #e07a5f;
+    color: #027ff7;
     font-family: 'Roboto Mono', monospace;
 }
 
 /* --- Prizes & Projects Section (Cream Background) --- */
 .prizes-section {
     padding: 100px 3rem;
-    background-color: #f4f1de;
+    background-color: #f2f7f9;
 }
 
 .prize-grid {
@@ -432,7 +461,7 @@ nav a {
 
 .prize-card .amount {
     font-size: 3.5rem;
-    color: #e07a5f;
+    color: #027ff7;
     font-weight: 700;
     margin-bottom: 10px;
 }
@@ -451,7 +480,7 @@ nav a {
 }
 
 .project-links-icons a:hover {
-    color: #e07a5f;
+    color: #027ff7;
 }
 
 /* --- FAQ Section (White Background) --- */
@@ -484,7 +513,7 @@ nav a {
     right: 10px;
     font-size: 2rem;
     transition: transform 0.3s ease;
-    color: #e07a5f;
+    color: #027ff7;
 }
 
 .faq-item.active .faq-question::after {
@@ -504,7 +533,7 @@ nav a {
 /* --- Footer (Cream Background) --- */
 footer {
     padding: 60px 3rem 20px;
-    background-color: #f4f1de;
+    background-color: #f1f7f9;
     border-top: 1px solid #e2e2e2;
 }
 
@@ -526,7 +555,7 @@ footer {
 /* --- Page Header for Sub-Pages (Cream Background) --- */
 .page-header {
     padding: 140px 3rem 80px;
-    background-color: #f4f1de;
+    background-color: #f2f7f9;
     text-align: center;
     margin-top: 80px;
 }
@@ -545,7 +574,7 @@ footer {
 
 .project-grid {
     display: grid;
-    gap: 40px;
+    gap: 30px;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     /* Default for smaller screens */
 }
@@ -555,6 +584,82 @@ footer {
         grid-template-columns: repeat(3, 1fr);
         /* Three columns for large screens */
     }
+}
+
+/* --- New styles for paper links and winner section --- */
+.paper-links {
+    background-color: #e6f2ff;
+    /* Light blue background */
+    border: 1px solid #b3d9ff;
+    /* Blue border */
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.paper-links p {
+    margin: 10px 0;
+    font-size: 1.1rem;
+    color: #0259ce;
+    /* Darker blue text */
+}
+
+.paper-links a {
+    color: #027ff7;
+    /* Accent color for links */
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.paper-links a:hover {
+    color: #0259ce;
+}
+
+.winner-section {
+    background-color: #f9f9f9;
+    /* Light gray background */
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 40px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.winner-section h3 {
+    text-align: center;
+    color: #027ff7;
+    /* Accent color for winner heading */
+    margin-bottom: 25px;
+    font-size: 2rem;
+}
+
+.prize-category {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: #ffffff;
+    border-left: 5px solid #027ff7;
+    /* Blue left border */
+    border-radius: 5px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.prize-category h4 {
+    color: #3d405b;
+    margin-bottom: 10px;
+    font-size: 1.3rem;
+}
+
+.prize-category p {
+    margin: 5px 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+.prize-category b {
+    color: #027ff7;
+    /* Bold text in prize category */
 }
 
 /* --- Responsive Design --- */
@@ -736,4 +841,9 @@ footer {
     .countdown-timer div {
         min-width: 80px;
     }
+}
+
+.year-heading {
+    margin-top: 80px;
+    /* Add top margin to separate from the previous section */
 }

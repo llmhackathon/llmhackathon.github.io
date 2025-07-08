@@ -1,44 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Details about the London site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in London.">
-    <meta name="keywords" content="London Hackathon, King's College London, LLM Event London, In-person Hackathon Site">
+    <meta name="description"
+        content="Sponsors of the LLM Hackathon for Applications in Materials Science & Chemistry.">
+    <meta name="keywords"
+        content="LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Models, Sponsors, Partners">
     <meta name="author" content="LLM Hackathon Organizers">
-    <title>London Site - LLM Hackathon</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Sponsors - LLM Hackathon</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
-    <div class="loader-wrapper">
-        <div class="loader"></div>
-    </div>
     <header>
         <nav>
-            <a href="../index.html" class="logo">LLM Hackathon</a>
+            <a href="index.html" class="logo">LLM Hackathon</a>
             <ul class="nav-links">
-                <li><a href="../about.html">About</a></li>
-                <li><a href="../agenda.html">Agenda</a></li>
-                <li><a href="../projects.html">Projects</a></li>
-                <li><a href="../submission.html">Submission</a></li>
-                <li><a href="../talks.html">Talks</a></li>
-                <li><a href="../resources.html">Resources</a></li>
-                <li><a href="../sponsors.html">Sponsors</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="submission.html">Submission</a></li>
+                <li><a href="talks.html">Talks</a></li>
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Sites <i class="fas fa-chevron-down"></i></a>
                     <div class="dropdown-content">
-                        <a href="london.html">London</a>
-                        <a href="new-york.html">New York</a>
-                        <a href="tokyo.html">Tokyo</a>
+                        <a href="sites/london.html">London</a>
+                        <a href="sites/new-york.html">New York</a>
+                        <a href="sites/tokyo.html">Tokyo</a>
                     </div>
                 </li>
-                <li><a href="../faq.html">FAQ</a></li>
+                <li><a href="faq.html">FAQ</a></li>
                 <li><a href="#" class="cta-button">Register Now</a></li>
             </ul>
             <div class="hamburger" role="button" aria-label="Toggle navigation menu">
@@ -51,36 +51,36 @@
 
     <main>
         <section class="page-header">
-            <h1>London <span>Site</span></h1>
+            <h1>Our Sponsors</h1>
         </section>
 
         <section class="content-section">
-            <h2>Welcome to the London Hub</h2>
-            <p>The London in-person event will be held at the prestigious King's College London. We are excited to welcome you to this historic and inspiring venue.</p>
+            <div class="sponsors-grid">
+                </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-             <div class="footer-col">
+            <div class="footer-col">
                 <h4>LLM Hackathon</h4>
                 <p>Innovate at the intersection of AI and molecular science.</p>
             </div>
             <div class="footer-col">
                 <h4>Quick Links</h4>
                 <ul>
-                    <li><a href="../about.html">About</a></li>
-                    <li><a href="../agenda.html">Agenda</a></li>
-                    <li><a href="../projects.html">Projects</a></li>
-                    <li><a href="../faq.html">FAQ</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="agenda.html">Agenda</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                 </ul>
             </div>
             <div class="footer-col">
                 <h4>Sites</h4>
                 <ul>
-                    <li><a href="london.html">London</a></li>
-                    <li><a href="new-york.html">New York</a></li>
-                    <li><a href="tokyo.html">Tokyo</a></li>
+                    <li><a href="sites/london.html">London</a></li>
+                    <li><a href="sites/new-york.html">New York</a></li>
+                    <li><a href="sites/tokyo.html">Tokyo</a>
                 </ul>
             </div>
             <div class="footer-col">
@@ -99,7 +99,7 @@
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('.nav-links');
             const navLinks = document.querySelectorAll('.nav-links li');
-            
+
             hamburger.addEventListener('click', () => {
                 nav.classList.toggle('nav-active');
                 hamburger.classList.toggle('toggle');
@@ -115,15 +115,8 @@
         }
 
         navSlide();
-
-        // Loader
-        window.addEventListener('load', () => {
-            const loader = document.querySelector('.loader-wrapper');
-            loader.classList.add('loader-hidden');
-            loader.addEventListener('transitionend', () => {
-                document.body.removeChild(loader);
-            });
-        });
     </script>
+
 </body>
+
 </html>
