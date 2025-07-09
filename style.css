@@ -97,7 +97,7 @@ nav {
 nav .nav-links {
     list-style: none;
     display: flex;
-    gap: 2.8rem;
+    gap: 2rem;
     align-items: center;
 }
 
@@ -562,7 +562,10 @@ footer {
 
 .page-header h1 {
     font-size: 3.5rem;
-    color: #3d405b;
+    background: linear-gradient(to right, #027bfc, #0259ce);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
 }
 
 /* --- Content Section for sub-pages (White Background) --- */
@@ -726,7 +729,7 @@ footer {
     }
 
     .hero-content {
-        flex-direction: column-reverse;
+        flex-direction: column-reverse; 
         text-align: center;
     }
 
@@ -846,4 +849,100 @@ footer {
 .year-heading {
     margin-top: 80px;
     /* Add top margin to separate from the previous section */
+}
+
+.acknowledgement-section {
+    background-color: #f2f7f9; /* Light cream/gray background */
+    border-radius: 10px;
+    padding: 30px;
+    margin-top: 40px; /* Add some top margin to separate it from the previous section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+}
+
+/*# sourceMappingURL=style.css.map */
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    justify-items: center;
+}
+
+.organizer-grid {
+    justify-content: center;
+}
+
+.volunteer-grid {
+    justify-content: center;
+    grid-template-columns: repeat(auto-fill, 280px); /* Fixed width columns for centering */
+}
+
+.section-title {
+    margin-top: 40px;
+}
+
+.team-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.organizer-card {
+    width: 400px; /* Increased width for lead organizer */
+    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+}
+
+.volunteer-card {
+    width: 280px; /* Fixed width for volunteer cards */
+    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+}
+
+.team-card img {
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.organizer-card img {
+    width: 200px;
+    height: 200px;
+}
+
+.volunteer-card img {
+    width: 120px;
+    height: 120px;
+}
+
+.team-card h5 {
+    color: #027ff7;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.team-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #3d405b;
+}
+
+.social-links a:hover {
+    color: #027ff7;
+}
+
+.volunteer-social-links a {
+    font-size: 1.2rem;
 }
