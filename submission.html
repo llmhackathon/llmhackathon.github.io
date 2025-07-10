@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find guidelines and instructions for submitting your project to the LLM Hackathon. Ensure your submission meets all requirements.">
-    <meta name="keywords" content="Project Submission, Hackathon Guidelines, Submission Requirements, LLM Projects, Materials Science Projects">
+    <meta name="description"
+        content="Find guidelines and instructions for submitting your project to the LLM Hackathon. Ensure your submission meets all requirements.">
+    <meta name="keywords"
+        content="Project Submission, Hackathon Guidelines, Submission Requirements, LLM Projects, Materials Science Projects">
     <meta name="author" content="LLM Hackathon Organizers">
     <title>Submission - LLM Hackathon</title>
     <link rel="stylesheet" href="style.css">
@@ -15,6 +18,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="loader-wrapper">
         <div class="loader"></div>
@@ -39,7 +43,7 @@
                     </div>
                 </li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="#" class="cta-button">Register Now</a></li>
+                <li><a href="https://lu.ma/hspoki8y" class="cta-button">Register Now</a></li>
             </ul>
             <div class="hamburger" role="button" aria-label="Toggle navigation menu">
                 <div class="line1"></div>
@@ -55,14 +59,27 @@
         </section>
 
         <section class="content-section">
-            <h2>How to Submit Your Project</h2>
-            <p>Please submit a link to your public GitHub repository containing your project code, a README.md file with instructions on how to run it, and a short video demo of your project in action. The submission form will be made available on this page during the final hours of the hackathon.</p>
+            <h2>How to Submit</h2>
+            <ol class="submission-steps">
+                <li>Create a concise video presentation (2 minutes or less) summarizing your team’s project,
+                    highlighting its applications in materials science and chemistry, and showcasing the innovative use
+                    of LLMs.</li>
+                <li>Post your video to at least one of the following social media platforms: YouTube, Twitter, LinkedIn,
+                    Instagram, or Threads. Ensure that your video is public and easily accessible.</li>
+                <li>One team member should fill out this <a href="#">google form</a> to submit your project.
+                </li>
+                <li class="alert"><strong>!! Submissions must be received by Sep 12nd at 09:59 am Central US Time
+                        (CT) !!</strong></li>
+                <li>After the submission deadline, our expert panel of judges will evaluate all entries based on their
+                    innovation, impact, relevance to materials science, scalability, and creativity.</li>
+            </ol>
+
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-             <div class="footer-col">
+            <div class="footer-col">
                 <h4>LLM Hackathon</h4>
                 <p>Innovate at the intersection of AI and molecular science.</p>
             </div>
@@ -99,7 +116,7 @@
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('.nav-links');
             const navLinks = document.querySelectorAll('.nav-links li');
-            
+
             hamburger.addEventListener('click', () => {
                 nav.classList.toggle('nav-active');
                 hamburger.classList.toggle('toggle');
@@ -126,30 +143,5 @@
         });
     </script>
 </body>
-</html>
 
-    <script>
-        // Nav Toggle
-        const navSlide = () => {
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('.nav-links');
-            const navLinks = document.querySelectorAll('.nav-links li');
-            
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-                hamburger.classList.toggle('toggle');
-
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = ''
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-            });
-        }
-
-        navSlide();
-    </script>
-</body>
 </html>

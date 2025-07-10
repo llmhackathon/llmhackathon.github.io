@@ -665,6 +665,10 @@ footer {
     /* Bold text in prize category */
 }
 
+.alert {
+    color: rgb(255, 76, 76);
+}
+
 /* --- Responsive Design --- */
 @media screen and (max-width: 1024px) {
     nav .nav-links {
@@ -729,7 +733,7 @@ footer {
     }
 
     .hero-content {
-        flex-direction: column-reverse; 
+        flex-direction: column-reverse;
         text-align: center;
     }
 
@@ -852,11 +856,14 @@ footer {
 }
 
 .acknowledgement-section {
-    background-color: #f2f7f9; /* Light cream/gray background */
+    background-color: #f2f7f9;
+    /* Light cream/gray background */
     border-radius: 10px;
     padding: 30px;
-    margin-top: 40px; /* Add some top margin to separate it from the previous section */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Subtle shadow */
+    margin-top: 40px;
+    /* Add some top margin to separate it from the previous section */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    /* Subtle shadow */
 }
 
 /*# sourceMappingURL=style.css.map */
@@ -875,7 +882,8 @@ footer {
 
 .volunteer-grid {
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 280px); /* Fixed width columns for centering */
+    grid-template-columns: repeat(auto-fill, 280px);
+    /* Fixed width columns for centering */
 }
 
 .section-title {
@@ -898,13 +906,17 @@ footer {
 }
 
 .organizer-card {
-    width: 400px; /* Increased width for lead organizer */
-    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+    width: 400px;
+    /* Increased width for lead organizer */
+    max-width: 100%;
+    /* Ensure it doesn't overflow on smaller screens */
 }
 
 .volunteer-card {
-    width: 280px; /* Fixed width for volunteer cards */
-    max-width: 100%; /* Ensure it doesn't overflow on smaller screens */
+    width: 280px;
+    /* Fixed width for volunteer cards */
+    max-width: 100%;
+    /* Ensure it doesn't overflow on smaller screens */
 }
 
 .team-card img {
