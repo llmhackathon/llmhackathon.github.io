@@ -600,6 +600,19 @@ footer {
     gap: 30px;
 }
 
+.resource-grid.general-tools-grid {
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.resource-grid.general-tools-grid .resource-card {
+    padding: 15px;
+    text-align: center;
+}
+
+.resource-grid.general-tools-grid .resource-card h4 a {
+    text-decoration: none;
+}
+
 .resource-card {
     background: #ffffff;
     border: 1px solid #e2e2e2;
@@ -615,8 +628,12 @@ footer {
 }
 
 .resource-card h4 {
-    color: #027ff7;
+    color: #000000;
     margin-bottom: 10px;
+}
+
+.resource-card:hover h4 {
+    color: #027ff7; /* Accent Color */
 }
 
 .resource-card p {
