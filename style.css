@@ -575,11 +575,63 @@ footer {
     margin: 0 auto;
 }
 
-.project-grid {
+/* Resource Card Styles */
+.resource-section {
+    margin-bottom: 60px;
+    max-width: 1200px;
+    margin: 0 auto 60px auto;
+    padding: 0 3rem;
+}
+
+.resource-section h2 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.resource-section h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.resource-grid {
     display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
     gap: 30px;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    /* Default for smaller screens */
+}
+
+.resource-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
+.resource-card h4 {
+    color: #027ff7;
+    margin-bottom: 10px;
+}
+
+.resource-card p {
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+}
+
+.resource-card a {
+    font-weight: 600;
+    color: #3d405b;
+    text-decoration: underline;
+}
+
+.resource-card a:hover {
+    color: #027ff7;
 }
 
 @media screen and (min-width: 1200px) {

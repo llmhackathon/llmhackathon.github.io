@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Access essential resources for the LLM Hackathon, including datasets, tools, and documentation to help you succeed in your projects.">
-    <meta name="keywords" content="Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials Science Resources, Chemistry Resources">
+    <meta name="description"
+        content="Access essential resources for the LLM Hackathon, including datasets, and documentation to help you succeed in your projects.">
+    <meta name="keywords"
+        content="Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials Science Resources, Chemistry Resources">
     <meta name="author" content="LLM Hackathon Organizers">
     <title>Resources - LLM Hackathon</title>
     <link rel="stylesheet" href="style.css">
@@ -15,6 +18,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="loader-wrapper">
         <div class="loader"></div>
@@ -39,7 +43,8 @@
                     </div>
                 </li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://lu.ma/hspoki8y" class="cta-button">Register Now</a></li>
+                <li><a target="_blank" rel="noopener" href="https://lu.ma/hspoki8y" class="cta-button">Register
+                        Now</a></li>
             </ul>
             <div class="hamburger" role="button" aria-label="Toggle navigation menu">
                 <div class="line1"></div>
@@ -55,14 +60,319 @@
         </section>
 
         <section class="content-section">
-            <h2>Tools and Data</h2>
-            <p>All participants will be provided with access to a variety of resources to help them with their projects, including powerful cloud computing instances, curated datasets, and pre-trained models from our sponsors.</p>
+            <p>Welcome to your curated resource list for the hackathon. This guide provides a starting point for
+                learning key techniques, finding
+                datasets, and exploring the essential tools and research papers at the
+                intersection of Large Language Models (LLMs), materials science, and chemistry.</p>
+        </section>
+
+        <section class="resource-section">
+            <h2>Tutorials &amp; Learning Resources</h2>
+            <h3>Foundational LLM Concepts</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Intro to Large Language Models</h4>
+                    <p>A general-audience overview of how LLMs are trained and the key concepts behind their operation,
+                        including pre-training, fine-tuning, and RLHF.</p>
+                    <a href="https://www.youtube.com/watch?v=zjkBMFhNj_g" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Let's build GPT: from scratch, in code, spelled out</h4>
+                    <p>A deep, code-first dive into the Transformer architecture that powers models like GPT.</p>
+                    <a href="https://youtu.be/kCc8FmEb1nY?si=DdtaubkIDlafzAQV" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>LLM Course on GitHub</h4>
+                    <p>A comprehensive course covering LLM fundamentals, the science of building LLMs, and the
+                        engineering of LLM-based applications.</p>
+                    <a href="https://github.com/mlabonne/llm-course" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <h3>Library-Specific Tutorials</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>RDKit</h4>
+                    <p>RDKit is a collection of cheminformatics and machine-learning software written in C++ and Python.
+                    </p>
+                    <p><b>Official Documentation:</b> The "Getting Started with the RDKit in Python" guide is the best
+                        place to begin.
+                        <a href="https://www.rdkit.org/docs/GettingStartedInPython.html" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p><b>YouTube Tutorial:</b> Video tutorial by <a
+                            href="https://scholar.google.com/citations?user=lOz-SVQAAAAJ&hl=en">Jan Jensen</a> is
+                        another great resource to start with. <a
+                            href="https://www.youtube.com/playlist?list=PLzfVULc1l7TdDSIfgDm12v21Y8jG_B6uh"
+                            target="_blank" rel="noopener" aria-label="external-link"><i
+                                class="fas fa-external-link-alt"></i></a></p>
+
+                </div>
+                <div class="resource-card">
+                    <h4>PySCF</h4>
+                    <p>The Python-based Simulations of Chemistry Framework (PySCF) is an open-source library for quantum
+                        chemistry
+                        calculations. It is highly extensible and designed for simplicity, both for users and
+                        developers.</p>
+                    <p><b>Official Documentation:</b> The 'User Guide' and 'Tutorials' are great starting points.
+                        <a href="https://pyscf.org/" target="_blank" rel="noopener" aria-label="external-link"><i
+                                class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+                <div class="resource-card">
+                    <h4>Atomic Simulation Environment (ASE)</h4>
+                    <p>The Atomic Simulation Environment (ASE) is a set of tools and Python modules for setting up,
+                        manipulating, running, visualizing and analyzing atomistic simulations.</p>
+                    <p><b>Official Documentation:</b> The 'ASE Tutorials' is the best place to begin with.
+                        <a href="https://wiki.fysik.dtu.dk/ase/tutorials/tutorials.html" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+                <div class="resource-card">
+                    <h4>Pymatgen</h4>
+                    <p>Pymatgen (Python Materials Genomics) is a robust, open-source Python library for materials
+                        analysis.</p>
+                    <p><b>Official Documentation:</b> The pymatgen API Documentation is the best place to begin with.
+                        <a href="https://pymatgen.org/pymatgen.html" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p><b>YouTube Tutorial:</b> Video tutorial by <a
+                            href="https://scholar.google.com/citations?user=IKUUbNwAAAAJ&hl=en">Anubhav Jain</a>,
+                        developer of pymatgen, is
+                        another great resource to start with. <a
+                            href="https://www.youtube.com/playlist?list=PL7gkuUui8u7_M47KrV4tS4pLwhe7mDAjT"
+                            target="_blank" rel="noopener" aria-label="external-link"><i
+                                class="fas fa-external-link-alt"></i></a></p>
+                </div>
+                <!-- LangChain Resource Card -->
+                <div class="resource-card">
+                    <h4>LangChain</h4>
+                    <p>LangChain is an open-source library specifically designed for creating applications using large
+                        language models (LLMs).</p>
+                    <p>
+                        <b>Official Documentation:</b> The best place to begin is the official LangChain documentation.
+                        It offers a
+                        comprehensive overview of the framework, from installation to advanced use cases.
+                        <a href="https://python.langchain.com/docs/introduction/" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p>
+                        <b>YouTube Tutorial:</b> For visual learners, <b>aiwithbrandon</b> YouTube channel provides a
+                        wealth of
+                        tutorials. The "LangChain Master Class For Beginners 2024" video is an excellent starting point.
+                        <a href="https://youtu.be/yF9kGESAi3M?si=HA8392wjKJBhMigS" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+
+                <!-- LangGraph Resource Card -->
+                <div class="resource-card">
+                    <h4>LangGraph</h4>
+                    <p>LangGraph, created by LangChain, is an open source AI agent framework designed to build, deploy
+                        and manage complex
+                        generative AI agent workflows.</p>
+                    <p>
+                        <b>Official Documentation:</b> To dive into building stateful, multi-actor applications, the
+                        LangGraph
+                        documentation is your go-to resource.
+                        <a href="https://langchain-ai.github.io/langgraph/" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p>
+                        <b>YouTube Tutorial:</b> A great video tutorial by LangChain on "Building Effective Agents with
+                        LangGraph" provides a
+                        practical introduction to creating sophisticated agents.
+                        <a href="https://youtu.be/aHCDrAbH_go?si=8vfcsHGY8befW8vk" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+            </div>
+            <h3>Technique-Specific Guides</h3>
+            <div class="resource-grid">
+                <!-- Fine-Tuning LLMs Resource Card -->
+                <div class="resource-card">
+                    <h4>Fine-Tuning LLMs</h4>
+                    <p>
+                        <b>Hugging Face Blog:</b> A practical guide on how to fine-tune a Llama 2 model in a Google
+                        Colab notebook,
+                        providing hands-on experience.
+                        <a href="https://www.philschmid.de/fine-tune-llms-in-2024-with-trl" target="_blank"
+                            rel="noopener" aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p>
+                        <b>YouTube Tutorial:</b> An excellent, detailed video from DeepLearning.AI that walks through
+                        the concepts and
+                        code for fine-tuning Large Language Models.
+                        <a href="https://www.youtube.com/live/eTieetk2dSw?si=nw0tdJ7AcAfrU0ok" target="_blank"
+                            rel="noopener" aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+
+                <!-- RAG Technique Resource Card -->
+                <div class="resource-card">
+                    <h4>RAG Technique</h4>
+                    <p>
+                        <b>LangChain Documentation:</b> Tutorial for Retrieval-Augmented Generation
+                        (RAG) from LangChain, explaining
+                        how to build applications that connect LLMs to external data sources.
+                        <a href="https://python.langchain.com/docs/tutorials/rag/" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                    <p>
+                        <b>YouTube Tutorial:</b> A clear and concise explanation from IBM Technology on what RAG is, how
+                        it works, and
+                        why it's a powerful technique for enhancing LLM performance.
+                        <a href="https://youtu.be/T-D1OfcDW1M?si=wohfYED6opiS6V7N" target="_blank" rel="noopener"
+                            aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="resource-section">
+            <h2>Datasets</h2>
+            <h3>Foundational Materials &amp; Chemistry Databases</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Materials Project</h4>
+                    <p>An open-access database of computed properties for over 200,000 inorganic materials and 577,000
+                        molecules, powered by high-throughput DFT calculations. It's a primary resource for crystal
+                        structures, formation energies, and electronic properties.</p>
+                    <a href="https://next-gen.materialsproject.org/" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>NOMAD Laboratory (Novel Materials Discovery)</h4>
+                    <p>A massive, FAIR-compliant repository that aggregates and normalizes materials science data from
+                        over 60 different simulation codes and experimental sources. It hosts over 19 million entries
+                        and features an integrated AI Toolkit with Jupyter notebooks for direct analysis.</p>
+                    <a href="https://nomad-lab.eu/nomad-lab/" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>PubChem</h4>
+                    <p>A comprehensive public database from the NIH containing information on over 92 million unique
+                        chemical compounds, including their properties, structures, and biological activities. It is
+                        organized into Substance, Compound, and BioAssay databases.</p>
+                    <a href="https://pubchem.ncbi.nlm.nih.gov/" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>ChEMBL</h4>
+                    <p>A manually curated database of bioactive molecules with drug-like properties, focusing on
+                        compound bioactivity data against drug targets. It contains over 5.4 million bioactivity
+                        measurements from the scientific literature.</p>
+                    <a href="https://www.ebi.ac.uk/chembl/" target="_blank" rel="noopener" aria-label="external-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Open Reaction Database (ORD)</h4>
+                    <p>An open-access project to create a centralized repository of high-quality, structured organic
+                        reaction data, designed to overcome the noise of patent-mined datasets.</p>
+                    <a href="https://open-reaction-database.org/" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>USPTO Reaction Datasets</h4>
+                    <p>Collections of chemical reactions extracted from United States patents, which have been
+                        foundational for machine learning in reaction prediction and retrosynthesis. Note that these
+                        often require cleaning.</p>
+                    <a href="https://www.uspto.gov/" target="_blank" rel="noopener" aria-label="external-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Crystallography Open Database (COD)</h4>
+                    <p>An open-access collection of over 400,000 crystal structures for organic, inorganic, and
+                        metal-organic compounds.</p>
+                    <a href="http://www.crystallography.net/" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Curated List of More Datasets</h4>
+                    <p>A curated list of the most useful datasets in materials science and chemistry for training
+                        machine learning and AI
+                        foundation models by <a target="_blank"
+                            href="https://scholar.google.com/citations?user=J-x5n7IAAAAJ&hl=en" rel="noopener">Ben
+                            Blaiszik</a>.</p>
+                    <a href="https://github.com/blaiszik/awesome-matchem-datasets" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <h3>General Datasets</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>arXiv Preprints</h4>
+                    <p>The entire collection of preprints from arXiv is available for bulk download, providing a massive
+                        corpus for text mining the latest scientific research.</p>
+                    <a href="https://arxiv.org/" target="_blank" rel="noopener" aria-label="external-link"><i
+                            class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Hugging Face Datasets</h4>
+                    <p>A central hub for thousands of datasets, including a growing number for materials science and
+                        chemistry.</p>
+                    <a href="https://huggingface.co/datasets" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>Kaggle Datasets</h4>
+                    <p>A platform hosting a wide variety of public datasets, including many relevant to chemistry and
+                        materials science.</p>
+                    <a href="https://www.kaggle.com/datasets" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="resource-section">
+            <h2>Key Research Papers &amp; Reviews</h2>
+            <h3>Examples & Reviews on LLMs in Materials & Chemistry</h3>
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h4>Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials
+                        Science and Chemistry</h4>
+                    <p>In the 2nd global hackathonfor LLMs applications for materials and chemistry 34 teams used large
+                        language models to create applications for materials science and chemistry research across seven
+                        different areas like property prediction, molecular design, and scientific communication.</p>
+                    <a href="https://arxiv.org/abs/2411.15221" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>14 examples of how LLMs can transform materials science and chemistry: a reflection on a large
+                        language model hackathon</h4>
+                    <p>In the 1st global hackathon for LLMs applications for materials and chemistry participants used
+                        large language models like GPT-4 to build working prototypes for chemistry and materials science
+                        applications in just two days.</p>
+                    <a href="https://doi.org/10.1039/D3DD00113J" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>A Survey of AI for Materials Science: Foundation Models, LLM Agents, Datasets, and Tools</h4>
+                    <p>A comprehensive review on how large AI foundation models (like ChatGPT-style systems) are being
+                        used to accelerate materials science research across six key areas from data analysis to
+                        discovering new materials.</p>
+                    <a href="https://arxiv.org/abs/2506.20743" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+                <div class="resource-card">
+                    <h4>A review of large language models and autonomous agents in chemistry</h4>
+                    <p>The authors reviewed how large language models and AI agents are being used in chemistry for
+                        tasks like molecule design
+                        and laboratory automation, and created a repository to track ongoing research in this rapidly
+                        evolving field.</p>
+                    <a href="https://doi.org/10.1039/D4SC03921A" target="_blank" rel="noopener"
+                        aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="footer-container">
-             <div class="footer-col">
+            <div class="footer-col">
                 <h4>LLM Hackathon</h4>
                 <p>Innovate at the intersection of AI and molecular science.</p>
             </div>
@@ -99,7 +409,7 @@
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('.nav-links');
             const navLinks = document.querySelectorAll('.nav-links li');
-            
+
             hamburger.addEventListener('click', () => {
                 nav.classList.toggle('nav-active');
                 hamburger.classList.toggle('toggle');
@@ -126,56 +436,5 @@
         });
     </script>
 </body>
-</html>
 
-    <script>
-        // Nav Toggle
-        const navSlide = () => {
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('.nav-links');
-            const navLinks = document.querySelectorAll('.nav-links li');
-            
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-                hamburger.classList.toggle('toggle');
-
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = ''
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-            });
-        }
-
-        navSlide();
-    </script>
-</body>
-</html>
-
-    <script>
-        // Nav Toggle
-        const navSlide = () => {
-            const hamburger = document.querySelector('.hamburger');
-            const nav = document.querySelector('.nav-links');
-            const navLinks = document.querySelectorAll('.nav-links li');
-            
-            hamburger.addEventListener('click', () => {
-                nav.classList.toggle('nav-active');
-                hamburger.classList.toggle('toggle');
-
-                navLinks.forEach((link, index) => {
-                    if (link.style.animation) {
-                        link.style.animation = ''
-                    } else {
-                        link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
-                    }
-                });
-            });
-        }
-
-        navSlide();
-    </script>
-</body>
 </html>

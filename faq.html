@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Find answers to frequently asked questions about the LLM Hackathon, including eligibility, team formation, resources, and more.">
-    <meta name="keywords" content="Hackathon FAQ, LLM Hackathon Questions, Participation, Eligibility, Team Size, Mentorship">
+    <meta name="description"
+        content="Find answers to frequently asked questions about the LLM Hackathon, including eligibility, team formation, resources, and more.">
+    <meta name="keywords"
+        content="Hackathon FAQ, LLM Hackathon Questions, Participation, Eligibility, Team Size, Mentorship">
     <meta name="author" content="LLM Hackathon Organizers">
     <title>FAQ - LLM Hackathon</title>
     <link rel="stylesheet" href="style.css">
@@ -15,6 +18,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
+
 <body>
     <div class="loader-wrapper">
         <div class="loader"></div>
@@ -39,7 +43,8 @@
                     </div>
                 </li>
                 <li><a href="faq.html">FAQ</a></li>
-                <li><a href="https://lu.ma/hspoki8y" class="cta-button">Register Now</a></li>
+                <li><a target="_blank" rel="noopener" href="https://lu.ma/hspoki8y" class="cta-button">Register
+                        Now</a></li>
             </ul>
             <div class="hamburger" role="button" aria-label="Toggle navigation menu">
                 <div class="line1"></div>
@@ -76,7 +81,8 @@
             <div class="faq-item">
                 <button class="faq-question">What kind of mentorship will be available?</button>
                 <div class="faq-answer">
-                    <p>We will have a team of experienced mentors from both academia and industry to help you with your projects.</p>
+                    <p>We will have a team of experienced mentors from both academia and industry to help you with your
+                        projects.</p>
                 </div>
             </div>
         </section>
@@ -84,7 +90,7 @@
 
     <footer>
         <div class="footer-container">
-             <div class="footer-col">
+            <div class="footer-col">
                 <h4>LLM Hackathon</h4>
                 <p>Innovate at the intersection of AI and molecular science.</p>
             </div>
@@ -121,7 +127,7 @@
             const hamburger = document.querySelector('.hamburger');
             const nav = document.querySelector('.nav-links');
             const navLinks = document.querySelectorAll('.nav-links li');
-            
+
             hamburger.addEventListener('click', () => {
                 nav.classList.toggle('nav-active');
                 hamburger.classList.toggle('toggle');
@@ -145,7 +151,7 @@
             question.addEventListener('click', () => {
                 const answer = item.querySelector('.faq-answer');
                 item.classList.toggle('active');
-                if(item.classList.contains('active')){
+                if (item.classList.contains('active')) {
                     answer.style.maxHeight = answer.scrollHeight + "px";
                 } else {
                     answer.style.maxHeight = null;
@@ -163,4 +169,5 @@
         });
     </script>
 </body>
+
 </html>
