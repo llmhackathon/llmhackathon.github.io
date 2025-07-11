@@ -4,11 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sponsors of the LLM Hackathon for Applications in Materials Science & Chemistry.">
+    <meta name="description"
+        content="Instructions and requirements for hosting an official LLM Hackathon on-site event.">
     <meta name="keywords"
-        content="LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Models, Sponsors, Partners">
-    <meta name="author" content="LLM Hackathon Organizers">
-    <title>Sponsors - LLM Hackathon</title>
+        content="Host Hackathon, On-site Event Requirements, LLM Hackathon Hosting, Venue Requirements, Organizer Guide">
+    <title>Host Requirements - LLM Hackathon</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -19,6 +19,9 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
     <header>
         <nav>
             <a href="index.html" class="logo">LLM Hackathon</a>
@@ -51,19 +54,46 @@
 
     <main>
         <section class="page-header">
-            <h1>Our Sponsors</h1>
+            <h1>On-site Hosting <span>Requirements</span></h1>
         </section>
 
         <section class="content-section">
-            <div class="sponsors-grid">
-                <div class="sponsor-logos">
-                    <img src="assets/images/sponsors/LILA_Logo.png" alt="LILA Logo">
-                    <img src="assets/images/sponsors/Google_AI_logo.png" alt="Google AI Logo">
-                    <img src="assets/images/sponsors/OpenAI_Logo.png" alt="OpenAI Logo">
-                    <img src="assets/images/sponsors/Claude_AI_logo.png" alt="Claude Logo">
-                    <img src="assets/images/sponsors/Langchain_Logo.png" alt="LangChain Logo">
-                </div>
-            </div>
+            <h2>Venue Requirements</h2>
+            <ul>
+                <li>Sufficient space to accommodate expected number of participants (e.g., classrooms, lecture halls,
+                    common areas).</li>
+                <li>Reliable high-speed internet access (Wi-Fi) for all participants.</li>
+                <li>Adequate power outlets for charging devices.</li>
+                <li>Projectors or large screens for presentations and announcements.</li>
+                <li>Whiteboards or flip charts for brainstorming sessions.</li>
+                <li>Restroom facilities.</li>
+                <li>Accessibility for individuals with disabilities.</li>
+            </ul>
+
+            <h2>Technical Infrastructure</h2>
+            <ul>
+                <li>Dedicated network support staff on-site during the event.</li>
+                <li>Backup internet connection (if possible).</li>
+                <li>Basic audio-visual equipment (microphones, speakers).</li>
+                <li>Technical support for participants (e.g., troubleshooting network issues).</li>
+            </ul>
+
+            <h2>Logistical Support</h2>
+            <ul>
+                <li>On-site registration and check-in area.</li>
+                <li>Designated areas for team collaboration and quiet work.</li>
+                <li>Access to food and beverage options (e.g., nearby cafes, catering options).</li>
+                <li>First aid station or access to medical assistance.</li>
+                <li>Clear signage for navigation within the venue.</li>
+                <li>Security personnel (if required by venue or event size).</li>
+            </ul>
+
+            <h2>Promotional & Communication</h2>
+            <ul>
+                <li>Ability to promote the event locally within your institution/community.</li>
+                <li>Designated point of contact for coordination with the global hackathon organizers.</li>
+                <li>Willingness to share local event photos and highlights for global promotion.</li>
+            </ul>
         </section>
     </main>
 
@@ -121,8 +151,16 @@
         }
 
         navSlide();
-    </script>
 
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            loader.classList.add('loader-hidden');
+            loader.addEventListener('transitionend', () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
 </body>
 
 </html>

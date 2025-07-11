@@ -232,6 +232,67 @@ nav a {
     display: block;
 }
 
+/* Submenu for Locations */
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu .dropbtn-submenu {
+    display: block;
+    padding: 12px 16px;
+    text-decoration: none;
+    color: #3d405b;
+    background-color: #ffffff;
+    width: 100%;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    position: relative;
+}
+
+.dropdown-submenu .dropbtn-submenu .fa-chevron-right {
+    font-size: 0.8rem;
+    margin-left: 5px;
+    transition: transform 0.3s ease;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.dropdown-submenu:hover .dropbtn-submenu .fa-chevron-right {
+    transform: translateY(-50%) rotate(90deg);
+}
+
+.dropdown-content-submenu {
+    display: none;
+    position: absolute;
+    left: 100%;
+    top: 0;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 10px 25px 0px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    border-radius: 8px;
+    border: 1px solid #e2e2e2;
+}
+
+.dropdown-content-submenu a {
+    color: #3d405b;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content-submenu a:hover {
+    background-color: #f2f7f9;
+}
+
+.dropdown-submenu:hover .dropdown-content-submenu {
+    display: block;
+}
+
+
 /* --- Hero Section --- */
 .hero {
     background: linear-gradient(to bottom, #f2f7f9, #ffffff);
@@ -634,6 +695,31 @@ footer {
 
 .resource-card:hover h4 {
     color: #027ff7; /* Accent Color */
+}
+
+.location-card {
+    text-align: center;
+    width: 300px;
+    margin: 0 auto; /* Center the card within its grid cell */
+}
+
+.location-card h4 {
+    color: #000000;
+    margin-bottom: 5px;
+}
+
+.location-card:hover h4 {
+    color: #027ff7; /* Accent Color */
+}
+
+.location-card p {
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    .content-section .resource-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
 
 .resource-card p {
