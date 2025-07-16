@@ -598,6 +598,28 @@ main {
     margin-bottom: 10px;
 }
 
+/* Project section */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.project-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 25px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+}
+
 .project-links-icons {
     display: flex;
     justify-content: center;
@@ -1339,55 +1361,24 @@ footer {
 
 /* Additional responsive grid adjustments */
 @media screen and (max-width: 1024px) {
-    .resource-grid.general-tools-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .resource-grid.general-tools-grid {
-        grid-template-columns: 1fr;
-    }
-
-    .resource-grid {
-        grid-template-columns: 1fr;
-    }
-}
-
-@media screen and (min-width: 1024px) {
-    .content-section .resource-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .project-grid {
-        grid-template-columns: repeat(3, 1fr);
-    }
-}
-
-
-
-/* Mobile landscape and small tablets (600px - 767px) */
-@media screen and (max-width: 767px) {
     h1 {
-        font-size: 2.2rem !important;
+        font-size: 2.5rem !important;
     }
 
     h2 {
-        font-size: 1.8rem !important;
+        font-size: 2rem !important;
     }
 
     h3 {
-        font-size: 1.2rem !important;
+        font-size: 1.4rem !important;
     }
 
     h4 {
-        font-size: 0.9rem !important;
+        font-size: 0.95rem !important;
     }
 
     h5 {
-        font-size: 0.8rem !important;
+        font-size: 0.9rem !important;
     }
 
     h6 {
@@ -1484,5 +1475,43 @@ footer {
 
     .toggle .line3 {
         transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    .resource-grid.general-tools-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .prize-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .resource-grid.general-tools-grid,
+    .resource-grid,
+    .project-grid,
+    .prize-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .content-section .resource-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .project-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .prize-grid {
+        grid-template-columns: repeat(4, 1fr);
     }
 }
