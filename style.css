@@ -422,6 +422,7 @@ main {
     font-weight: 600;
     text-align: left;
     margin: 10px 0 20px;
+    text-align: left !important;
 }
 
 .hero-text h2 span {
@@ -1213,6 +1214,7 @@ footer {
 
     .hero-text h2 {
         font-size: 1.8rem !important;
+        text-align: center !important;
     }
 
     .tagline {
