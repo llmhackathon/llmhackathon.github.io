@@ -887,6 +887,10 @@ footer {
     grid-template-columns: repeat(4, 1fr);
 }
 
+.general-tools-grid a h4 {
+    margin-bottom: unset;
+}
+
 .resource-grid.general-tools-grid .resource-card {
     padding: 15px;
     text-align: center;
