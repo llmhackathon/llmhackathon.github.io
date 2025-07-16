@@ -19,6 +19,18 @@ body {
     --navbar-height: 80px;
 }
 
+.ordered-list li {
+    list-style: decimal;
+}
+
+.unordered-list li {
+    list-style: lower-alpha;
+}
+
+.unordered-list-disc li {
+    list-style: disc;
+}
+
 /* --- Base Typography (Desktop First) --- */
 h1,
 h2,
@@ -193,6 +205,10 @@ nav {
     font-weight: 700;
     color: #3d405b;
     text-decoration: none;
+}
+
+.logo:focus {
+    outline: none;
 }
 
 nav .nav-links {
@@ -471,6 +487,17 @@ main {
     gap: 64px;
     padding: 100px 48px;
     background-color: #ffffff;
+    max-width: 1400px;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-image {
+    flex: 0 0 auto;
 }
 
 .about-content h2 {
@@ -508,6 +535,101 @@ main {
     border-radius: 15px;
 }
 
+/* Agenda Section */
+.content-section h3 {
+    color: #027ff7;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+}
+
+.content-section h4 {
+    color: #0259ce;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.4rem;
+}
+
+.content-section ol {
+    margin-left: 20px;
+}
+
+.content-section ul {
+    margin-left: 40px;
+}
+
+.content-section table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.content-section th,
+.content-section td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e2e2;
+}
+
+.content-section th:first-child,
+.content-section td:first-child {
+    width: 30%;
+}
+
+.content-section th {
+    background-color: #027ff7;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.content-section tr:nth-child(even) {
+    background-color: #f2f7f9;
+}
+
+.content-section tr:hover {
+    background-color: #e6f2ff;
+}
+
+.talks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.talk-card {
+    background: #ffffff;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.talk-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
+}
+
+.talk-card h5 {
+    color: #027ff7;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.talk-card p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.important-links {
+    background-color: #e6f2ff;
+    border-left: 5px solid #027ff7;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
 /* --- Sponsors Section --- */
 .sponsors-section {
     padding: 80px 48px;
@@ -531,6 +653,9 @@ main {
 .schedule-section {
     padding: 100px 48px;
     background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
 }
 
 .schedule-timeline {
@@ -574,6 +699,7 @@ main {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 40px;
+    margin-top: 30px;
 }
 
 .prize-card {
@@ -1418,6 +1544,16 @@ footer {
 
     .about-section {
         flex-direction: column;
+        text-align: center;
+    }
+
+    .countdown-timer {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .about-content h2 {
+        text-align: center;
     }
 
     .cta-button-large,
@@ -1497,6 +1633,15 @@ footer {
     .project-grid,
     .prize-grid {
         grid-template-columns: 1fr;
+    }
+
+    .about-section {
+        padding: 60px 24px;
+        gap: 40px;
+    }
+
+    .about-image img {
+        max-width: 100%;
     }
 }
 

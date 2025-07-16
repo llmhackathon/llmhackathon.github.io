@@ -18,101 +18,6 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-        .content-section h3 {
-            color: #027ff7;
-            margin-top: 40px;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-        }
-
-        .content-section h4 {
-            color: #0259ce;
-            margin-top: 20px;
-            margin-bottom: 10px;
-            font-size: 1.4rem;
-        }
-
-        .content-section ol {
-            margin-left: 20px;
-        }
-
-        .content-section ul {
-            margin-left: 40px;
-        }
-
-        .content-section table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-        }
-
-        .content-section th,
-        .content-section td {
-            padding: 15px;
-            text-align: left;
-            border-bottom: 1px solid #e2e2e2;
-        }
-
-        .content-section th:first-child,
-        .content-section td:first-child {
-            width: 30%;
-        }
-
-        .content-section th {
-            background-color: #027ff7;
-            color: #ffffff;
-            font-weight: 600;
-        }
-
-        .content-section tr:nth-child(even) {
-            background-color: #f2f7f9;
-        }
-
-        .content-section tr:hover {
-            background-color: #e6f2ff;
-        }
-
-        .talks-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .talk-card {
-            background: #ffffff;
-            border: 1px solid #e2e2e2;
-            border-radius: 10px;
-            padding: 20px;
-            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .talk-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 12px 35px rgba(0, 0, 0, 0.15);
-        }
-
-        .talk-card h5 {
-            color: #027ff7;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
-        }
-
-        .talk-card p {
-            font-size: 0.9rem;
-            line-height: 1.6;
-        }
-
-        .important-links {
-            background-color: #e6f2ff;
-            border-left: 5px solid #027ff7;
-            padding: 20px;
-            margin-bottom: 30px;
-        }
-    </style>
 </head>
 
 <body>
@@ -168,11 +73,11 @@
             <h4>Brainstorm, build, team up.</h4>
             <p>Before the event, participants can join the Slack and Miro and attend the initial teaming event.
                 Pre-teaming and beginning work is allowed!</p>
-            <ol>
+            <ol class="ordered-list">
                 <li>Add the events to your calendar.</li>
                 <li>Join the Slack channel to connect with other participants.</li>
                 <li>Brainstorm project ideas and form teams:
-                    <ul>
+                    <ul class="unordered-list">
                         <li>Browse the project proposals on our Miro board.</li>
                         <li>Post your project idea in the slack channel with the <b>#team</b> hashtag.</li>
                         <li>If you would like to join a team, use the slack channel to express your interest and
