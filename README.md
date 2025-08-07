@@ -8,20 +8,56 @@ The LLM Hackathon brings together the brightest minds from academia and industry
 
 ## 2025 Event Details
 
-**Dates:** September 11-13, 2025
+**Dates:** September 11-12, 2025
 
-- **Kick-off:** September 11, 9:30 AM CST
+- **Kick-off:** September 11, 9:30 AM (CT)
 - **Hacking Period:** September 11-12
-- **Submission Deadline:** September 13, 9:59 AM CST
-- **Awards Ceremony:** September 19, 9:30 AM CST
+- **Submission Deadline:** September 12, 5:00 PM (CT)
 
 **Format:** Hybrid (online + on-site locations)
 
 ## On-Site Locations
 
-- **London:** King's College London
-- **New York:** Cornell Tech (Roosevelt Island)
-- **Tokyo:** University of Tokyo
+- **Toronto, Canada:** University of Toronto
+- **Durham, USA:** Duke University
+- **Pittsburgh, USA:** Carnegie Mellon University
+- **Sydney, Australia:** University of New South Wales
+- **West Lafayette, USA:** Purdue University
+- **Baltimore, USA:** Johns Hopkins University
+- **Berlin, Germany:** Center for Materials Science Berlin
+- **London, UK:** King's College London
+- **Oxford, UK:** University of Oxford
+- **Lemont, USA:** Argonne National Laboratory
+
+## Site Requirement Guideline
+
+### Steps to Host a Site
+
+1.  **Express Interest:** Complete the short "Site Host" form so we can learn about your venue and primary contact.
+2.  **Meet Site Requirements:** Confirm that you can provide the Site Requirements below.
+3.  **Promote Locally:** Share the registration link and your room location with your community.
+4.  **Event:** Welcome participants, keep the schedule on track, and upload photos / short updates to our shared Slack.
+
+### Site Requirements
+
+- **Reliable Internet:** Stable, high-speed Wi-Fi (or wired) that can handle video streaming and multiple laptops.
+- **Physical Space:** One or more rooms with tables, chairs, and power outlets.
+- **Local Site Lead:** A designated organizer who remains on-site (or on-call) throughout the event.
+- **Accessibility and Safety:**
+  - Responsible for safety, following local rules and regulations
+  - Schedule reminders and liaising with the central team via Slack
+  - ADA-compliant entrance/restrooms where possible
+  - Harassment-free environment
+- **Optional Extras:**
+  - Light refreshments (coffee, water, snacks) or a list of nearby food options
+  - Swag or local prizes—totally up to you!
+
+### What You Can Expect From Us
+
+- A digital participant kit (schedule, central judging rubric, submission instructions)
+- Shared assets to help to advertise your site
+- A dedicated Slack team for participants and a private channel for site hosts
+- Post-event recognition: every site and its standout projects will be highlighted in the official recap
 
 ## Previous Hackathon Results
 
@@ -91,12 +127,13 @@ The website provides comprehensive resources including:
 **Lead Organizer:** Dr. Benjamin J. Blaiszik  
 University of Chicago and Argonne National Laboratory
 
-**Volunteers:** Adib Bazgir, Alexander Al-Feghali, Aritra Roy, Hassan Harb, Piyush R. Maharana, Pranav Krishnan, Thomas Pruyn
+**Volunteers:** Aritra Roy, Hassan Harb, Piyush R. Maharana, Pranav Krishnan, Thomas Pruyn, Adib Bazgir, Alexander Al-Feghali
 
 ## Sponsors & Partners
 
 - LILA (Learning in Artificial Intelligence and Applications)
 - HuggingFace
+- AIChemy
 
 ## Important Links
 
