@@ -817,18 +817,38 @@ footer {
 }
 
 .footer-container {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.footer-col {
+    flex: 1 1 30%;
+    margin: 10px 20px;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.quick-links-columns {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 10px;
+}
+
+.quick-links-columns ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
 }
 
 .footer-bottom {
-    text-align: center;
-    margin-top: 40px;
-    padding-top: 20px;
-    border-top: 1px solid #dcd9c6;
+    margin-top: 20px;
+    padding-top: 10px;
 }
 
 /* --- Page Header for Sub-Pages --- */
