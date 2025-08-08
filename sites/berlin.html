@@ -18,6 +18,17 @@
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .content-section a {
+            color: #2563eb;
+            text-decoration: underline;
+            transition: color 0.2s;
+        }
+
+        .content-section a:hover {
+            color: #1d4ed8;
+        }
+    </style>
 </head>
 
 <body>
@@ -70,8 +81,70 @@
 
         <section class="content-section">
             <h2>Welcome to the Berlin Hub</h2>
-            <p>The Berlin in-person event will be held at the Center for Materials Science Berlin. We are excited to
-                welcome you to this vibrant and innovative academic environment.</p>
+            <div class="event-intro" style="margin-bottom: 24px;">
+                <p>
+                    The Berlin in-person event will be held at the <strong>Center for Materials Science Berlin (CSMB)</strong>.
+                    </p>
+                    <p>
+                        We will have a motivated group of people ready to hack, a brainstorming and teaming session to kick things off, some environments with compute to play around, and of course, pizza 🍕.
+                </p>
+                <p style="margin-top: 12px;">
+                    <strong>Note:</strong> Places are limited—register early to secure your spot!
+                </p>
+            </div>
+
+            <div class="organizer"
+                style="display: flex; align-items: center; gap: 16px; margin: 8px 0 24px; flex-wrap: wrap;">
+                <img src="./FAIRmat_logo.svg" alt="FAIRmat logo" style="height: 42px; width: auto;" />
+                <p style="margin: 0;">
+                    This Berlin site is <strong>organized by</strong>
+                    <a href="https://www.fairmat-nfdi.eu/" target="_blank" rel="noopener">FAIRmat (NFDI)</a>.
+                </p>
+            </div>
+
+            <div class="general-info">
+                <iframe src="https://www.google.com/maps?q=Zum+Gro%C3%9Fen+Windkanal+2,+12489+Berlin&output=embed"
+                    width="100%" height="300" style="border:0; border-radius:12px; margin-bottom:16px;"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Location</h3>
+                <p><strong>Venue:</strong> Center for Materials Science Berlin (CSMB) <br>
+                    <strong>Address:</strong> Zum Großen Windkanal 2, 12489 Berlin
+                </p>
+
+                <img src="./csmb.jpg" alt="Center for Materials Science Berlin facilities"
+                    style="width: 100%; max-width: 600px; height: auto; border-radius: 12px; margin: 16px 0;">
+
+                <h3>Event Registration</h3>
+                <p>Please register on the FAIRmat event page to attend the Berlin in-person event.</p>
+                <div style="margin: 24px 0; text-align: center;">
+                    <a href="https://events.fairmat-nfdi.eu/event/44/" target="_blank" rel="noopener"
+                        style="background-color: #2563eb; color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; display: inline-block; transition: background-color 0.2s;"
+                        onmouseover="this.style.backgroundColor='#1d4ed8'"
+                        onmouseout="this.style.backgroundColor='#2563eb'">Register for Berlin</a>
+                </div>
+
+                <h3>Slack</h3>
+                <p>Join the Berlin channel for updates and team formation: <a
+                        href="https://llmsformateri-0lw8517.slack.com/archives/C06SQNQSGH3" target="_blank"
+                        rel="noopener">#berlin-site channel</a></p>
+
+                <h3>FAQs</h3>
+                <ul>
+                    <li><strong>Who can participate?</strong> Anyone interested in doing cool science that involves modern
+                        LLMs is welcome.</li>
+                    <li><strong>What should I bring?</strong> Laptop, charger, and your ideas.</li>
+                    <li><strong>Do I need to register?</strong> Yes—please register via the link above.</li>
+                    <li><strong>Are there fees?</strong> See the registration page for the latest details.</li>
+                    <li><strong>How do I submit my project?</strong> See the <a href="../submission.html">Submission</a>
+                        page for details.</li>
+                    <li><strong>Where can I find more info?</strong> Check the <a href="../faq.html">FAQ</a> and <a
+                            href="../resources.html">Resources</a> pages.</li>
+                </ul>
+
+                <h3>Contact</h3>
+                <p>For questions about the Berlin site, contact <strong>Pepe Marquez</strong> at <a
+                        href="mailto:jose.marquez@physik.hu-berlin.de">jose.marquez@physik.hu-berlin.de</a>.</p>
+            </div>
         </section>
     </main>
 
