@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Discover the lineup of expert talks and workshops at the LLM Hackathon. Gain insights from leaders in AI, materials science, and chemistry.">
+    <meta name="keywords"
+        content="Hackathon Talks, Workshops, AI Speakers, Materials Science Talks, Chemistry Presentations">
+    <meta name="author" content="LLM Hackathon Organizers">
+    <title>Talks - LLM Hackathon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+    <header>
+        <nav>
+            <a href="/" class="logo">LLM Hackathon</a>
+            <ul class="nav-links">
+                <li><a href="about.html">About</a></li>
+                <li><a href="agenda.html">Agenda</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="submission.html">Submission</a></li>
+
+                <li><a href="resources.html">Resources</a></li>
+                <li><a href="sponsors.html">Sponsors</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Sites <i class="fas fa-chevron-down"></i></a>
+                    <div class="dropdown-content">
+                        <a href="requirements.html">Requirements</a>
+                        <div class="dropdown-submenu">
+                            <a href="#" class="dropbtn-submenu">Locations <i class="fas fa-chevron-right"></i></a>
+                            <div class="dropdown-content-submenu">
+                                <a href="sites/london.html">London</a>
+                                <a href="sites/new-york.html">New York</a>
+                                <a href="sites/tokyo.html">Tokyo</a>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a target="_blank" rel="noopener" href="https://lu.ma/hspoki8y" class="cta-button">Register
+                        Now</a></li>
+            </ul>
+            <div class="hamburger" role="button" aria-label="Toggle navigation menu">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <h1>Featured <span>Talks</span></h1>
+        </section>
+
+        <section class="content-section">
+            <h2>Insights from Industry Leaders</h2>
+            <p>We will be hosting a series of talks from experts in the field of AI, materials science, and chemistry.
+                Check back here for the full schedule and speaker list.</p>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <!-- LLM Hackathon Column -->
+            <div class="footer-col center-text">
+                <h4>LLM Hackathon</h4>
+                <p>Innovate at the intersection of AI and molecular science with the help of LLMs. Join us in pushing
+                    the boundaries of what's possible!</p>
+            </div>
+
+            <!-- Quick Links Column with Two Sub-columns -->
+            <div class="footer-col center-text">
+                <h4>Quick Links</h4>
+                <div class="quick-links-columns">
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="agenda.html">Agenda</a></li>
+                        <li><a href="projects.html">Projects</a></li>
+                        <li><a href="submission.html">Submission</a></li>
+                    </ul>
+                    <ul>
+                        <li><a href="resources.html">Resources</a></li>
+                        <li><a href="sponsors.html">Sponsors</a></li>
+                        <li><a href="sites.html">Sites</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Contact Column -->
+            <div class="footer-col center-text">
+                <h4>Contact</h4>
+                <p><b>Organizer: </b><a href="mailto:blaiszik@uchicago.edu">blaiszik@uchicago.edu</a></p>
+                <p><b>Slack: </b><a href="https://cutt.ly/llm-hackathon-slack">Join our Slack</a></p>
+            </div>
+        </div>
+
+        <div class="footer-bottom center-text">
+            <p>2025 LLM Hackathon for Materials & Chemistry &copy; All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script>
+
+        // Loader
+        window.addEventListener('load', () => {
+            const loader = document.querySelector('.loader-wrapper');
+            loader.classList.add('loader-hidden');
+            loader.addEventListener('transitionend', () => {
+                document.body.removeChild(loader);
+            });
+        });
+    </script>
+</body>
+
+</html>

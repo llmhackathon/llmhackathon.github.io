@@ -1,0 +1,31 @@
+# Prize information
+main_prizes:
+  - amount: "$1000"
+    title: "First Prize"
+    description: "For the overall winning team."
+    
+  - amount: "$500"
+    title: "Second Prize"
+    description: "For the runner-up team."
+    
+  - amount: "$250"
+    title: "Third Prize"
+    description: "For the second runner-up team."
+    
+  - amount: "Various"
+    title: "Special Prizes"
+    description: "Awards for best innovation, best design, and more!"
+
+# Judging criteria
+judging_criteria:
+  - title: "Potential for Impact"
+    description: "Research advancement potential"
+  
+  - title: "Innovativeness"
+    description: "Unique approaches and creativity"
+  
+  - title: "Scalability"
+    description: "Growth and user accommodation capability"
+  
+  - title: "Relevance"
+    description: "Advancement of materials science and chemistry"

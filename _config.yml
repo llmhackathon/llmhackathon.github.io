@@ -1,0 +1,73 @@
+# Jekyll Configuration for LLM Hackathon Website
+
+# Site settings
+title: "LLM Hackathon for Applications in Materials Science & Chemistry"
+description: "A hybrid international hackathon connecting researchers from across the globe to explore and help solve the biggest problems in materials science and chemistry."
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://llmhackathon.github.io" # the base hostname & protocol for your site
+
+# Author information
+author:
+  name: "LLM Hackathon Organizers"
+  email: "blaiszik@uchicago.edu"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+permalink: pretty
+sass:
+  sass_dir: _sass
+  style: compressed
+
+# Plugins
+plugins:
+  - jekyll-sass-converter
+
+# Collections
+collections:
+  sites:
+    output: true
+    permalink: /sites/:name/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  - scope:
+      path: ""
+      type: "sites"
+    values:
+      layout: "site-location"
+
+# Exclude files from processing
+exclude:
+  - README.md
+  - CLAUDE.md
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+
+# Include files
+include:
+  - _pages
+
+# Event information
+event:
+  dates: "September 11-12, 2025"
+  kickoff: "9:30 AM (CT), Sept 11"
+  submission_deadline: "5:00 PM (CT), Sept 12"
+  countdown_date: "September 11, 2025 12:00:00"
+
+# External links
+links:
+  registration: "https://lu.ma/hspoki8y"
+  slack: "https://cutt.ly/llm-hackathon-slack"
+  main_organizer_email: "blaiszik@uchicago.edu"
+
+# SEO settings
+google_analytics: # Add if needed
+lang: en_US

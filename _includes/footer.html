@@ -1,0 +1,37 @@
+<footer>
+    <div class="footer-container">
+        <!-- LLM Hackathon Column -->
+        <div class="footer-col center-text">
+            <h4>LLM Hackathon</h4>
+            <p>Innovate at the intersection of AI and molecular science with the help of LLMs. Join us in pushing the boundaries of what's possible!</p>
+        </div>
+
+        <!-- Quick Links Column with Two Sub-columns -->
+        <div class="footer-col center-text">
+            <h4>Quick Links</h4>
+            <div class="quick-links-columns">
+                <ul>
+                    {% for item in site.data.navigation.footer.quick_links_left %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+                <ul>
+                    {% for item in site.data.navigation.footer.quick_links_right %}
+                    <li><a href="{{ item.url | relative_url }}">{{ item.name }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+
+        <!-- Contact Column -->
+        <div class="footer-col center-text">
+            <h4>Contact</h4>
+            <p><b>Organizer: </b><a href="mailto:{{ site.links.main_organizer_email }}">{{ site.links.main_organizer_email }}</a></p>
+            <p><b>Slack: </b><a href="{{ site.links.slack }}">Join our Slack</a></p>
+        </div>
+    </div>
+
+    <div class="footer-bottom center-text">
+        <p>{{ 'now' | date: '%Y' }} LLM Hackathon for Materials & Chemistry &copy; All Rights Reserved</p>
+    </div>
+</footer>

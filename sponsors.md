@@ -1,0 +1,27 @@
+---
+layout: page
+title: "Sponsors & Partners"
+description: "Meet our sponsors and partners supporting the LLM Hackathon for Applications in Materials Science & Chemistry."
+keywords: "LLM Hackathon Sponsors, Partners, LILA, HuggingFace, AIChemy"
+---
+
+<section class="sponsors-section">
+    <h2>Our <span>Partners</span></h2>
+    <div class="sponsor-logos">
+        {% for sponsor in site.data.sponsors.partners %}
+        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+        {% endfor %}
+    </div>
+</section>
+
+## Partner Information
+
+Our hackathon is supported by leading organizations in the AI and materials science communities:
+
+- **LILA (Learning in Artificial Intelligence and Applications)** - Supporting AI research and applications
+- **HuggingFace** - The leading platform for machine learning and AI models
+- **AIChemy** - Advancing AI applications in chemistry and materials science
+
+## Sponsorship Opportunities
+
+Interested in sponsoring future events? Contact us at [{{ site.links.main_organizer_email }}](mailto:{{ site.links.main_organizer_email }}) to learn about partnership opportunities.
