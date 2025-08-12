@@ -1,0 +1,39 @@
+# Main navigation items
+main:
+  - name: "About"
+    url: "/about.html"
+  - name: "Agenda"
+    url: "/agenda.html"
+  - name: "Projects"
+    url: "/projects.html"
+  - name: "Submission"
+    url: "/submission.html"
+  - name: "Resources"
+    url: "/resources.html"
+  - name: "Sponsors"
+    url: "/sponsors.html"
+  - name: "Sites"
+    url: "/sites.html"
+  - name: "FAQ"
+    url: "/faq.html"
+
+# Footer navigation
+footer:
+  quick_links_left:
+    - name: "About"
+      url: "/about.html"
+    - name: "Agenda"
+      url: "/agenda.html"
+    - name: "Projects"
+      url: "/projects.html"
+    - name: "Submission"
+      url: "/submission.html"
+  quick_links_right:
+    - name: "Resources"
+      url: "/resources.html"
+    - name: "Sponsors"
+      url: "/sponsors.html"
+    - name: "Sites"
+      url: "/sites.html"
+    - name: "FAQ"
+      url: "/faq.html"

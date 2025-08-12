@@ -1,0 +1,13 @@
+# Event schedule information
+items:
+  - time: "9:30 AM (CT), Sept 11"
+    title: "Hackathon Kick-off"
+    description: "Kick-off and opening remarks"
+  
+  - time: "10:00 AM (CT), Sept 11"
+    title: "Hacking Begins"
+    description: "Mentorship sessions available."
+  
+  - time: "17:00 PM (CT), Sept 12"
+    title: "Final Submissions"
+    description: "Project submission deadline."

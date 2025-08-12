@@ -1,0 +1,32 @@
+# Sponsor/Partner information
+partners:
+  - name: "LILA"
+    logo: "/assets/images/sponsors/LILA_Logo.png"
+    alt: "LILA Logo"
+    url: "#"
+  - name: "HuggingFace"
+    logo: "/assets/images/sponsors/HF_Logo.svg"
+    alt: "HuggingFace Logo"
+    url: "https://huggingface.co"
+  - name: "AIChemy"
+    logo: "/assets/images/sponsors/aichemy_logo.png"
+    alt: "AIChemy Logo"
+    url: "#"
+
+# Additional sponsors that appear in other contexts
+all_sponsors:
+  - name: "Claude AI"
+    logo: "/assets/images/sponsors/Claude_AI_logo.png"
+    alt: "Claude AI Logo"
+  - name: "Google AI"
+    logo: "/assets/images/sponsors/Google_AI_logo.png"
+    alt: "Google AI Logo"
+  - name: "OpenAI"
+    logo: "/assets/images/sponsors/OpenAI_Logo.png"
+    alt: "OpenAI Logo"
+  - name: "LangChain"
+    logo: "/assets/images/sponsors/Langchain_Logo.png"
+    alt: "LangChain Logo"
+  - name: "Cerebras"
+    logo: "/assets/images/sponsors/Cerebras_logo.png"
+    alt: "Cerebras Logo"
