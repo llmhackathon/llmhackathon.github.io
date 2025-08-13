@@ -12,57 +12,34 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
 
 <section id="locations" class="content-section" style="padding-top: 5rem; scroll-margin-top: 100px;">
     <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 2rem;">Our <span>Locations</span></h2>
+    
+    <div style="background: #f8fafc; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.5rem; margin-bottom: 2rem; text-align: center;">
+        <h3 style="color: #1a365d; margin-bottom: 1rem; font-size: 1.2rem;">Registration Requirements</h3>
+        <p style="color: #4a5568; margin-bottom: 0.5rem;">
+            <strong>All participants:</strong> Register for the main hackathon using the button in the navigation bar.
+        </p>
+        <p style="color: #4a5568; margin: 0;">
+            <strong>In-person participants:</strong> Also register for your specific site below if site-specific registration is available.
+        </p>
+    </div>
+    
     <div class="resource-grid">
-        <a href="sites/toronto.html" class="resource-card location-card">
-            <h4>Toronto, Canada</h4>
-            <p>University of Toronto</p>
-            <p><i class="fas fa-envelope"></i> Brandon Lines<br>[brandon.lines@utoronto.ca]</p>
-        </a>
-        <a href="sites/durham.html" class="resource-card location-card">
-            <h4>Durham, USA</h4>
-            <p>Duke University</p>
-            <p><i class="fas fa-envelope"></i> L. Catherine Brinson<br>[cate.brinson@duke.edu]</p>
-        </a>
-        <a href="sites/pittsburgh.html" class="resource-card location-card">
-            <h4>Pittsburgh, USA</h4>
-            <p>Carnegie Mellon University</p>
-            <p><i class="fas fa-envelope"></i> Olexandr Isayev<br>[olexandr@cmu.edu]</p>
-        </a>
-        <a href="sites/sydney.html" class="resource-card location-card">
-            <h4>Sydney, Australia</h4>
-            <p>University of New South Wales</p>
-            <p><i class="fas fa-envelope"></i> Tong Xie<br>[tong.xie@unsw.edu.au]</p>
-        </a>
-        <a href="sites/west-lafayette.html" class="resource-card location-card">
-            <h4>West Lafayette, USA</h4>
-            <p>Purdue University</p>
-            <p><i class="fas fa-envelope"></i> Juan C. Verduzco<br>[jverduzc@purdue.edu]</p>
-        </a>
-        <a href="sites/baltimore.html" class="resource-card location-card">
-            <h4>Baltimore, USA</h4>
-            <p>Johns Hopkins University</p>
-            <p><i class="fas fa-envelope"></i> David Elbert<br>[elbert@jhu.edu]</p>
-        </a>
-        <a href="sites/berlin.html" class="resource-card location-card">
-            <h4>Berlin, Germany</h4>
-            <p>Center for Materials Science Berlin</p>
-            <p><i class="fas fa-envelope"></i> Pepe Marquez<br>[jose.marquez@physik.hu-berlin.de]</p>
-        </a>
-        <a href="sites/london.html" class="resource-card location-card">
-            <h4>London, UK</h4>
-            <p>King's College London</p>
-            <p><i class="fas fa-envelope"></i> Aron Walsh<br>[a.walsh@imperial.ac.uk]</p>
-        </a>
-        <a href="sites/oxford.html" class="resource-card location-card">
-            <h4>Oxford, UK</h4>
-            <p>University of Oxford</p>
-            <p><i class="fas fa-envelope"></i> Wojtek Treyde<br>[wojtek.treyde@sjc.ox.ac.uk]</p>
-        </a>
-        <a href="sites/argonne.html" class="resource-card location-card">
-            <h4>Lemont, USA</h4>
-            <p>Argonne National Laboratory</p>
-            <p><i class="fas fa-envelope"></i> Hassan Harb<br>[hharb@anl.gov]</p>
-        </a>
+        {% for site in site.data.sites.locations %}
+        <div class="resource-card location-card" style="text-decoration: none; display: block;">
+            <a href="sites/{{ site.slug }}/" style="text-decoration: none; color: inherit;">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.institution }}</p>
+                <p><i class="fas fa-envelope"></i> {{ site.organizer_name }}<br>[{{ site.organizer_email }}]</p>
+            </a>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                {% if site.registration_link %}
+                <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Site Registration</a>
+                {% else %}
+                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
     </div>
 </section>
 
@@ -81,29 +58,13 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
         <div class="mb-16">
             <h3 class="text-3xl font-bold text-gray-900 mb-8 text-center">Steps to Host a Site</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {% for step in site.data.sites.hosting.steps %}
                 <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="text-3xl font-bold text-indigo-600 mb-4">1</div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Express Interest</h4>
-                    <p class="text-gray-600">Complete the short "Site Host" form so we can learn about your
-                        venue and primary contact.</p>
+                    <div class="text-3xl font-bold text-indigo-600 mb-4">{{ step.number }}</div>
+                    <h4 class="text-xl font-semibold text-gray-900 mb-3">{{ step.title }}</h4>
+                    <p class="text-gray-600">{{ step.description }}</p>
                 </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="text-3xl font-bold text-indigo-600 mb-4">2</div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Meet Site Requirements</h4>
-                    <p class="text-gray-600">Confirm that you can provide the Site Requirements below.</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="text-3xl font-bold text-indigo-600 mb-4">3</div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Promote Locally</h4>
-                    <p class="text-gray-600">Share the registration link and your room location with your
-                        community.</p>
-                </div>
-                <div class="bg-white rounded-xl p-6 shadow-lg hover:shadow-xl transition-shadow">
-                    <div class="text-3xl font-bold text-indigo-600 mb-4">4</div>
-                    <h4 class="text-xl font-semibold text-gray-900 mb-3">Event</h4>
-                    <p class="text-gray-600">Welcome participants, keep the schedule on track, and upload photos
-                        / short updates to our shared Slack.</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
 
@@ -117,27 +78,12 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
                         Essential Requirements
                     </h4>
                     <ul class="space-y-4 text-gray-700">
+                        {% for requirement in site.data.sites.hosting.essential_requirements %}
                         <li class="flex items-start">
-                            <i class="fas fa-wifi text-blue-500 mr-3 mt-1"></i>
-                            <span><strong>Reliable Internet:</strong> Stable, high-speed Wi-Fi (or wired) that can
-                                handle video streaming and multiple laptops.</span>
+                            <i class="{{ requirement.icon }} text-blue-500 mr-3 mt-1"></i>
+                            <span><strong>{{ requirement.title }}:</strong> {{ requirement.description }}</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-home text-blue-500 mr-3 mt-1"></i>
-                            <span><strong>Physical Space:</strong> One or more rooms with tables, chairs, and power
-                                outlets.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-user-tie text-blue-500 mr-3 mt-1"></i>
-                            <span><strong>Local Site Lead:</strong> A designated organizer who remains on-site (or
-                                on-call) throughout the event.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-shield-alt text-blue-500 mr-3 mt-1"></i>
-                            <span><strong>Accessibility and Safety:</strong> Responsible for safety, following local
-                                rules and regulations, ADA-compliant entrance/restrooms where possible, and a
-                                harassment-free environment.</span>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div class="bg-white rounded-xl p-8 shadow-lg">
@@ -146,23 +92,12 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
                         Optional Extras
                     </h4>
                     <ul class="space-y-4 text-gray-700">
+                        {% for extra in site.data.sites.hosting.optional_extras %}
                         <li class="flex items-start">
-                            <i class="fas fa-coffee text-yellow-500 mr-3 mt-1"></i>
-                            <span><strong>Light Refreshments:</strong> Coffee, water, snacks or a list of nearby food
-                                options.</span>
+                            <i class="{{ extra.icon }} text-yellow-500 mr-3 mt-1"></i>
+                            <span><strong>{{ extra.title }}:</strong> {{ extra.description }}</span>
                         </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-gift text-yellow-500 mr-3 mt-1"></i>
-                            <span><strong>Swag or Local Prizes:</strong> Totally up to you!</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-server text-yellow-500 mr-3 mt-1"></i>
-                            <span><strong>Computing Resources:</strong> Access to local computational resources.</span>
-                        </li>
-                        <li class="flex items-start">
-                            <i class="fas fa-camera text-yellow-500 mr-3 mt-1"></i>
-                            <span><strong>Documentation:</strong> Photography and social media coordination.</span>
-                        </li>
+                        {% endfor %}
                     </ul>
                 </div>
             </div>
@@ -172,26 +107,13 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
         <div class="bg-white rounded-xl p-8 shadow-lg">
             <h3 class="text-3xl font-bold text-gray-900 mb-6 text-center">What You Can Expect From Us</h3>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                {% for support in site.data.sites.hosting.support_provided %}
                 <div class="text-center">
-                    <i class="fas fa-box text-4xl text-blue-500 mb-4"></i>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Digital Participant Kit</h4>
-                    <p class="text-gray-600">Schedule, central judging rubric, submission instructions</p>
+                    <i class="{{ support.icon }} text-4xl text-blue-500 mb-4"></i>
+                    <h4 class="text-lg font-semibold text-gray-900 mb-2">{{ support.title }}</h4>
+                    <p class="text-gray-600">{{ support.description }}</p>
                 </div>
-                <div class="text-center">
-                    <i class="fas fa-bullhorn text-4xl text-blue-500 mb-4"></i>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Shared Assets</h4>
-                    <p class="text-gray-600">Help to advertise your site</p>
-                </div>
-                <div class="text-center">
-                    <i class="fab fa-slack text-4xl text-blue-500 mb-4"></i>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Dedicated Slack</h4>
-                    <p class="text-gray-600">Team for participants and private channel for site hosts</p>
-                </div>
-                <div class="text-center">
-                    <i class="fas fa-trophy text-4xl text-blue-500 mb-4"></i>
-                    <h4 class="text-lg font-semibold text-gray-900 mb-2">Post-Event Recognition</h4>
-                    <p class="text-gray-600">Every site and its standout projects highlighted in official recap</p>
-                </div>
+                {% endfor %}
             </div>
         </div>
     </div>
