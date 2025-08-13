@@ -3,7 +3,7 @@ partners:
   - name: "LILA"
     logo: "/assets/images/sponsors/LILA_Logo.png"
     alt: "LILA Logo"
-    url: "#"
+    url: "https://www.lila.ai"
   - name: "HuggingFace"
     logo: "/assets/images/sponsors/HF_Logo.svg"
     alt: "HuggingFace Logo"
@@ -11,7 +11,20 @@ partners:
   - name: "AIChemy"
     logo: "/assets/images/sponsors/aichemy_logo.png"
     alt: "AIChemy Logo"
-    url: "#"
+    url: "https://aichemy.ac.uk"
+  - name: "Cerebras"
+    logo: "/assets/images/sponsors/Cerebras_logo.png"
+    alt: "Cerebras Logo"
+    url: "https://www.cerebras.ai"
+  - name: "Fum"
+    logo: "/assets/images/sponsors/fum.png"
+    alt: "Fum Logo"
+    url: "https://www.fum.tech"
+  - name: "National Science Foundation"
+    logo: "/assets/images/sponsors/NSF_logo.png"
+    alt: "NSF Logo"
+    url: "https://www.nsf.gov"
+  
 
 # Additional sponsors that appear in other contexts
 all_sponsors:
