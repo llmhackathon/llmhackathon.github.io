@@ -8,7 +8,7 @@ locations:
     country: "Canada"
     region: "North America"
     registration_link: null
-    
+
   - name: "Durham, USA"
     slug: "durham"
     institution: "Duke University"
@@ -17,7 +17,7 @@ locations:
     country: "USA"
     region: "North America"
     registration_link: null
-    
+
   - name: "Pittsburgh, USA"
     slug: "pittsburgh"
     institution: "Carnegie Mellon University"
@@ -26,7 +26,7 @@ locations:
     country: "USA"
     region: "North America"
     registration_link: null
-    
+
   - name: "Sydney, Australia"
     slug: "sydney"
     institution: "University of New South Wales"
@@ -35,7 +35,7 @@ locations:
     country: "Australia"
     region: "Asia-Pacific"
     registration_link: null
-    
+
   - name: "West Lafayette, USA"
     slug: "west-lafayette"
     institution: "Purdue University"
@@ -43,8 +43,8 @@ locations:
     organizer_email: "jverduzc@purdue.edu"
     country: "USA"
     region: "North America"
-    registration_link: null
-    
+    registration_link: https://www.eventbrite.com/e/llm-hackathon-for-applications-in-materials-science-chemistry-tickets-1510910336489?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl
+
   - name: "Baltimore, USA"
     slug: "baltimore"
     institution: "Johns Hopkins University"
@@ -53,25 +53,43 @@ locations:
     country: "USA"
     region: "North America"
     registration_link: null
-    
-  - name: "Berlin, Germany"
-    slug: "berlin"
-    institution: "Center for Materials Science Berlin"
-    organizer_name: "Pepe Marquez"
-    organizer_email: "jose.marquez@physik.hu-berlin.de"
-    country: "Germany"
-    region: "Europe"
+
+  - name: "Lemont, USA"
+    slug: "argonne"
+    institution: "Argonne National Laboratory"
+    organizer_name: "Hassan Harb"
+    organizer_email: "hharb@anl.gov"
+    country: "USA"
+    region: "North America"
     registration_link: null
-    
+
+  - name: "Binghamton, USA"
+    slug: "binghamton"
+    institution: "SUNY Binghamton"
+    organizer_name: "Shehtab Zaman"
+    organizer_email: "szaman5@binghamton.edu"
+    country: "USA"
+    region: "North America"
+    registration_link: null
+
+  - name: "Champaign, USA"
+    slug: "champaign"
+    institution: "University of Illinois at Urbana-Champaign"
+    organizer_name: "Pranav Krishnan"
+    organizer_email: "pranav12@illinois.edu"
+    country: "USA"
+    region: "North America"
+    registration_link: null
+
   - name: "London, UK"
     slug: "london"
-    institution: "King's College London"
-    organizer_name: "Aron Walsh"
-    organizer_email: "a.walsh@imperial.ac.uk"
+    institution: "Imperial College London"
+    organizer_name: "Nduma Ry"
+    organizer_email: "napo.nduma22@imperial.ac.uk"
     country: "UK"
     region: "Europe"
     registration_link: null
-    
+
   - name: "Oxford, UK"
     slug: "oxford"
     institution: "University of Oxford"
@@ -80,12 +98,39 @@ locations:
     country: "UK"
     region: "Europe"
     registration_link: null
-    
-  - name: "Lemont, USA"
-    slug: "argonne"
-    institution: "Argonne National Laboratory"
-    organizer_name: "Hassan Harb"
-    organizer_email: "hharb@anl.gov"
+
+  - name: "Liverpool, UK"
+    slug: "liverpool"
+    institution: "University of Liverpool"
+    organizer_name: "Ben Alston"
+    organizer_email: "Ben.Alston@liverpool.ac.uk"
+    country: "UK"
+    region: "Europe"
+    registration_link: null
+
+  - name: "Berlin, Germany"
+    slug: "berlin"
+    institution: "Center for Materials Science Berlin"
+    organizer_name: "Pepe Marquez"
+    organizer_email: "jose.marquez@physik.hu-berlin.de"
+    country: "Germany"
+    region: "Europe"
+    registration_link: https://events.fairmat-nfdi.eu/event/44/
+
+  - name: "Lausanne, Switzerland"
+    slug: "lausanne"
+    institution: "École Polytechnique Fédérale de Lausanne (EPFL)"
+    organizer_name: "Philippe Schwaller"
+    organizer_email: "philippe.schwaller@epfl.ch"
+    country: "Switzerland"
+    region: "Europe"
+    registration_link: null
+
+  - name: "Boston, USA"
+    slug: "boston"
+    institution: "Massachusetts Institute of Technology (MIT)"
+    organizer_name: "Sophie Guo"
+    organizer_email: "sophiejg@mit.edu"
     country: "USA"
     region: "North America"
     registration_link: null
@@ -96,66 +141,66 @@ hosting:
     - title: "Reliable Internet"
       icon: "fas fa-wifi"
       description: "Stable, high-speed Wi-Fi (or wired) that can handle video streaming and multiple laptops."
-      
+
     - title: "Physical Space"
       icon: "fas fa-home"
       description: "One or more rooms with tables, chairs, and power outlets."
-      
+
     - title: "Local Site Lead"
       icon: "fas fa-user-tie"
       description: "A designated organizer who remains on-site (or on-call) throughout the event."
-      
+
     - title: "Accessibility and Safety"
       icon: "fas fa-shield-alt"
       description: "Responsible for safety, following local rules and regulations, ADA-compliant entrance/restrooms where possible, and a harassment-free environment."
-      
+
   optional_extras:
     - title: "Light Refreshments"
       icon: "fas fa-coffee"
       description: "Coffee, water, snacks or a list of nearby food options."
-      
+
     - title: "Swag or Local Prizes"
       icon: "fas fa-gift"
       description: "Totally up to you!"
-      
+
     - title: "Computing Resources"
       icon: "fas fa-server"
       description: "Access to local computational resources."
-      
+
     - title: "Documentation"
       icon: "fas fa-camera"
       description: "Photography and social media coordination."
-      
+
   support_provided:
     - title: "Digital Participant Kit"
       icon: "fas fa-box"
       description: "Schedule, central judging rubric, submission instructions"
-      
+
     - title: "Shared Assets"
       icon: "fas fa-bullhorn"
       description: "Help to advertise your site"
-      
+
     - title: "Dedicated Slack"
       icon: "fab fa-slack"
       description: "Team for participants and private channel for site hosts"
-      
+
     - title: "Post-Event Recognition"
       icon: "fas fa-trophy"
       description: "Every site and its standout projects highlighted in official recap"
-      
+
   steps:
     - number: 1
       title: "Express Interest"
-      description: "Complete the short \"Site Host\" form so we can learn about your venue and primary contact."
-      
+      description: 'Complete the short "Site Host" form so we can learn about your venue and primary contact.'
+
     - number: 2
       title: "Meet Site Requirements"
       description: "Confirm that you can provide the Site Requirements below."
-      
+
     - number: 3
       title: "Promote Locally"
       description: "Share the registration link and your room location with your community."
-      
+
     - number: 4
       title: "Event"
       description: "Welcome participants, keep the schedule on track, and upload photos / short updates to our shared Slack."

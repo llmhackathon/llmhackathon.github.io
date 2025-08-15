@@ -5,14 +5,11 @@ description: "Meet our sponsors and partners supporting the LLM Hackathon for Ap
 keywords: "LLM Hackathon Sponsors, Partners, LILA, HuggingFace, AIChemy"
 ---
 
-<section class="sponsors-section">
-    <h2>Our <span>Partners</span></h2>
-    <div class="sponsor-logos">
-        {% for sponsor in site.data.sponsors.partners %}
-        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
-        {% endfor %}
-    </div>
-</section>
+<div class="sponsor-logos">
+    {% for sponsor in site.data.sponsors.partners %}
+    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+    {% endfor %}
+</div>
 
 ## Partner Information
 
@@ -21,6 +18,9 @@ Our hackathon is supported by leading organizations in the AI and materials scie
 - **LILA (Learning in Artificial Intelligence and Applications)** - Supporting AI research and applications
 - **HuggingFace** - The leading platform for machine learning and AI models
 - **AIChemy** - Advancing AI applications in chemistry and materials science
+- **Cerebras** - First and only company in the world building AI hardware at wafer-scale.
+- **FUM** - Transforming advanced materials market with AI-powered data infrastructure.
+- **NSF** - Independent federal agency supporting science and engineering in all 50 states and U.S. territories.
 
 ## Sponsorship Opportunities
 

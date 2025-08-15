@@ -230,35 +230,35 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>🎬 Slide Design + MVP Recording</h3>
     <div class="resource-grid general-tools-grid">
         <a href="https://www.powtoon.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Powtoon</h4>
         </a>
         <a href="https://hislide.io/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>HiSlide</h4>
         </a>
         <a href="https://tinytake.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>TinyTake</h4>
         </a>
         <a href="https://canva.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Canva</h4>
         </a>
         <a href="https://workspace.google.com/products/slides/" target="_blank" rel="noopener"
-            aria-label="external-link" class="resource-card">
+            aria-label="external-link" class="resource-card resource-card-general">
             <h4>Google Slides</h4>
         </a>
         <a href="https://www.loom.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Loom</h4>
         </a>
         <a href="https://streamlabs.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Streamlabs</h4>
         </a>
         <a href="https://obsproject.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>OBS Studio</h4>
         </a>
     </div>
@@ -266,19 +266,19 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>🌀 Website Builder + Landing Page Mockup</h3>
     <div class="resource-grid general-tools-grid">
         <a href="https://www.wix.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Wix</h4>
         </a>
         <a href="https://www.weebly.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Weebly</h4>
         </a>
         <a href="https://www.squarespace.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Squarespace</h4>
         </a>
         <a href="https://canva.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Canva</h4>
         </a>
     </div>
@@ -286,23 +286,23 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>💻 No Code MVP + Prototyping Tools</h3>
     <div class="resource-grid general-tools-grid">
         <a href="https://www.moqups.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Moqups</h4>
         </a>
         <a href="https://www.marvelapp.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Marvel Apps</h4>
         </a>
         <a href="https://www.origami.design/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Origami</h4>
         </a>
         <a href="https://www.invisionapp.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>InVision</h4>
         </a>
         <a href="https://www.framer.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Framer</h4>
         </a>
     </div>
@@ -310,31 +310,31 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>🎨 Design + Artwork + Creative Tools</h3>
     <div class="resource-grid general-tools-grid">
         <a href="https://www.unsplash.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Unsplash</h4>
         </a>
         <a href="https://www.thenounproject.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Noun Project</h4>
         </a>
         <a href="https://www.icons8.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Icons8</h4>
         </a>
         <a href="https://www.feathericons.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Feather Icons</h4>
         </a>
         <a href="https://www.freepik.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>FreePik</h4>
         </a>
         <a href="https://www.undraw.co/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Undraw</h4>
         </a>
         <a href="https://www.artboard.studio/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Artboard.Studio</h4>
         </a>
     </div>
@@ -342,15 +342,15 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>✏️ Marketing Copy</h3>
     <div class="resource-grid general-tools-grid">
         <a href="https://www.goodemailcopy.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>Good Email Copy</h4>
         </a>
         <a href="https://www.copy.ai/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>CopyAI</h4>
         </a>
         <a href="https://www.reallygoodemails.com/" target="_blank" rel="noopener" aria-label="external-link"
-            class="resource-card">
+            class="resource-card resource-card-general">
             <h4>ReallyGoodEmails</h4>
         </a>
     </div>

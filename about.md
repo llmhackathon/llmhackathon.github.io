@@ -33,8 +33,6 @@ Recently Large-language models (LLMs) caught the interest of many scientists. Re
     </div>
 </div>
 
-## Volunteers
-
 <div class="team-grid volunteer-grid">
     {% for volunteer in site.data.team.volunteers %}
     <div class="team-card volunteer-card">

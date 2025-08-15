@@ -39,7 +39,7 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
 </section>
 
 <section id="sponsors" class="sponsors-section">
-    <h2>Our <span>Partners</span></h2>
+    <h2 style="margin-bottom:20px;">Our <span>Partners</span></h2>
     <div class="sponsor-logos">
         {% for sponsor in site.data.sponsors.partners %}
         <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
@@ -48,7 +48,7 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
 </section>
 
 <section id="schedule" class="schedule-section">
-    <h2>Hackathon <span>Schedule</span></h2>
+    <h2 style="margin-bottom:40px;">Hackathon <span>Schedule</span></h2>
     <div class="schedule-timeline">
         {% for item in site.data.schedule.items %}
         <div class="schedule-item">
@@ -63,7 +63,7 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
 </section>
 
 <section id="prizes" class="prizes-section">
-    <h2>Prizes <span>& More</span></h2>
+    <h2 style="margin-bottom:40px;">Prizes <span>& More</span></h2>
     <div class="prize-grid">
         {% for prize in site.data.prizes.main_prizes %}
         <div class="prize-card">
@@ -75,9 +75,9 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
     </div>
 </section>
 
-<section id="faq" class="faq-section">
-    <h2>Frequently Asked <span>Questions</span></h2>
-    {% for faq in site.data.faq.questions %}
+<section id="faq" class="faq-section-home">
+    <h2 style="margin-bottom:40px;">Frequently Asked <span>Questions</span></h2>
+    {% for faq in site.data.faq-home.questions %}
     <div class="faq-item">
         <button class="faq-question">{{ faq.question }}</button>
         <div class="faq-answer">

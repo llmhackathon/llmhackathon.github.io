@@ -2,7 +2,7 @@
 layout: page
 title: "Hackathon Sites"
 description: "Explore all the physical locations for the LLM Hackathon and learn how to host your own site."
-keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-site Hackathon, Venue Information"
+keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Sydney, On-site Hackathon, Venue Information"
 ---
 
 <div style="text-align: center; margin-top: 2rem; display: flex; justify-content: center; gap: 1rem;">
@@ -23,17 +23,20 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
         </p>
     </div>
     
+    <!-- North America -->
+    <h3 style="text-align: center; font-size: 2rem; margin: 3rem 0 1.5rem; color: #2563eb;">North America</h3>
     <div class="resource-grid">
-        {% for site in site.data.sites.locations %}
+        {% assign north_america_sites = site.data.sites.locations | where: "region", "North America" %}
+        {% for site in north_america_sites %}
         <div class="resource-card location-card" style="text-decoration: none; display: block;">
-            <a href="sites/{{ site.slug }}/" style="text-decoration: none; color: inherit;">
+            <a href="/sites/{{ site.slug }}/" style="text-decoration: none; color: inherit;">
                 <h4>{{ site.name }}</h4>
                 <p>{{ site.institution }}</p>
                 <p><i class="fas fa-envelope"></i> {{ site.organizer_name }}<br>[{{ site.organizer_email }}]</p>
             </a>
             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
                 {% if site.registration_link %}
-                <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem;">Site Registration</a>
+                <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
                 {% else %}
                 <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
                 {% endif %}
@@ -41,6 +44,51 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
         </div>
         {% endfor %}
     </div>
+
+    <!-- Europe -->
+    <h3 style="text-align: center; font-size: 2rem; margin: 3rem 0 1.5rem; color: #2563eb;">Europe</h3>
+    <div class="resource-grid">
+        {% assign europe_sites = site.data.sites.locations | where: "region", "Europe" %}
+        {% for site in europe_sites %}
+        <div class="resource-card location-card" style="text-decoration: none; display: block;">
+            <a href="/sites/{{ site.slug }}/" style="text-decoration: none; color: inherit;">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.institution }}</p>
+                <p><i class="fas fa-envelope"></i> {{ site.organizer_name }}<br>[{{ site.organizer_email }}]</p>
+            </a>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                {% if site.registration_link %}
+                <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
+                {% else %}
+                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
+    <!-- Asia-Pacific -->
+    <h3 style="text-align: center; font-size: 2rem; margin: 3rem 0 1.5rem; color: #2563eb;">Asia-Pacific</h3>
+    <div class="resource-grid">
+        {% assign asia_pacific_sites = site.data.sites.locations | where: "region", "Asia-Pacific" %}
+        {% for site in asia_pacific_sites %}
+        <div class="resource-card location-card" style="text-decoration: none; display: block;">
+            <a href="/sites/{{ site.slug }}/" style="text-decoration: none; color: inherit;">
+                <h4>{{ site.name }}</h4>
+                <p>{{ site.institution }}</p>
+                <p><i class="fas fa-envelope"></i> {{ site.organizer_name }}<br>[{{ site.organizer_email }}]</p>
+            </a>
+            <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
+                {% if site.registration_link %}
+                <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
+                {% else %}
+                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+
 </section>
 
 <section id="hosting" class="bg-gradient-to-br from-blue-50 to-indigo-100 py-16"
@@ -117,4 +165,5 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Tokyo, On-si
             </div>
         </div>
     </div>
+
 </section>
