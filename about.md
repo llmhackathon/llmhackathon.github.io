@@ -57,3 +57,7 @@ Recently Large-language models (LLMs) caught the interest of many scientists. Re
     </div>
     {% endfor %}
 </div>
+
+## Acknowledgement
+
+We would like to thank all our sponsors, partners, and volunteers for their incredible support in making this event possible. A special thanks to all the participants for their enthusiasm and dedication. We are excited to see the innovative solutions you will create!

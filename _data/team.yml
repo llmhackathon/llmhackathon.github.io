@@ -14,49 +14,55 @@ volunteers:
   - name: "Aritra Roy"
     image: "/assets/images/organizers/aritra.webp"
     social:
-      website: "https://aritraroy.live"
-      twitter: "https://x.com/itsaritra"
-      github: "https://github.com/aritra-work"
+      website: "http://aritraroy.live"
+      twitter: "https://x.com/aritraroy24"
+      github: "https://github.com/aritraroy24"
       email: "contact@aritraroy.live"
   
   - name: "Hassan Harb"
     image: "/assets/images/organizers/hassan.jpeg"
     social:
       website: "#"
-      github: "https://github.com/hharb"
+      twitter: "#"
+      github: "https://github.com/HassanHarb92"
       email: "hharb@anl.gov"
   
   - name: "Piyush R. Maharana"
     image: "/assets/images/organizers/piyush.jpeg"
     social:
-      website: "#"
-      github: "https://github.com/piyushmaharana"
-      email: "#"
+      website: "https://catastropiyush.github.io/"
+      twitter: "https://x.com/CatAstro_Piyush"
+      github: "https://github.com/catastropiyush"
+      email: "piyushmaharana15@gmail.com"
   
   - name: "Pranav Krishnan"
     image: "/assets/images/organizers/pranav.jpeg"
     social:
       website: "#"
+      twitter: "#"
       github: "#"
-      email: "#"
+      email: "pranav12@illinois.edu"
   
   - name: "Thomas Pruyn"
     image: "/assets/images/organizers/thomas.jpeg"
     social:
       website: "#"
-      github: "#"
+      twitter: "#"
+      github: "https://github.com/iamthomaspruyn"
       email: "tom.pruyn@mail.utoronto.ca"
   
   - name: "Adib Bazgir"
     image: "/assets/images/organizers/adib.jpeg"
     social:
       website: "#"
-      github: "#"
-      email: "#"
+      twitter: "#"
+      github: "https://github.com/adibgpt"
+      email: "adibbazgir@gmail.com"
   
   - name: "Alexander Al-Feghali"
     image: "/assets/images/organizers/alexander.jpeg"
     social:
-      website: "#"
-      github: "#"
-      email: "#"
+      website: "https://al-feghali.com"
+      twitter: "https://x.com/AbuTarator"
+      github: "https://github.com/alxfgh"
+      email: "alexander.alfeghali@example.com"

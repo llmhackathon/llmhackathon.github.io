@@ -5,3 +5,18 @@ questions:
   
   - question: "Is there a participation fee?"
     answer: "No, participation is completely free."
+  
+  - question: "What is the team size?"
+    answer: "The ideal team size is anywhere between 3 and 10 participants. <b>But there is no enforced limit on size.</b>"
+  
+  - question: "What do I need for the hackathon?"
+    answer: "You will need a reliable internet connection and access to a few tools that will be used during the weekend. Make sure you check out our Tech Stack above, and have signed up for all those services."
+  
+  - question: "How will I interact with the other attendees?"
+    answer: "You can interact with others via the Slack, Zoom, Miro. Separate team meetings separate team meeting locations should bedefined for discussions."
+  
+  - question: "What kind of mentorship will be available?"
+    answer: "We will have a team of experienced mentors from both academia and industry via Slack to help you with your projects."
+  
+  - question: "What will be the judging criteria?"
+    answer: "<b>1. Potential for impact:</b> Using what you know about the particular domain, how could this project impact research done in this field? Looking at past research, would his project make better research outcomes or accelerate research in the future?<br><b>2. Innovativeness:</b> Does this project stand out? Is it a unique approach? Does it make researchers' lives easier?<br><b>3. Scalability:</b> At what point does this project stop scaling? Can the project scale up to accommodate more users? Can this project serve its intended audience as is or does it have the capability to grow with users?<br><b>4. Relevance to materials science and chemistry:</b> How relevant is the project in terms of advancing the research in materials science and chemistry?"
