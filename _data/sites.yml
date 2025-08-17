@@ -84,11 +84,11 @@ locations:
   - name: "London, UK"
     slug: "london"
     institution: "Imperial College London"
-    organizer_name: "Nduma Ry"
+    organizer_name: "Ry Nduma"
     organizer_email: "napo.nduma22@imperial.ac.uk"
     country: "UK"
     region: "Europe"
-    registration_link: null
+    registration_link: https://ir7x6hf97aq.typeform.com/to/WCilhQ8a
 
   - name: "Oxford, UK"
     slug: "oxford"
