@@ -97,7 +97,7 @@ locations:
     organizer_email: "wojtek.treyde@sjc.ox.ac.uk"
     country: "UK"
     region: "Europe"
-    registration_link: null
+    registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeivA-5L9uHjyaMouIdqOrgoGuZQPwhMgDZVGImVyso7_m6eA/viewform?usp=dialog
 
   - name: "Liverpool, UK"
     slug: "liverpool"
