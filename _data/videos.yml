@@ -1,0 +1,23 @@
+# Video items for homepage preview section
+videos:
+  - title: "2025 Chenru Duan: From MIT PhD to AI Startup: Creating Better Benchmarks for AI-Driven Scientific Research"
+    description: "Join us for an in-depth conversation with Chenru Duan, founder and CTO of Deep Principle, as he discusses his journey from MIT PhD to AI startup and introduces the groundbreaking Scientific Discovery Evaluation (SDE) Framework. Unlike traditional AI benchmarks that focus on textbook-style Q&A, SDE Harness evaluates LLMs on iterative scientific discovery workflows - hypothesis generation, experimentation, observation, and refinement. "
+    youtube_id: "epi_ZfSR_YY"
+    thumbnail: "https://img.youtube.com/vi/epi_ZfSR_YY/maxresdefault.jpg"
+  - title: "2024 Elsa Olivetta (MIT), Calvin Li (Fum), Marwin Segler (Microsoft), and Michael Craig (Valence)  LLM Hackathon for Applications in Materials and Chemistry Kickoff"
+    youtube_id: "RJaQmaPzTLY"
+    thumbnail: "https://img.youtube.com/vi/RJaQmaPzTLY/maxresdefault.jpg"
+    description: "Speakers include Elsa Olivetta (MIT), Calvin Li (Fum), Marwin Segler (Microsoft), and Michael Craig (Valence). This video also includes event kickoff information and teaming support."
+  - title: "2023 Kevin Jablonka: LLMs in Materials and Chemistry - Why ML Can Find a New Material, But Not a Needle in a Haystack"
+    youtube_id: "NhXmoYRZVk8"
+    thumbnail: "https://img.youtube.com/vi/NhXmoYRZVk8/maxresdefault.jpg"
+    description: "Kevin Jablonka from EPFL describes the implications of large language models and new software for materials and chemistry discovery.Topics include: Background ML in materials with tabular data; LLMs as a general model creation platform for materials science; Software to simplify application of LLMs to materials and chemistry; ChemChain (using LangChain)  to combine chemistry-related tools with almost no code"
+  - title: "2023 Andrew White: LLMs and GPT4 in Materials and Chemistry - How to Be a Chemist in 2023"
+    youtube_id: "0HNu2AE0frw&t"
+    thumbnail: "https://img.youtube.com/vi/0HNu2AE0frw/maxresdefault.jpg"
+    description: "Andrew White describes the implications of large language models and new software for materials and chemistry discovery. Topics include: How to search for information in 2023; Paper-QA; Agent based Paper-QA extension; GPT4; Synthesis to property prediction mapping skipping structure"
+  - title: "2023 Christian Dallago: LLMs for Applications in Chemistry - BioLLMs and All That Jazz"
+    youtube_id: "Tn0UVAgcF4M"
+    thumbnail: "https://img.youtube.com/vi/Tn0UVAgcF4M/maxresdefault.jpg"
+    description: "As part of the LLM for Applications in Materials and Chemistry Hackathon,  Chris Dallago gives an overview of NVIDIA software and tools to facilitate for materials and chemistry discovery. Topics include: NeMo Framework and BioNeMo; 3D Parallelism for Building Foundation Models; MegaMolBart; MolMIM molecular auto encoder"
+  

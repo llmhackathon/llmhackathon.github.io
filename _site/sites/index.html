@@ -80,7 +80,7 @@
         
         <a class="nav_options active" href="/sites/">Sites</a>
         
-        <a class="nav_options" href="/faq/">FAQ</a>
+        <a class="nav_options" href="/#faq">FAQ</a>
         
         
         <a target="_blank" href="https://lu.ma/hspoki8y" rel="noopener" class="cta-button">Register Now</a>
@@ -133,7 +133,7 @@
             <a href="/sites/durham/" style="text-decoration: none; color: inherit;">
                 <h4>Durham, USA</h4>
                 <p>Duke University</p>
-                <p><i class="fas fa-envelope"></i> L. Catherine Brinson<br />[cate.brinson@duke.edu]</p>
+                <p><i class="fas fa-envelope"></i> Defne Çirci<br />[defne.circi@duke.edu]</p>
             </a>
             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
                 
@@ -261,7 +261,7 @@
             </a>
             <div style="margin-top: 1rem; padding-top: 1rem; border-top: 1px solid #e2e8f0;">
                 
-                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeivA-5L9uHjyaMouIdqOrgoGuZQPwhMgDZVGImVyso7_m6eA/viewform?usp=dialog" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
                 
             </div>
         </div>
@@ -572,6 +572,38 @@
             });
         }
     });
+
+    // Video Modal Functions
+    function openVideoModal(videoId, title) {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoTitle = document.getElementById('videoTitle');
+        
+        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        videoTitle.textContent = title;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        modal.style.display = 'none';
+        videoFrame.src = '';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+
+    // Make functions globally accessible
+    window.openVideoModal = openVideoModal;
+    window.closeVideoModal = closeVideoModal;
 
     // Loader
     window.addEventListener('load', () => {
