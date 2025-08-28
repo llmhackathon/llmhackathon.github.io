@@ -21,7 +21,7 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Custom CSS -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
 
 <!-- SEO and Social Meta Tags -->
 <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
