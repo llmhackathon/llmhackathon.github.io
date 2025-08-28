@@ -15,7 +15,7 @@ main:
   - name: "Sites"
     url: "/sites/"
   - name: "FAQ"
-    url: "/faq/"
+    url: "/#faq"
 
 # Footer navigation
 footer:

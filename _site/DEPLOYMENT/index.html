@@ -80,7 +80,7 @@
         
         <a class="nav_options" href="/sites/">Sites</a>
         
-        <a class="nav_options" href="/faq/">FAQ</a>
+        <a class="nav_options" href="/#faq">FAQ</a>
         
         
         <a target="_blank" href="https://lu.ma/hspoki8y" rel="noopener" class="cta-button">Register Now</a>
@@ -553,6 +553,38 @@ mogrify <span class="nt">-resize</span> 800x600 <span class="nt">-quality</span>
             });
         }
     });
+
+    // Video Modal Functions
+    function openVideoModal(videoId, title) {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoTitle = document.getElementById('videoTitle');
+        
+        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        videoTitle.textContent = title;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        modal.style.display = 'none';
+        videoFrame.src = '';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+
+    // Make functions globally accessible
+    window.openVideoModal = openVideoModal;
+    window.closeVideoModal = closeVideoModal;
 
     // Loader
     window.addEventListener('load', () => {

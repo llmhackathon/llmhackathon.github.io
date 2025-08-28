@@ -80,7 +80,7 @@
         
         <a class="nav_options" href="/sites/">Sites</a>
         
-        <a class="nav_options" href="/faq/">FAQ</a>
+        <a class="nav_options" href="/#faq">FAQ</a>
         
         
         <a target="_blank" href="https://lu.ma/hspoki8y" rel="noopener" class="cta-button">Register Now</a>
@@ -100,10 +100,10 @@
 <div class="schedule-timeline">
     
     <div class="schedule-item">
-        <div class="schedule-time">9:30 AM (CT), Sept 11</div>
+        <div class="schedule-time">9:00 AM (CT), Sept 11</div>
         <div class="schedule-details">
             <h4>Hackathon Kick-off</h4>
-            <p>Kick-off and opening remarks</p>
+            <p>Kick-off (virtual video - link soon) and opening teaming event</p>
         </div>
     </div>
     
@@ -120,6 +120,14 @@
         <div class="schedule-details">
             <h4>Final Submissions</h4>
             <p>Project submission deadline.</p>
+        </div>
+    </div>
+    
+    <div class="schedule-item">
+        <div class="schedule-time">time ASAP, ~Sept 15</div>
+        <div class="schedule-details">
+            <h4>Post-Event Showcase</h4>
+            <p>Winners Announced, Featured Projects Invited to Virtual Showcase</p>
         </div>
     </div>
     
@@ -275,6 +283,38 @@
             });
         }
     });
+
+    // Video Modal Functions
+    function openVideoModal(videoId, title) {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        const videoTitle = document.getElementById('videoTitle');
+        
+        videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
+        videoTitle.textContent = title;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeVideoModal() {
+        const modal = document.getElementById('videoModal');
+        const videoFrame = document.getElementById('videoFrame');
+        
+        modal.style.display = 'none';
+        videoFrame.src = '';
+        document.body.style.overflow = 'auto';
+    }
+
+    // Close modal when pressing Escape key
+    document.addEventListener('keydown', function(event) {
+        if (event.key === 'Escape') {
+            closeVideoModal();
+        }
+    });
+
+    // Make functions globally accessible
+    window.openVideoModal = openVideoModal;
+    window.closeVideoModal = closeVideoModal;
 
     // Loader
     window.addEventListener('load', () => {
