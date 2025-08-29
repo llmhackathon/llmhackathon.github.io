@@ -38,7 +38,7 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Sydney, On-s
                 {% if site.registration_link %}
                 <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
                 {% else %}
-                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">E-mail Contact for Details</span>
                 {% endif %}
             </div>
         </div>

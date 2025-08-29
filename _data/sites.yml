@@ -1,6 +1,6 @@
 # Site location data for the LLM Hackathon
 locations:
-  - name: "Toronto, Canada"
+  - name: "Toronto, ON, Canada"
     slug: "toronto"
     institution: "University of Toronto"
     organizer_name: "Brandon Lines"
@@ -9,7 +9,7 @@ locations:
     region: "North America"
     registration_link: null
 
-  - name: "Durham, USA"
+  - name: "Durham, NC, USA"
     slug: "durham"
     institution: "Duke University"
     organizer_name: "Defne Çirci"
@@ -18,14 +18,23 @@ locations:
     region: "North America"
     registration_link: null
 
-  - name: "Pittsburgh, USA"
-    slug: "pittsburgh"
-    institution: "Carnegie Mellon University"
-    organizer_name: "Olexandr Isayev"
-    organizer_email: "olexandr@cmu.edu"
+  - name: "Knowxville, TN, USA"
+    slug: "durham"
+    institution: "University of Tennessee"
+    organizer_name: ""
+    organizer_email: ""
     country: "USA"
     region: "North America"
     registration_link: null
+
+  # - name: "Pittsburgh, USA"
+  #   slug: "pittsburgh"
+  #   institution: "Carnegie Mellon University"
+  #   organizer_name: "Olexandr Isayev"
+  #   organizer_email: "olexandr@cmu.edu"
+  #   country: "USA"
+  #   region: "North America"
+  #   registration_link: null
 
   - name: "Sydney, Australia"
     slug: "sydney"
@@ -36,7 +45,7 @@ locations:
     region: "Asia-Pacific"
     registration_link: null
 
-  - name: "West Lafayette, USA"
+  - name: "West Lafayette, IN, USA"
     slug: "west-lafayette"
     institution: "Purdue University"
     organizer_name: "Juan C. Verduzco"
@@ -45,7 +54,7 @@ locations:
     region: "North America"
     registration_link: https://www.eventbrite.com/e/llm-hackathon-for-applications-in-materials-science-chemistry-tickets-1510910336489?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl
 
-  - name: "Baltimore, USA"
+  - name: "Baltimore, MD, USA"
     slug: "baltimore"
     institution: "Johns Hopkins University"
     organizer_name: "David Elbert"
@@ -54,25 +63,24 @@ locations:
     region: "North America"
     registration_link: null
 
-  - name: "Lemont, USA"
+  - name: "Lemont, IL, USA"
     slug: "argonne"
     institution: "Argonne National Laboratory"
     organizer_name: "Hassan Harb"
     organizer_email: "hharb@anl.gov"
     country: "USA"
     region: "North America"
-    registration_link: null
 
-  - name: "Binghamton, USA"
-    slug: "binghamton"
-    institution: "SUNY Binghamton"
-    organizer_name: "Shehtab Zaman"
-    organizer_email: "szaman5@binghamton.edu"
-    country: "USA"
-    region: "North America"
-    registration_link: null
+  # - name: "Binghamton, USA"
+  #   slug: "binghamton"
+  #   institution: "SUNY Binghamton"
+  #   organizer_name: "Shehtab Zaman"
+  #   organizer_email: "szaman5@binghamton.edu"
+  #   country: "USA"
+  #   region: "North America"
+  #   registration_link: null
 
-  - name: "Champaign, USA"
+  - name: "Champaign, IL, USA"
     slug: "champaign"
     institution: "University of Illinois at Urbana-Champaign"
     organizer_name: "Pranav Krishnan"
@@ -99,15 +107,6 @@ locations:
     region: "Europe"
     registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeivA-5L9uHjyaMouIdqOrgoGuZQPwhMgDZVGImVyso7_m6eA/viewform?usp=dialog
 
-  - name: "Liverpool, UK"
-    slug: "liverpool"
-    institution: "University of Liverpool"
-    organizer_name: "Ben Alston"
-    organizer_email: "Ben.Alston@liverpool.ac.uk"
-    country: "UK"
-    region: "Europe"
-    registration_link: null
-
   - name: "Berlin, Germany"
     slug: "berlin"
     institution: "Center for Materials Science Berlin"
@@ -117,23 +116,23 @@ locations:
     region: "Europe"
     registration_link: https://events.fairmat-nfdi.eu/event/44/
 
-  - name: "Lausanne, Switzerland"
-    slug: "lausanne"
-    institution: "École Polytechnique Fédérale de Lausanne (EPFL)"
-    organizer_name: "Philippe Schwaller"
-    organizer_email: "philippe.schwaller@epfl.ch"
-    country: "Switzerland"
-    region: "Europe"
-    registration_link: null
+  # - name: "Lausanne, Switzerland"
+  #   slug: "lausanne"
+  #   institution: "École Polytechnique Fédérale de Lausanne (EPFL)"
+  #   organizer_name: "Philippe Schwaller"
+  #   organizer_email: "philippe.schwaller@epfl.ch"
+  #   country: "Switzerland"
+  #   region: "Europe"
+  #   registration_link: null
 
-  - name: "Boston, USA"
+  - name: "Boston, MA, USA"
     slug: "boston"
     institution: "Massachusetts Institute of Technology (MIT)"
     organizer_name: "Sophie Guo"
     organizer_email: "sophiejg@mit.edu"
     country: "USA"
     region: "North America"
-    registration_link: null
+    registration_link: https://luma.com/2sv74wi8
 
 # Site requirements and hosting information
 hosting:
