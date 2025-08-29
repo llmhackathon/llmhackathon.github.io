@@ -38,7 +38,7 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Sydney, On-s
                 {% if site.registration_link %}
                 <a href="{{ site.registration_link }}" target="_blank" rel="noopener" class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: linear-gradient(to right, #027ff7, #0259ce); color: white; text-decoration: none;">Site Registration</a>
                 {% else %}
-                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">Registration TBD</span>
+                <span class="cta-button" style="font-size: 0.9rem; padding: 0.5rem 1rem; background: #e2e8f0; color: #718096; cursor: not-allowed;">E-mail Contact for Details</span>
                 {% endif %}
             </div>
         </div>
@@ -99,6 +99,9 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Sydney, On-s
             <p class="text-xl text-gray-700 max-w-3xl mx-auto">
                 Help us grow our community by operating your own "node" of the hackathon!
             </p>
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="https://forms.gle/nF832hR774W4hC2F6" class="cta-button" target="_blank" rel="noopener">Register a Site</a>
+            </div>
             <div class="mt-6 border-t-2 border-indigo-300 w-24 mx-auto"></div>
         </div>
 
@@ -163,7 +166,12 @@ keywords: "Hackathon Locations, Hackathon Hosting, London, Toronto, Sydney, On-s
                 </div>
                 {% endfor %}
             </div>
+           
         </div>
+        <p style="margin-top: 2rem; text-align: center;">
+                <strong>By registering or operating a local hackathon site, you acknowledge and accept full responsibility to follow local regulations, and for the safety, conduct, and well-being of participants at your venue. The central organizing committee assumes no liability for injuries, property damage, or other losses that may occur during your local event.</strong>
+            </p>
+
     </div>
 
 </section>
