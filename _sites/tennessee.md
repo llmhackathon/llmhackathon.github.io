@@ -19,8 +19,5 @@ The in-person event will be held at **The University of Tennessee**.
 **Email:** [ssanch18@vols.utk.edu](ssanch18@vols.utk.edu), [sergei2@utk.edu](sergei2@utk.edu)
 
 
-## Contact
-
-For Tennessee-specific questions, please reach out to the contacts above
-
-Registration details coming soon!
+Click the link below to register
+## [Click Here to Register](https://forms.gle/YiTarbfop6Nd3Fac7)
