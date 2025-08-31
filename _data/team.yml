@@ -1,13 +1,13 @@
 # Team member information
 organizer:
-  name: "Dr. Benjamin J. Blaiszik"
+  name: "Ben Blaiszik"
   title: "Lead Organizer"
   affiliation: "University of Chicago and Argonne National Laboratory"
   image: "/assets/images/organizers/blaiszik.jpeg"
   social:
-    website: "https://www.anl.gov/profile/benjamin-j-blaiszik"
     twitter: "https://x.com/BenBlaiszik"
     github: "https://github.com/blaiszik"
+    linkedin: "https://www.linkedin.com/in/benblaiszik/"
     email: "blaiszik@uchicago.edu"
 
 volunteers:
@@ -42,27 +42,23 @@ volunteers:
       twitter: "#"
       github: "#"
       email: "pranav12@illinois.edu"
+
   
   - name: "Thomas Pruyn"
     image: "/assets/images/organizers/thomas.jpeg"
     social:
-      website: "#"
-      twitter: "#"
       github: "https://github.com/iamthomaspruyn"
       email: "tom.pruyn@mail.utoronto.ca"
   
-  - name: "Adib Bazgir"
-    image: "/assets/images/organizers/adib.jpeg"
-    social:
-      website: "#"
-      twitter: "#"
-      github: "https://github.com/adibgpt"
-      email: "adibbazgir@gmail.com"
   
-  - name: "Alexander Al-Feghali"
-    image: "/assets/images/organizers/alexander.jpeg"
+  - name: "Sophie Guo"
+    image: "/assets/images/organizers/sophie.jpeg"
     social:
-      website: "https://al-feghali.com"
-      twitter: "https://x.com/AbuTarator"
-      github: "https://github.com/alxfgh"
-      email: "alexander.alfeghali@example.com"
+      linkedin: "https://www.linkedin.com/in/sophie-guo-2439a4156/"
+
+  - name: "Calvin Li"
+    image: "/assets/images/organizers/calvin.jpeg"
+    social:
+      linkedin: "https://www.linkedin.com/in/temporalparts/"
+
+  
