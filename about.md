@@ -7,7 +7,7 @@ keywords: "About LLM Hackathon, Materials Science AI, Chemistry AI, Hackathon Mi
 
 ## LLM Hackathon for Applications in Materials Science & Chemistry
 
-Recently Large-language models (LLMs) caught the interest of many scientists. Recent studies suggested that these models could be useful in chemistry and materials science. To explore these possibilities, we started organizing a hackathon to showcase LLM applications in materials science and chemistry back in 2023 showcasing 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually which can be found in [**arXiv**](https://arxiv.org/abs/2411.15221).
+Recently Large-language models (LLMs) have sparked the interest of many scientists for the possibility to enable previously intractable applications. To explore  possibilities in materials science and chemistry, we have organize an annual hackathon to showcase LLM applications in materials science and chemistry. In 2023, the results showed 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually which can be found in [**arXiv**](https://arxiv.org/abs/2411.15221).
 
 ## Organizing Team
 
@@ -26,9 +26,13 @@ Recently Large-language models (LLMs) caught the interest of many scientists. Re
             {% if site.data.team.organizer.social.github and site.data.team.organizer.social.github != "#" %}
             <a target="_blank" aria-label="github" rel="noopener" href="{{ site.data.team.organizer.social.github }}"><i class="fab fa-github"></i></a>
             {% endif %}
+            {% if site.data.team.organizer.social.linkedin and site.data.team.organizer.social.linkedin != "#" %}
+            <a target="_blank" aria-label="linkedin" rel="noopener" href="{{ site.data.team.organizer.social.linkedin }}"><i class="fab fa-linkedin"></i></a>
+            {% endif %}
             {% if site.data.team.organizer.social.email and site.data.team.organizer.social.email != "#" %}
             <a aria-label="email" href="mailto:{{ site.data.team.organizer.social.email }}"><i class="fas fa-envelope"></i></a>
             {% endif %}
+            
         </div>
     </div>
 </div>
@@ -47,6 +51,9 @@ Recently Large-language models (LLMs) caught the interest of many scientists. Re
             {% endif %}
             {% if volunteer.social.github and volunteer.social.github != "#" %}
             <a target="_blank" aria-label="github" rel="noopener" href="{{ volunteer.social.github }}"><i class="fab fa-github"></i></a>
+            {% endif %}
+            {% if volunteer.social.linkedin and volunteer.social.linkedin != "#" %}
+            <a target="_blank" aria-label="linkedin" rel="noopener" href="{{ volunteer.social.linkedin }}"><i class="fab fa-linkedin"></i></a>
             {% endif %}
             {% if volunteer.social.email and volunteer.social.email != "#" %}
             <a aria-label="email" href="mailto:{{ volunteer.social.email }}"><i class="fas fa-envelope"></i></a>
