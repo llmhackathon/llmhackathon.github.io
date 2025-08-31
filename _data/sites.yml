@@ -18,14 +18,14 @@ locations:
     region: "North America"
     registration_link: null
 
-  - name: "Knowxville, TN, USA"
-    slug: "durham"
+  - name: "Knoxville, TN, USA"
+    slug: "tennessee"
     institution: "University of Tennessee"
-    organizer_name: ""
-    organizer_email: ""
+    organizer_name: "Sheryl Sanchez, Sergei Kalinin"
+    organizer_email: "ssanch18@vols.utk.edu, sergei2@utk.edu"
     country: "USA"
     region: "North America"
-    registration_link: null
+    registration_link: https://forms.gle/YiTarbfop6Nd3Fac7
 
   # - name: "Pittsburgh, USA"
   #   slug: "pittsburgh"
@@ -71,14 +71,14 @@ locations:
     country: "USA"
     region: "North America"
 
-  # - name: "Binghamton, USA"
-  #   slug: "binghamton"
-  #   institution: "SUNY Binghamton"
-  #   organizer_name: "Shehtab Zaman"
-  #   organizer_email: "szaman5@binghamton.edu"
-  #   country: "USA"
-  #   region: "North America"
-  #   registration_link: null
+  - name: "Binghamton, USA"
+    slug: "binghamton"
+    institution: "SUNY Binghamton"
+    organizer_name: "Shehtab Zaman"
+    organizer_email: "szaman5@binghamton.edu"
+    country: "USA"
+    region: "North America"
+    registration_link: null
 
   - name: "Champaign, IL, USA"
     slug: "champaign"
