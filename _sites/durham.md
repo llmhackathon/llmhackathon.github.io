@@ -12,11 +12,11 @@ The Durham in-person event will be held at **Duke University**.
 ## Event Details
 
 **Location:** Duke University  
-**Organizer:** L. Catherine Brinson  
-**Email:** [cate.brinson@duke.edu](mailto:cate.brinson@duke.edu)
+**Organizer:** Defne Circi, L. Catherine Brinson  
+**Email:** [defne.circi@duke.edu](mailto:defne.circi@duke.edu)
 
 ## Contact
 
-For Durham-specific questions, please reach out to **L. Catherine Brinson** at [cate.brinson@duke.edu](mailto:cate.brinson@duke.edu).
+For Durham-specific questions, please reach out to **Defne Circi** at [defne.circi@duke.edu](mailto:defne.circi@duke.edu).
 
-Registration details coming soon!
+## [Click Here to Register](https://docs.google.com/forms/d/1H3TnPE2ItUAyzkkqAgtIxJ3aGiuN6HS0FTJEa818HaA)
