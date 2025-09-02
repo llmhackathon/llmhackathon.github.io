@@ -16,7 +16,7 @@ locations:
     organizer_email: "defne.circi@duke.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://docs.google.com/forms/d/1H3TnPE2ItUAyzkkqAgtIxJ3aGiuN6HS0FTJEa818HaAll
+    registration_link: https://docs.google.com/forms/d/1H3TnPE2ItUAyzkkqAgtIxJ3aGiuN6HS0FTJEa818HaA
 
   - name: "Knoxville, TN, USA"
     slug: "tennessee"
