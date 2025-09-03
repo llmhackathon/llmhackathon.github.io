@@ -1,5 +1,9 @@
 # Video items for homepage preview section
 videos:
+  - title: "2025 Magdalena Lederbauer: Breaking Down Barriers in Science: AI Tools for Better Research Communication"
+    description: "In this conversation, Magdalena Lederbauer shares her journey at the intersection of chemistry and machine learning, especially using LLMs. She discusses her experiences at ETH Zurich, her participation in hackathons, and the development of GlossaGen, a tool designed to create glossaries from scientific literature. The conversation also introduces a template for hackathon participants to rapidly create applications."
+    youtube_id: "9Gr4VrEKD4Q"
+    thumbnail: "https://img.youtube.com/vi/9Gr4VrEKD4Q/maxresdefault.jpg"
   - title: "2025 Chenru Duan: From MIT PhD to AI Startup: Creating Better Benchmarks for AI-Driven Scientific Research"
     description: "Join us for an in-depth conversation with Chenru Duan, founder and CTO of Deep Principle, as he discusses his journey from MIT PhD to AI startup and introduces the groundbreaking Scientific Discovery Evaluation (SDE) Framework. Unlike traditional AI benchmarks that focus on textbook-style Q&A, SDE Harness evaluates LLMs on iterative scientific discovery workflows - hypothesis generation, experimentation, observation, and refinement. "
     youtube_id: "epi_ZfSR_YY"
