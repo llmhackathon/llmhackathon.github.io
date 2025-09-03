@@ -46,7 +46,7 @@ locations:
     registration_link: null
 
   - name: "KFUPM, KSA"
-    slug: ""
+    slug: "kfupm"
     institution: "KFUPM"
     organizer_name: "Abduljabar Alsayoud"
     organizer_email: "sayoudaq@kfupm.edu.sa"
