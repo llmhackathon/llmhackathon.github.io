@@ -70,7 +70,7 @@ locations:
     organizer_email: "elbert@jhu.edu"
     country: "USA"
     region: "North America"
-    registration_link: null
+    registration_link: https://bit.ly/2025_JHU_LLM_Hackathon_Registration
 
   - name: "Lemont, IL, USA"
     slug: "argonne"
