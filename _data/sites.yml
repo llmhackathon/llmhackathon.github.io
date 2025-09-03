@@ -7,7 +7,7 @@ locations:
     organizer_email: "brandon.lines@utoronto.ca"
     country: "Canada"
     region: "North America"
-    registration_link: null
+    registration_link: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOBgyd5wkQpDooqLuJ_8rg9UNDUwMVlQMU4zVFpERTlBQUxDRzcyUU0zVi4u
 
   - name: "Durham, NC, USA"
     slug: "durham"
@@ -45,6 +45,15 @@ locations:
     region: "Asia-Pacific"
     registration_link: null
 
+  - name: "KFUPM, KSA"
+    slug: ""
+    institution: "KFUPM"
+    organizer_name: "Abduljabar Alsayoud"
+    organizer_email: "sayoudaq@kfupm.edu.sa"
+    country: "KSA"
+    region: "Asia-Pacific"
+    registration_link: https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks7D2xcI1axdPrX5xshVqq0JURFBOOVlGNktIOVBNSjlUTTVTWDlTS0ZHSS4u
+
   - name: "West Lafayette, IN, USA"
     slug: "west-lafayette"
     institution: "Purdue University"
@@ -71,7 +80,7 @@ locations:
     country: "USA"
     region: "North America"
 
-  - name: "Binghamton, USA"
+  - name: "Binghamton, NY, USA"
     slug: "binghamton"
     institution: "SUNY Binghamton"
     organizer_name: "Shehtab Zaman"
@@ -116,14 +125,24 @@ locations:
     region: "Europe"
     registration_link: https://events.fairmat-nfdi.eu/event/44/
 
-  # - name: "Lausanne, Switzerland"
-  #   slug: "lausanne"
-  #   institution: "École Polytechnique Fédérale de Lausanne (EPFL)"
-  #   organizer_name: "Philippe Schwaller"
-  #   organizer_email: "philippe.schwaller@epfl.ch"
-  #   country: "Switzerland"
-  #   region: "Europe"
-  #   registration_link: null
+  - name: "Leipzig, Germany"
+    slug: "leipzig"
+    institution: "Max-Planck-Gesellschaft"
+    organizer_name: "Sandor Brockhauser"
+    organizer_email: "sandor.brockhauser@cbs.mpg.de"
+    country: "Germany"
+    region: "Europe"
+    registration_link:
+
+  - name: "Raleigh, NC, USA"
+    slug: "ncstate"
+    institution: "NC State"
+    organizer_name: "Yara Yingling"
+    organizer_email: "yara_yingling@ncstate.edu"
+    country: "USA"
+    region: "North America"
+    registration_link:
+
 
   - name: "Boston, MA, USA"
     slug: "boston"
