@@ -14,6 +14,7 @@ This guide covers how to install dependencies, run the site locally, and deploy 
 ### 1. Install Ruby and Bundler
 
 #### On macOS (using Homebrew)
+
 ```bash
 # Install Homebrew if not already installed
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
@@ -30,6 +31,7 @@ gem install bundler
 ```
 
 #### On Ubuntu/Debian
+
 ```bash
 # Update package list
 sudo apt update
@@ -48,6 +50,7 @@ gem install bundler
 ```
 
 #### On Windows
+
 ```bash
 # Install Ruby using RubyInstaller
 # Download from: https://rubyinstaller.org/downloads/
@@ -124,6 +127,7 @@ git push origin main
 ```
 
 **That's it!** GitHub Pages will automatically:
+
 1. Detect the Jekyll site
 2. Run `bundle exec jekyll build`
 3. Deploy the built site
@@ -176,7 +180,9 @@ bundle outdated
 ## 📝 Content Editing Guide
 
 ### Adding Navigation Items
+
 Edit `_data/navigation.yml`:
+
 ```yaml
 main:
   - name: "New Page"
@@ -184,7 +190,9 @@ main:
 ```
 
 ### Adding Team Members
+
 Edit `_data/team.yml`:
+
 ```yaml
 volunteers:
   - name: "New Volunteer"
@@ -195,20 +203,23 @@ volunteers:
 ```
 
 ### Adding Site Locations
+
 Create `_sites/new-city.md`:
+
 ```yaml
 ---
 layout: site-location
 title: "New City"
 description: "Details about the New City site"
 ---
-
 ## Welcome to New City Hub
 Your content here...
 ```
 
 ### Updating Event Information
+
 Edit `_config.yml`:
+
 ```yaml
 event:
   dates: "September 11-12, 2025"
@@ -220,6 +231,7 @@ event:
 ### Common Issues
 
 **Jekyll not found:**
+
 ```bash
 # Ensure Ruby and Bundler are installed
 ruby --version
@@ -230,6 +242,7 @@ gem install bundler jekyll
 ```
 
 **Port already in use:**
+
 ```bash
 # Use different port
 bundle exec jekyll serve --port 4001
@@ -239,6 +252,7 @@ lsof -ti:4000 | xargs kill -9
 ```
 
 **Permission errors:**
+
 ```bash
 # On macOS/Linux, avoid using sudo with gem commands
 # Instead, configure gem installation directory
@@ -248,6 +262,7 @@ source ~/.bashrc
 ```
 
 **Build failures on GitHub Pages:**
+
 - Check that all file names are lowercase
 - Ensure no spaces in file names (use hyphens instead)
 - Verify YAML frontmatter syntax
@@ -280,11 +295,13 @@ bundle exec jekyll build --trace
 If you have a custom domain:
 
 1. Add `CNAME` file to repository root:
+
 ```
 yourdomain.com
 ```
 
 2. Configure DNS records:
+
 ```
 Type: CNAME
 Name: www
@@ -298,6 +315,7 @@ GitHub Pages automatically provides HTTPS for `.github.io` domains and custom do
 ## 📊 Performance Optimization
 
 ### Image Optimization
+
 ```bash
 # Install ImageMagick for image processing
 brew install imagemagick  # macOS
@@ -308,6 +326,7 @@ mogrify -resize 800x600 -quality 85 assets/images/*.jpg
 ```
 
 ### CSS Optimization
+
 The site automatically minifies CSS in production mode when `JEKYLL_ENV=production`.
 
 ## 🔄 CI/CD (Advanced)
@@ -319,32 +338,32 @@ name: Build and Deploy Jekyll Site
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    
+
     steps:
-    - uses: actions/checkout@v3
-    
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: 3.0
-        bundler-cache: true
-        
-    - name: Build site
-      run: bundle exec jekyll build
-      
-    - name: Deploy to GitHub Pages
-      if: github.ref == 'refs/heads/main'
-      uses: peaceiris/actions-gh-pages@v3
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./_site
+      - uses: actions/checkout@v3
+
+      - name: Setup Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+          bundler-cache: true
+
+      - name: Build site
+        run: bundle exec jekyll build
+
+      - name: Deploy to GitHub Pages
+        if: github.ref == 'refs/heads/main'
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
 ```
 
 ## 📞 Support
@@ -352,11 +371,12 @@ jobs:
 - **Jekyll Documentation**: https://jekyllrb.com/docs/
 - **GitHub Pages Documentation**: https://docs.github.com/en/pages
 - **Repository Issues**: Create an issue in the GitHub repository for site-specific problems
-- **Community Support**: Join our [Slack community](https://cutt.ly/llm-hackathon-slack)
+- **Community Support**: Join our [Slack community](https://cutt.ly/llmhackathon-slack)
 
 ---
 
 **Quick Start Summary:**
+
 1. `git clone [repository]`
 2. `bundle install`
 3. `bundle exec jekyll serve`

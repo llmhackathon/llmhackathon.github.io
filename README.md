@@ -138,7 +138,7 @@ University of Chicago and Argonne National Laboratory
 ## Important Links
 
 - **Registration:** [lu.ma/hspoki8y](https://lu.ma/hspoki8y)
-- **Slack Community:** [cutt.ly/llm-hackathon-slack](https://cutt.ly/llm-hackathon-slack)
+- **Slack Community:** [cutt.ly/llm-hackathon-slack](https://cutt.ly/llmhackathon-slack)
 - **Contact:**
   - [blaiszik@uchicago.edu](mailto:blaiszik@uchicago.edu) [Dr. Ben Blaiszik],
   - [contact@aritraroy.live](mailto:contact@aritraroy.live) [Aritra Roy]
