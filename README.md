@@ -67,7 +67,7 @@ The LLM Hackathon brings together the brightest minds from academia and industry
 
 **Publication:** [Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry](https://arxiv.org/abs/2411.15221) - _arXiv Preprint_
 
-**Selected Projects Publication:** [34 Examples of LLM Applications in Materials Science and Chemistry: Towards Automation, Assistants, Agents, and Accelerated Scientific Discovery](https://arxiv.org/abs/2505.03049) - _arXiv Preprint_
+**Selected Projects Publication:** [32 examples of LLM applications in materials science and chemistry: towards automation, assistants, agents, and accelerated scientific discovery](https://doi.org/10.1088/2632-2153/ae011a) - _Machine Learning: Science and Technology_
 
 **Prize Winners:**
 

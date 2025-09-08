@@ -13,10 +13,10 @@ The 2024 LLM Hackathon showcased **34 innovative projects** across 7 on-site loc
 
 <div class="paper-links">
     <p><strong>📄 Reflections from the 2024 Hackathon:</strong></p>
-    <p><a href="https://arxiv.org/abs/2411.15221" target="_blank" rel="noopener">Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry</a></p>
+    <p><a href="https://arxiv.org/abs/2411.15221" target="_blank" rel="noopener">Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry</a> - <em>Machine Learning: Science and Technology</em></p>
     
     <p><strong>📄 Project Showcase:</strong></p>
-    <p><a href="https://arxiv.org/abs/2505.03049" target="_blank" rel="noopener">34 Examples of LLM Applications in Materials Science and Chemistry: Towards Automation, Assistants, Agents, and Accelerated Scientific Discovery</a></p>
+    <p><a href="https://doi.org/10.1088/2632-2153/ae011a" target="_blank" rel="noopener">32 examples of LLM applications in materials science and chemistry: towards automation, assistants, agents, and accelerated scientific discovery</a></p>
 </div>
 
 ### 2024 Prize Winners
@@ -66,26 +66,31 @@ The inaugural 2023 hackathon established the foundation for LLM applications in 
 Our hackathons have explored diverse applications of LLMs across multiple domains:
 
 ### 🔬 Materials Discovery
+
 - Automated materials design and optimization
 - Property prediction and screening
 - Novel material synthesis pathways
 
 ### ⚗️ Chemical Research
+
 - Reaction mechanism analysis
 - Drug discovery and molecular design
 - Chemical safety and risk assessment
 
 ### 📊 Data Analysis & Visualization
+
 - Automated data processing pipelines
 - Interactive visualization platforms
 - Literature mining and synthesis
 
 ### 🤖 AI Assistants & Agents
+
 - Research assistants for scientists
 - Automated experimental design
 - Knowledge extraction and summarization
 
 ### 🔧 Tools & Platforms
+
 - Domain-specific LLM applications
 - Integration with existing scientific software
 - User-friendly interfaces for researchers
@@ -93,19 +98,21 @@ Our hackathons have explored diverse applications of LLMs across multiple domain
 ## Participation Statistics
 
 ### 2024 Event
+
 - **34 projects** submitted
 - **7 on-site locations** worldwide
 - **Virtual participation** enabled global reach
 - **International collaboration** across continents
 
 ### 2023 Event
+
 - **14 foundational projects**
 - **Proof of concept** for LLM applications
 - **Community building** in AI + materials science
 
 ## Get Involved
 
-Ready to contribute to the next generation of AI-powered scientific discovery? 
+Ready to contribute to the next generation of AI-powered scientific discovery?
 
 - **Register** for the {{ site.event.dates }} hackathon: [{{ site.links.registration }}]({{ site.links.registration }})
 - **Join our community**: [Slack workspace]({{ site.links.slack }})
