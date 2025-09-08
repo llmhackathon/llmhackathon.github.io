@@ -13,10 +13,10 @@ The 2024 LLM Hackathon showcased **34 innovative projects** across 7 on-site loc
 
 <div class="paper-links">
     <p><strong>📄 Reflections from the 2024 Hackathon:</strong></p>
-    <p><a href="https://arxiv.org/abs/2411.15221" target="_blank" rel="noopener">Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry</a> - <em>Machine Learning: Science and Technology</em></p>
+    <p><a href="https://arxiv.org/abs/2411.15221" target="_blank" rel="noopener">Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry</a> - <em>arXiv Preprint</em></p>
     
     <p><strong>📄 Project Showcase:</strong></p>
-    <p><a href="https://doi.org/10.1088/2632-2153/ae011a" target="_blank" rel="noopener">32 examples of LLM applications in materials science and chemistry: towards automation, assistants, agents, and accelerated scientific discovery</a></p>
+    <p><a href="https://doi.org/10.1088/2632-2153/ae011a" target="_blank" rel="noopener">32 examples of LLM applications in materials science and chemistry: towards automation, assistants, agents, and accelerated scientific discovery</a> - <em>Machine Learning: Science and Technology</em></p>
 </div>
 
 ### 2024 Prize Winners
