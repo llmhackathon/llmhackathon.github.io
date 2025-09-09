@@ -24,7 +24,14 @@ partners:
     logo: "/assets/images/sponsors/NSF_logo.png"
     alt: "NSF Logo"
     url: "https://www.nsf.gov"
-  
+  - name: "Abstrax Tech"
+    logo: "/assets/images/sponsors/AbstraxTech_logo.svg"
+    alt: "Abstrax Tech Logo"
+    url: "https://abstraxtech.com/"
+  - name: "biostate.AI"
+    logo: "/assets/images/sponsors/BiostateAI_logo.png"
+    alt: "biostate.AI Logo"
+    url: "https://biostate.ai/"
 
 # Additional sponsors that appear in other contexts
 all_sponsors:

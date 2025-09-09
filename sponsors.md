@@ -21,6 +21,8 @@ Our hackathon is supported by leading organizations in the AI and materials scie
 - **Cerebras** - First and only company in the world building AI hardware at wafer-scale.
 - **FUM** - Transforming advanced materials market with AI-powered data infrastructure.
 - **NSF** - Independent federal agency supporting science and engineering in all 50 states and U.S. territories.
+- **Abstrax Tech** - Crafting innovative terpene-driven, functional flavor solutions through peer-reviewed research.
+- **biostate.AI** - Transforming healthcare through next-generation RNAseq and GenAI.
 
 ## Sponsorship Opportunities
 
