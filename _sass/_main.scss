@@ -1378,6 +1378,56 @@ footer {
     font-size: 1.2rem;
 }
 
+/* --- Submission Page Styles --- */
+.submission-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.submission-deadline {
+  font-size: 1.8rem;
+  color: #0259ce;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.submission-card {
+  background: #ffffff;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+  padding: 30px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.submission-card h3 {
+  color: #027ff7;
+  margin-bottom: 20px;
+}
+
+.submission-card ul,
+.submission-card ol {
+  margin-left: 20px;
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.submission-card li {
+  margin-bottom: 10px;
+}
+
+.submission-footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #f2f7f9;
+  border-radius: 8px;
+}
+
+.submission-footer h4 {
+    color: #0259ce;
+}
+
 /* --- Responsive Design --- */
 
 /* Large Screens (1200px+) - Base styles already defined */
