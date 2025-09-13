@@ -6,7 +6,7 @@ main:
     url: "/agenda/"
   - name: "Projects"
     url: "/projects/"
-  - name: "Submission"
+  - name: "Submission Guidelines"
     url: "/submission/"
   - name: "Resources"
     url: "/resources/"
@@ -26,7 +26,7 @@ footer:
       url: "/agenda/"
     - name: "Projects"
       url: "/projects/"
-    - name: "Submission"
+    - name: "Submission Guidelines"
       url: "/submission/"
   quick_links_right:
     - name: "Resources"
