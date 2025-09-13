@@ -195,35 +195,112 @@ permalink: /submissions/
     color: #374151;
     margin-right: 8px;
     font-size: 0.9rem;
+    min-width: fit-content;
 }
 
+/* Base chip styling - clean monochromatic approach */
 .chip {
-    background: linear-gradient(135deg, #e6f2ff 0%, #dbeafe 100%);
-    color: #1e40af;
+    background: #f8fafc;
+    color: #475569;
     padding: 6px 14px;
     border-radius: 20px;
     font-size: 0.8rem;
     font-weight: 600;
-    border: 1px solid #bfdbfe;
+    border: 1px solid #e2e8f0;
     transition: all 0.3s ease;
     text-transform: capitalize;
+    white-space: nowrap;
 }
 
 .chip:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(30, 64, 175, 0.2);
+    background: #f1f5f9;
+    border-color: #cbd5e1;
+    box-shadow: 0 4px 12px rgba(71, 85, 105, 0.15);
 }
 
-.chip.chip-anal-chem-yes {
-    background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%);
-    color: #059669;
-    border-color: #6ee7b7;
+/* Primary Category Badge */
+.primary-category {
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    padding: 8px 16px;
+    border-radius: 24px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 15px;
+    border: 1px solid #a855f7;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
+    text-decoration: none;
 }
 
-.chip.chip-anal-chem-no {
-    background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%);
-    color: #dc2626;
-    border-color: #fca5a5;
+.primary-category:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+}
+
+/* Enhanced chip variants with subtle visual differentiation */
+.chip.domain-area {
+    background: #eff6ff;
+    color: #1e40af;
+    border-color: #dbeafe;
+    position: relative;
+}
+
+.chip.domain-area::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background: #3b82f6;
+    border-radius: 50%;
+}
+
+.chip.domain-area:hover {
+    background: #dbeafe;
+    color: #1d4ed8;
+}
+
+.chip.modality {
+    background: #f0f9ff;
+    color: #0284c7;
+    border-color: #e0f2fe;
+    position: relative;
+}
+
+.chip.modality::before {
+    content: '';
+    position: absolute;
+    left: 4px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 4px;
+    background: #0ea5e9;
+    border-radius: 50%;
+}
+
+.chip.modality:hover {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+.chip.model {
+    background: #f9fafb;
+    color: #374151;
+    border-color: #d1d5db;
+    font-weight: 700;
+}
+
+.chip.model:hover {
+    background: #f3f4f6;
+    color: #111827;
+    border-color: #9ca3af;
 }
 
 /* Media Embeds */
@@ -378,12 +455,12 @@ permalink: /submissions/
                 <div class="stat-label">Total Submissions</div>
             </div>
             <div class="stat-item">
-                <div class="stat-number" id="anal-chem-relevant">-</div>
-                <div class="stat-label">Analytical Chemistry</div>
-            </div>
-            <div class="stat-item">
                 <div class="stat-number" id="unique-models">-</div>
                 <div class="stat-label">AI Models Used</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="unique-categories">-</div>
+                <div class="stat-label">Project Categories</div>
             </div>
         </div>
     </div>
@@ -400,14 +477,15 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(data => {
             // Calculate statistics
             const totalSubmissions = data.length;
-            const analChemRelevant = data.filter(s => s.is_relevant_to_anal_chem === 'Yes').length;
             const allModels = data.flatMap(s => s.models_used ? s.models_used.split(',').map(m => m.trim()) : []);
             const uniqueModels = [...new Set(allModels)].length;
+            const allCategories = data.map(s => s.primary_category).filter(Boolean);
+            const uniqueCategories = [...new Set(allCategories)].length;
 
             // Update stats
             document.getElementById('total-submissions').textContent = totalSubmissions;
-            document.getElementById('anal-chem-relevant').textContent = analChemRelevant;
             document.getElementById('unique-models').textContent = uniqueModels;
+            document.getElementById('unique-categories').textContent = uniqueCategories;
 
             // Clear loading state
             const container = document.getElementById('submissions-container');
@@ -447,15 +525,45 @@ document.addEventListener('DOMContentLoaded', function() {
                     }
                 }
                 
-                let modelsUsedChips = '';
-                if(submission.models_used){
-                    modelsUsedChips = submission.models_used.split(',').map(model => `<span class="chip">${model.trim()}</span>`).join('');
+                // Helper function to format category names
+                function formatCategoryName(category) {
+                    return category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                 }
 
-                const isRelevantChip = `<span class="chip ${submission.is_relevant_to_anal_chem === 'Yes' ? 'chip-anal-chem-yes' : 'chip-anal-chem-no'}">${submission.is_relevant_to_anal_chem === 'Yes' ? 'Relevant to Analytical Chemistry' : 'Not Relevant to Analytical Chemistry'}</span>`;
+                // Create primary category badge
+                let primaryCategoryBadge = '';
+                if (submission.primary_category) {
+                    primaryCategoryBadge = `<div class="primary-category">${formatCategoryName(submission.primary_category)}</div>`;
+                }
+
+                // Create domain area chips
+                let domainAreaChips = '';
+                if (submission.facets && submission.facets.domain_area) {
+                    domainAreaChips = submission.facets.domain_area.map(domain => 
+                        `<span class="chip domain-area">${domain.replace(/_/g, ' ')}</span>`
+                    ).join('');
+                }
+
+                // Create modality chips
+                let modalityChips = '';
+                if (submission.facets && submission.facets.modality) {
+                    modalityChips = submission.facets.modality.map(modality => 
+                        `<span class="chip modality">${modality.replace(/_/g, ' ')}</span>`
+                    ).join('');
+                }
+
+                // Create model chips
+                let modelsUsedChips = '';
+                if(submission.models_used){
+                    modelsUsedChips = submission.models_used.split(',').map(model => 
+                        `<span class="chip model">${model.trim()}</span>`
+                    ).join('');
+                }
+
 
                 card.innerHTML = `
                     ${embedContent}
+                    ${primaryCategoryBadge}
                     <h3>${submission.team_name}</h3>
                     <div class="submission-section">
                         <div class="submission-section-title">Team Members</div>
@@ -469,13 +577,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         <div class="submission-section-title">Project Novelty</div>
                         <div class="submission-content">${submission.project_novelty}</div>
                     </div>
-                    <div class="chips-container">
-                        <div class="chips-label">Models Used:</div>
+                    ${domainAreaChips ? `<div class="chips-container">
+                        <div class="chips-label">Domain Areas:</div>
+                        ${domainAreaChips}
+                    </div>` : ''}
+                    ${modalityChips ? `<div class="chips-container">
+                        <div class="chips-label">Modalities:</div>
+                        ${modalityChips}
+                    </div>` : ''}
+                    ${modelsUsedChips ? `<div class="chips-container">
+                        <div class="chips-label">AI Models:</div>
                         ${modelsUsedChips}
-                    </div>
-                    <div class="chips-container">
-                        ${isRelevantChip}
-                    </div>
+                    </div>` : ''}
                     <div class="submission-links">
                         <a href="${submission.submission_link}" class="btn" target="_blank" rel="noopener">
                             <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor">

@@ -7,7 +7,14 @@
         "project_novelty": "Titanarium makes AI-to-AI conversation into an experience. LLMs modeled on scientists talk autonomously, while users watch or join like a digital terrarium. We built a unique, character-driven virtual communication platform during this hackathon.",
         "code_link": "https://github.com/JSR-ISM-Smart-Chemistry-Lab/Titanarium",
         "models_used": "OpenAI, gpt-oss-20b",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "novel_ux_communication_experience",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "SyntheSeek",
@@ -17,7 +24,13 @@
         "project_novelty": "This work builds on Synthesis Explorer from the Materials Project - extending the idea of structured synthesis representation. Built during this hackathon was: the CLI agentic workflow, the custom schema, and the pdf to schema pipeline.",
         "code_link": "https://github.com/alexchen5/syntheseek",
         "models_used": "Cerebras, Semantic Scholar",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "synthesis_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Ecorxn Advisor",
@@ -27,27 +40,47 @@
         "project_novelty": "Ecorxn Advisor is a LangChain-based assistant that utilizes OpenAI API to analyze chemical reactions and suggest greener alternatives. We built a scalable curated database and used it to prompt engineer the LLM model.  ",
         "code_link": "",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "safety_compliance_green_chem",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "NEDD - Next Experiment Data Driven",
         "team_members": "Viktoriia Baibakova",
         "submission_link": "https://www.linkedin.com/posts/viktoriia-baibakova_ai-materialsscience-hackathon-activity-7372296092257800192-pssH?utm_source=share&utm_medium=member_desktop&rcm=ACoAADoFARMBcTXMnjRDWSM6OoM9_ggldCivzp8",
-        "description": "Built NEDD (Next Experiment Data Driven) \u00d1 a local-first UI + AI Agent that helps scientists plan smarter experiments by visualizing parameter space (pairplots to reveal skewness & gaps), detecting regions of ignorance, for potentially using ML + Active Learning to suggest the next most informative experiments (not yet implemented). With integrated LLM assistance, researchers can query data in natural language (\u00d2Which parameters are under-sampled?\u00d3) and receive optimized experiment recommendations \u00d1 ensuring data privacy, reducing wasted effort, and accelerating discovery.",
+        "description": "Built NEDD (Next Experiment Data Driven) Ñ a local-first UI + AI Agent that helps scientists plan smarter experiments by visualizing parameter space (pairplots to reveal skewness & gaps), detecting regions of ignorance, for potentially using ML + Active Learning to suggest the next most informative experiments (not yet implemented). With integrated LLM assistance, researchers can query data in natural language (ÒWhich parameters are under-sampled?Ó) and receive optimized experiment recommendations Ñ ensuring data privacy, reducing wasted effort, and accelerating discovery.",
         "project_novelty": "I started this project from scratch during the hackathon. The idea and the need came to me earlier at my work when I was given a task to do Active Leaning on set of experiments. I saw skewed data and suggested additional experiments to mitigate it.",
         "code_link": "https://github.com/ViktoriiaBaib/NEDD/tree/main",
         "models_used": "Anthropic, Streamlit",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "TIB AI4SCI",
-        "team_members": "Farhana Keya (TIB\u00d1Leibniz Information Centre for Science and Technology), Sasi Kiran Gaddipati (TIB\u00d1Leibniz Information Centre for Science and Technology), Diyana Muhammed (TIB\u00d1Leibniz Information Centre for Science and Technology), Gollam Rabby (L3S Research Center), Prof. S\u009aren Auer (TIB\u00d1Leibniz Information Centre for Science and Technology)",
+        "team_members": "Farhana Keya (TIBÑLeibniz Information Centre for Science and Technology), Sasi Kiran Gaddipati (TIBÑLeibniz Information Centre for Science and Technology), Diyana Muhammed (TIBÑLeibniz Information Centre for Science and Technology), Gollam Rabby (L3S Research Center), Prof. Sren Auer (TIBÑLeibniz Information Centre for Science and Technology)",
         "submission_link": "https://www.linkedin.com/posts/gsasikiran_excited-to-have-been-part-of-the-2025-llm-activity-7372298381836337152-fTST?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB_gE5YB0RWMjF06XJY0d5uUA8b0fZeNJKE",
         "description": "We develop ChemCrow and MC NEST Hypothesis Generation as tools in a research workflow of TIB AIssistant , a research co-pilot. We initially developed and hosted a fastapi to convert the chemistry tools as an api from the chemcrow library. We also inspired from the MC NEST Hypothesis generation algorithm to validate and come up with best chemical and material science hypothesis. We also developed and hosted an another fastapi for hypothesis generation tool to be integrated with TIB AIssistant.",
         "project_novelty": "We transform the chemistry python library to ChemCrow tool API and developed a hypothesis generation tool inspired from MCNEST tree based algoritm as a tool, integrated to research co-pilot TIB AIssistant to enhance the Chem and MS research workflow.",
         "code_link": "https://github.com/DIYANAPV/llm-hackathon-MS-and-Chem-2025/tree/main",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "multi_agent_frameworks_meta_agents",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "CuPirates",
@@ -57,47 +90,84 @@
         "project_novelty": "We built on prior efforts applying LLMs to materials design by fine-tuning on superconductivity literature and prototyping a workflow that links LLM-generated structural descriptions to text-to-crystal generators for cuprate discovery.",
         "code_link": "",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "superconductors"
+            ]
+        }
     },
     {
         "team_name": "m2snano:  nanoparticle image analysis",
-        "team_members": "Francisco Antonio Molina Bakhos (ICN2), Andr\u008es Henao Aristiz\u0087bal (ICN2), Muriel Freixanet Gusta (ICN2), Neus Bast\u009cs (ICN2)\nICN2 (Catalan Institute of nanoscience and Nanotechnology)",
+        "team_members": "Francisco Antonio Molina Bakhos (ICN2), Andrs Henao Aristizbal (ICN2), Muriel Freixanet Gusta (ICN2), Neus Basts (ICN2)\nICN2 (Catalan Institute of nanoscience and Nanotechnology)",
         "submission_link": "https://www.linkedin.com/posts/henaoandres_llm-ai-materialsscience-activity-7372304334493224961-XVLj?utm_source=social_share_send&utm_medium=member_desktop_web&rcm=ACoAAAPhOI0BQ1mvEjhtneTi9qr5LTS20_znOQ4",
         "description": "Our team has built a UI tool to analyze three specific parameters from nanocrystals used in catalysis: roughness, shell thickness, and porosity. This tool uses image processing (YoloV8) and ollama and llama3.2 to help the researchers exploring the results.",
         "project_novelty": "This works builds on top of the initial image processing tool to study 3 parameters of nanoparticles for catalysis: roughness, shell thickness, and porosity.\n\nDuring the hackathon, we improved the UI and added a LLM capacity to explain the results",
         "code_link": "https://github.com/icn2-ai/m2snano-llm",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "images_microscopy"
+            ]
+        }
     },
     {
         "team_name": "SmeLLMap",
         "team_members": "Lu, Justice (Duke University)",
         "submission_link": "https://www.linkedin.com/posts/justice-lu-1842a395_turning-smell-from-a-mystery-into-a-map-activity-7372304796038471680-fpC4?utm_source=share&utm_medium=member_desktop&rcm=ACoAABQnZzQBxyKA1uEUp0LCBt9_rfQ-WVQiOc8",
-        "description": "The molecular mechanisms underlying olfactory perception remain unresolved, as no clear correspondence exists between olfactory receptors (ORs) and the odorants they detect. This knowledge gap is largely driven by the limited availability of receptor structures. Here, we introduce a computational framework that integrates large language models (ESM2) with structure prediction to investigate receptor\u00d0odor relationships. ESM2 embeddings were used to capture sequence-derived features of ORs, while AlphaFold-predicted receptor structures were voxelized to extract binding cavities. These representations were combined into a spatial ESM encoding pipeline and used to train convolutional neural networks (CNNs) for odor \"flavor\" classification. Our approach achieved near-perfect performance (AUC > 0.95 across ten odor categories) for odor recognition.",
+        "description": "The molecular mechanisms underlying olfactory perception remain unresolved, as no clear correspondence exists between olfactory receptors (ORs) and the odorants they detect. This knowledge gap is largely driven by the limited availability of receptor structures. Here, we introduce a computational framework that integrates large language models (ESM2) with structure prediction to investigate receptorÐodor relationships. ESM2 embeddings were used to capture sequence-derived features of ORs, while AlphaFold-predicted receptor structures were voxelized to extract binding cavities. These representations were combined into a spatial ESM encoding pipeline and used to train convolutional neural networks (CNNs) for odor \"flavor\" classification. Our approach achieved near-perfect performance (AUC > 0.95 across ten odor categories) for odor recognition.",
         "project_novelty": "We extended earlier ideas on OR binding cavities by creating a new pipeline during this hackathon. Integrating ESM-based LLM features with 3D cavity voxels, then training CNNs to classify odors and extract features",
         "code_link": "https://github.com/Justice-Lu/spatialESM_OdorClassification",
         "models_used": "ESM-2",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "MatSci LapLab",
         "team_members": "(Layan Alhomidan, Materials science and Engineering, KFUPM), (Alaa Alshaikhi, Materials science and Engineering, KFUPM), ( Layan Alkhamis, Materials science and Engineering, KFUPM), ( Raneem Almutlaq, Artificial Intelligence , Imam Abdulrahman Bin Faisal University), ( Lama Aldossary,  Imam Abdulrahman Bin Faisal University), ( Jawaher Alghannam, Cyber Security,  Imam Abdulrahman Bin Faisal University), (Deem Alenazi, Data Science Engineering, KFUPM). ",
         "submission_link": "youtube.com/watch?si=pTa2MDzObWy0eRku&v=1KUYHbP1Bm4&feature=youtu.be",
-        "description": "MatSci LapLab (a materials science lab on your laptop, basically between your hands) is an LLM-based tool that acts as both a lab assistant and learning companion. It helps students gain hands-on experience, deepen their understanding, and connect with experts. Built with Figma, HTML, CSS, and React, it features an AI assistant linked to Hugging Face models. Users can run multiple tests, track progress, and get step-by-step guidance on how to prepare samples and perform experiments. The tool recommends the right characterization technique when users don\u00d5t know what to choose, provides notes and tips to improve practice, and simulates tests like TGA, SEM, and Tensile for those without lab access. It also helps learners train virtually before using complex instruments like SEM, while making materials science education more inclusive for students worldwide, especially where lab resources are limited",
+        "description": "MatSci LapLab (a materials science lab on your laptop, basically between your hands) is an LLM-based tool that acts as both a lab assistant and learning companion. It helps students gain hands-on experience, deepen their understanding, and connect with experts. Built with Figma, HTML, CSS, and React, it features an AI assistant linked to Hugging Face models. Users can run multiple tests, track progress, and get step-by-step guidance on how to prepare samples and perform experiments. The tool recommends the right characterization technique when users donÕt know what to choose, provides notes and tips to improve practice, and simulates tests like TGA, SEM, and Tensile for those without lab access. It also helps learners train virtually before using complex instruments like SEM, while making materials science education more inclusive for students worldwide, especially where lab resources are limited",
         "project_novelty": "This tool merges AI guidance, simulated tests, and expert links to make costly, hands-on materials science training accessible, preparing students before using million-dollar equipment.",
         "code_link": "https://laplab-git-main-lamas-projects-2cbad6db.vercel.app?_vercel_share=Tm9QlX5FHX26PZOMDpeGpOslmBcRvF3L",
         "models_used": "Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "education_elns_notetaking_training",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "ARIA",
         "team_members": "Yi Cao (Johns Hopkins University), \nLiaoyaqi Wang (Johns Hopkins University), \nTung Yan Liu (Johns Hopkins University), \nYanqi Huang (Johns Hopkins University), \nJieneng Chen (Johns Hopkins University)",
         "submission_link": "https://www.linkedin.com/posts/yi-cao-1368ab292_github-yicao-elinallm4chem-explainable-synthesis-activity-7372331154709905408-1Hyq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEb3tPoBgmt_8xQYwQpEY2DbQllFRcSwlU4",
-        "description": "ARIA (Autonomous Reasoning Intelligence for Atomics): A Causal Framework for Materials Discovery\nWe built the first causal reasoning system enabling inverse materials design - predicting synthesis pathways from target properties with transparent explanations.\nKey Components:\n\u00a5 Causal Knowledge Graph - Extracted from 200+ papers, encoding synthesis-property relationships\n\u00a5 Two-Tier Reasoning - Direct causal paths + analogical inference for novel cases\n\u00a5 Chain-of-Thought Integration - Mechanistic explanations grounded in chemistry principles\n\nInnovation: Unlike black-box AI, ARIA explains WHY synthesis conditions produce desired properties and HOW workflows derive from material requirements. Features transfer learning for robust reasoning when direct paths don't exist.\nImpact: Successfully demonstrated inverse design for extreme materials (acid-resistant composites, self-healing systems) with full transparency - solving materials science's \"reversal curse.\"",
+        "description": "ARIA (Autonomous Reasoning Intelligence for Atomics): A Causal Framework for Materials Discovery\nWe built the first causal reasoning system enabling inverse materials design - predicting synthesis pathways from target properties with transparent explanations.\nKey Components:\n¥ Causal Knowledge Graph - Extracted from 200+ papers, encoding synthesis-property relationships\n¥ Two-Tier Reasoning - Direct causal paths + analogical inference for novel cases\n¥ Chain-of-Thought Integration - Mechanistic explanations grounded in chemistry principles\n\nInnovation: Unlike black-box AI, ARIA explains WHY synthesis conditions produce desired properties and HOW workflows derive from material requirements. Features transfer learning for robust reasoning when direct paths don't exist.\nImpact: Successfully demonstrated inverse design for extreme materials (acid-resistant composites, self-healing systems) with full transparency - solving materials science's \"reversal curse.\"",
         "project_novelty": "Extended LLM reasoning to materials science, creating the first explainable synthesis design framework with transparent causal reasoning and automated knowledge graph construction during this hackathon.",
         "code_link": "https://github.com/yicao-elina/LLM4Chem-Explainable-synthesis.git",
         "models_used": "Google Gemini, OpenAI, Hugging Face, Qwen, Materials Project",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "synthesis_design",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "MP-LLM",
@@ -107,37 +177,66 @@
         "project_novelty": "We built on prior API-based querying of the Materials Project by creating a natural language interface. During the hackathon, we developed the pipeline, benchmark problems, and evaluation to test LLMs on generating accurate materials queries.",
         "code_link": "https://github.com/killiansheriff/MP-LLM",
         "models_used": "Google Gemini, OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "CrysTalk",
         "team_members": "Izumi, Takahara (The University of Tokyo)\nShuichiro, Ozawa (The University of Tokyo)",
         "submission_link": "https://www.youtube.com/watch?v=BQT_OjHS2l8",
-        "description": "We developed CrysTalk, an AI agent that lowers barriers in materials modeling by translating natural language instructions into actionable atomic operations. Given an atomic structure (e.g., CIF file) and natural language commands such as \u00d2make a 3_3_3 supercell\u00d3 or \u00d2create a slab,\u00d3 the LLM autonomously decomposes the task into steps, writes and executes Python code, and performs the requested manipulations. The agent also integrates web search to resolve ambiguous terms or technical jargon, and leverages machine learning potentials to return more stable, physically meaningful structures. CrysTalk facilitates seamless interaction both with researchers and other AI agents, potentially enabling more intuitive workflows and accelerating materials discovery.",
-        "project_novelty": "Leveraging LLMs\u00d5 reasoning and code-generation strengths, we built an agent that translates natural language into atomic modeling actions, with web search to better interpret instructions and ML potentials to yield locally stable structures.",
+        "description": "We developed CrysTalk, an AI agent that lowers barriers in materials modeling by translating natural language instructions into actionable atomic operations. Given an atomic structure (e.g., CIF file) and natural language commands such as Òmake a 3_3_3 supercellÓ or Òcreate a slab,Ó the LLM autonomously decomposes the task into steps, writes and executes Python code, and performs the requested manipulations. The agent also integrates web search to resolve ambiguous terms or technical jargon, and leverages machine learning potentials to return more stable, physically meaningful structures. CrysTalk facilitates seamless interaction both with researchers and other AI agents, potentially enabling more intuitive workflows and accelerating materials discovery.",
+        "project_novelty": "Leveraging LLMsÕ reasoning and code-generation strengths, we built an agent that translates natural language into atomic modeling actions, with web search to better interpret instructions and ML potentials to yield locally stable structures.",
         "code_link": "https://github.com/MatAgentHub/crystalk",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Wataru Takahara",
         "team_members": "Wataru Takahara (Hitachi, Ltd., Nara Institute of Science and Technology)",
         "submission_link": "https://www.youtube.com/watch?v=UiqtCc6gtLg",
-        "description": "We produce large numbers of XRD spectra in materials research, but matching a measured pattern to literature examples normally requires manual peak analysis and domain expertise. Uploading raw experimental data to the cloud is often undesirable due to IP and privacy concerns. The team developed \"Local XRD Image RAG with Gemma-3n\", a prototype for on-premise matching and interpretation of experimental XRD patterns. Pipeline: compute CLIP image embeddings for a local XRD dataset, index them with FAISS for top-k retrieval, retrieve candidates for an uploaded query image, and fuse candidate metadata into a concise prompt that\u00d1together with the image\u00d1is fed to Gemma-3n (local) to generate grounded, human-readable explanations. A Streamlit UI supports image upload, candidate display, and \u00d2Run RAG interpretation\u00d3 action. Benefits: data remains on-premise, outputs are interpretable by researchers, and the UI enables rapid exploratory analysis. Code is available on GitHub.",
+        "description": "We produce large numbers of XRD spectra in materials research, but matching a measured pattern to literature examples normally requires manual peak analysis and domain expertise. Uploading raw experimental data to the cloud is often undesirable due to IP and privacy concerns. The team developed \"Local XRD Image RAG with Gemma-3n\", a prototype for on-premise matching and interpretation of experimental XRD patterns. Pipeline: compute CLIP image embeddings for a local XRD dataset, index them with FAISS for top-k retrieval, retrieve candidates for an uploaded query image, and fuse candidate metadata into a concise prompt thatÑtogether with the imageÑis fed to Gemma-3n (local) to generate grounded, human-readable explanations. A Streamlit UI supports image upload, candidate display, and ÒRun RAG interpretationÓ action. Benefits: data remains on-premise, outputs are interpretable by researchers, and the UI enables rapid exploratory analysis. Code is available on GitHub.",
         "project_novelty": "Built on CLIP+FAISS retrieval and VLMs, we created a local Image-RAG for materials XRD: CLIP embeddings, FAISS top-k, metadata-fused prompts, and on-premise Gemma-3n via Streamlit (previously local tools were text-only LLMs).",
         "code_link": "https://github.com/mipypf/xrd-image-rag-with-local-llm",
         "models_used": "google/gemma-3n-E2B-it",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "Ragalicious",
-        "team_members": "Esma Boydas1, Carlos Madariaga2, Bernadette Mohr1, Joseph Rudzinski2, Sherjeel Shabih1\n\n1Physics Department and CSMB Adlershof, Humboldt-Universit\u008at zu Berlin\n2Bundesanstalt f\u009fr Materialforschung und -pr\u009ffung (BAM)",
+        "team_members": "Esma Boydas1, Carlos Madariaga2, Bernadette Mohr1, Joseph Rudzinski2, Sherjeel Shabih1\n\n1Physics Department and CSMB Adlershof, Humboldt-Universitt zu Berlin\n2Bundesanstalt fr Materialforschung und -prfung (BAM)",
         "submission_link": "https://www.linkedin.com/posts/joseph-rudzinski_llmhackathon-activity-7372338498021781504-gOwZ?utm_source=share&utm_medium=member_desktop&rcm=ACoAABG-DGYB-nO9kjB6OeCIEhieVLpwViJvXy8",
         "description": "We built NOMAD RAGBOT, an AI assistant that provides fast, reliable guidance across a fragmented community knowledge base. Using retrieval-augmented generation (RAG), it connects large language models with diverse documentation sources, GitHub repos, docs pages, and web pages, to deliver precise, context-aware answers. Our system includes automated data ingestion and dynamic chunking pipelines, a vector database for efficient retrieval, and user-friendly interfaces (Streamlit and Gradio apps) for interactive exploration. The result is a prototype that can be reused by other communities to build systems that help scientists and community members quickly find, understand, and share relevant knowledge, accelerating onboarding, collaboration, and scientific progress.",
         "project_novelty": "We expanded upon standard RAG workflows by beginning to standardize and automate data ingestion from diverse community sources, enabling a unified, searchable knowledge base.",
         "code_link": "https://github.com/FAIRmat-NFDI/nomad-bot-rag-docs-discord",
         "models_used": "OpenAI, Hugging Face, nomic-embed-text (via Ollama/local API)",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "community"
+            ]
+        }
     },
     {
         "team_name": "ZeroMAT",
@@ -147,7 +246,13 @@
         "project_novelty": "Previous materials property prediction relied on extensive training and lacked domain knowledge. During this hackathon, we built ZeroMAT's zero-training pipeline combining TabPFN's in-context learning with RAG-based domain feature recommendation.",
         "code_link": "https://github.com/Ahri111/ZEROMAT",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "CafChem",
@@ -157,7 +262,14 @@
         "project_novelty": "This docking code uses an MLIP for all energy evaluation. It is wrapped in an AI agent for ease of use and quick interpretation of results. The conformer and solvation code were taken from previous projects; docking was done during the hackathon",
         "code_link": "https://github.com/MauricioCafiero/UMADock/tree/main",
         "models_used": "Hugging Face, Microsoft Phi4-mini-instruct ",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "drug_discovery",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "MatterMinds",
@@ -167,7 +279,13 @@
         "project_novelty": "An integrated solution to generate large synthetic datasets of crystal structures and compute their material properties. Can we used to explore large composition spaces for novel materials. Integrated with NOMAD, making the solution FAIR by design.",
         "code_link": "https://github.com/FAIRmat-NFDI/nomad-crystallm",
         "models_used": "self-hosted using NOMAD",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "BandgapMiner",
@@ -177,27 +295,47 @@
         "project_novelty": "This work pioneers an AI workflow where agents autonomously validate their own extractions before human review. We built the full system fusing this AI self-correction with expert curation and final database grounding.",
         "code_link": "https://bandgapminer.streamlit.app",
         "models_used": "OpenAI, Hugging Face, Materials Project API",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "ChemBot",
         "team_members": "1.Seham Salem Abyah\nApplied chemistry \nMetrologist (ARCMST), KFUPM. \n\n2.Fatima Abdullah Almahri\nApplied chemistry \nMetrologist (ARCMST), KFUPM. \n\n3.Syeda Aishah Asim \nLLM\nMS AI,KFUPM. \n\n4.Muhammad Sabih \nResearch Engineer III (ARCMST), Assistant Professor (CIE), KFUPM. \n\n5.Umair bin Mansoor \nAssistant Professor (CS)\nDHA Suffa University",
         "submission_link": "https://www.linkedin.com/posts/activity-7372328245293297664-23sx?utm_source=share&utm_medium=member_ios&rcm=ACoAAEr42iMBF1EFqbVo8k3qIunNa3_x4zMMy0o",
-        "description": "ChemBot is a context-aware chemistry assistant built using BioGPT and LangChain. It extracts text from PDFs, creates vector embeddings stored in FAISS, and performs semantic search to answer domain-specific queries, supporting KFUPM Vision 2030 goals on hydrogen production, storage, and distribution. Challenges like prompt engineering are addressed by providing detailed context and constraints. For future work, we plan to integrate vision-language models (VLMs) for multimodal reasoning. Additionally, we explored the gpt-oss (20B) GitHub repo, 8-bit quantized and fine-tuned with LoRA on the ChemData dataset, which could further enhance ChemBot\u00d5s accuracy, though testing time was limited.",
+        "description": "ChemBot is a context-aware chemistry assistant built using BioGPT and LangChain. It extracts text from PDFs, creates vector embeddings stored in FAISS, and performs semantic search to answer domain-specific queries, supporting KFUPM Vision 2030 goals on hydrogen production, storage, and distribution. Challenges like prompt engineering are addressed by providing detailed context and constraints. For future work, we plan to integrate vision-language models (VLMs) for multimodal reasoning. Additionally, we explored the gpt-oss (20B) GitHub repo, 8-bit quantized and fine-tuned with LoRA on the ChemData dataset, which could further enhance ChemBotÕs accuracy, though testing time was limited.",
         "project_novelty": "Built ChemBot during the hackathon using BioGPT and LangChain, integrating PDF semantic search with context-aware Q&A via RAG. Designed for hydrogen research, with future plans to add multimodal reasoning using VLMs.\n___ ______ __ ________: 24",
         "code_link": "https://colab.research.google.com/drive/1KdNz9yZr45nlkZj6U4faK_LDg8plH-Rb?usp=sharing   https://drive.google.com/file/d/1sj11J_E0DtxfihEIHxAVGqMs6LM4aO9o/view?usp=sharing  https://huggingface.co/umairbinmansoor/finetuned_model/tree/main  https://40132ea7fb541e43a4.gradio.live/  https://docs.google.com/spreadsheets/d/1ZDuL9zznRjaAffbHk0h20BXny-FzSLHJxn3vSyCXvj0/edit?usp=sharing",
         "models_used": "Biogpt ,Hugging face ,OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "energy_storage",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "Fordham Reasoning Team",
         "team_members": "Baosen Zhang (Fordham University), Hao Liu (Fordham University)",
         "submission_link": "https://youtu.be/tW3ArrFU4_Y",
-        "description": "We used the dataset introduced in the Ether0 paper, which contains chemistry-related multiple-choice problems. \nLLMs we compared are:\n- Ether0: SFT and GRPO from Mistral model. We ran inference on NERSC\u00d5s Perlmutter HPC using 4 A100 GPUs. \n- DeepSeek-R1\n- Gemini-2.5-pro\nAnlysis include: \n- Model comparison for number of correct problems.\n- Reasoning trace extraction: We classified sentences into functional categories, and identified dependencies among them.\n- Graph analytics: We applied graph-based methods to visualize reasoning relationships. We were able to extract key knowledge, which often in the \u00d2fact retrieval\u00d3 with highest closeness or pagerank centrality. \n- Cross-model comparison: functional category count comparison revealed that fact retrieval is the most common, which is not like math problem with active computation the important. The box plot comparison revealed that the importance of reasoning steps is different across different reasoning models. ",
-        "project_novelty": "Reasoning models are emerging, but their reasoning traces remain under-explored. Inspired by \u00d2Thought Anchor\u00d3 work, we explored chemistry knowledge extraction and interpretability in reasoning LLMs, including Ether0, Deepseek-r1, Gemini-2.5-Pro. ",
+        "description": "We used the dataset introduced in the Ether0 paper, which contains chemistry-related multiple-choice problems. \nLLMs we compared are:\n- Ether0: SFT and GRPO from Mistral model. We ran inference on NERSCÕs Perlmutter HPC using 4 A100 GPUs. \n- DeepSeek-R1\n- Gemini-2.5-pro\nAnlysis include: \n- Model comparison for number of correct problems.\n- Reasoning trace extraction: We classified sentences into functional categories, and identified dependencies among them.\n- Graph analytics: We applied graph-based methods to visualize reasoning relationships. We were able to extract key knowledge, which often in the Òfact retrievalÓ with highest closeness or pagerank centrality. \n- Cross-model comparison: functional category count comparison revealed that fact retrieval is the most common, which is not like math problem with active computation the important. The box plot comparison revealed that the importance of reasoning steps is different across different reasoning models. ",
+        "project_novelty": "Reasoning models are emerging, but their reasoning traces remain under-explored. Inspired by ÒThought AnchorÓ work, we explored chemistry knowledge extraction and interpretability in reasoning LLMs, including Ether0, Deepseek-r1, Gemini-2.5-Pro. ",
         "code_link": "https://github.com/BaosenZ/mach-interp-LLM-hackathon-2025.git",
         "models_used": "Google Gemini, OpenAI, Deepseek-r1 (OpenRouter), Ether0 (NERSC HPC)",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "Clueless-scientist",
@@ -207,27 +345,47 @@
         "project_novelty": "This work borrows idea from recent papers on explainability for molecules. The novelty is in application of this idea to crystals. To achieve this the similarity measure should be developed and the method for generating similar structures. ",
         "code_link": " https://github.com/epatyukova/llm2025-hackathon-CLUE",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Sol-Agent",
         "team_members": "Espinosa Castaneda, Rafael (University of Toronto); Zhang, Runze (University of Toronto); Shi, Qiuyu (University of Toronto); Wan, Hao (University of Toronto); Liu, Yutong (University of Toronto); Mousavi, Shayan (National Research Council Canada)",
         "submission_link": "https://youtu.be/PEPYdFUC-VA",
-        "description": "We built a datelining tool for materials scientists that accelerates research in sol\u00d0gel synthesis and oxygen evolution reaction (OER) catalysts. Key features:\n1. Sol\u00d0gel synthesis guidance: Finds optimal synthesis protocols for experimentalists or robotic platforms.\n2. OER catalyst discovery: Provides data on known catalysts and predicts promising candidates with lower overpotentials.\n3. Document-grounded insights: Uses PDF-based retrieval and a 4-bit LLM to extract and summarize actionable synthesis and catalyst information.\n4. Community-focused: Shares verified synthesis protocols and catalyst data with researchers.\nThis tool bridges literature, automation, and predictive chemistry for faster, data-driven experimentation.",
-        "project_novelty": "We developed a Llama-3-8B-powered tool that accelerates literature searches for sol\u00d0gel OER synthesis, enabling the rapid extraction of methods and answers, showcasing a reusable tool for scientific discovery.",
+        "description": "We built a datelining tool for materials scientists that accelerates research in solÐgel synthesis and oxygen evolution reaction (OER) catalysts. Key features:\n1. SolÐgel synthesis guidance: Finds optimal synthesis protocols for experimentalists or robotic platforms.\n2. OER catalyst discovery: Provides data on known catalysts and predicts promising candidates with lower overpotentials.\n3. Document-grounded insights: Uses PDF-based retrieval and a 4-bit LLM to extract and summarize actionable synthesis and catalyst information.\n4. Community-focused: Shares verified synthesis protocols and catalyst data with researchers.\nThis tool bridges literature, automation, and predictive chemistry for faster, data-driven experimentation.",
+        "project_novelty": "We developed a Llama-3-8B-powered tool that accelerates literature searches for solÐgel OER synthesis, enabling the rapid extraction of methods and answers, showcasing a reusable tool for scientific discovery.",
         "code_link": "https://github.com/rafaelespinosacastaneda/Hackaton-for-Applications-in-Materials-Science-and-Chemistry",
         "models_used": "Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "catalysis"
+            ]
+        }
     },
     {
         "team_name": "NeuroSymbolic",
         "team_members": "Order : Surname, First Name (Affiliation)\nRoy, Mahule (University of Oxford) [First Author]\nRoy, Chandra Subhas (TATA Consumer Products Limited) [Co-Author]",
         "submission_link": "https://www.youtube.com/watch?v=lKxwF3fFfkM",
-        "description": "We built the Neuro-Symbolic Hypothesis Engine \u00d1 the first system to fuse neural learning, symbolic logic, liquid adaptation, quantum-inspired search, and contrastive alignment into one unified pipeline. Unlike LLMs that hallucinate or KG models that treat rules as afterthoughts, NSHE enforces scientific constraints at every layer: energy-based transformers avoid overconfidence, liquid networks adapt to new discoveries in real time, and quantum-inspired reasoning explores millions of rule paths simultaneously to find rare hypotheses. Contrastive embeddings are trained not just on text, but against logical relationships \u00d1 ensuring meaning aligns with truth. Every hypothesis is validated by ontological rules and traced step-by-step to its factual roots. No other system combines dynamic adaptation, exponential exploration, logical fidelity, and full auditability. We don\u00d5t guess science \u00d1 we reason it, reliably.",
-        "project_novelty": "We built the first system that fuses neural learning, symbolic logic, and quantum-inspired search into a single adaptive pipeline \u00d1 generating traceable, rule-bound scientific hypotheses in real time, unlike prior modular approaches.",
+        "description": "We built the Neuro-Symbolic Hypothesis Engine Ñ the first system to fuse neural learning, symbolic logic, liquid adaptation, quantum-inspired search, and contrastive alignment into one unified pipeline. Unlike LLMs that hallucinate or KG models that treat rules as afterthoughts, NSHE enforces scientific constraints at every layer: energy-based transformers avoid overconfidence, liquid networks adapt to new discoveries in real time, and quantum-inspired reasoning explores millions of rule paths simultaneously to find rare hypotheses. Contrastive embeddings are trained not just on text, but against logical relationships Ñ ensuring meaning aligns with truth. Every hypothesis is validated by ontological rules and traced step-by-step to its factual roots. No other system combines dynamic adaptation, exponential exploration, logical fidelity, and full auditability. We donÕt guess science Ñ we reason it, reliably.",
+        "project_novelty": "We built the first system that fuses neural learning, symbolic logic, and quantum-inspired search into a single adaptive pipeline Ñ generating traceable, rule-bound scientific hypotheses in real time, unlike prior modular approaches.",
         "code_link": "https://github.com/dreamboat26/hackathon/tree/main",
         "models_used": "Hugging Face, Materials Project, Arxiv API",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "multi_agent_frameworks_meta_agents",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "Baker",
@@ -237,7 +395,15 @@
         "project_novelty": "The idea comes from benchmarking of LLM research agents (to be published any time now). About 70 % of code base written during hackathon, 30 % written days leading up to hackathon (Monday-Thursday).  ",
         "code_link": "https://github.com/mattiasutancykeln/Baker",
         "models_used": "Anthropic, OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "multi_agent_frameworks_meta_agents",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "Explain that Automation!",
@@ -247,17 +413,36 @@
         "project_novelty": "Previous: real-time AI/ML control framework for a scanning electron microscope produced database of interaction logs. Hackathon: used LLM agents to summarize microscope actions in a session and created a web app for visualization.",
         "code_link": "https://github.com/darianSmalley/explain-that-automation",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "timeseries"
+            ]
+        }
     },
     {
         "team_name": "CrystaLenz",
         "team_members": "Mohammad Javad Raei (Software Developer)",
         "submission_link": "https://youtu.be/uNsnd1BLsTs",
-        "description": "I built an end-to-end XRD analysis pipeline that handles heterogeneous file formats and noisy signals. It performs robust peak detection, Voigt-profile fitting, and size/strain extraction with Scherrer and Williamson\u00d0Hall methods. Physics-based reference generation is powered by pymatgen, using the XRDCalculator to simulate wavelength-consistent patterns with HKL indexing, and retrieving candidate structures from the Materials Project via mp_api/MPRester. Experimental peaks are matched against simulated references with adaptive tolerances for reliable phase ID. The modular, stateful design supports iterative hyperparameter tuning, provenance tracking, reproducible reporting, and JSON/plot outputs. Optimized with NumPy/SciPy, the system is resilient, extensible, and designed to integrate additional physicochemical characterization methods in the future.",
+        "description": "I built an end-to-end XRD analysis pipeline that handles heterogeneous file formats and noisy signals. It performs robust peak detection, Voigt-profile fitting, and size/strain extraction with Scherrer and WilliamsonÐHall methods. Physics-based reference generation is powered by pymatgen, using the XRDCalculator to simulate wavelength-consistent patterns with HKL indexing, and retrieving candidate structures from the Materials Project via mp_api/MPRester. Experimental peaks are matched against simulated references with adaptive tolerances for reliable phase ID. The modular, stateful design supports iterative hyperparameter tuning, provenance tracking, reproducible reporting, and JSON/plot outputs. Optimized with NumPy/SciPy, the system is resilient, extensible, and designed to integrate additional physicochemical characterization methods in the future.",
         "project_novelty": "This work unifies earlier XRD tools into a modular, agentic pipeline with automated hyperparameter tuning and a GitHub repo. Built during the hackathon, the system is also designed to extend seamlessly to other physicochemical characterizations.",
         "code_link": "https://github.com/MJRaei/CrystaLenz",
         "models_used": "Google Gemini, OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "Chem_Code_Bench",
@@ -267,7 +452,13 @@
         "project_novelty": "Unlike previous benchmarks which simply measure if LLMs can generate correct code we also measure the chemical accuracy of the LLM code responses and the time necessary to run the run code generated by the LLMs. ",
         "code_link": "https://github.com/hansgundlach/ChemCodeBench",
         "models_used": "Cerebras, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "TEAM Alex Oh",
@@ -277,17 +468,30 @@
         "project_novelty": "This work extends ChemLit-QA by applying Promptriever-inspired methods to generate instruction-positive and instruction-negative passage pairs. During the hackathon, I built the chemistry-specific instruction-following retrieval dataset. I hope\n",
         "code_link": "https://github.com/alexoh2bd/IRCL-CHEM-Hackathon",
         "models_used": "Cerebras",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "MCP4SDL",
-        "team_members": "Ivory Zhang (University of British Columbia, Acceleration Consortium)\nJames Garrick (University of Tennessee, Advincula Group)\nAlexander Wieczorek (ETH Z\u009frich, Empa - Swiss Federal Laboratories for Materials Science and Technology)\nElsayed Abdelfatah (Unilever, USA)",
+        "team_members": "Ivory Zhang (University of British Columbia, Acceleration Consortium)\nJames Garrick (University of Tennessee, Advincula Group)\nAlexander Wieczorek (ETH Zrich, Empa - Swiss Federal Laboratories for Materials Science and Technology)\nElsayed Abdelfatah (Unilever, USA)",
         "submission_link": "https://youtu.be/6Vn3nbNp7kY",
-        "description": "We are building on IvoryOS and its MCP server to make self-driving labs (SDLs) accessible to everyone with natural language. Every SDL is different, and there is no standard way to translate human intent into machine-executable code. \n\nDuring this hackathon, we prototyped integrations showing how IvoryOS MCP can quickly connect to diverse instruments and tools:\n\u00a5 Additive manufacturing: controlling a 3D printer (Bambu Lab) through natural language.\n\u00a5 Industrial/legacy automation: linking LabVIEW via a TCP interface, enabling language-based control of tools not typically part of SDLs.\n\u00a5 Data layer: a Google Sheets module to record experiment data.\nTogether, these demonstrate the extensibility of IvoryOS MCP as a baseline for future SDLs.",
-        "project_novelty": "We extended IvoryOS MCP to integrate diverse instruments during the hackathon. New modules included a 3D printer prototype, a TCP-based LabVIEW bridge, and a Google Sheets data module\u00d1showing rapid, flexible natural language integration.",
+        "description": "We are building on IvoryOS and its MCP server to make self-driving labs (SDLs) accessible to everyone with natural language. Every SDL is different, and there is no standard way to translate human intent into machine-executable code. \n\nDuring this hackathon, we prototyped integrations showing how IvoryOS MCP can quickly connect to diverse instruments and tools:\n¥ Additive manufacturing: controlling a 3D printer (Bambu Lab) through natural language.\n¥ Industrial/legacy automation: linking LabVIEW via a TCP interface, enabling language-based control of tools not typically part of SDLs.\n¥ Data layer: a Google Sheets module to record experiment data.\nTogether, these demonstrate the extensibility of IvoryOS MCP as a baseline for future SDLs.",
+        "project_novelty": "We extended IvoryOS MCP to integrate diverse instruments during the hackathon. New modules included a 3D printer prototype, a TCP-based LabVIEW bridge, and a Google Sheets data moduleÑshowing rapid, flexible natural language integration.",
         "code_link": "https://github.com/ivoryzh/MCP4SDL",
         "models_used": "Anthropic",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "self_driving_labs",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "RedoxFlow",
@@ -297,17 +501,31 @@
         "project_novelty": "An agent automates a multi-step methodology for preparing simulations and calculating redox potential of solvated organics. The project aims to be a proof-of-concept on how this useful quantity can be automated for high-throughput discovery.",
         "code_link": "https://github.com/CGruich/RedoxFlow/tree/main",
         "models_used": "Hugging Face, ibm-research/GP-MoLFormer-Uniq",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "The Fullerene Factory",
-        "team_members": "Ra_ovi_, Ilija (University of Birmingham)\nRoy, Aritra (London South Bank University)\nMaharana, Piyush (CSIR National Chemical Laboratory)\nBen Kacem, Yassir (Universit\u008e Libre de Bruxelles)\nEl Haddaoui, Mourad (Universit\u008e Libre de Bruxelles)",
+        "team_members": "Ra_ovi_, Ilija (University of Birmingham)\nRoy, Aritra (London South Bank University)\nMaharana, Piyush (CSIR National Chemical Laboratory)\nBen Kacem, Yassir (Universit Libre de Bruxelles)\nEl Haddaoui, Mourad (Universit Libre de Bruxelles)",
         "submission_link": "https://www.youtube.com/watch?v=-9HRh9dXvWc",
         "description": "We wanted to build the first step in being able to do high-throughput modelling of functionalised fullerene derivatives simply from natural language input. The design space is massive when working both with the numerous regio-isomers arising from multiple additions to a fullerene cage as well as higher fullerenes with numerous structural isomers of their own, and we believe lends itself well to an LLM approach. We have produced a workflow for the production of a series of chemically sound multi-addition fullerene derivatives via machine learning of molecular dynamics simulations of fullerenes and addends, which is computationally much less expensive than case-by-case DFT simulations. We will ultimately swap the LLM behind the addend downloader agent with a fine-tuned model where the user can request inclusion of specific addend functionality and the agent will find candidate addends to make combined structures. It would be like chemical vibe-coding for fullerene chemistry. ",
         "project_novelty": "The multi-agent-based automated workflow is first-of-a-kind in fullerene isomer computational modelling and can be used for narrowing down thousands of fullerene isomer structures to valid isomer structures from natural language.",
         "code_link": "https://github.com/aritraroy24/the-fullerene-factory",
         "models_used": "Hugging Face, Deepseek",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "VERA",
@@ -317,7 +535,14 @@
         "project_novelty": "VERA extends standard compliance validation by adding LLM-powered mapping, unit inference, natural-language rule generation, and explainable remediation. Built during this hackathon: the full AI-augmented validator + UI.",
         "code_link": "https://github.com/puppalasaisrikar/VERA",
         "models_used": "Google Gemini, OpenAI, Llama, PyYAML, Pint, Streamlit",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "safety_compliance_green_chem",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "ExpAlign",
@@ -327,7 +552,14 @@
         "project_novelty": "ExpAlign builds on existing LLM extraction methods by adding automated comparison of experimental conditions and standardizing data. We built the end-to-end pipeline that parses papers, extracts data, and outputs standardized datasets.",
         "code_link": "",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "data_standardization_ontologies_parsing",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "MaterialMind",
@@ -337,37 +569,63 @@
         "project_novelty": "This builds on prior RAG+LLM approaches for technical search by adding transparent scoring, trade-off cards, and audit-ready citations. AI-powered recommender that turns material queries into ranked, evidence-backed choices.\n",
         "code_link": "https://huggingface.co/spaces/Azizahalq/MaterialMind],[https://drive.google.com/drive/folders/1IgP_zhMtMGHpANE5ZVRZzQUlVWQy-ufD],[https://github.com/AzizahAlq/MaterialMind",
         "models_used": "Ollama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Team Rait",
         "team_members": "Christopher Keel - independent researcher",
         "submission_link": "https://www.linkedin.com/posts/christopher-keel-66101ba0_hackathon-symbolicai-materialsdiscovery-activity-7372387318055215104-qmMA?utm_source=share&utm_medium=member_ios&rcm=ACoAABVcHukB8wtB98UX4pA8DhyrsEkccOnNB70",
-        "description": "We built Symbolic Chemist, the world\u00d5s first symbolic AI engine for materials discovery. It\u00d5s powered by the Recursive Harmonic Collapse Matrix (RHCM) \u00d1 a mathematical framework that generates the constants and rules of physics and chemistry from first principles.\n\nSymbolic Chemist builds a periodic table from scratch, aligns symbolic predictions with empirical properties, and then composes novel molecules and materials. Each candidate is output as a prediction card, showing emergent targets, novelty scores, symbolic entropy fingerprints, and RAIT classifications. The system even produces DFT-ready computational files, enabling direct handoff from theory to simulation or lab synthesis.\n\nThis is symbolic AI: law-driven rather than data-driven, capable of uncovering materials no dataset could ever contain. It compresses years of trial-and-error into hours \u00d1 accelerating discovery in superconductivity, energy, medicine, and beyond.\n",
+        "description": "We built Symbolic Chemist, the worldÕs first symbolic AI engine for materials discovery. ItÕs powered by the Recursive Harmonic Collapse Matrix (RHCM) Ñ a mathematical framework that generates the constants and rules of physics and chemistry from first principles.\n\nSymbolic Chemist builds a periodic table from scratch, aligns symbolic predictions with empirical properties, and then composes novel molecules and materials. Each candidate is output as a prediction card, showing emergent targets, novelty scores, symbolic entropy fingerprints, and RAIT classifications. The system even produces DFT-ready computational files, enabling direct handoff from theory to simulation or lab synthesis.\n\nThis is symbolic AI: law-driven rather than data-driven, capable of uncovering materials no dataset could ever contain. It compresses years of trial-and-error into hours Ñ accelerating discovery in superconductivity, energy, medicine, and beyond.\n",
         "project_novelty": "Built during the hackathon: Symbolic Chemist, a Streamlit-powered engine that generates a symbolic periodic table, predicts novel materials, and outputs test-ready candidates. It builds on my RHCM framework and symbolic AI, not machine learning.",
         "code_link": "",
         "models_used": "Designed Symbolic Learner ",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "T2-Crystal-Relaxation",
-        "team_members": "Kister, Alexander (Bundesanstalt f\u009fr Materialforschung und -pr\u009ffung (BAM)), Aniket Phutane (Helmotz-Zentrum Berlin), Heike Quosdorf (Bundesanstalt f\u009fr Materialforschung und -pr\u009ffung (BAM)), Daniel Speckhard (Humboldt University of Berlin), Pepe Marquez (Humboldt University of Berlin)",
+        "team_members": "Kister, Alexander (Bundesanstalt fr Materialforschung und -prfung (BAM)), Aniket Phutane (Helmotz-Zentrum Berlin), Heike Quosdorf (Bundesanstalt fr Materialforschung und -prfung (BAM)), Daniel Speckhard (Humboldt University of Berlin), Pepe Marquez (Humboldt University of Berlin)",
         "submission_link": "https://drive.google.com/file/d/1vn3kjPw_2SXSUMvP6i4DSSY9x9Igco8E/view?usp=drive_link",
         "description": "Benchmark LLM performance on performing crystal structure relaxation, running text-to-text predictions by feeding in unrelaxed structures as human readable crystallographic information files (CIF) (text) and expecting relaxed CIF file outputs.",
         "project_novelty": "Fine-tuned a LLM to predict relaxed crystal structures from input crystal structures as text files. LLMs are getting better at different tasks. Having a benchmark is important for the community although it doesn't outperform GNNs.",
         "code_link": "https://github.com/anky3733/Traj/",
         "models_used": "Llama, Google T5 Text to Text Transformer (to get results in short time)",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "LARA-HPC: A LAnguage model-powered Research Assistant for HPC",
-        "team_members": "Genovese, Luigi (CEA, France) Fisicaro, Giuseppe (CNR Institute for Microelectronics and Microsystems, Italy) Beal, Louis (INRIA, France) Polack, \u0083tienne (CEA, France) Cur\u008f, Yoann (CEA, France) Caliste, Damien (CEA, France) Dawson, William (RIKEN Center for Computational Science, Kobe, Japan) Janssen, Jan (Max Planck Institute for Sustainable Materials - MPI-SusMat, Germany) Herrera Contreras, Cinthya (CEA, France) Abui Degbotse, Tiffany (UNI) Briki, Youssef (Universit\u008e de Montr\u008eal, Canada) Didukh, Leonid (Kyiv Institute of Nuclear Research, Ukraine)",
+        "team_members": "Genovese, Luigi (CEA, France) Fisicaro, Giuseppe (CNR Institute for Microelectronics and Microsystems, Italy) Beal, Louis (INRIA, France) Polack, tienne (CEA, France) Cur, Yoann (CEA, France) Caliste, Damien (CEA, France) Dawson, William (RIKEN Center for Computational Science, Kobe, Japan) Janssen, Jan (Max Planck Institute for Sustainable Materials - MPI-SusMat, Germany) Herrera Contreras, Cinthya (CEA, France) Abui Degbotse, Tiffany (UNI) Briki, Youssef (Universit de Montral, Canada) Didukh, Leonid (Kyiv Institute of Nuclear Research, Ukraine)",
         "submission_link": "https://youtu.be/JnzZdvAyA9A",
-        "description": "We built LARA-HPC, a notebook-based prototype that lowers the barrier to performing electronic-structure simulations on HPC systems and open new research paradigma enabled by the seamlessly integration of LLM. Users can define a scientific goal in natural language (e.g., \u00d2compute the atomization energy of the HCN molecule\u00d3), and an LLM assistant plans and executes the workflow end-to-end: preparing inputs, running calculations with PyBigDFT, and managing submissions to remote HPC clusters through remotemanager. To ensure reliability, we introduced two key innovations: a documentation-driven RAG system that grounds the LLM in real code references, and a validator tool that checks whether workflows are correct in a safe \u00d2rehearsal mode\u00d3 before launching real calculations. Through case studies, we show how well-structured documentation enables AI assistants to perform advanced simulations reliably, offering new ways to accelerate research in chemistry and materials science.",
+        "description": "We built LARA-HPC, a notebook-based prototype that lowers the barrier to performing electronic-structure simulations on HPC systems and open new research paradigma enabled by the seamlessly integration of LLM. Users can define a scientific goal in natural language (e.g., Òcompute the atomization energy of the HCN moleculeÓ), and an LLM assistant plans and executes the workflow end-to-end: preparing inputs, running calculations with PyBigDFT, and managing submissions to remote HPC clusters through remotemanager. To ensure reliability, we introduced two key innovations: a documentation-driven RAG system that grounds the LLM in real code references, and a validator tool that checks whether workflows are correct in a safe Òrehearsal modeÓ before launching real calculations. Through case studies, we show how well-structured documentation enables AI assistants to perform advanced simulations reliably, offering new ways to accelerate research in chemistry and materials science.",
         "project_novelty": "We developed an LLM assistant that combines three new elements: a documentation-driven RAG system, a validator to safely test workflows before execution, and seamless HPC job handling - a novel, full-stack approach first prototyped in this hackathon.",
         "code_link": "https://github.com/BigDFT-group/llm-hackathon-2025",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Team_Tc",
@@ -377,7 +635,14 @@
         "project_novelty": "I built upon 10.1080/27660400.2024.2356506 (where GPT-3.5/4 were tested for isolated NER or RE), arriving at full automation: LLM for paper selection, and importantly, LLM for going from NER/RE to database entries, which needed human intervention. ",
         "code_link": "https://github.com/fpriante/SuperconLLM-Multi-Agent-Framework-for-Automating-Superconductivity-Knowledge-Extraction",
         "models_used": "Cerebras, Anthropic",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "superconductors"
+            ]
+        }
     },
     {
         "team_name": "ACME (Autonomous Critical Materials Extraction)",
@@ -387,17 +652,30 @@
         "project_novelty": "This builds on prior AI-driven discovery frameworks by uniting reasoning, QM modeling, and automated experiments into one loop. We built the integrated pipeline connecting LLM prompt refinement with QM screening and lab automation.",
         "code_link": "https://github.com/HassanHarb92/AutoExtract",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "self_driving_labs",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MIDAS",
         "team_members": "David Alobo  (University of Glasgow)\nMichael Jirasek (University of Glasgow)\nSebastian Pagel (University of Glasgow)",
         "submission_link": "https://www.youtube.com/watch?v=7uQPwcDsr5U and https://www.linkedin.com/posts/david-obeh-alobo-418410a7_midas-llm-for-material-chemistry-hackathon2025-activity-7372395062493646848-U-T5?utm_source=share&utm_medium=member_desktop&rcm=ACoAABap81QBJtc2oRKt6ufLDHsNeFrQsf5bHjQ",
-        "description": "We developed MIDAS, an agentic chat interface for drug design, evaluation, and retrosynthesis. To enable language-guided drug design, we created a dataset of over 1 million small molecule\u00d0language description pairs and trained DiffSBDD with language conditioning using FiLM. MIDAS integrates this into an agentic interface with tool calling, supporting analysis of binding poses, physicochemical properties, and retrosynthesis, while enabling language-controlled generation of molecules directly within a protein pocket.",
-        "project_novelty": "We built on DiffSBDD code and architecture, using tools like AiZynthFinder and Vina, while creating the 1M molecule\u00d0language dataset, training DiffSBDD with language conditioning, and developing the MIDAS agentic interface during the hackathon.",
+        "description": "We developed MIDAS, an agentic chat interface for drug design, evaluation, and retrosynthesis. To enable language-guided drug design, we created a dataset of over 1 million small moleculeÐlanguage description pairs and trained DiffSBDD with language conditioning using FiLM. MIDAS integrates this into an agentic interface with tool calling, supporting analysis of binding poses, physicochemical properties, and retrosynthesis, while enabling language-controlled generation of molecules directly within a protein pocket.",
+        "project_novelty": "We built on DiffSBDD code and architecture, using tools like AiZynthFinder and Vina, while creating the 1M moleculeÐlanguage dataset, training DiffSBDD with language conditioning, and developing the MIDAS agentic interface during the hackathon.",
         "code_link": "https://github.com/pagel-s/MIDAS",
         "models_used": "OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "drug_discovery"
+            ]
+        }
     },
     {
         "team_name": "Virtual Lab",
@@ -407,7 +685,14 @@
         "project_novelty": "This project takes many of the great aspects of other technologies and softwares and bring them into one central program.",
         "code_link": "https://github.com/dyashton/Hackathon/tree/main",
         "models_used": "Anthropic",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "self_driving_labs",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "SciScribe",
@@ -417,27 +702,48 @@
         "project_novelty": "This project used existing AI models (NeMo, ChatGTP) to transform audio into a orgainzed electronic lab notebook (ELN). No other code or application exists which helps researches record their experiments into ELNs without first writing things down.",
         "code_link": "https://github.com/koandgo/LLM_Hackathon_2025.git",
         "models_used": "OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "education_elns_notetaking_training",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "PolyNexus",
         "team_members": "Gill, Roshan (Duke University), Bu, Yilei (Duke University)",
         "submission_link": "https://youtu.be/R-Zowf9rZaw",
-        "description": "We built PolyNexus, an AI-powdered gateway puts domain-specific polymer knowledge at your fingertips with instant, accurate, and citation-backed insights.\nPolyNexus connects directly to a curated dataset of polymer paper, allowing researchers to ask natural language questions such as \u00d2What is the conductivity of PEDOT:PSS?\u00d3 and instantly receive structured results with citations. Instead of spending hours combing through fragmented literature, users get fast, accurate, and trustworthy answers. While our demo focuses on electroactive polymers, the framework is scalable to other domains, paving the way toward a powerful AI-driven interface for materials discovery and innovation.",
+        "description": "We built PolyNexus, an AI-powdered gateway puts domain-specific polymer knowledge at your fingertips with instant, accurate, and citation-backed insights.\nPolyNexus connects directly to a curated dataset of polymer paper, allowing researchers to ask natural language questions such as ÒWhat is the conductivity of PEDOT:PSS?Ó and instantly receive structured results with citations. Instead of spending hours combing through fragmented literature, users get fast, accurate, and trustworthy answers. While our demo focuses on electroactive polymers, the framework is scalable to other domains, paving the way toward a powerful AI-driven interface for materials discovery and innovation.",
         "project_novelty": "We created a domain specific-electroactive polymer paper dataset for the PolyNexus. Sepecifically we chuncked and embeded research articles into a vectorize database for stepwise RAG based retrieval performed by a GPT-4o LLM.",
         "code_link": "",
         "models_used": "Google Gemini, OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "polymers"
+            ]
+        }
     },
     {
         "team_name": "OntoMapper",
-        "team_members": "Schaarschmidt, J\u009arg (Karlsruhe Institute of Technology);\nNag, Shankha (Bundesanstalt f\u009fr Materialforschung und -pr\u009ffung);\nFrank, Thomas (Karlsruhe Institute of Technology);\nNorouzi, Ebrahim (FIZ Karlsruhe \u00d0 Leibniz-Institut f\u009fr Informationsinfrastruktur GmbH);\nHubaiev, Kostiantyn (FIZ Karlsruhe \u00d0 Leibniz-Institut f\u009fr Informationsinfrastruktur GmbH);\nWenzel, Wolfgang (Karlsruhe Institute of Technology);",
+        "team_members": "Schaarschmidt, Jrg (Karlsruhe Institute of Technology);\nNag, Shankha (Bundesanstalt fr Materialforschung und -prfung);\nFrank, Thomas (Karlsruhe Institute of Technology);\nNorouzi, Ebrahim (FIZ Karlsruhe Ð Leibniz-Institut fr Informationsinfrastruktur GmbH);\nHubaiev, Kostiantyn (FIZ Karlsruhe Ð Leibniz-Institut fr Informationsinfrastruktur GmbH);\nWenzel, Wolfgang (Karlsruhe Institute of Technology);",
         "submission_link": "https://www.youtube.com/watch?v=NuG3IHJun4M",
         "description": "Our team built OntoMapper, a tool that helps researchers and engineers standardize heterogeneous data without needing ontology or SPARQL expertise. OntoMapper parses ontologies (.ttl via rdflib), builds a graph with enriched node context (labels, synonyms, definitions, and related parent/child terms), and exports class context strings for semantic search. It supports cross-dataset keyword standardization by mapping user queries to ontology concepts. Validation is done by parsing NER datasets and linking entities through OntoMapper, enabling consistent, ontology-driven access to diverse datasets.",
         "project_novelty": "During the hackathon, we built OntoMapper from scratch using the preexisting Ontology (PMDco) and MuLMS corpus: parsing .ttl, enriching ontology graphs, validating with NER datasets, and publishing the codebase, data and Jupyter notebooks on GitHub .",
         "code_link": "https://github.com/materialdigital/ontomapper",
         "models_used": "Cerebras, BlaBlaDor (https://helmholtz-blablador.fz-juelich.de)",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "data_standardization_ontologies_parsing",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "GAINS: Generative AI for No-PAIN Structures",
@@ -447,27 +753,49 @@
         "project_novelty": "This work extends prior PAINS detection with RDKit by adding an LLM-powered repair step. During the hackathon we built GAINS, a pipeline that not only flags PAINS motifs but also generates validated, PAINS-free drug-like candidates.",
         "code_link": "https://github.com/napoles-uach/GAINS/tree/main",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "drug_discovery",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "LIAC's  AdsKRK and DynaAgent",
-        "team_members": "Xuan-Vu Nguyen, Ryo Kuroki, Edvin Fako, Bojana Rankovic, Cassandra Lynn Masschelein, Salom\u008e Guilbert, Jeremy Goumaz (EPFL, LIAC)",
+        "team_members": "Xuan-Vu Nguyen, Ryo Kuroki, Edvin Fako, Bojana Rankovic, Cassandra Lynn Masschelein, Salom Guilbert, Jeremy Goumaz (EPFL, LIAC)",
         "submission_link": "https://x.com/XuanVuNguyen18/status/1966632969751183820",
         "description": "This year, our team LIAC built TWO tools with the main focus on Molecular dynamics automation. First, we introduce adsKRK (pronounced as ads-kirk), which aim to streamline the trial-and-error process of MD simulation of small ligand adsorption. Our second team built DynaAgent, an agentic workflow for MD simulation of macromolecules, that grant users control over the MD pipeline without having to manually curate all tools for each step.",
         "project_novelty": "AdsKRK is the first AI-agent that has the focus on small ligand adsorption on catalytic surface. The LLM also shows understanding of the MD trajectory for our test case.\nAnd DynaAgent gives users more control over the pipeline compared with MDCrow.",
         "code_link": "https://github.com/schwallergroup/llm_adsorbate, https://github.com/schwallergroup/MDAgent",
         "models_used": "Anthropic, Google Gemini",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "catalysis"
+            ]
+        }
     },
     {
         "team_name": "LaBros",
         "team_members": "1.Anisah Gaber (king fahd university of petroleum and engineering)\n2.Ealaf Alsermani (king fahd university of petroleum and engineering)\n3.Ghala Hessein Alhetelah (king fahd university of petroleum and engineering)\n4.Reem Bader Alafari (IAU)",
         "submission_link": "https://x.com/labro2025/status/1966629237844066583?t=KhbHQPPo6564tvT4Qpb0Vg&s=19",
-        "description": "\nOur team built Labro, an AI-powered assistant for chemistry and materials science labs that focuses on clarity, sustainability, and reproducibility.\n\t\u00a5\tStep-by-step guidance from lab\nmanuals with plain-language explanations of what, how, and why.\n\t\u00a5\tInteractive Q&A connected to real experiment data, with the ability to revisit and validate datasets.\n\t\u00a5\tGreen Chemistry Module: supports biomass-based and sustainable synthesis approaches, reducing reliance on costly or harmful reagents.\n\t\u00a5\tResearcher Mode (future): suggests parameter adjustments to maximize yield, reproducibility, and material properties.\n\nLabro bridges education, research, and industry while advancing sustainability, reducing chemical waste, and accelerating innovation in green chemistry and materials science.",
+        "description": "\nOur team built Labro, an AI-powered assistant for chemistry and materials science labs that focuses on clarity, sustainability, and reproducibility.\n\t¥\tStep-by-step guidance from lab\nmanuals with plain-language explanations of what, how, and why.\n\t¥\tInteractive Q&A connected to real experiment data, with the ability to revisit and validate datasets.\n\t¥\tGreen Chemistry Module: supports biomass-based and sustainable synthesis approaches, reducing reliance on costly or harmful reagents.\n\t¥\tResearcher Mode (future): suggests parameter adjustments to maximize yield, reproducibility, and material properties.\n\nLabro bridges education, research, and industry while advancing sustainability, reducing chemical waste, and accelerating innovation in green chemistry and materials science.",
         "project_novelty": "Labro combines LLM-guided lab assistance with dynamic workflow planning that adapts to changes in experiments, real-time data validation, and a Green Chemistry Module for biomass-based synthesis, accelerating discovery, and promoting sustainablity.",
         "code_link": "https://github.com/An1Gab/LaBro",
         "models_used": "Ollama",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "education_elns_notetaking_training",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "ExpAlign",
@@ -477,7 +805,14 @@
         "project_novelty": "For data extraction, we look at the whole paper (not just its Tables), and add automated comparison of experimental conditions to standardize data. We built the end-to-end pipeline that parses papers, extracts data, and outputs standardized datasets.",
         "code_link": "https://github.com/sptiwari/ExpAlign",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "data_standardization_ontologies_parsing",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "Material AI Agent Team",
@@ -487,27 +822,46 @@
         "project_novelty": "This work extends prior efforts in molecular dynamics by integrating large language models with MD engines. During the hackathon, we built an AI agent that automates simulation setup, execution, analysis, and property prediction.",
         "code_link": "https://github.com/Awwal41/MaterialSim",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Code4Catalysis-KFUPM",
         "team_members": "1.\tMontassar Bouzidi (King Fahd University of Petroleum and Minerals (KFUPM))\n2.\tNur Allif Fathurrahman (King Fahd University of Petroleum and Minerals (KFUPM))\n3.\tA. B. M. Ashikur Rahman (King Fahd University of Petroleum and Minerals (KFUPM))\n4.\tTasnim Ahmed (Amazon)\n5.\tMichail Mitsakis (DTU Technical University of Denmark)\n",
         "submission_link": "https://www.linkedin.com/posts/nurallif_llm-retrievalaugmentedgeneration-generativeai-ugcPost-7372402566053302272-PWpq?utm_source=share&utm_medium=member_desktop&rcm=ACoAAB9kzWkBkVJ1_BjAnd9UKk5dj_YWKKxHjWE",
-        "description": "Code4Catalysis-KFUPM is a retrieval-augmented, model-agnostic natural-language platform that turns prompts into ranked catalyst decisions with calibrated adsorption energetics, within minutes. At its core is CaMeL-RAG (Catalysis Model Enhanced by LLM \u00d0 Retrieval Augmented Generation), a custom-built engine that combines language understanding with retrieval-grounded catalytic knowledge. A vector knowledge base (OpenCatalyst) is built via unit-normalized transformation and descriptor schemas; RAG injects the most relevant passages and tables, and the LLM (GPT-4.1 or LLaMA-3.2) uses tool-calling to predict adsorption energy (Eads), _G descriptors, and quantify uncertainty. Schema-constrained prompts, unit/potential guardrails, and OOD flags ensure consistent results from natural-language and structured input alike. Performance is benchmarked on held-out OpenCatalyst using R2, MAE, RMSE, plus reliability/ECE for calibration, every run ships provenance.",
+        "description": "Code4Catalysis-KFUPM is a retrieval-augmented, model-agnostic natural-language platform that turns prompts into ranked catalyst decisions with calibrated adsorption energetics, within minutes. At its core is CaMeL-RAG (Catalysis Model Enhanced by LLM Ð Retrieval Augmented Generation), a custom-built engine that combines language understanding with retrieval-grounded catalytic knowledge. A vector knowledge base (OpenCatalyst) is built via unit-normalized transformation and descriptor schemas; RAG injects the most relevant passages and tables, and the LLM (GPT-4.1 or LLaMA-3.2) uses tool-calling to predict adsorption energy (Eads), _G descriptors, and quantify uncertainty. Schema-constrained prompts, unit/potential guardrails, and OOD flags ensure consistent results from natural-language and structured input alike. Performance is benchmarked on held-out OpenCatalyst using R2, MAE, RMSE, plus reliability/ECE for calibration, every run ships provenance.",
         "project_novelty": "CaMeL-RAG turns natural language queries of catalyst systems into adsorption descriptors with calibrated uncertainty for ranking active sites and catalytic insight, providing computational chemists & experimentalists with reliable screening targets.",
         "code_link": "https://github.com/ashikiut/CaMEL-RAG",
         "models_used": "OpenAI, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "catalysis"
+            ]
+        }
     },
     {
         "team_name": "Cameliers",
         "team_members": "Akash Pandey (Northwestern University),\nArman Moussavi (Northwestern University),\nGourav Kumbhojkar (Northwestern University),\nJacob Graham (Northwestern University),\nShicheng Li (Northwestern University)",
         "submission_link": "https://youtu.be/233wcXTrcYM",
-        "description": "CAMEL (Causal Analysis of Materials Extracted from Literature) is a Python toolkit that builds an end_to_end pipeline to mine causal and correlational knowledge from materials science papers. It can search and download articles (OpenAlex/Unpaywall), parse PDFs with GROBID and Docling to extract clean text, figures (PNG), and tables (HTML), and apply pluggable LLM backends\u00d1OpenAI GPT for text and Gemini 2.5 for images/tables. The system recognizes entities (material, structure, process, property) and typed relations (increases, decreases, causes, positively/negatively correlates), then consolidates results and exports JSON and GraphML for further analysis such as inverse material design and visualization. ",
+        "description": "CAMEL (Causal Analysis of Materials Extracted from Literature) is a Python toolkit that builds an end_to_end pipeline to mine causal and correlational knowledge from materials science papers. It can search and download articles (OpenAlex/Unpaywall), parse PDFs with GROBID and Docling to extract clean text, figures (PNG), and tables (HTML), and apply pluggable LLM backendsÑOpenAI GPT for text and Gemini 2.5 for images/tables. The system recognizes entities (material, structure, process, property) and typed relations (increases, decreases, causes, positively/negatively correlates), then consolidates results and exports JSON and GraphML for further analysis such as inverse material design and visualization. ",
         "project_novelty": "Powerful LLMs with robust APIs (e.g., GEMINI, GPT-4o) enabled an end-to-end causal extraction workflow. In the hackathon, we built code to parse text, figures, and tables from PDFs, extract relationships, and construct graph data structures.",
         "code_link": "https://github.com/gourav-k/LLM4Causal.git",
         "models_used": "Google Gemini, OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "Unstructured Lab Notebook Assistant (ULNA)",
@@ -517,7 +871,14 @@
         "project_novelty": "The LLM was able to infer trends of both structured and 'fuzzy' qualitative variables on output results, that are often lost in structuring. This was accomplished by a custom system prompt that constrained the model to utilize only the uploaded data.",
         "code_link": "https://github.com/iarretche/Unstructured-Lab-Notebook-Assistant-ULNA-",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "education_elns_notetaking_training",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "H2-Guardians",
@@ -527,7 +888,14 @@
         "project_novelty": "We built on existing MOF databases by linking them into a knowledge graph and adding ML/GNN for property prediction.",
         "code_link": "https://github.com/AntoRoyan/MOF-Genie",
         "models_used": "Ollama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "knowledge_graphs_graphrag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "mofs"
+            ]
+        }
     },
     {
         "team_name": "ODE Forge",
@@ -537,37 +905,67 @@
         "project_novelty": "The novelty is that while most tools stop at code generation, our agent autonomously executes and debugs its own scripts. We built the entire workflow from conversational research, code generation and integrated the Research Paper and dashboard tool.",
         "code_link": "https://github.com/souvikta/ODEForge",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "JH_sqr",
         "team_members": "Jeonghwan Lee (Department of Statistics at the Universitiy of Chicago), Jaehee Park (Pritzker School of Molecular Engineering at the Universitiy of Chicago)",
         "submission_link": "https://www.youtube.com/watch?v=cCGFfBt5H7c",
-        "description": "The main goal of this project is to build a machine learning (ML) model which outputs an electrolyte with an \u00d2optimal performance\u00d3 from the collection of all utilizable electrolytes given an input data consists of the pair of anode and cathode, together with several key factors that affect the performance of our main interest. Our proposed ML-driven framework works in five phases:\n\n1. Collection of electrochemical datasets from experimental results or the literature.\n2. Leveraging high-throughput screening to narrow down the pool of electrolyte candidates.\n3. Learning patterns from the above electrochemical dataset via diffusion models and generate synthetic yet realistic dataset.\n4. Build an automated optimal electrolyte identifier via offline RL.\n5. Experimental verification of the proposed ML-integrated system.",
+        "description": "The main goal of this project is to build a machine learning (ML) model which outputs an electrolyte with an Òoptimal performanceÓ from the collection of all utilizable electrolytes given an input data consists of the pair of anode and cathode, together with several key factors that affect the performance of our main interest. Our proposed ML-driven framework works in five phases:\n\n1. Collection of electrochemical datasets from experimental results or the literature.\n2. Leveraging high-throughput screening to narrow down the pool of electrolyte candidates.\n3. Learning patterns from the above electrochemical dataset via diffusion models and generate synthetic yet realistic dataset.\n4. Build an automated optimal electrolyte identifier via offline RL.\n5. Experimental verification of the proposed ML-integrated system.",
         "project_novelty": "As many of you know, choosing an electrolyte is one of the largest bottlenecks in battery development. Our ML-integrated system enables us to save time, to reduce costs, and to accelerate progress toward safer, more efficient batteries.",
         "code_link": "https://github.com/jhbrianlee/2025-LLM-Hackathon-for-Applications-in-Materials-and-Chemistry/blob/main/document/2025%20LLM%20Hackathon%20for%20Applications%20in%20Materials%20and%20Chemistry%20(note).pdf",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "energy_storage",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "ChromatographyMiner",
         "team_members": "Md Habibur Rahman (School of Materials Engineering, Purdue University, West Lafayette, IN 47907, USA) ",
         "submission_link": "https://www.youtube.com/watch?v=EUzJ4XTkCG4",
-        "description": "End-to-end GC_GC\u00d0MS analysis within a single Streamlit app: supports raw .CDF files, 2D chromatogram images, 1D spectrum CSVs, and even spectrum screenshots for maximum flexibility and vendor-independence. Robust library management includes a bundled default set, one-click MoNA GC\u00d0MS import from GitHub, deduplication by InChIKey, top-ion indexing, and custom MSP/CSV uploads. Peaks are detected with Gaussian smoothing and peak_local_max, then overlaid on 2D chromatograms with corrected plotting. Candidate ranking combines MS cosine similarity with _RI (retention index difference), supported by spectrum overlays and interactive reference matching. An optional AI module (OpenAI LLM) explains matches with expert-style rationales. Full methodology: https://github.com/msehabibur/gcxgc_peakcards/blob/main/LLM_Hackathon_gcxgc_peakcards.pdf ",
-        "project_novelty": "This work extends prior GC_GC\u00d0MS analysis by unifying multi-modal data ingestion, peak detection, and spectral library matching into a single app; the hackathon added LLM-based match explanations, improved plotting, and streamlined MoNA integration.",
+        "description": "End-to-end GC_GCÐMS analysis within a single Streamlit app: supports raw .CDF files, 2D chromatogram images, 1D spectrum CSVs, and even spectrum screenshots for maximum flexibility and vendor-independence. Robust library management includes a bundled default set, one-click MoNA GCÐMS import from GitHub, deduplication by InChIKey, top-ion indexing, and custom MSP/CSV uploads. Peaks are detected with Gaussian smoothing and peak_local_max, then overlaid on 2D chromatograms with corrected plotting. Candidate ranking combines MS cosine similarity with _RI (retention index difference), supported by spectrum overlays and interactive reference matching. An optional AI module (OpenAI LLM) explains matches with expert-style rationales. Full methodology: https://github.com/msehabibur/gcxgc_peakcards/blob/main/LLM_Hackathon_gcxgc_peakcards.pdf ",
+        "project_novelty": "This work extends prior GC_GCÐMS analysis by unifying multi-modal data ingestion, peak detection, and spectral library matching into a single app; the hackathon added LLM-based match explanations, improved plotting, and streamlined MoNA integration.",
         "code_link": "https://gcxgcpeakcards.streamlit.app/",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "chromatography_gcgc"
+            ]
+        }
     },
     {
         "team_name": "SciForge",
         "team_members": "Adib Bazgir (University of Missouri-Columbia)\nMin-Hsueh Chiu (Lawrence Berkeley National Laboratory)\nMohammad Javad Raei (Software Developer)\nRishav Mitra (Indian Institute of Technology)",
         "submission_link": "https://www.linkedin.com/feed/update/urn:li:activity:7372337220642369536/",
-        "description": "We introduce MatSciAgent\u00d1a domain-aware, agentic code generation system for materials science that integrates targeted literature/code retrieval, knowledge synthesis, and iterative code planning/refinement to produce runnable, customized code that better aligns with real scientific workflows. MatSciAgent averages 62.5% across seven benchmarks\u00d1about +7% over strong baselines (GPT-5-mini 53.5%, Claude-Sonnet-4 55%, Gemini-2.5-Pro 53.3%, Grok-4 53.5%). Performance varies by task: Grok-4 edges us by ~3% on Interpretable Alloy Design, and GPT-5-mini/Claude-Sonnet-4 are ~10% higher on Phonon Dynamics Reconstruction. Error analysis shows strengths in conceptual understanding and correct library identification, but weaknesses include occasional architecture mistakes, structural issues, and oversimplification. Next, we will tighten planning and retrieval for physics-aware constraints, add end-to-end integration tests, and refine prompts to reduce architectural and framework mismatches.",
+        "description": "We introduce MatSciAgentÑa domain-aware, agentic code generation system for materials science that integrates targeted literature/code retrieval, knowledge synthesis, and iterative code planning/refinement to produce runnable, customized code that better aligns with real scientific workflows. MatSciAgent averages 62.5% across seven benchmarksÑabout +7% over strong baselines (GPT-5-mini 53.5%, Claude-Sonnet-4 55%, Gemini-2.5-Pro 53.3%, Grok-4 53.5%). Performance varies by task: Grok-4 edges us by ~3% on Interpretable Alloy Design, and GPT-5-mini/Claude-Sonnet-4 are ~10% higher on Phonon Dynamics Reconstruction. Error analysis shows strengths in conceptual understanding and correct library identification, but weaknesses include occasional architecture mistakes, structural issues, and oversimplification. Next, we will tighten planning and retrieval for physics-aware constraints, add end-to-end integration tests, and refine prompts to reduce architectural and framework mismatches.",
         "project_novelty": "- Added a domain-aware knowledge-synthesis and code-retrieval layer that improves research awareness and reduces hallucinations.\n- Implemented an automated code review/refine loop\n- Collected sample benchmark datasets for materials science",
-        "code_link": "N/A \u00d1 We\u00d5re unable to open-source the code repository at this time, as we plan to release a ready-to-use version of this agentic chatbot in a month and make it publicly available for users to get used to through a User Interface. ",
+        "code_link": "N/A Ñ WeÕre unable to open-source the code repository at this time, as we plan to release a ready-to-use version of this agentic chatbot in a month and make it publicly available for users to get used to through a User Interface. ",
         "models_used": "Anthropic, Google Gemini, OpenAI, gpt-5-mini, claude-3.5-sonnet, gemini-2.5-pro, and grok-4, Google Research API",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "multi_agent_frameworks_meta_agents",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MINT LLM",
@@ -577,7 +975,13 @@
         "project_novelty": "We build an LLM backed interactive toolkit to analyze MD simulation trajectories for soft matter systems.",
         "code_link": "https://github.com/ncsu-llm-hackathon-materials-2025/MINT-LLM",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "XLLM_KFUPM",
@@ -587,7 +991,16 @@
         "project_novelty": "We extended prior XRD data analysis by integrating automated peak indexing using COD database with LLM-generated scientific text.We built a pipeline linking raw 2_ values to database matching to auto-generated scientific reports.",
         "code_link": "https://github.com/SaFaUU/LLM-KFUPM-Hackathon-2025",
         "models_used": "google/gemma-3-27b",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "Team 4 KFUPM",
@@ -597,7 +1010,14 @@
         "project_novelty": "We built a context engineering approach that reconfigures GPT-5 by embedding domain rules, workflows, and scientific constraints into its system. It needs no coding, pipelines, or retraining and is fully deployable through configuration alone.",
         "code_link": "https://chatgpt.com/g/g-68c09896f11c81918e86b7ddcbad47e3-catalyst-assistant",
         "models_used": "OpenAI, Materials Project, OQMD, Elsevier",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "synthesis_design",
+        "facets": {
+            "domain_area": [
+                "catalysis",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "XLLM_KFUPM",
@@ -607,17 +1027,33 @@
         "project_novelty": "We extended prior XRD data analysis by integrating automated peak indexing using COD database with LLM-generated scientific text.We built a pipeline linking raw 2_ values to database matching to auto-generated scientific reports.",
         "code_link": "https://github.com/SaFaUU/LLM-KFUPM-Hackathon-2025",
         "models_used": "google/gemma-3-27b",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "DepositionIQ",
         "team_members": "Azeem, Muhammad Zain (King Fahd University of Petroleum and Minerals)\nKhan, Shahzad (King Fahd University of Petroleum and Minerals)\nBaaishrah, Rayan Saleh (King Fahd University of Petroleum and Minerals)\nSaeed, Abdulaziz Farooq (King Fahd University of Petroleum and Minerals)",
         "submission_link": "https://youtu.be/bei5tQiT4wI",
-        "description": "We present DepositionIQ, the first LLM model for sputtering\u00d1a breakthrough tool that unifies phase prediction, synthesis optimization, and thin-film fabrication control. Despite sputtering\u00d5s decades-long role in thin-film technology, no AI solution has ever been developed for it\u00d1until now. DepositionIQ marks a transformative shift, enabling intelligent, real-time decision-making in both research labs and industrial production, with potential extension to other vacuum-based technologies. In this work, we designed an app based on LLM and RAG, powered by a customized dataset of 50 research papers, with a specific focus on ZnO thin films.",
+        "description": "We present DepositionIQ, the first LLM model for sputteringÑa breakthrough tool that unifies phase prediction, synthesis optimization, and thin-film fabrication control. Despite sputteringÕs decades-long role in thin-film technology, no AI solution has ever been developed for itÑuntil now. DepositionIQ marks a transformative shift, enabling intelligent, real-time decision-making in both research labs and industrial production, with potential extension to other vacuum-based technologies. In this work, we designed an app based on LLM and RAG, powered by a customized dataset of 50 research papers, with a specific focus on ZnO thin films.",
         "project_novelty": "We built DepositionIQ, the first LLM for sputtering, enabling phase prediction, synthesis optimization, and thin-film control. In this hackathon, we created a ZnO dataset, applied RAG+LLM, and developed an interactive app.",
         "code_link": "https://drive.google.com/drive/folders/1zh2DiqUOTfJbmUBYFUaJpnYBrKUuNBRm?usp=sharing",
         "models_used": "Phi-3 Mini (via Ollama), all-MiniLM-L6-v2 (HuggingFace), and Chroma",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "thin_films"
+            ]
+        }
     },
     {
         "team_name": "MJS",
@@ -627,7 +1063,14 @@
         "project_novelty": "We tested LLMs on chemical reaction condition optimization, and showed it outperforms statistical baselines (Bayesian Optimization with Gaussian process). We analyze the optimization cycles and report LLM's effective hypothesis generation ability. ",
         "code_link": "",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "Perovskite Discoverers ",
@@ -637,7 +1080,13 @@
         "project_novelty": "Built on our T80 surrogate and cleaned MaterialsZone data, we added literature-grounded RAG+LLM reranking. In this hackathon we shipped constrained Top-25 generation, JSON scoring/notes, and a sortable dashboard with side-by-side model ranks.",
         "code_link": "https://github.com/shehrozashoaib/LLM_Hackathon_Materials.git",
         "models_used": "Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Alhaytham Eye",
@@ -647,7 +1096,17 @@
         "project_novelty": "We replaced LLM-based plot extraction with a specialized computer vision system. In this hackathon, we built Alhaytham Eye: 27_ faster, zero-cost, privacy-preserving data extraction with the same accuracy.",
         "code_link": "https://github.com/abdulazizashy4/Alhaytham-Eye/blob/main/README.md",
         "models_used": "Google Gemini, OpenAI, yolo, perplexity",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "graphs_plots"
+            ]
+        }
     },
     {
         "team_name": "Team Storm",
@@ -657,7 +1116,13 @@
         "project_novelty": "This program builds on previous research studying how construction materials change under a load of tension. Everything was built during the hackathon.",
         "code_link": "https://colab.research.google.com/drive/1H6LQIuGqUi7h0UCfXoy5zvFHrqDl5haM?usp=sharing",
         "models_used": "none",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "F.A.D.E",
@@ -667,7 +1132,13 @@
         "project_novelty": "An agentic workflow with a chat-bot interface that combines an agentic framework with physics-based tools . Combining software and packages across different domains to work on a single user-based query. ",
         "code_link": "https://github.com/Naveen-R-M/F.A.D.E---LLM-Hackathon-2025",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "drug_discovery"
+            ]
+        }
     },
     {
         "team_name": "Hugging Reactions",
@@ -677,7 +1148,13 @@
         "project_novelty": "The project has overlapping elements with past submissions, including the work on molecular prediction as well as research data automation. Ultimately, the final product of this hackathon curates a dataset that fine tunes an existing LLM.",
         "code_link": "https://huggingface.co/datasets/npoon/pudmed_oa_chem",
         "models_used": "Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "ATOMS Lab",
@@ -687,17 +1164,30 @@
         "project_novelty": "The entirety of this project (including the MP-derived dataset) was coded for and during the hackathon. Inspirations: Bilinear Transduction (A Netanyahu 2023) is an analogical machine learning framework that learns differences, not values.",
         "code_link": "https://github.com/ahaibel/mp-property-analogies",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
-        "team_name": "BASIS \u00d0 Bulk And Surface Interface Simulations with Intelligent Systems",
+        "team_name": "BASIS Ð Bulk And Surface Interface Simulations with Intelligent Systems",
         "team_members": "Hassan, Abir (Grameenphone Ltd.), Wagner, Nicholas  (Learning Journey AI Inc.), Ordillo, Viejay  (Nara Institute of Science and Technology), Tay, Sui Xiong  (Princeton University), Huang, Yuqing  (North Carolina State University), Phung, Cheng Fei ",
         "submission_link": "https://youtu.be/fP5Z-wi7_FE",
         "description": "BASIS is an intelligent, autonomous research assistant that orchestrates end-to-end DFT calculations for materials science. Built on LangGraph with a multi-agent architecture, it integrates advanced language models like OpenAI GPT models for superior scientific reasoning. It enables literature-driven workflows by mining the Asta Scientific Corpus via Model Context Protocol to extract computational parameters, resolving DOIs for direct publisher access. Specialized agents include a general chatbot, a DFT engine, and a job scheduler for HPC management. The platform maintains thread-isolated workspaces with persistent SQLite state, generates Quantum ESPRESSO or VASP inputs, submits jobs locally or to cluster servers, and provides real-time monitoring with robust error handling. A modern Streamlit interface offers transparent tool visualization, streaming API responses, and an extensible registry of 37+ specialized tools for structure generation, testing, database integration, and more.",
         "project_novelty": "While there are other DFT automation workflows, we extend them by allowing literature data mining for references. We built multi-agent graphs, tools for DFT calculation, and workspace-scoped execution atop a generic agentic chat system.",
         "code_link": "https://github.com/abir0/dft-agent",
         "models_used": "Cerebras, OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "AtomBridge",
@@ -707,7 +1197,16 @@
         "project_novelty": "Several papers create workflows for generating structures from literature. However, these papers are limited to 2D systems. AtomBridge in principle can generate structures in any dimension and suggest multiple types of structures to study. ",
         "code_link": "https://github.com/dpalmer-anl/AtomBridge",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "BENZENE",
@@ -717,7 +1216,16 @@
         "project_novelty": "The VLM generates human-readable summaries of the complex chromatography analysis results, translating statistical outputs (peak locations, uncertainties, metrics) into natural language that non-experts can understand.Retry",
         "code_link": "https://github.com/SubramanyamSahoo/LLM-Hackathon-for-Applications-in-Materials-and-Chemistry-2025",
         "models_used": "Cerebras",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "chromatography_gcgc"
+            ]
+        }
     },
     {
         "team_name": "LLM-BT",
@@ -727,37 +1235,69 @@
         "project_novelty": "This work introduces a novel bilinear transduction approach where the model learns to predict properties by leveraging anchor molecule pairs rather than isolated molecular representations.",
         "code_link": "https://github.com/shijiale0609/LLM_BT_Materials",
         "models_used": "QWEN",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "drug_discovery"
+            ]
+        }
     },
     {
         "team_name": "Parse Patrol",
-        "team_members": "Nathan Daelman (Physics Department and CSMB Adlershof, Humboldt-Universit\u008at zu Berlin); Christina Etrural (Bundesanstalt f\u009fr Materialforschung und -pr\u009ffung, BAM, Berlin\n); Rubel Mozumber (Physics Department and CSMB Adlershof, Humboldt-Universit\u008at zu Berlin); Sascha Klawon (Physics Department and CSMB Adlershof, Humboldt-Universit\u008at zu Berlin); Remya Ann Mathews Kalapurakal (University of New Hampshire)",
+        "team_members": "Nathan Daelman (Physics Department and CSMB Adlershof, Humboldt-Universitt zu Berlin); Christina Etrural (Bundesanstalt fr Materialforschung und -prfung, BAM, Berlin\n); Rubel Mozumber (Physics Department and CSMB Adlershof, Humboldt-Universitt zu Berlin); Sascha Klawon (Physics Department and CSMB Adlershof, Humboldt-Universitt zu Berlin); Remya Ann Mathews Kalapurakal (University of New Hampshire)",
         "submission_link": "https://www.linkedin.com/posts/nathan-daelman-352440174_presenting-our-teams-submission-parse-patrol-activity-7372414129917071360-hNLB?utm_source=share&utm_medium=member_desktop&rcm=ACoAACla9e4BcccnRNOET52tbc6laBjv4Pu8q_0",
-        "description": "Problem: Diverse scientific communities produce materials or chemistry data in disjoint formats, even though the underlying scientific meaning is the same across communities. File conversion thus poses a burdensome\u00d1but unavoidable\u00d1task when sharing data across domains and software. Moreover, parsers are fragile and costly to maintain, as they break when input or output specifications change. Our team members' experience in large-scale data repositories, i.e. NOMAD-lab and Materials Project, backs this view up.\n\nSolution: We built a universal parser that can provide output conform with a user-defined schema and format. The parser consists of an interface for an AI agent to automatically discover hosted parsers and invoke them directly or within a script. Our interface complies with the recently developed industry standard of Model Context Protocol (MCP). This ensures immediate compatibility with state-of-the-art LLMs, IDEs, and AI-applications.\n",
+        "description": "Problem: Diverse scientific communities produce materials or chemistry data in disjoint formats, even though the underlying scientific meaning is the same across communities. File conversion thus poses a burdensomeÑbut unavoidableÑtask when sharing data across domains and software. Moreover, parsers are fragile and costly to maintain, as they break when input or output specifications change. Our team members' experience in large-scale data repositories, i.e. NOMAD-lab and Materials Project, backs this view up.\n\nSolution: We built a universal parser that can provide output conform with a user-defined schema and format. The parser consists of an interface for an AI agent to automatically discover hosted parsers and invoke them directly or within a script. Our interface complies with the recently developed industry standard of Model Context Protocol (MCP). This ensures immediate compatibility with state-of-the-art LLMs, IDEs, and AI-applications.\n",
         "project_novelty": "Combining community parsers in a cohesive, but flexible structure with ease of maintaining. The underlying MCP technology is novel, but rapidly becoming and industry standard.",
         "code_link": "https://github.com/ndaelman-hu/parse-patrol/tree/v0.0.2-beta",
         "models_used": "OpenAI, MCP is compatible with all state-of-the-art models",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "data_standardization_ontologies_parsing",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "SCALE: Scaffold Conscious Agent for Learning & Exploration",
-        "team_members": "Chandy, Sruthy (UC Berkeley, Lawrence Berkeley National Laboratory) Verma, Ashwini (CSIR\u00d0National Chemical Laboratory, India) Pandit, Vivek (Chipstack)",
+        "team_members": "Chandy, Sruthy (UC Berkeley, Lawrence Berkeley National Laboratory) Verma, Ashwini (CSIRÐNational Chemical Laboratory, India) Pandit, Vivek (Chipstack)",
         "submission_link": "https://youtu.be/k0Y7rfM3rLY",
-        "description": "SCALE: The AI Molecular Designer - Idea to custom molecules, fast!\n\nWe built an agentic molecular enhancement system that replaces traditional rule based approaches with GPT-5 reasoning. Our system features:\n\n\u00a5 LLM-Driven Design: GPT-5 agent makes strategic decisions and generates chemically-informed molecular modifications with real-time reasoning\n\u00a5 Chemosensory Focus: Specialized for flavor/fragrance molecules with odorant filters (MW: 85-250 Da, LogP: 0.5-4) and ML-based odor prediction (Random Forest, R_=0.965)  \n\u00a5 Multi-Objective Optimization: Targets QED (drug-likeness), LogP (lipophilicity), and custom odor profiles with physics-aware MMFF94 strain penalties\n\u00a5 Safety Guardrails: Automatic filtering of reactive/toxic patterns and synthetic accessibility constraints\n\nThe system combines tools like cheminformatics (RDKit), machine learning (scikit-learn), and AI agents for inverse molecular design - turning target properties into synthesizable candidates.",
+        "description": "SCALE: The AI Molecular Designer - Idea to custom molecules, fast!\n\nWe built an agentic molecular enhancement system that replaces traditional rule based approaches with GPT-5 reasoning. Our system features:\n\n¥ LLM-Driven Design: GPT-5 agent makes strategic decisions and generates chemically-informed molecular modifications with real-time reasoning\n¥ Chemosensory Focus: Specialized for flavor/fragrance molecules with odorant filters (MW: 85-250 Da, LogP: 0.5-4) and ML-based odor prediction (Random Forest, R_=0.965)  \n¥ Multi-Objective Optimization: Targets QED (drug-likeness), LogP (lipophilicity), and custom odor profiles with physics-aware MMFF94 strain penalties\n¥ Safety Guardrails: Automatic filtering of reactive/toxic patterns and synthetic accessibility constraints\n\nThe system combines tools like cheminformatics (RDKit), machine learning (scikit-learn), and AI agents for inverse molecular design - turning target properties into synthesizable candidates.",
         "project_novelty": "Extended SCALE by replacing rule based heuristics controllers with GPT-5 agents for strategic molecular design with chemical reasoning and cheminformatics tool use. Built AI molecular design for drug likeness and fragrance profile matching.",
         "code_link": "https://github.com/schandy2211/scale",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "drug_discovery",
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "ChemGraph-IR",
         "team_members": "Keceli, Murat (Argonne National Laboratory); Azmi, Abdullah (Islamic University of Technology); Monat, Jeremy; Rishi, Varun; Tallau, Kelly; Ranka, Karnamohit; Shen, Kevin (Noble AI); Lahiri, Abhiroop; Pham, Thang (Argonne National Laboratory); Giri, Sandip (IIT Kharagpur); Vazquez-Mayagoitia, Alvaro (Argonne National Laboratory)",
         "submission_link": "https://youtu.be/LLz4MXTztWA",
-        "description": "Imagine AI agents that can autonomously generate accurate infrared (IR) spectra for any molecule using cutting-edge machine learning potentials and quantum chemistry methods. Our project, ChemGraph-IR, extends the open-source ChemGraph framework to:\n\n\u00a5 Accept natural language queries describing a molecule and desired method (e.g., \u00d2calculate the IR spectrum of ethanol with xTB\u00d3), then run geometry optimization and vibrational analysis using sensible defaults or user-specified methods.\n\u00a5 Compute IR intensities, apply peak broadening, and build spectra.\n\u00a5 Offer a clean, user-friendly interface to select LLMs and quantum chemistry methods, and to view 3D molecular structures and normal mode vibrations.\n\u00a5 Gracefully handle errors by catching failed optimizations or imaginary frequencies, retrying with adjusted parameters, and reporting issues clearly.",
-        "project_novelty": "We added IR spectrum simulation\u00d1computing dipole moments, animating normal modes, and displaying spectra\u00d1plus new documentation and demo notebooks, building on ChemGraph\u00d5s name-to-SMILES and ASE-based optimization.",
+        "description": "Imagine AI agents that can autonomously generate accurate infrared (IR) spectra for any molecule using cutting-edge machine learning potentials and quantum chemistry methods. Our project, ChemGraph-IR, extends the open-source ChemGraph framework to:\n\n¥ Accept natural language queries describing a molecule and desired method (e.g., Òcalculate the IR spectrum of ethanol with xTBÓ), then run geometry optimization and vibrational analysis using sensible defaults or user-specified methods.\n¥ Compute IR intensities, apply peak broadening, and build spectra.\n¥ Offer a clean, user-friendly interface to select LLMs and quantum chemistry methods, and to view 3D molecular structures and normal mode vibrations.\n¥ Gracefully handle errors by catching failed optimizations or imaginary frequencies, retrying with adjusted parameters, and reporting issues clearly.",
+        "project_novelty": "We added IR spectrum simulationÑcomputing dipole moments, animating normal modes, and displaying spectraÑplus new documentation and demo notebooks, building on ChemGraphÕs name-to-SMILES and ASE-based optimization.",
         "code_link": "https://github.com/argonne-lcf/ChemGraph",
         "models_used": "Anthropic, Google Gemini, OpenAI, Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "spectra_ir"
+            ]
+        }
     },
     {
         "team_name": "SCARA Team 15, KFUPM ",
@@ -767,7 +1307,13 @@
         "project_novelty": "The first AI agent capable of evaluating any type of corrosion of steel alloys.",
         "code_link": "https://github.com/mo-alkubaish/SCARA",
         "models_used": "OpenAI, Hugging Face, Groq",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "AESOP",
@@ -777,57 +1323,97 @@
         "project_novelty": "We build a proof of concept of RAG as a way to make LLMs a force multiplier in materials research. Specifically, we prototype a codegen tool that uses examples and documentation to provide code suggestions to users for materials science simulations.",
         "code_link": "https://github.com/HallucinatingStrikeTeam/AESOP",
         "models_used": "Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "Tomatak Twins",
-        "team_members": "Ikram, Azed (King\u00d5s College London, Faculty of Natural, Mathematical and Engineering Sciences)\nAamer, Naafey (Lahore School of Management Sciences, School of Computer Science)",
+        "team_members": "Ikram, Azed (KingÕs College London, Faculty of Natural, Mathematical and Engineering Sciences)\nAamer, Naafey (Lahore School of Management Sciences, School of Computer Science)",
         "submission_link": "https://www.instagram.com/p/DOhXFEKiNQt/?img_index=1&igsh=d2NzeWs0ZW91NXQ0",
-        "description": "We build a digital twin for a tokamak nuclear fusion reactor using a multi agent LLM system with a unique LLM evaluation framework to choose best underlying language model for each component of our LLM system. The LLM system will automatically update the twin model\u00d5s parameters to match real sensor data, coming closer to the original data with each iteration and discourse betweeen our agents.\n\nThis framework relies on a nuclear energy domain specific evaluation to choose the best LLM, this methodology is described in our slides.",
+        "description": "We build a digital twin for a tokamak nuclear fusion reactor using a multi agent LLM system with a unique LLM evaluation framework to choose best underlying language model for each component of our LLM system. The LLM system will automatically update the twin modelÕs parameters to match real sensor data, coming closer to the original data with each iteration and discourse betweeen our agents.\n\nThis framework relies on a nuclear energy domain specific evaluation to choose the best LLM, this methodology is described in our slides.",
         "project_novelty": "The method of mapping a digital twin to real sensor data of a tomatak nuclear fusion reactor is unique. Especially one being automated with a novel LLM system",
         "code_link": "https://github.com/naafey-aamer",
         "models_used": "Anthropic, OpenAI, Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "multi_agent_frameworks_meta_agents",
+        "facets": {
+            "domain_area": [
+                "energy_storage",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "POSP",
         "team_members": "Diya Mirji(Duke University) Sharmil Nanjappa (Duke University) Tiffanydegbotse Degbotse(Duke University)",
         "submission_link": "https://youtu.be/cljjs-hbHzE",
-        "description": "Our team has built an application that teaches the user about biodegradable molecules based on the molecule composition. A molecule composition is chosen by the user. This feature set is entered into a kNN model which is trained on molecules\u00d5 composition features such as the number of halogen atoms. The model will predict if the molecule is biodegradable or not. Both the selected molecule\u00d5s features and prediction will be explained by the LLM. This LLM interprets the features into plain scientific language, suggests a plausible polymer that can match this feature profile, and expands on the biodegradability of the suggested molecule.",
-        "project_novelty": "This work impacts production analysis of materials that are biodegradable for future infrastructures, which is relevant to the UN\u00d5s SDG#12. The LLM helps to further explain the molecules feature profile and how it relates to biodegradable materials.",
+        "description": "Our team has built an application that teaches the user about biodegradable molecules based on the molecule composition. A molecule composition is chosen by the user. This feature set is entered into a kNN model which is trained on moleculesÕ composition features such as the number of halogen atoms. The model will predict if the molecule is biodegradable or not. Both the selected moleculeÕs features and prediction will be explained by the LLM. This LLM interprets the features into plain scientific language, suggests a plausible polymer that can match this feature profile, and expands on the biodegradability of the suggested molecule.",
+        "project_novelty": "This work impacts production analysis of materials that are biodegradable for future infrastructures, which is relevant to the UNÕs SDG#12. The LLM helps to further explain the molecules feature profile and how it relates to biodegradable materials.",
         "code_link": "https://github.com/dvm14/llm-hackathon-PoSP",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "RagyMaterials",
         "team_members": "Tajah Trapier, North Carolina State University\nAum Pandya, North Carolina State University\nLaila Belpalme, North Carolina State University\nRujuta Palimka, North Carolina State University\nOluwatimilehin Oluwajire, North Carolina State University\n",
         "submission_link": "https://youtu.be/D7Q2acbTzcs",
-        "description": "* RagyMaterials: a personalized RAG system for materials science\n* Converts research articles + Zotero libraries into structured JSON for semantic querying\n* Integrates an LLM + vector database for context-aware retrieval\n* Adds an internet search feature that generates optimized queries from the user\u00d5s library and returns related references in ACS citation style\n* Includes a 2D/3D molecular rendering tool for compound visualization\n* Provides a unified assistant combining personal databases, external literature, and visualization tools to accelerate discovery in materials research",
+        "description": "* RagyMaterials: a personalized RAG system for materials science\n* Converts research articles + Zotero libraries into structured JSON for semantic querying\n* Integrates an LLM + vector database for context-aware retrieval\n* Adds an internet search feature that generates optimized queries from the userÕs library and returns related references in ACS citation style\n* Includes a 2D/3D molecular rendering tool for compound visualization\n* Provides a unified assistant combining personal databases, external literature, and visualization tools to accelerate discovery in materials research",
         "project_novelty": "We extended prior RAG frameworks by tailoring them to materials science. During this hackathon, we built a personalized RAG that integrates Zotero libraries, LLM+vector DB search, internet reference retrieval, and 2D/3D molecular rendering. ",
         "code_link": "https://github.com/tajaht/ragymaterials ",
         "models_used": "Cerebras, Google Gemini, OpenAI, Llama, Crossref and OpenAlex",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Materials Design Group ",
         "team_members": "Ryan Nduma, Hyunsoo Park, Kinga Mastej - Imperial College London, Materials Design Group",
         "submission_link": "https://youtu.be/ffLqLH87yLo",
-        "description": "SKY is an LLM-powered synthesis exploration agent for inorganic materials. It performs composition- and structure-based similarity search on the Materials Project, retrieves neighbor synthesis recipes + metadata, and surfaces property/structure summaries.\n\nAn LLM merges/adapts steps from neighbors to your target formula/structure, producing a recursive search, best-guess protocol with confidence scores, parameter deltas, and citations back to sources. Sky ships with a clean CLI (sky) and a tutorial notebook; outputs both readable summaries and JSON for pipelines.\n\nGoal: accelerate hypothesis generation even when a direct recipe doesn\u00d5t exist.",
+        "description": "SKY is an LLM-powered synthesis exploration agent for inorganic materials. It performs composition- and structure-based similarity search on the Materials Project, retrieves neighbor synthesis recipes + metadata, and surfaces property/structure summaries.\n\nAn LLM merges/adapts steps from neighbors to your target formula/structure, producing a recursive search, best-guess protocol with confidence scores, parameter deltas, and citations back to sources. Sky ships with a clean CLI (sky) and a tutorial notebook; outputs both readable summaries and JSON for pipelines.\n\nGoal: accelerate hypothesis generation even when a direct recipe doesnÕt exist.",
         "project_novelty": "Builds on Materials Project+pymatgen search and prior recipe-mining. We built an agent that fuses similarity search with LLM reasoning to adapt neighbor recipes into target-specific best-guess syntheses, with confidence scores and citations.",
         "code_link": "https://github.com/hspark1212/synthesis-agent",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "synthesis_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "V-RAPIDS",
         "team_members": "Rodrigo Pires Ferreira (University of Chicago)\nRui Ding (University of Chicago)",
         "submission_link": "https://drive.google.com/file/d/1-1UgbwHlaGywGzULDFuHZKQVqygZTn7P/view?usp=sharing",
-        "description": "V-RAPIDS enables rapid pre-screening of molecule\u00d0surface pairs for sensing and materials discovery, minimizing dependence on slow, expensive simulations. Given a probe and a surface, it constructs the system and uses a machine-learned potential to estimate adsorption strength. Because surrogate models and setup choices can diverge from experiment or high-level theory, we add a literature-grounded mixture-of-experts (MoE) validator: candidate papers are retrieved, multiple LLMs (OpenAI, Grok, Anthropic, Gemini) extract per-molecule adsorption energies, normalize them to eV with a consistent sign convention, and a robust consensus is formed after sanity filtering. Decisions follow: GREEN (agreement): accept; YELLOW (minor discrepancy): resample and re-run; RED (major discrepancy): escalate to higher-fidelity calculations or experiments. Future work: stronger unit/sign safeguards, broader sources, citation de-duplication, per-surface calibrations, logging, and active learning.",
+        "description": "V-RAPIDS enables rapid pre-screening of moleculeÐsurface pairs for sensing and materials discovery, minimizing dependence on slow, expensive simulations. Given a probe and a surface, it constructs the system and uses a machine-learned potential to estimate adsorption strength. Because surrogate models and setup choices can diverge from experiment or high-level theory, we add a literature-grounded mixture-of-experts (MoE) validator: candidate papers are retrieved, multiple LLMs (OpenAI, Grok, Anthropic, Gemini) extract per-molecule adsorption energies, normalize them to eV with a consistent sign convention, and a robust consensus is formed after sanity filtering. Decisions follow: GREEN (agreement): accept; YELLOW (minor discrepancy): resample and re-run; RED (major discrepancy): escalate to higher-fidelity calculations or experiments. Future work: stronger unit/sign safeguards, broader sources, citation de-duplication, per-surface calibrations, logging, and active learning.",
         "project_novelty": "Fixed some minor bugs in the UMA API call and implemented the LLM calls + mixture of experts + validation against UMA from scratch.",
         "code_link": "https://github.com/rpf00/vrapids",
         "models_used": "Anthropic, Google Gemini, OpenAI, Hugging Face, Grok, UMA (Meta)",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "ReaSafe",
@@ -837,7 +1423,13 @@
         "project_novelty": "We combined RAG with chemical reaction risk analysis to create an interactive AI assistant for safer lab work. During the hackathon we built the RAG pipeline, integrated it with a local LLM, and developed a Streamlit-based interface for real-time use",
         "code_link": "",
         "models_used": "Google Gemini, OpenAI, Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "safety_compliance_green_chem",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "The Featurizers",
@@ -847,7 +1439,13 @@
         "project_novelty": "We believe that our application is the first automatic machine learning pipeline that leverages LLMs to construct physics-informed features through reference to data and publication.",
         "code_link": "https://github.com/guannant/LLM_auto_featurization",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "PolyPredictor",
@@ -857,17 +1455,30 @@
         "project_novelty": "Everything was build during this hackathon",
         "code_link": "https://github.com/554181320angela-lang/Poly-predictor.git",
         "models_used": "OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "polymers"
+            ]
+        }
     },
     {
         "team_name": "GoldKnowledge Retrievers",
         "team_members": "Amro Aswad (UofT), Sartaaj Takrim Khan (UofT), Thomas Pruyn (UofT), Erin Wong (UofT), Andrew Yi (UofT), Tobias Deacon (True North Materials), Seyed Mohamad Moosavi (UofT)",
         "submission_link": "https://youtu.be/IAy1A2JWRWI",
-        "description": "While RAG helps reduce hallucination and extend domain knowledge, it does not enable global reasoning across scientific literature \u00d0 essential for scientific discovery. Our work develops an agent that uses GraphRAG over a knowledge graph as a global field representation (in our case, MOFs), enabling reasoning across literature. In addition to standard tools, the agent is equipped with a GraphRAG tool that interfaces with a knowledge graph. Using GraphRAG as a tool, the data is summarized in communities in hierarchies, from coarse to detailed information. The agent then uses the retrieved communities to provide a robust answer. We demonstrate a use case where GPT-5 totally hallucinates a response to a domain related question on MOFs, while our agent provides a correct answer based on global  scientific reasoning. Our work enables materials research with agentic AI, augmented with factual data from literature, and reasoned globally.",
+        "description": "While RAG helps reduce hallucination and extend domain knowledge, it does not enable global reasoning across scientific literature Ð essential for scientific discovery. Our work develops an agent that uses GraphRAG over a knowledge graph as a global field representation (in our case, MOFs), enabling reasoning across literature. In addition to standard tools, the agent is equipped with a GraphRAG tool that interfaces with a knowledge graph. Using GraphRAG as a tool, the data is summarized in communities in hierarchies, from coarse to detailed information. The agent then uses the retrieved communities to provide a robust answer. We demonstrate a use case where GPT-5 totally hallucinates a response to a domain related question on MOFs, while our agent provides a correct answer based on global  scientific reasoning. Our work enables materials research with agentic AI, augmented with factual data from literature, and reasoned globally.",
         "project_novelty": "- Global reasoning using GraphRAG\n- Knowledge graph as long-term memory of an agent\n- Agentic response with GraphRAG+LLM",
         "code_link": "https://github.com/AI4ChemS/ChemUnityQA",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "knowledge_graphs_graphrag",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "mofs"
+            ]
+        }
     },
     {
         "team_name": "CryoSensor",
@@ -877,7 +1488,13 @@
         "project_novelty": "It is a specific, multi-layered approach to applying Large Language Models (LLMs) in a highly specialized industrial context.",
         "code_link": "github.com/Hassan-Alsayoud/cryosensor",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "Amalgam-NCSU",
@@ -887,7 +1504,14 @@
         "project_novelty": "Leveraging established computational chemistry tools, we built a novel, agent-guided workflow that automates the entire molecular simulation pipeline, including programmatic file generation and integrated analysis and visualization.",
         "code_link": "https://github.com/devanshu-777/PackSynth",
         "models_used": "Google Gemini, Hugging Face, Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "polymers"
+            ]
+        }
     },
     {
         "team_name": "HEA query",
@@ -897,67 +1521,119 @@
         "project_novelty": "Built HEA Query, a Gradio app uniting HEA dataset + literature with LLM-powered search for alloy properties and scientific context. ",
         "code_link": "https://github.com/staradutt/HEAquery",
         "models_used": "Hugging Face, Mistral",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Team Alloyed Minds",
         "team_members": "Qazi, Mohammad Aatif (University of Alberta) \nQazi, Mohammad Areeb (Mohamed bin Zayed University of Artificial Intelligence)",
         "submission_link": "https://youtu.be/KVANi3qA95Y",
-        "description": "We built MaterEase \u00d0 an AI-powered, open-source assistant for materials science, starting with high-entropy alloys (HEAs). MaterEase enables researchers, students, and professionals to:\n\n- Query in natural language to retrieve HEAs with specific properties (e.g., hardness, microstructure, yield strength, processing method).\n\n- Compare and visualize results through interactive plots for faster insights.\n\n- Access references directly, ensuring transparency and traceability.\n\n- Contribute to an open dataset, by downloading and adding new HEA and other materials  compositions and properties to grow community resources.\n\nBy integrating LLMs with domain data, MaterEase reduces the time spent searching through scattered sources and empowers users to focus on discovery\u00caand\u00cainnovation.",
-        "project_novelty": "This work builds on prior research in high-entropy alloys and open materials datasets. During the hackathon, we developed MaterEase, an open-source LLM-powered tool for querying, visualizing, and sourcing HEA properties\u00cainteractively.",
+        "description": "We built MaterEase Ð an AI-powered, open-source assistant for materials science, starting with high-entropy alloys (HEAs). MaterEase enables researchers, students, and professionals to:\n\n- Query in natural language to retrieve HEAs with specific properties (e.g., hardness, microstructure, yield strength, processing method).\n\n- Compare and visualize results through interactive plots for faster insights.\n\n- Access references directly, ensuring transparency and traceability.\n\n- Contribute to an open dataset, by downloading and adding new HEA and other materials  compositions and properties to grow community resources.\n\nBy integrating LLMs with domain data, MaterEase reduces the time spent searching through scattered sources and empowers users to focus on discoveryÊandÊinnovation.",
+        "project_novelty": "This work builds on prior research in high-entropy alloys and open materials datasets. During the hackathon, we developed MaterEase, an open-source LLM-powered tool for querying, visualizing, and sourcing HEA propertiesÊinteractively.",
         "code_link": "https://github.com/Areeb2735/MaterEase-Your-AI-Powered-Materials-Science-Assistant",
         "models_used": "Google Gemini, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Best Team",
         "team_members": "Arthur da Silva Sousa Santos, Remya, Vallabh Vasudevan, Robert Robinson, Maryam Ghaddran, Tim, Elena Stojanovska, Lucas Rodrigues, Adeel Atta, Uzair Khan.",
         "submission_link": "https://youtu.be/wlbnUKJ7t1s",
-        "description": "The main challenge in applying machine-learning techniques to advanced materials is data scarcity. To address this, our team developed a complete LLM-based workflow. We built the \u00d2Forja de Materia AI\u00d3 solution, which can be configured to use a wide variety of LLMs to extract information of interest from pappers. Second, we tested LLMs\u00d5 ability to generate advanced-materials databases. We created high-entropy oxide datasets using GPT-OSS-120B and Mistral, with GPT-OSS-120B achieving an impressive score of 24/25 correct. We generated carbon-based materials datasets, where Gemma 3 outperformed GPT-OSS-20B.We trained models with scikit-learn; these models achieved high accuracies on the generated datasets\u00d1reaching 87% on the GPT-OSS-120B-derived set\u00d1and even the lowest-quality dataset yielded 79% accuracy with shallow learners. We also trained more complex models using PyTorch and other frameworks, which delivered higher accuracies even on datasets generated by older LLMs. ",
+        "description": "The main challenge in applying machine-learning techniques to advanced materials is data scarcity. To address this, our team developed a complete LLM-based workflow. We built the ÒForja de Materia AIÓ solution, which can be configured to use a wide variety of LLMs to extract information of interest from pappers. Second, we tested LLMsÕ ability to generate advanced-materials databases. We created high-entropy oxide datasets using GPT-OSS-120B and Mistral, with GPT-OSS-120B achieving an impressive score of 24/25 correct. We generated carbon-based materials datasets, where Gemma 3 outperformed GPT-OSS-20B.We trained models with scikit-learn; these models achieved high accuracies on the generated datasetsÑreaching 87% on the GPT-OSS-120B-derived setÑand even the lowest-quality dataset yielded 79% accuracy with shallow learners. We also trained more complex models using PyTorch and other frameworks, which delivered higher accuracies even on datasets generated by older LLMs. ",
         "project_novelty": "Novelty: We have developed a new LLM-based workflow to overcome the biggest existing challenge in applying machine learning to the field of advanced materials. Was built during the hackaton: AI agents, new datasets, LLMs evaluation, ML models.",
         "code_link": "https://github.com/Arthurns16/hacktoon2025",
         "models_used": "Google Gemini, OpenAI, Hugging Face, Mistral",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "benchmarks_evaluation_datasets",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "MixSense",
-        "team_members": "Jesus Diaz Sanchez (MIT), Katharina J\u008ager (MIT), Kevin Greenman (CatholicTech), Lucia\nVina Lopez (MIT), Magdalena Lederbauer (MIT), Mrigi Munjal (MIT), Sathya Edamadaka (MIT), Tatem Rios_ (MIT)",
+        "team_members": "Jesus Diaz Sanchez (MIT), Katharina Jger (MIT), Kevin Greenman (CatholicTech), Lucia\nVina Lopez (MIT), Magdalena Lederbauer (MIT), Mrigi Munjal (MIT), Sathya Edamadaka (MIT), Tatem Rios_ (MIT)",
         "submission_link": "https://www.linkedin.com/posts/jesus-diaz-sanchez-b7603a188_excited-to-share-our-project-from-the-llm-activity-7372418093496774656-B3FF?utm_source=share&utm_medium=member_desktop&rcm=ACoAACwkvQoB4NVBr6w6GYdn4jEEjFx5pYoR20o",
         "description": "To create an autonomous LLM agent for analytical chemistry for quantitative structure elucidation from _H NMR that rapidly identifies compounds in a mixture and flavor prediction of compounds \n-User Input: The product mixture's NMR spectrum (in csv or tsv format, as time series or not) and the chemical names of the compounds in reactants; SMILES for the flavor prediction\n-Key Features:\n-Automatically predicts potential reaction products from the starting material and retrieves reference spectra\n-Simulates novel NMR spectra for individual compounds that are not in the library\n-Deconvolutes NMR spectrum of mixture into its components\n-Quantifies compounds for guided hypothesis of chemical reaction development or discovery \n-Prediction of flavor of the individual compounds given input SMILES string\n-Output: Provides the precise molar composition of the mixture, fully automating reaction yield and purity analysis; Gives output of the flavor profile for flavor tasks along with confidence ",
         "project_novelty": "By predicting products and simulating their spectra on-the-fly, our tool bypasses manual isolation, purification, and peak integration, providing the composition of mixtures instantly from raw data and making quantitative NMR easy for any chemist.",
         "code_link": "https://github.com/jdsanc/LLMHackathon/tree/main",
         "models_used": "OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "timeseries",
+                "graphs_plots"
+            ]
+        }
     },
     {
         "team_name": "SDLsmart",
         "team_members": "Ivory Zhang (UBC, Acceleration Consortium)\nMaria Politi (UBC, Acceleration Consortium)\nMahtab Zehtab (UBC)",
         "submission_link": "https://youtu.be/28x8_QEI8KQ",
-        "description": "In this hackathon, we leveraged the existing IvoryOS MCP server to reimplement workflow iteration with real-time visualization with an existing platform, including two independent substations:\n\n- Liquid\u00d0Liquid Extraction \n- Crystallization/Purification\n\nBoth substations are independently operated but share common instruments such as balance and HPLC. Traditionally, these stations need additional engine or script for iteration or optimization capabilities.\n\nBy installing IvoryOS and setting up the MCP server in Claude Desktop, we demonstrated:\n\n- Design an Experiment on the fly: call an operation and completed a solubility workflow.\n\n- Design a closed-loop Optimization: prompting LLM for instructions of designing a closed-loop experiment and build an experiment in natural language.\n\n- A Live Visualization Dashboard: prompting for real-time data during execution and prompting for plotting the current data to monitor experiments on the fly.\n",
+        "description": "In this hackathon, we leveraged the existing IvoryOS MCP server to reimplement workflow iteration with real-time visualization with an existing platform, including two independent substations:\n\n- LiquidÐLiquid Extraction \n- Crystallization/Purification\n\nBoth substations are independently operated but share common instruments such as balance and HPLC. Traditionally, these stations need additional engine or script for iteration or optimization capabilities.\n\nBy installing IvoryOS and setting up the MCP server in Claude Desktop, we demonstrated:\n\n- Design an Experiment on the fly: call an operation and completed a solubility workflow.\n\n- Design a closed-loop Optimization: prompting LLM for instructions of designing a closed-loop experiment and build an experiment in natural language.\n\n- A Live Visualization Dashboard: prompting for real-time data during execution and prompting for plotting the current data to monitor experiments on the fly.\n",
         "project_novelty": "We leveraged the existing IvoryOS MCP server, enabling \"Self-Driving\" on a robotic platform. We designed a solubility workflow and an optimization workflow via LLM and leveraged the Claude Artifacts to visualize experiment data interactively.",
         "code_link": "https://gitlab.com/heingroup/llm-hackathon-2025",
         "models_used": "Anthropic",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "self_driving_labs",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "teamDOS",
         "team_members": "Ankita Biswas (UVA), Suvo Banik (ANL), Collin Kovacs (UT), Huanhuan Zhao (UT)",
         "submission_link": "https://github.com/ckovacs2/LLMHackathon/tree/main",
-        "description": "For a given structure, the agent will generate a hypothesis explaining how certain structural features contribute to the specific characteristics of the material\u00d5s density of states (DOS).",
+        "description": "For a given structure, the agent will generate a hypothesis explaining how certain structural features contribute to the specific characteristics of the materialÕs density of states (DOS).",
         "project_novelty": "This work is inspired by ",
         "code_link": "",
         "models_used": "Google Gemini, OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "SpectroBot",
-        "team_members": "Uzair, Mohammad (King Fahd University of Petroleum and Minerals, Department of Bioengineering)\nTariq, Ans Bin (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nSaliya, Thahira (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nSiddiqua, Ayesha (King Fahd University of Petroleum and Minerals, Department of Chemistry) \nAllah Baksh, Shakira (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nAslam, Muhammad (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nMufti, Muhammad (King Fahd University of Petroleum and Minerals, Department of Information and Computer Science)\nAthar, Mohammad (Quaid-e-Azam University, Department of Chemistry)\nImran, Mohammed (Zoom Video Communications,\u00caInc.,\u00caUS)",
+        "team_members": "Uzair, Mohammad (King Fahd University of Petroleum and Minerals, Department of Bioengineering)\nTariq, Ans Bin (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nSaliya, Thahira (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nSiddiqua, Ayesha (King Fahd University of Petroleum and Minerals, Department of Chemistry) \nAllah Baksh, Shakira (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nAslam, Muhammad (King Fahd University of Petroleum and Minerals, Department of Chemistry)\nMufti, Muhammad (King Fahd University of Petroleum and Minerals, Department of Information and Computer Science)\nAthar, Mohammad (Quaid-e-Azam University, Department of Chemistry)\nImran, Mohammed (Zoom Video Communications,ÊInc.,ÊUS)",
         "submission_link": "https://www.linkedin.com/posts/muzair20_llmhackathon-materialsscience-chemistry-activity-7372418341660942336-Gvh3?utm_source=share&utm_medium=member_desktop&rcm=ACoAADqnv8cBtLT2t59cZvxfWXOsiq-2S40xtXY",
-        "description": "1. SpectroBot converts raw FTIR and UV\u00d0Vis .csv files into noise-free reports in minutes.\n2. A user uploads data and gets accurate plots and a downloadable .pdf file. \n3. Our tool provides a clear, lab-ready interpretation that identifies functional groups and quantifies absorbance, citing literature and spectrum libraries. \n4. An integrated LLM model lets users ask focused follow-ups about their spectrum they just generated. \n5. This tool compresses hours of manual analysis into seconds, standardizes reporting, and delivers accurate results.\n",
+        "description": "1. SpectroBot converts raw FTIR and UVÐVis .csv files into noise-free reports in minutes.\n2. A user uploads data and gets accurate plots and a downloadable .pdf file. \n3. Our tool provides a clear, lab-ready interpretation that identifies functional groups and quantifies absorbance, citing literature and spectrum libraries. \n4. An integrated LLM model lets users ask focused follow-ups about their spectrum they just generated. \n5. This tool compresses hours of manual analysis into seconds, standardizes reporting, and delivers accurate results.\n",
         "project_novelty": "Previous work only demonstrated raw data visualization. SpectroBot provides a quick and concise, citation-anchored interpretation along with visualization, integrated with a built-in chatbot for further inquiry of the analyzed data.",
         "code_link": "https://spectrobot.streamlit.app/",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "spectra_ir",
+                "spectra_uvvis"
+            ]
+        }
     },
     {
         "team_name": "AgentHackers",
@@ -967,17 +1643,32 @@
         "project_novelty": "Built on our plate-aware, high-throughput PL tooling. During the hackathon we created SpecTopus: an LLM-guided, fully automated peak-fitting + QC agent with live plots, smart retries, and structured outputs for self-driving labs.",
         "code_link": "https://github.com/SLKS99/SpecTopus",
         "models_used": "Google Gemini, OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ],
+            "modality": [
+                "spectra_pl"
+            ]
+        }
     },
     {
         "team_name": "VASPilot",
         "team_members": "Parida, Chiku (Technical University of Denmark - DTU); Aggarwal, Savyasanchi (University College London); Roy, Diptendu (Technical University of Denmark - DTU); Li, Bingcan ( University of Cambridge); Petersen, H., Martin (Technical University of Denmark - DTU); Low, Andre (Nanyang Technical University - NTU)",
         "submission_link": "https://www.linkedin.com/posts/diptendu-roy-bab284226_ai-materialsscience-hackathon-activity-7372418332953763840-b4xm?utm_source=share&utm_medium=member_android&rcm=ACoAADijIbMBCms1anaYSUJ0BD8IlKyCneYuCPk",
         "description": "VASPilot is an innovative LLM-powered assistant designed to revolutionize materials simulations. It uniquely combines graph-based embeddings with textual encoding of VASP input files to deliver fast, reliable predictions, even for out-of-distribution structures. By leveraging a precomputed RAG database, it performs advanced similarity searches across structure, composition, and INCAR settings, offering actionable guidance to improve calculations. Users can visualize and interact with their structures and nearest neighbors, gaining deep, intuitive insights. Currently, VASPilot predicts bandgaps using a non-hallucinated multi-headed regression model, achieving R_ > 0.85 on stratified splits, with easy extensibility to other properties. By streamlining convergence testing, providing interpretable feedback, and accelerating property estimation, VASPilot can empowers researchers to conduct high-throughput simulations to explore novel compounds with speed, efficiency, and accessibility.",
-        "project_novelty": "This work extends prior materials simulation tools by combining graph and text embeddings with RAG for accurate predictions. During the hackathon, we built VASPilot\u00d5s RAG database, similarity search, and bandgap prediction pipeline.",
+        "project_novelty": "This work extends prior materials simulation tools by combining graph and text embeddings with RAG for accurate predictions. During the hackathon, we built VASPilotÕs RAG database, similarity search, and bandgap prediction pipeline.",
         "code_link": "https://github.com/chiku-parida/VASPilot",
         "models_used": "OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "AssemblAI",
@@ -987,7 +1678,13 @@
         "project_novelty": "AssemblAI uses an LLM to streamline peptide self-assembly protocol design by retrieving and ranking scientific literature. The hackathon built an AI to predict and validate experimental conditions, dramatically cutting research time.",
         "code_link": "https://github.com/ndharms/peptide-agent",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "synthesis_design",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "CrystalGen",
@@ -997,7 +1694,13 @@
         "project_novelty": "GPT-OSS for material generation",
         "code_link": "",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "AtomicShorts",
@@ -1007,27 +1710,47 @@
         "project_novelty": "Existing prompt-to-video applications are expensive, not iterative, struggle with materials science-specific elements, and do not involve a validation step. We built this entire agentic pipeline addressing these challenges during this hackathon. ",
         "code_link": "https://github.com/vrindaasomjit/atomic-shorts",
         "models_used": "Google Gemini, OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "novel_ux_communication_experience",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "Catalyze",
         "team_members": "Srusti Sain, Samanvya Tripathi",
         "submission_link": "https://vimeo.com/1118263550?share=copy",
-        "description": "Catalyze is an AI-powered chemistry assistant that streamlines research, protocol generation, lab automation, and safety analysis. Built with a multi-agent architecture, it features specialized agents for research, protocols, automation, and safety, all integrated with chemical databases like ChEMBL and PubChem. Catalyze can analyze PDFs, extract insights, and generate step-by-step experimental protocols with built-in hazard assessments. It also automates experiments by generating validated code for both OpenTrons (Python) and Lynx (C#) platforms. With a modern UI, real-time processing, and safety-first design, Catalyze accelerates discovery while ensuring rigor and compliance\u00d1empowering researchers, students, and labs to work faster, safer, and smarter.",
+        "description": "Catalyze is an AI-powered chemistry assistant that streamlines research, protocol generation, lab automation, and safety analysis. Built with a multi-agent architecture, it features specialized agents for research, protocols, automation, and safety, all integrated with chemical databases like ChEMBL and PubChem. Catalyze can analyze PDFs, extract insights, and generate step-by-step experimental protocols with built-in hazard assessments. It also automates experiments by generating validated code for both OpenTrons (Python) and Lynx (C#) platforms. With a modern UI, real-time processing, and safety-first design, Catalyze accelerates discovery while ensuring rigor and complianceÑempowering researchers, students, and labs to work faster, safer, and smarter.",
         "project_novelty": "Catalyze builds on AI research tools and ChEMBL, adding multi-agent design, PDF analysis, and dual lab automation. At the hackathon, we built the agent system, safety module, and automation integration.",
         "code_link": "https://github.com/srustisain/mit-catalyze",
         "models_used": "Cerebras, OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "self_driving_labs",
+        "facets": {
+            "domain_area": [
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "MatGen",
         "team_members": "Althagafi, Alsaigh, Ben Mansour, Syed, Mezghani (King Fahd University of Petroleum and Minerals)",
         "submission_link": "https://www.youtube.com/watch?v=4tZKNjpP840&feature=youtu.be",
-        "description": "We built a fully integrated MATLAB plugin that embeds an agentic LLM to streamline researchers\u00d5 workflows. It uses open-source LLMs via LangChain (with an easy switch to API models) and ships a suite of research tools, enabling natural-language control of complex code\u00d1no Python expertise required.",
+        "description": "We built a fully integrated MATLAB plugin that embeds an agentic LLM to streamline researchersÕ workflows. It uses open-source LLMs via LangChain (with an easy switch to API models) and ships a suite of research tools, enabling natural-language control of complex codeÑno Python expertise required.",
         "project_novelty": "Integrates an agentic workflow with existing scientific software to enhance both. Enables users to access capabilities they previously lacked, using natural language via agentic frameworks to accomplish tasks.",
         "code_link": "",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     },
     {
         "team_name": "PhaseDiag Agents",
@@ -1037,7 +1760,13 @@
         "project_novelty": "Entirely built during the hackathon.",
         "code_link": "https://github.com/Jverduzc/maps",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Team AgentLearn",
@@ -1047,7 +1776,14 @@
         "project_novelty": "We built an agentic orchestration system to automate the retrain process, and we built multiple tools, including RAG lookup system for the LLM to view, search related molecules in the dataset. A model to predict aromatic is also built to demostrate.",
         "code_link": "https://github.com/tonylifepix/AgentLearn",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "chemistry",
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "Quantumania AI",
@@ -1057,17 +1793,34 @@
         "project_novelty": "Leveraging public datasets and LLMs, we built a novel RAG pipeline and full-stack app during this hackathon to make complex food chemistry instantly accessible and understandable.",
         "code_link": "https://github.com/uk89564522-rgb/FoodChem_AI",
         "models_used": "Google Gemini",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "analytical_chemistry",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "XAScribe",
         "team_members": "Bill Zheng (University of Chicago), Matthew Miyagishima (University of Chicago), Rahul Mallela (University of Chicago), Shakul Pathak (Massachusetts Institute of Technology), Tim Greitemeier (University of Chicago), Yiming Chen (Argonne National Laboratory)",
         "submission_link": "https://youtu.be/E2KHzhEcL8c",
-        "description": "XAScribe makes a spectroscopist\u00d5s work easier than ever. It takes in X-ray absorption spectroscopy (XAS) data and generates manuscript-ready analysis. Users upload spectra and provide experimental conditions through a simple chat interface. The pipeline standardizes raw spectra, applies a random forest model to predict oxidation states and bond lengths, and highlights the most influential features. These outputs are combined with a retrieval-augmented generation (RAG) system that pulls relevant examples from literature. Finally, a large language model interprets the predictions and key features, integrates user input and references, and produces clear, manuscript-ready scientific insights\u00d1making spectroscopic analysis more efficient and more accessible.",
+        "description": "XAScribe makes a spectroscopistÕs work easier than ever. It takes in X-ray absorption spectroscopy (XAS) data and generates manuscript-ready analysis. Users upload spectra and provide experimental conditions through a simple chat interface. The pipeline standardizes raw spectra, applies a random forest model to predict oxidation states and bond lengths, and highlights the most influential features. These outputs are combined with a retrieval-augmented generation (RAG) system that pulls relevant examples from literature. Finally, a large language model interprets the predictions and key features, integrates user input and references, and produces clear, manuscript-ready scientific insightsÑmaking spectroscopic analysis more efficient and more accessible.",
         "project_novelty": "XAScribe builds on open XAS database by integrating random forest predictions with RAG and LLMs. During the hackathon, we built an end-to-end pipeline that standardizes spectra, predicts key metrics, and auto-generates manuscript-ready analysis.",
         "code_link": "https://xascribe-mqr9ykb3xgrabj4msihmvx.streamlit.app/",
         "models_used": "Google Gemini, Hugging Face",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "spectra_xas"
+            ]
+        }
     },
     {
         "team_name": "OntoKG",
@@ -1077,7 +1830,13 @@
         "project_novelty": "This work builds on MatKG advances by implementing a complete LLM-KG integration system. The prototype demonstrates automated hypothesis generation, validation pipeline, and successful expansion of 821+ material relationships.",
         "code_link": "",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "knowledge_graphs_graphrag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MINT LLM",
@@ -1087,27 +1846,45 @@
         "project_novelty": "We developed an LLM backed interactive toolkit to analyze MD simulation trajectories for soft matter systems.",
         "code_link": "https://github.com/ncsu-llm-hackathon-materials-2025/MINT-LLM",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MuMMIE",
         "team_members": "Abhijeet Gangan (UCLA), Defne Circi(Duke University), Shashank Kushwaha(UIUC), Mohd Zaki (JHU)",
         "submission_link": "bit.ly/mummie_video",
-        "description": "We developed a workflow for multilingual patent information extraction in materials science, with a focus on glass compositions and their properties. Unlike recent scientific articles, patent PDFs are far more challenging\u00d1often noisy, inconsistent, and messy in formatting.\n \nOur pipeline first converts these patents into structured text, followed by entity and relation extraction to capture composition\u00d0property pairs. To rigorously evaluate performance, we created a new benchmark dataset spanning five languages, reflecting the underexplored challenge of non-English patent literature where data scarcity is significant.\n \nWe then compared multiple models using a tailored evaluation metric, revealing strengths and limitations in handling noisy multilingual inputs. This benchmark provides a foundation for advancing robust, cross-lingual scientific information extraction from patents which is a critical step toward building more inclusive and comprehensive materials databases.",
+        "description": "We developed a workflow for multilingual patent information extraction in materials science, with a focus on glass compositions and their properties. Unlike recent scientific articles, patent PDFs are far more challengingÑoften noisy, inconsistent, and messy in formatting.\n \nOur pipeline first converts these patents into structured text, followed by entity and relation extraction to capture compositionÐproperty pairs. To rigorously evaluate performance, we created a new benchmark dataset spanning five languages, reflecting the underexplored challenge of non-English patent literature where data scarcity is significant.\n \nWe then compared multiple models using a tailored evaluation metric, revealing strengths and limitations in handling noisy multilingual inputs. This benchmark provides a foundation for advancing robust, cross-lingual scientific information extraction from patents which is a critical step toward building more inclusive and comprehensive materials databases.",
         "project_novelty": "We used the gold annotations from the sciglass database and built the llm based pipeline during the hackathon",
         "code_link": "https://github.com/zakidotai/MuMMIE",
         "models_used": "Cerebras",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "L.A.R.A",
         "team_members": "Prakul Pandit, Sugan kanagasenthinathan, Hemangi Patel\n\nInstitute for Frontier Materials on Earth and in Space, German Aerospace Center, Cologne, Germany",
         "submission_link": "https://www.linkedin.com/posts/prakul-pandit_materialsscience-ai-llm-activity-7372423584650117120-ZKqo?utm_source=share&utm_medium=member_desktop&rcm=ACoAABZPvNkBI_r8zUl9kYIaZhFjvbTR2zdnVI4",
-        "description": "We are building L.A.R.A, the first aerogel-specific foundation model, designed for researchers\u00d1especially chemists\u00d1to bridge the skill gap between experimental science and computational methods. L.A.R.A understands aerogels through fine-tuning on domain literature, accesses and summarizes relevant papers from arXiv, and can run molecular dynamics simulations without requiring coding expertise. It integrates knowledge graphs to organize insights, generate hypotheses, and suggest novel aerogel designs, empowering researchers to accelerate discovery and innovation in this complex material domain.",
+        "description": "We are building L.A.R.A, the first aerogel-specific foundation model, designed for researchersÑespecially chemistsÑto bridge the skill gap between experimental science and computational methods. L.A.R.A understands aerogels through fine-tuning on domain literature, accesses and summarizes relevant papers from arXiv, and can run molecular dynamics simulations without requiring coding expertise. It integrates knowledge graphs to organize insights, generate hypotheses, and suggest novel aerogel designs, empowering researchers to accelerate discovery and innovation in this complex material domain.",
         "project_novelty": "In the hackathon we built on existing Llamat materials model, fine-tuned it on 200 aerogel papers, and linked it with MatKG for hypothesis generation. We added RAG search for papers, image segmentation, and a no-code cloud client for simulations.",
         "code_link": "https://github.com/sugannathan/L.A.R.A-LLMs-as-Aerogel-Research-Assistants",
         "models_used": "Hugging Face, also finetuned a model which cna be run locally",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "literature_mining_rag",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MAGE Team",
@@ -1117,27 +1894,46 @@
         "project_novelty": "We fine-tuned a unified model and wrapped it in an agentic framework that enables both forward property prediction (from composition/structure) and inverse design (generating structures for targeted properties).",
         "code_link": "https://github.com/truptimohanty/MAGE",
         "models_used": "Google Gemini, Mistral",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "MindMesh",
-        "team_members": "Goulet, Maxime (Universit\u008e de Montr\u008eal, D\u008epartement de chimie)\nZidani, Ramzi (Universit\u008e de Montr\u008eal, D\u008epartement de chimie)\nVazquez, Estefania (McGill University, Department of software engineering)\nDavy, Thomas (Universit\u008e de Montr\u008eal, D\u008epartement de psychologie)",
+        "team_members": "Goulet, Maxime (Universit de Montral, Dpartement de chimie)\nZidani, Ramzi (Universit de Montral, Dpartement de chimie)\nVazquez, Estefania (McGill University, Department of software engineering)\nDavy, Thomas (Universit de Montral, Dpartement de psychologie)",
         "submission_link": "https://www.youtube.com/watch?v=DrTtngWxNMY",
-        "description": "We built MindMesh, a system that creates personalized AI learning agents designed to reduce friction in multidisciplinary collaboration. Too often, we\u00d5ve struggled in projects where each teammate brings expertise from different fields, but explaining concepts to one another takes more time than solving the actual problem. To address this, we designed a questionnaire that captures both a person\u00d5s knowledge profile (background, strengths, comfort with math, coding, or scientific domains) and their learning profile (how they best absorb information, analogies, equations, or direct explanations). From these profiles, we generate an AI agent that adapts communication to their style. Our prototype demonstrates this process with a front-facing chat interface for personalized interaction. While our goal is a \u00d2mother agent\u00d3 to connect all these agents and summarize progress across collaborators, our current build already shows how tailored AI can accelerate mutual understanding.",
-        "project_novelty": "Built on advances in personalized AI and context-driven prompting. During the hackathon, we built a system that generates learner profiles via a questionnaire and creates tailored AI agents that adapt explanations to each user\u00d5s learning style.",
+        "description": "We built MindMesh, a system that creates personalized AI learning agents designed to reduce friction in multidisciplinary collaboration. Too often, weÕve struggled in projects where each teammate brings expertise from different fields, but explaining concepts to one another takes more time than solving the actual problem. To address this, we designed a questionnaire that captures both a personÕs knowledge profile (background, strengths, comfort with math, coding, or scientific domains) and their learning profile (how they best absorb information, analogies, equations, or direct explanations). From these profiles, we generate an AI agent that adapts communication to their style. Our prototype demonstrates this process with a front-facing chat interface for personalized interaction. While our goal is a Òmother agentÓ to connect all these agents and summarize progress across collaborators, our current build already shows how tailored AI can accelerate mutual understanding.",
+        "project_novelty": "Built on advances in personalized AI and context-driven prompting. During the hackathon, we built a system that generates learner profiles via a questionnaire and creates tailored AI agents that adapt explanations to each userÕs learning style.",
         "code_link": "https://github.com/estefaniavazquez/MindMesh/tree/main",
         "models_used": "Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "education_elns_notetaking_training",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "teamDOS",
         "team_members": "Ankita Biswas (UVA), Suvo Banik (ANL), Collin Kovacs (UT), Huanhuan Zhao (UT)",
         "submission_link": "https://github.com/ckovacs2/LLMHackathon/tree/main",
-        "description": "For a given structure, the agent will generate a hypothesis explaining how certain structural features contribute to the specific characteristics of the material\u00d5s density of states (DOS).",
-        "project_novelty": "Inspired by last year\u00d5s \u00d4Learning LOBSTERs\u00d5, we focused on DOS at the Fermi level\u00d1a key driver of conductivity, magnetism, and superconductivity. Rapid DOS screening is vital to accelerate materials design and discovery.",
+        "description": "For a given structure, the agent will generate a hypothesis explaining how certain structural features contribute to the specific characteristics of the materialÕs density of states (DOS).",
+        "project_novelty": "Inspired by last yearÕs ÔLearning LOBSTERsÕ, we focused on DOS at the Fermi levelÑa key driver of conductivity, magnetism, and superconductivity. Rapid DOS screening is vital to accelerate materials design and discovery.",
         "code_link": "https://github.com/ckovacs2/LLMHackathon/tree/main",
         "models_used": "Google Gemini, OpenAI, Hugging Face, Materials Project database, can be extended to other databses too",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "ThinFilm.ai",
@@ -1147,7 +1943,14 @@
         "project_novelty": "This project was conceived and built entirely during the 2-day hackathon. This model helps experimentalists to predict thin film qualities in terms of their structure, impurity, before  they carry out  any expensive and time consuming experiments.",
         "code_link": "https://github.com/ram123-debug/mat-chem-llm-hackathon.git",
         "models_used": "Google Gemini, OpenAI, Hugging Face",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "thin_films"
+            ]
+        }
     },
     {
         "team_name": "Team Datalab - Guillemot ",
@@ -1157,7 +1960,17 @@
         "project_novelty": "Everything in the github repository was built during the hackathon. Some parts integrate with 3rd party tools or with the datalab API in order to enhance functionality, but we made sure to keep all the work unique to the hackathon.",
         "code_link": "https://github.com/datalab-org/guillemot/",
         "models_used": "Anthropic, OpenAI",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "spectroscopy_chromatography_imaging_analysis",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ],
+            "modality": [
+                "xrd"
+            ]
+        }
     },
     {
         "team_name": "CrystalGen",
@@ -1167,7 +1980,13 @@
         "project_novelty": "During this hackathon, we built an end-to-end framework using GPT-OSS to generate candidate crystal structures",
         "code_link": "https://github.com/RishikeshMagar/GPT-OSS-MAT",
         "models_used": "OpenAI",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "structure_generation_inverse_design",
+        "facets": {
+            "domain_area": [
+                "materials"
+            ]
+        }
     },
     {
         "team_name": "LLM4ConProp",
@@ -1177,16 +1996,30 @@
         "project_novelty": "We are the first to explore ML+LLM synergy for predicting concrete materials properties. In this hackathon, we developed and tested the framework to evaluate accuracy and knowledge-guided predictions. All results were generated during this hackathon.",
         "code_link": "",
         "models_used": "OpenAI, OpenRouter",
-        "is_relevant_to_anal_chem": "No"
+        "analytical_chem": "No",
+        "primary_category": "property_prediction",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "chemistry"
+            ]
+        }
     },
     {
         "team_name": "MatGen",
         "team_members": "Mezghani, Althagafi, Syed, Alsaigh, Ben Mansour (King Fahd University of Petroleum and Minerals)",
         "submission_link": "https://www.youtube.com/watch?v=nIXMZN26804&ab_channel=MatGen",
-        "description": "We created a fully integrated Matlab plugin powered by an agentic LLM to make researchers\u00d5 workflows more efficient and intuitive. Built with open-source LLMs and LangChain, the plugin allows easy switching between locally run models and APIs. We designed a suite of tools that support an agentic workflow, enabling researchers to use natural language to access powerful functionalities that would normally require Python or coding expertise. By integrating directly with Matlab, the plugin lets researchers interact seamlessly with complex code, lowering technical barriers and empowering them to focus on scientific discovery.",
+        "description": "We created a fully integrated Matlab plugin powered by an agentic LLM to make researchersÕ workflows more efficient and intuitive. Built with open-source LLMs and LangChain, the plugin allows easy switching between locally run models and APIs. We designed a suite of tools that support an agentic workflow, enabling researchers to use natural language to access powerful functionalities that would normally require Python or coding expertise. By integrating directly with Matlab, the plugin lets researchers interact seamlessly with complex code, lowering technical barriers and empowering them to focus on scientific discovery.",
         "project_novelty": "We integrated agentic workflows into MATLAB, since it has simulink and more alike, letting scientists use natural language to access advanced tools, especially spectroscopy related",
         "code_link": "",
         "models_used": "Llama",
-        "is_relevant_to_anal_chem": "Yes"
+        "analytical_chem": "Yes",
+        "primary_category": "simulation_orchestration",
+        "facets": {
+            "domain_area": [
+                "materials",
+                "analytical_chemistry"
+            ]
+        }
     }
 ]
