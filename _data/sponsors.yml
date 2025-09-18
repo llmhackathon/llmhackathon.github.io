@@ -32,6 +32,14 @@ partners:
     logo: "/assets/images/sponsors/BiostateAI_logo.png"
     alt: "biostate.AI Logo"
     url: "https://biostate.ai/"
+  - name: "Advaita Capital"
+    logo: "/assets/images/sponsors/advaita.png"
+    alt: "Advaita Capital"
+    url: "https://www.advaitacap.com"
+  - name: "Green Dynamics"
+    logo: "/assets/images/sponsors/greendynamics.png"
+    alt: "Green Dynamics"
+    url: "https://www.greendynamics.com.au"
 
 # Additional sponsors that appear in other contexts
 all_sponsors:
