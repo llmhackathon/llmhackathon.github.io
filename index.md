@@ -12,10 +12,11 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
             <h2>LLM Hackathon for <span>Applications in Materials Science & Chemistry</span></h2>
             <p class="tagline">A hybrid international hackathon connecting researchers from across the globe to
                 explore and help solve the biggest problems in materials science and chemistry.</p>
-            <a target="_blank" rel="noopener" href="{{ site.links.registration }}" class="cta-button-large">Register
-                Now</a>
-            <a rel="noopener noreferrer" href="{{ site.links.slack }}" target="_blank"
-                class="secondary-cta">Join Slack</a>
+            <div class="hero-actions">
+                <a href="{{ '/awards/' | relative_url }}" class="cta-button-large">See 2025 Awards</a>
+                <a rel="noopener noreferrer" href="{{ site.links.slack }}" target="_blank"
+                    class="secondary-cta">Join Slack</a>
+            </div>
         </div>
         <div class="hero-image">
             <img src="{{ '/assets/images/hero-image.png' | relative_url }}" alt="Abstract illustration representing AI and coding.">
@@ -30,11 +31,12 @@ keywords: "LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Mode
     </div>
     <div class="about-content">
         <h2>About The <span>Hackathon</span></h2>
-        <p>Join us for an event dedicated to solving critical challenges in materials science and chemistry
-            using the power of Large Language Models, data, agents, and more. This event brings together the
-            brightest minds from
-            academia and industry for a ~24-hour hybrid international hackathon (in-person + online).</p>
-        <div id="countdown" class="countdown-timer"></div>
+        <div class="event-status-banner">
+            <span class="status-dot"></span>
+            <span><strong>The 2025 hackathon has wrapped!</strong></span>
+        </div>
+        <p>Our most recent hackathon brought together an incredible community of materials scientists, chemists, and AI enthusiasts from around the world. Over the course of 24 intensive hours, participants dove deep into some of the most challenging problems in science, leveraging the power of large language models and cutting-edge AI tools to push the boundaries of what's possible.</p>
+        <p>Teams worked collaboratively across time zones, creating innovative solutions that ranged from automated research assistants to novel data analysis pipelines. The energy was infectious, the discoveries were groundbreaking, and the connections made will last far beyond the event itself. Check out the amazing projects and winners on our awards page, and stay tuned for announcements about future hackathons!</p>
     </div>
 </section>
 

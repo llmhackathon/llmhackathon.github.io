@@ -23,7 +23,5 @@
         {% for item in site.data.navigation.main %}
         <a class="nav_options{% if page.url == item.url %} active{% endif %}" href="{{ item.url | relative_url }}">{{ item.name }}</a>
         {% endfor %}
-        
-        <a target="_blank" href="{{ site.links.registration }}" rel="noopener" class="cta-button">Register Now</a>
     </div>
 </nav>

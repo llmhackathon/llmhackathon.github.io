@@ -6,6 +6,8 @@ main:
     url: "/agenda/"
   - name: "Projects"
     url: "/projects/"
+  - name: "2025 Awards"
+    url: "/awards/"
   - name: "Submission Guidelines"
     url: "/submission/"
   - name: "Resources"
