@@ -5,6 +5,39 @@ permalink: /submissions/
 ---
 
 <style>
+/* Submissions actions */
+.submissions-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 24px;
+}
+
+.submissions-actions .awards-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: linear-gradient(120deg, #2563eb, #0ea5e9);
+    color: white;
+    padding: 12px 28px;
+    border-radius: 999px;
+    font-weight: 600;
+    font-size: 0.95rem;
+    text-decoration: none;
+    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.25);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.submissions-actions .awards-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 20px 48px rgba(14, 165, 233, 0.35);
+    filter: brightness(1.04);
+}
+
+.submissions-actions .awards-button svg {
+    width: 18px;
+    height: 18px;
+}
+
 /* Page Header */
 .submissions-header {
     text-align: center;
@@ -446,6 +479,14 @@ permalink: /submissions/
 </style>
 
 <div class="content-section">
+    <div class="submissions-actions">
+        <a class="awards-button" href="{{ '/awards/' | relative_url }}">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17 3V5H21V7C21 10.31 18.31 13 15 13C13.48 13 12.09 12.45 11 11.56C9.91 12.45 8.52 13 7 13C3.69 13 1 10.31 1 7V5H5V3H17M5 7H3C3 9.21 4.79 11 7 11C8.68 11 10.1 9.95 10.66 8.5H5V7M19 7H13.34C13.9 8.95 15.32 10 17 10C19.21 10 21 8.21 21 6H19V7M13 15.91C14.25 16.57 16.19 17 18 17V19C16.37 19 14.4 18.5 13 17.68V21H9V17.68C7.6 18.5 5.63 19 4 19V17C5.81 17 7.75 16.57 9 15.91V15H13V15.91Z" />
+            </svg>
+            View 2025 Awards
+        </a>
+    </div>
     <div class="submissions-header">
         <h1>2025 Hackathon Submissions</h1>
         <p>Explore the innovative projects from our community of materials scientists, chemists, and AI researchers.</p>
