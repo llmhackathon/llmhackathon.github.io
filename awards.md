@@ -301,6 +301,7 @@ permalink: /awards/
                 <li>CafChem</li>
                 <li>Catalyze</li>
                 <li>Clueless-scientist</li>
+                <li>DFTPilot</li>
                 <li>ExpAlign</li>
                 <li>H2-Guardians</li>
                 <li>JH_sqr</li>
@@ -323,7 +324,6 @@ permalink: /awards/
                 <li>SciForge</li>
                 <li>Team Datalab - Guillemot</li>
                 <li>Team_Tc</li>
-                <li>VASPilot</li>
             </ul>
         </div>
     </section>
