@@ -5,90 +5,369 @@ permalink: /submissions/
 ---
 
 <style>
-/* Submissions actions */
-.submissions-actions {
-    display: flex;
-    justify-content: flex-end;
+/* Search and Filter Section */
+.search-filter-section {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e8f0fe;
+}
+
+.search-box-container {
+    position: relative;
     margin-bottom: 24px;
 }
 
-.submissions-actions .awards-button {
+.search-icon {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    color: #6b7280;
+    pointer-events: none;
+}
+
+#search-input {
+    width: 100%;
+    padding: 16px 50px 16px 50px;
+    font-size: 1rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    background: #fafbfc;
+}
+
+#search-input:focus {
+    outline: none;
+    border-color: #027ff7;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(2, 127, 247, 0.1);
+}
+
+#search-input::placeholder {
+    color: #9ca3af;
+}
+
+.clear-search-btn {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #9ca3af;
+    font-size: 20px;
+    padding: 4px 8px;
+    display: none;
+    transition: color 0.2s ease;
+}
+
+.clear-search-btn:hover {
+    color: #374151;
+}
+
+.clear-search-btn.visible {
+    display: block;
+}
+
+.filters-container {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.filter-group {
+    position: relative;
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 10px 16px;
+    font-size: 0.9rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #027ff7;
+    box-shadow: 0 0 0 3px rgba(2, 127, 247, 0.1);
+}
+
+.filter-group select:hover {
+    border-color: #cbd5e1;
+}
+
+.active-filters {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 32px;
+}
+
+.active-filter-chip {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, #027ff7, #0259ce);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    animation: slideIn 0.3s ease;
+}
+
+.active-filter-chip .remove-filter {
+    background: rgba(255, 255, 255, 0.25);
+    border: none;
+    color: white;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    line-height: 1;
+    transition: background 0.2s ease;
+}
+
+.active-filter-chip .remove-filter:hover {
+    background: rgba(255, 255, 255, 0.4);
+}
+
+.clear-all-filters {
+    background: #f3f4f6;
+    color: #374151;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.clear-all-filters:hover {
+    background: #e5e7eb;
+    color: #111827;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.results-info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 0;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #e5e7eb;
+}
+
+.results-count {
+    font-size: 1rem;
+    color: #374151;
+    font-weight: 600;
+}
+
+.results-count .count-number {
+    color: #027ff7;
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.sort-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sort-group label {
+    font-size: 0.9rem;
+    color: #6b7280;
+    font-weight: 500;
+}
+
+.sort-group select {
+    padding: 8px 32px 8px 12px;
+    font-size: 0.9rem;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    background: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+.sort-group select:focus {
+    outline: none;
+    border-color: #027ff7;
+}
+
+.no-results {
+    text-align: center;
+    padding: 60px 20px;
+    color: #6b7280;
+}
+
+.no-results-icon {
+    font-size: 4rem;
+    margin-bottom: 16px;
+    opacity: 0.3;
+}
+
+.no-results h3 {
+    font-size: 1.5rem;
+    color: #374151;
+    margin-bottom: 8px;
+}
+
+.no-results p {
+    font-size: 1rem;
+    color: #6b7280;
+}
+
+/* Page Header */
+.submissions-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding: 24px 30px;
+    background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%);
+    border-radius: 16px;
+    border: 1px solid #e0efff;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.submissions-stats {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    flex: 1;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 12px 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e2e2;
+    min-width: 140px;
+}
+
+.stat-number {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #027ff7;
+    margin-bottom: 4px;
+}
+
+.stat-label {
+    font-size: 0.8rem;
+    color: #666;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.header-awards-button {
     display: inline-flex;
     align-items: center;
     gap: 10px;
     background: linear-gradient(120deg, #2563eb, #0ea5e9);
     color: white;
-    padding: 12px 28px;
+    padding: 14px 28px;
     border-radius: 999px;
     font-weight: 600;
     font-size: 0.95rem;
     text-decoration: none;
-    box-shadow: 0 16px 32px rgba(37, 99, 235, 0.25);
+    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
     transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    white-space: nowrap;
 }
 
-.submissions-actions .awards-button:hover {
+.header-awards-button:hover {
     transform: translateY(-2px);
-    box-shadow: 0 20px 48px rgba(14, 165, 233, 0.35);
-    filter: brightness(1.04);
+    box-shadow: 0 12px 32px rgba(14, 165, 233, 0.4);
+    filter: brightness(1.05);
+    color: white;
+    text-decoration: none;
 }
 
-.submissions-actions .awards-button svg {
+.header-awards-button svg {
     width: 18px;
     height: 18px;
 }
 
-/* Page Header */
-.submissions-header {
-    text-align: center;
-    margin-bottom: 40px;
-    padding: 40px 20px;
-    background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%);
-    border-radius: 16px;
-    border: 1px solid #e0efff;
-}
-
-.submissions-stats {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 20px;
-    flex-wrap: wrap;
-}
-
-.stat-item {
-    text-align: center;
-    padding: 15px 25px;
-    background: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e2e2e2;
-}
-
-.stat-number {
-    font-size: 2rem;
-    font-weight: 700;
-    color: #027ff7;
-    margin-bottom: 5px;
-}
-
-.stat-label {
-    font-size: 0.9rem;
-    color: #666;
-    font-weight: 500;
-}
-
 /* Submission Cards */
 .submission-card {
-    background: #ffffff;
+    background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
     border: 1px solid #e8f0fe;
-    border-radius: 16px;
-    padding: 30px;
-    margin-bottom: 40px;
-    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.06);
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    border-radius: 20px;
+    padding: 35px;
+    margin-bottom: 32px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
+    animation: fadeInUp 0.5s ease forwards;
+    opacity: 0;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 .submission-card::before {
@@ -97,15 +376,16 @@ permalink: /submissions/
     top: 0;
     left: 0;
     right: 0;
-    height: 4px;
-    background: linear-gradient(90deg, #027ff7, #0259ce, #6366f1);
-    border-radius: 16px 16px 0 0;
+    height: 5px;
+    background: linear-gradient(90deg, #027ff7, #0ea5e9, #6366f1);
+    border-radius: 20px 20px 0 0;
 }
 
 .submission-card:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 16px 48px rgba(0, 0, 0, 0.12);
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(2, 127, 247, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
     border-color: #027ff7;
+    background: #ffffff;
 }
 
 /* Team Name */
@@ -425,20 +705,41 @@ permalink: /submissions/
 /* Responsive Design */
 @media (max-width: 768px) {
     .submission-card {
+        padding: 24px;
+        margin-bottom: 24px;
+        border-radius: 16px;
+    }
+    
+    .submissions-header {
         padding: 20px;
-        margin-bottom: 30px;
+        flex-direction: column;
+        align-items: stretch;
     }
     
     .submissions-stats {
-        gap: 15px;
+        gap: 10px;
+        justify-content: center;
     }
     
     .stat-item {
-        padding: 12px 20px;
+        padding: 10px 16px;
+        min-width: 100px;
+        flex: 1;
     }
     
     .stat-number {
         font-size: 1.5rem;
+    }
+    
+    .stat-label {
+        font-size: 0.7rem;
+    }
+    
+    .header-awards-button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 24px;
+        font-size: 0.9rem;
     }
     
     .submission-links {
@@ -448,6 +749,42 @@ permalink: /submissions/
     .submission-links .btn {
         padding: 10px 18px;
         font-size: 13px;
+    }
+    
+    .search-filter-section {
+        padding: 20px;
+    }
+    
+    .filters-container {
+        flex-direction: column;
+    }
+    
+    .filter-group {
+        min-width: 100%;
+    }
+    
+    .results-info {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+    
+    .chips-container {
+        flex-wrap: wrap;
+    }
+    
+    .submission-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .submissions-stats {
+        flex-direction: column;
+    }
+    
+    .stat-item {
+        width: 100%;
     }
 }
 
@@ -479,30 +816,70 @@ permalink: /submissions/
 </style>
 
 <div class="content-section">
-    <div class="submissions-actions">
-        <a class="awards-button" href="{{ '/awards/' | relative_url }}">
-            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                <path d="M17 3V5H21V7C21 10.31 18.31 13 15 13C13.48 13 12.09 12.45 11 11.56C9.91 12.45 8.52 13 7 13C3.69 13 1 10.31 1 7V5H5V3H17M5 7H3C3 9.21 4.79 11 7 11C8.68 11 10.1 9.95 10.66 8.5H5V7M19 7H13.34C13.9 8.95 15.32 10 17 10C19.21 10 21 8.21 21 6H19V7M13 15.91C14.25 16.57 16.19 17 18 17V19C16.37 19 14.4 18.5 13 17.68V21H9V17.68C7.6 18.5 5.63 19 4 19V17C5.81 17 7.75 16.57 9 15.91V15H13V15.91Z" />
-            </svg>
-            View 2025 Awards
-        </a>
-    </div>
     <div class="submissions-header">
-        <h1>2025 Hackathon Submissions</h1>
-        <p>Explore the innovative projects from our community of materials scientists, chemists, and AI researchers.</p>
         <div class="submissions-stats">
             <div class="stat-item">
                 <div class="stat-number" id="total-submissions">-</div>
-                <div class="stat-label">Total Submissions</div>
+                <div class="stat-label">Submissions</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" id="unique-models">-</div>
-                <div class="stat-label">AI Models Used</div>
+                <div class="stat-label">AI Models</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" id="unique-categories">-</div>
-                <div class="stat-label">Project Categories</div>
+                <div class="stat-label">Categories</div>
             </div>
+        </div>
+        <a class="header-awards-button" href="{{ '/awards/' | relative_url }}">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                <path d="M17 3V5H21V7C21 10.31 18.31 13 15 13C13.48 13 12.09 12.45 11 11.56C9.91 12.45 8.52 13 7 13C3.69 13 1 10.31 1 7V5H5V3H17M5 7H3C3 9.21 4.79 11 7 11C8.68 11 10.1 9.95 10.66 8.5H5V7M19 7H13.34C13.9 8.95 15.32 10 17 10C19.21 10 21 8.21 21 6H19V7M13 15.91C14.25 16.57 16.19 17 18 17V19C16.37 19 14.4 18.5 13 17.68V21H9V17.68C7.6 18.5 5.63 19 4 19V17C5.81 17 7.75 16.57 9 15.91V15H13V15.91Z" />
+            </svg>
+            View Awards
+        </a>
+    </div>
+    
+    <!-- Search and Filter Section -->
+    <div class="search-filter-section">
+        <div class="search-box-container">
+            <svg class="search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="11" cy="11" r="8"></circle>
+                <path d="m21 21-4.35-4.35"></path>
+            </svg>
+            <input type="text" id="search-input" placeholder="Search by team name, members, or description...">
+            <button class="clear-search-btn" id="clear-search">×</button>
+        </div>
+        
+        <div class="filters-container">
+            <div class="filter-group">
+                <label for="category-filter">Category</label>
+                <select id="category-filter">
+                    <option value="">All Categories</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <label for="domain-filter">Domain Area</label>
+                <select id="domain-filter">
+                    <option value="">All Domains</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="active-filters" id="active-filters"></div>
+    </div>
+    
+    <!-- Results Info -->
+    <div class="results-info" id="results-info" style="display: none;">
+        <div class="results-count">
+            Showing <span class="count-number" id="results-count">0</span> of <span id="total-count">0</span> submissions
+        </div>
+        <div class="sort-group">
+            <label for="sort-select">Sort by:</label>
+            <select id="sort-select">
+                <option value="default">Default</option>
+                <option value="name-asc">Team Name (A-Z)</option>
+                <option value="name-desc">Team Name (Z-A)</option>
+            </select>
         </div>
     </div>
     
@@ -513,9 +890,26 @@ permalink: /submissions/
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
+    let allSubmissions = [];
+    let filteredSubmissions = [];
+    
+    // Async indexes for faster filtering
+    let categoryIndex = new Map();
+    let domainIndex = new Map();
+    
+    // State for filters
+    const filters = {
+        search: '',
+        category: '',
+        domain: ''
+    };
+    
     fetch('/assets/data/submissions.json')
         .then(response => response.json())
         .then(data => {
+            allSubmissions = data;
+            filteredSubmissions = data;
+            
             // Calculate statistics
             const totalSubmissions = data.length;
             const allModels = data.flatMap(s => s.models_used ? s.models_used.split(',').map(m => m.trim()) : []);
@@ -527,15 +921,269 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('total-submissions').textContent = totalSubmissions;
             document.getElementById('unique-models').textContent = uniqueModels;
             document.getElementById('unique-categories').textContent = uniqueCategories;
-
-            // Clear loading state
+            document.getElementById('total-count').textContent = totalSubmissions;
+            
+            // Populate filter dropdowns
+            populateFilters(data);
+            
+            // Build indexes asynchronously
+            buildIndexes(data);
+            
+            // Initial render
+            renderSubmissions(filteredSubmissions);
+            
+            // Set up event listeners
+            setupEventListeners();
+        })
+        .catch(error => {
             const container = document.getElementById('submissions-container');
-            container.className = '';
-            container.innerHTML = '';
+            container.innerHTML = '<div style="text-align: center; color: #dc2626; padding: 40px;">Error loading submissions. Please try again later.</div>';
+        });
+    
+    // Build search indexes asynchronously for faster filtering
+    function buildIndexes(data) {
+        // Use setTimeout to make it async and not block rendering
+        setTimeout(() => {
+            // Build category index
+            data.forEach((submission, index) => {
+                if (submission.primary_category) {
+                    if (!categoryIndex.has(submission.primary_category)) {
+                        categoryIndex.set(submission.primary_category, []);
+                    }
+                    categoryIndex.get(submission.primary_category).push(index);
+                }
+                
+                // Build domain index
+                if (submission.facets && submission.facets.domain_area) {
+                    submission.facets.domain_area.forEach(domain => {
+                        if (!domainIndex.has(domain)) {
+                            domainIndex.set(domain, []);
+                        }
+                        domainIndex.get(domain).push(index);
+                    });
+                }
+            });
+            console.log('Search indexes built: Category entries:', categoryIndex.size, 'Domain entries:', domainIndex.size);
+        }, 0);
+    }
+    
+    function populateFilters(data) {
+        // Populate categories
+        const categories = [...new Set(data.map(s => s.primary_category).filter(Boolean))].sort();
+        const categorySelect = document.getElementById('category-filter');
+        categories.forEach(cat => {
+            const option = document.createElement('option');
+            option.value = cat;
+            option.textContent = formatCategoryName(cat);
+            categorySelect.appendChild(option);
+        });
+        
+        // Populate domains
+        const domains = [...new Set(data.flatMap(s => s.facets?.domain_area || []))].sort();
+        const domainSelect = document.getElementById('domain-filter');
+        domains.forEach(domain => {
+            const option = document.createElement('option');
+            option.value = domain;
+            option.textContent = domain.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+            domainSelect.appendChild(option);
+        });
+    }
+    
+    function setupEventListeners() {
+        // Search input
+        const searchInput = document.getElementById('search-input');
+        const clearSearchBtn = document.getElementById('clear-search');
+        
+        searchInput.addEventListener('input', (e) => {
+            filters.search = e.target.value.toLowerCase();
+            clearSearchBtn.classList.toggle('visible', e.target.value.length > 0);
+            applyFilters();
+        });
+        
+        clearSearchBtn.addEventListener('click', () => {
+            searchInput.value = '';
+            filters.search = '';
+            clearSearchBtn.classList.remove('visible');
+            applyFilters();
+        });
+        
+        // Filter dropdowns
+        document.getElementById('category-filter').addEventListener('change', (e) => {
+            filters.category = e.target.value;
+            applyFilters();
+        });
+        
+        document.getElementById('domain-filter').addEventListener('change', (e) => {
+            filters.domain = e.target.value;
+            applyFilters();
+        });
+        
+        // Sort
+        document.getElementById('sort-select').addEventListener('change', (e) => {
+            sortSubmissions(e.target.value);
+        });
+    }
+    
+    function applyFilters() {
+        // Use indexes when available for faster filtering
+        let candidateIndices = null;
+        
+        // Start with category filter using index if available
+        if (filters.category) {
+            candidateIndices = categoryIndex.has(filters.category) 
+                ? new Set(categoryIndex.get(filters.category))
+                : new Set();
+        }
+        
+        // Apply domain filter using index if available
+        if (filters.domain) {
+            const domainIndices = domainIndex.has(filters.domain)
+                ? new Set(domainIndex.get(filters.domain))
+                : new Set();
+            
+            if (candidateIndices === null) {
+                candidateIndices = domainIndices;
+            } else {
+                // Intersection of category and domain
+                candidateIndices = new Set([...candidateIndices].filter(x => domainIndices.has(x)));
+            }
+        }
+        
+        // If we have candidate indices from indexed filters, use them
+        const candidates = candidateIndices !== null
+            ? [...candidateIndices].map(i => allSubmissions[i])
+            : allSubmissions;
+        
+        // Apply search filter (can't be indexed efficiently)
+        filteredSubmissions = candidates.filter(submission => {
+            if (filters.search) {
+                const searchLower = filters.search;
+                const matchesSearch = 
+                    submission.team_name.toLowerCase().includes(searchLower) ||
+                    submission.team_members.toLowerCase().includes(searchLower) ||
+                    submission.description.toLowerCase().includes(searchLower) ||
+                    (submission.project_novelty && submission.project_novelty.toLowerCase().includes(searchLower));
+                
+                if (!matchesSearch) return false;
+            }
+            
+            return true;
+        });
+        
+        updateActiveFilters();
+        renderSubmissions(filteredSubmissions);
+    }
+    
+    function updateActiveFilters() {
+        const activeFiltersContainer = document.getElementById('active-filters');
+        activeFiltersContainer.innerHTML = '';
+        
+        let hasFilters = false;
+        
+        if (filters.search) {
+            hasFilters = true;
+            addFilterChip('Search: "' + filters.search + '"', 'search');
+        }
+        
+        if (filters.category) {
+            hasFilters = true;
+            addFilterChip('Category: ' + formatCategoryName(filters.category), 'category');
+        }
+        
+        if (filters.domain) {
+            hasFilters = true;
+            addFilterChip('Domain: ' + filters.domain.replace(/_/g, ' '), 'domain');
+        }
+        
+        if (hasFilters) {
+            const clearAllBtn = document.createElement('button');
+            clearAllBtn.className = 'clear-all-filters';
+            clearAllBtn.textContent = 'Clear All';
+            clearAllBtn.onclick = clearAllFilters;
+            activeFiltersContainer.appendChild(clearAllBtn);
+        }
+    }
+    
+    function addFilterChip(text, filterType) {
+        const activeFiltersContainer = document.getElementById('active-filters');
+        const chip = document.createElement('div');
+        chip.className = 'active-filter-chip';
+        chip.innerHTML = `
+            ${text}
+            <button class="remove-filter" onclick="removeFilter('${filterType}')">×</button>
+        `;
+        activeFiltersContainer.appendChild(chip);
+    }
+    
+    window.removeFilter = function(filterType) {
+        filters[filterType] = '';
+        
+        // Reset the corresponding UI element
+        if (filterType === 'search') {
+            document.getElementById('search-input').value = '';
+            document.getElementById('clear-search').classList.remove('visible');
+        } else if (filterType === 'category') {
+            document.getElementById('category-filter').value = '';
+        } else if (filterType === 'domain') {
+            document.getElementById('domain-filter').value = '';
+        }
+        
+        applyFilters();
+    };
+    
+    function clearAllFilters() {
+        filters.search = '';
+        filters.category = '';
+        filters.domain = '';
+        
+        document.getElementById('search-input').value = '';
+        document.getElementById('clear-search').classList.remove('visible');
+        document.getElementById('category-filter').value = '';
+        document.getElementById('domain-filter').value = '';
+        
+        applyFilters();
+    }
+    
+    function sortSubmissions(sortBy) {
+        if (sortBy === 'name-asc') {
+            filteredSubmissions.sort((a, b) => a.team_name.localeCompare(b.team_name));
+        } else if (sortBy === 'name-desc') {
+            filteredSubmissions.sort((a, b) => b.team_name.localeCompare(a.team_name));
+        } else {
+            // Reset to original order
+            filteredSubmissions = allSubmissions.filter(s => filteredSubmissions.includes(s));
+        }
+        renderSubmissions(filteredSubmissions);
+    }
+    
+    function renderSubmissions(submissions) {
+        const container = document.getElementById('submissions-container');
+        const resultsInfo = document.getElementById('results-info');
+        const resultsCount = document.getElementById('results-count');
+        
+        // Update results count
+        resultsCount.textContent = submissions.length;
+        resultsInfo.style.display = 'flex';
+        
+        // Clear container
+        container.className = '';
+        container.innerHTML = '';
+        
+        if (submissions.length === 0) {
+            container.innerHTML = `
+                <div class="no-results">
+                    <div class="no-results-icon">🔍</div>
+                    <h3>No submissions found</h3>
+                    <p>Try adjusting your search or filters</p>
+                </div>
+            `;
+            return;
+        }
 
-            data.forEach(submission => {
+        submissions.forEach((submission, index) => {
                 const card = document.createElement('div');
                 card.className = 'submission-card';
+                card.style.animationDelay = `${index * 0.05}s`;
 
                 let embedContent = '';
                 if (submission.submission_link) {
@@ -648,6 +1296,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 container.appendChild(card);
             });
 
+            // Load Twitter widgets if needed
             if (document.querySelector('.twitter-tweet')) {
                 const script = document.createElement('script');
                 script.src = 'https://platform.twitter.com/widgets.js';
@@ -655,10 +1304,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 script.async = true;
                 document.body.appendChild(script);
             }
-        })
-        .catch(error => {
-            const container = document.getElementById('submissions-container');
-            container.innerHTML = '<div style="text-align: center; color: #dc2626; padding: 40px;">Error loading submissions. Please try again later.</div>';
-        });
+    }
+    
+    // Helper function to format category names
+    function formatCategoryName(category) {
+        return category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
+    }
 });
 </script>
