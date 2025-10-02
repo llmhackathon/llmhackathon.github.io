@@ -35,94 +35,167 @@ permalink: /awards/
 
 .award-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
     gap: 24px;
 }
 
 .award-card {
-    background: #ffffff;
-    border-radius: 18px;
-    border: 1px solid rgba(226, 232, 240, 0.9);
-    padding: 28px;
-    box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1);
+    background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
+    border: 1px solid #e8f0fe;
+    border-radius: 16px;
+    padding: 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+    transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    position: relative;
 }
 
 .award-card::before {
-    content: "";
+    content: '';
     position: absolute;
-    inset: 0;
-    border-radius: 18px;
-    padding: 1px;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.35), rgba(14, 165, 233, 0.2));
-    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-    mask-composite: exclude;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: linear-gradient(90deg, #027ff7, #0ea5e9, #6366f1);
+    border-radius: 20px 20px 0 0;
 }
 
-.award-card:hover::before {
-    opacity: 1;
+.award-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 20px 60px rgba(2, 127, 247, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
+    border-color: #027ff7;
+    background: #ffffff;
 }
 
 .award-rank {
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-    font-size: 0.85rem;
+    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
     font-weight: 700;
-    color: #1d4ed8;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: inline-block;
+    margin-bottom: 12px;
+    border: 1px solid #a855f7;
+    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
 }
 
 .award-card h3 {
-    margin: 0;
-    font-size: 1.35rem;
-    color: #0f172a;
+    color: #1a1a1a;
+    margin-bottom: 12px;
+    font-size: 1.25rem;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 6px;
+    line-height: 1.3;
+}
+
+.award-card h3::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background: linear-gradient(90deg, #027ff7, #6366f1);
+    border-radius: 2px;
+}
+
+.award-section {
+    margin-bottom: 14px;
+    flex: 1;
+}
+
+.award-section-title {
+    font-weight: 600;
+    color: #374151;
+    margin-bottom: 6px;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.award-section-title::before {
+    content: '';
+    width: 3px;
+    height: 12px;
+    background: #027ff7;
+    border-radius: 2px;
 }
 
 .award-team {
-    font-size: 0.95rem;
-    color: #475569;
+    color: #4b5563;
+    line-height: 1.5;
+    font-size: 0.875rem;
 }
 
 .award-description {
-    font-size: 0.95rem;
-    color: #334155;
-    line-height: 1.65;
+    color: #4b5563;
+    line-height: 1.5;
+    font-size: 0.875rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
-.award-footer {
+.award-links {
     margin-top: auto;
+    padding-top: 16px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .award-button {
+    background: linear-gradient(135deg, #027ff7 0%, #0259ce 100%);
+    color: #ffffff;
+    padding: 10px 18px;
+    border: 0;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    text-decoration: none;
     display: inline-flex;
     align-items: center;
-    justify-content: center;
-    gap: 8px;
-    padding: 12px 22px;
-    border-radius: 999px;
-    background: linear-gradient(120deg, #2563eb, #0ea5e9);
-    color: #fff;
-    font-weight: 600;
-    font-size: 0.95rem;
-    text-decoration: none;
-    box-shadow: 0 18px 36px rgba(37, 99, 235, 0.25);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    gap: 6px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.award-button::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
+    transition: left 0.5s;
+}
+
+.award-button:hover::before {
+    left: 100%;
 }
 
 .award-button:hover {
+    color: #ffffff;
     transform: translateY(-2px);
-    box-shadow: 0 24px 56px rgba(14, 165, 233, 0.35);
-    filter: brightness(1.03);
+    box-shadow: 0 8px 24px rgba(2, 127, 247, 0.4);
 }
 
 .award-button svg {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
 }
 
 .visionary-card {
@@ -147,6 +220,13 @@ permalink: /awards/
     color: #334155;
 }
 
+.loading {
+    text-align: center;
+    padding: 40px;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
 @media (max-width: 768px) {
     .awards-intro {
         padding: 24px;
@@ -155,9 +235,27 @@ permalink: /awards/
     .award-grid {
         grid-template-columns: 1fr;
     }
+    
+    .award-card {
+        padding: 20px;
+    }
+    
+    .award-card h3 {
+        font-size: 1.15rem;
+    }
+    
+    .award-description {
+        -webkit-line-clamp: 5;
+    }
 
     .visionary-card ul {
         columns: 1;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 1200px) {
+    .award-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 </style>
@@ -169,162 +267,131 @@ permalink: /awards/
 
     <section class="awards-section" aria-label="Lila Prize Winners">
         <h2>Lila Prize Winners</h2>
-        <div class="award-grid">
-            <article class="award-card">
-                <span class="award-rank">1st place</span>
-                <h3>Materials Design Group</h3>
-                <p class="award-team">Ryan Nduma, Hyunsoo Park, Kinga Mastej &mdash; Imperial College London</p>
-                <p class="award-description">SKY is an LLM-powered synthesis exploration agent for inorganic materials. It performs composition and structure similarity searches on the Materials Project, retrieves neighbor synthesis recipes with metadata, and surfaces property and structure summaries. An LLM fuses those neighbors into target-specific protocols with confidence scores, parameter deltas, and citations, producing both readable summaries and JSON outputs to accelerate hypothesis generation when direct recipes do not exist.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://youtu.be/ffLqLH87yLo" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <span class="award-rank">2nd place</span>
-                <h3>Triple_As</h3>
-                <p class="award-team">Abbas Adamu Abdullahi, Aminu Rabiu Doguwa, Abubakar Shuaibu Dahiru, Ahmad Dalhatu Abbas, Mauliady Satria, Sara Uribe Garcia &mdash; KFUPM, Dhahran</p>
-                <p class="award-description">Triple_As delivers a learning platform that gives students clarity and confidence while offering institutions a scalable solution. It includes progress analytics to track improvement, an AI study-material generator for personalized flashcards and guides, and an award-winning interface that saves learners time.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://youtu.be/s1nscrTJIa8" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <span class="award-rank">3rd place</span>
-                <h3>MixSense</h3>
-                <p class="award-team">Jesus Diaz Sanchez, Katharina Jaeger, Kevin Greenman, Lucia Vina Lopez, Magdalena Lederbauer, Mrigi Munjal, Sathya Edamadaka, Tatem Rios</p>
-                <p class="award-description">MixSense built an autonomous LLM agent for analytical chemistry that performs quantitative structure elucidation from 1H NMR, rapidly identifying compounds in mixtures and predicting flavor profiles. The workflow spans product prediction, spectrum simulation, deconvolution, quantification, and flavor reporting directly from raw data.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://www.linkedin.com/posts/jesus-diaz-sanchez-b7603a188_excited-to-share-our-project-from-the-llm-activity-7372418093496774656-B3FF?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAACwkvQoB4NVBr6w6GYdn4jEEjFx5pYoR20o" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <span class="award-rank">4th place</span>
-                <h3>CrystaLenz</h3>
-                <p class="award-team">Mohammad Javad Raei</p>
-                <p class="award-description">CrystaLenz is an end-to-end XRD analysis pipeline that handles heterogeneous file formats and noisy signals. It provides robust peak detection, Voigt profile fitting, and size and strain extraction with Scherrer and Williamson-Hall methods, streamlining crystallography workflows.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://youtu.be/uNsnd1BLsTs" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <span class="award-rank">5th place</span>
-                <h3>ACME (Autonomous Critical Materials Extraction)</h3>
-                <p class="award-team">Hassan Harb, Hossam Farag, Rakesh Kamath, Adwaith Ravichandran, Tugba Isik, Cailin Buchanan, Suman Kumari, Sungil Hong, Yunkai Sun, Mustafa Unal, Shi Li &mdash; Argonne National Laboratory</p>
-                <p class="award-description">ACME built an autonomous closed-loop discovery platform that integrates AI-driven reasoning with experimental automation. User prompts are refined into candidate molecules, filtered through conformer searches and quantum calculations, and routed to automated lab execution, with results cycling back for continuous improvement.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://www.youtube.com/watch?v=bMx332SAWv4" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
+        <div class="award-grid" id="lila-awards-grid">
+            <div class="loading">Loading awards...</div>
         </div>
     </section>
 
     <section class="awards-section" aria-label="Abstrax Prizes">
         <h2>Abstrax Prizes</h2>
-        <div class="award-grid">
-            <article class="award-card">
-                <h3>SmeLLMap</h3>
-                <p class="award-team">Justice Lu &mdash; Duke University</p>
-                <p class="award-description">SmeLLMap integrates ESM2 language models with structure prediction to study receptor-odor relationships. By combining sequence-derived features and AlphaFold cavities, the team trained CNNs that deliver near-perfect odor recognition performance across ten categories (AUC above 0.95).</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://www.linkedin.com/posts/justice-lu-1842a395_turning-smell-from-a-mystery-into-a-map-activity-7372304796038471680-fpC4?utm_source=share&amp;utm_medium=member_desktop&amp;rcm=ACoAABQnZzQBxyKA1uEUp0LCBt9_rfQ-WVQiOc8" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <h3>ATOMS Lab</h3>
-                <p class="award-team">Alexander Haibel, Fariha Agbere, Shashane Anderson, Kevin Ishimwe, Colin Jones, Oscar Matemb, Izzy Shahmoradi, Samiha Sharlin, Ejike Ugwuanyi, Muhammed Usman, Tyler Josephson</p>
-                <p class="award-description">ATOMS Lab built a framework for analogical prompting with LLMs to predict properties, prompting models to reason through exemplars before answering. The team curated materials and scent datasets to explore analogical reasoning for both structural properties and fragrance scores.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://youtu.be/Fboa8sOo3w0" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
-            <article class="award-card">
-                <h3>ChromatographyMiner</h3>
-                <p class="award-team">Md Habibur Rahman &mdash; Purdue University</p>
-                <p class="award-description">ChromatographyMiner unifies GCxGC-MS analysis within a single Streamlit application, spanning raw data ingestion, peak detection, spectral matching, and LLM-powered explanations. The toolkit integrates MoNA libraries, deduplication, and visualization to support analytical chemistry workflows.</p>
-                <div class="award-footer">
-                    <a class="award-button" href="https://www.youtube.com/watch?v=EUzJ4XTkCG4" target="_blank" rel="noopener">
-                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
-                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
-                        </svg>
-                        Watch demo
-                    </a>
-                </div>
-            </article>
+        <div class="award-grid" id="abstrax-awards-grid">
+            <div class="loading">Loading awards...</div>
         </div>
     </section>
 
     <section class="awards-section" aria-label="2025 Visionary Awards">
         <h2>2025 Visionary Awards</h2>
         <p class="section-copy">These teams were recognized by the judges for exceptional scores, novelty, or innovative approaches. They will be invited to a special session of the hackathon showcase, and all participating teams will still be welcomed.</p>
-        <div class="visionary-card">
-            <ul>
-                <li>ARIA</li>
-                <li>AssemblAI</li>
-                <li>AtomBridge</li>
-                <li>AtomicShorts</li>
-                <li>Best Team</li>
-                <li>CafChem</li>
-                <li>Catalyze</li>
-                <li>Clueless-scientist</li>
-                <li>DFTPilot</li>
-                <li>ExpAlign</li>
-                <li>H2-Guardians</li>
-                <li>JH_sqr</li>
-                <li>L.A.R.A</li>
-                <li>LARA-HPC: A LAnguage model-powered Research Assistant for HPC</li>
-                <li>LIAC's AdsKRK and DynaAgent</li>
-                <li>LLM4ConProp</li>
-                <li>Material AI Agent Team</li>
-                <li>MatSci LapLab</li>
-                <li>MCP4SDL</li>
-                <li>MIDAS</li>
-                <li>MINT LLM</li>
-                <li>MJS</li>
-                <li>MuMMIE</li>
-                <li>Parse Patrol</li>
-                <li>PolyNexus</li>
-                <li>PolyPredictor</li>
-                <li>Ragalicious</li>
-                <li>RedoxFlow</li>
-                <li>SciForge</li>
-                <li>Team Datalab - Guillemot</li>
-                <li>Team_Tc</li>
-            </ul>
+        <div class="award-grid" id="visionary-awards-grid">
+            <div class="loading">Loading awards...</div>
         </div>
     </section>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    fetch('/assets/data/submissions.json')
+        .then(response => response.json())
+        .then(data => {
+            // Filter submissions with awards
+            const awardedSubmissions = data.filter(s => s.award);
+            
+            // Group by award type
+            const lilaWinners = awardedSubmissions
+                .filter(s => s.award.startsWith('Lila Prize'))
+                .sort((a, b) => {
+                    // Sort by place number
+                    const getPlace = (award) => {
+                        const match = award.match(/(\d+)(st|nd|rd|th) Place/);
+                        return match ? parseInt(match[1]) : 999;
+                    };
+                    return getPlace(a.award) - getPlace(b.award);
+                });
+            
+            const abstraxWinners = awardedSubmissions
+                .filter(s => s.award === 'Abstrax Prize');
+            
+            const visionaryWinners = awardedSubmissions
+                .filter(s => s.award === 'Visionary Award')
+                .sort((a, b) => a.team_name.localeCompare(b.team_name));
+            
+            // Render awards
+            renderAwardCards(lilaWinners, 'lila-awards-grid', true);
+            renderAwardCards(abstraxWinners, 'abstrax-awards-grid', false);
+            renderAwardCards(visionaryWinners, 'visionary-awards-grid', false);
+        })
+        .catch(error => {
+            console.error('Error loading awards:', error);
+            document.querySelectorAll('.loading').forEach(el => {
+                el.textContent = 'Error loading awards. Please try again later.';
+                el.style.color = '#dc2626';
+            });
+        });
+    
+    function renderAwardCards(winners, containerId, showRank) {
+        const container = document.getElementById(containerId);
+        container.innerHTML = '';
+        
+        if (winners.length === 0) {
+            container.innerHTML = '<div class="loading">No awards in this category.</div>';
+            return;
+        }
+        
+        winners.forEach((submission) => {
+            const card = document.createElement('article');
+            card.className = 'award-card';
+            
+            // Extract rank from award name
+            let rankBadge = '';
+            if (showRank && submission.award) {
+                const rankMatch = submission.award.match(/(\d+)(st|nd|rd|th) [Pp]lace/);
+                if (rankMatch) {
+                    rankBadge = `<span class="award-rank">${rankMatch[1]}${rankMatch[2]} place</span>`;
+                }
+            } else if (!showRank) {
+                rankBadge = `<span class="award-rank">${submission.award}</span>`;
+            }
+            
+            // Build links
+            let linksHtml = '<div class="award-links">';
+            if (submission.submission_link) {
+                linksHtml += `
+                    <a class="award-button" href="${submission.submission_link}" target="_blank" rel="noopener">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M10 16.5V7.5L16 12L10 16.5M5 3H19C20.1 3 21 3.9 21 5V19C21 20.1 20.1 21 19 21H5C3.9 21 3 20.1 3 19V5C3 3.9 3.9 3 5 3Z" />
+                        </svg>
+                        Watch demo
+                    </a>
+                `;
+            }
+            if (submission.code_link) {
+                linksHtml += `
+                    <a class="award-button" href="${submission.code_link}" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);">
+                        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                            <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
+                        </svg>
+                        View Code
+                    </a>
+                `;
+            }
+            linksHtml += '</div>';
+            
+            card.innerHTML = `
+                ${rankBadge}
+                <h3>${submission.team_name}</h3>
+                <div class="award-section">
+                    <div class="award-section-title">Team Members</div>
+                    <div class="award-team">${submission.team_members}</div>
+                </div>
+                <div class="award-section">
+                    <div class="award-section-title">Description</div>
+                    <div class="award-description">${submission.description}</div>
+                </div>
+                ${linksHtml}
+            `;
+            
+            container.appendChild(card);
+        });
+    }
+});
+</script>

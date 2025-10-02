@@ -863,6 +863,14 @@ permalink: /submissions/
                     <option value="">All Domains</option>
                 </select>
             </div>
+            <div class="filter-group">
+                <label for="award-filter">Award Status</label>
+                <select id="award-filter">
+                    <option value="">All Submissions</option>
+                    <option value="awarded">Award Winners Only</option>
+                    <option value="not-awarded">Non-Award Winners</option>
+                </select>
+            </div>
         </div>
         
         <div class="active-filters" id="active-filters"></div>
@@ -901,7 +909,8 @@ document.addEventListener('DOMContentLoaded', function() {
     const filters = {
         search: '',
         category: '',
-        domain: ''
+        domain: '',
+        award: ''
     };
     
     fetch('/assets/data/submissions.json')
@@ -1018,6 +1027,11 @@ document.addEventListener('DOMContentLoaded', function() {
             applyFilters();
         });
         
+        document.getElementById('award-filter').addEventListener('change', (e) => {
+            filters.award = e.target.value;
+            applyFilters();
+        });
+        
         // Sort
         document.getElementById('sort-select').addEventListener('change', (e) => {
             sortSubmissions(e.target.value);
@@ -1054,7 +1068,7 @@ document.addEventListener('DOMContentLoaded', function() {
             ? [...candidateIndices].map(i => allSubmissions[i])
             : allSubmissions;
         
-        // Apply search filter (can't be indexed efficiently)
+        // Apply search and award filters
         filteredSubmissions = candidates.filter(submission => {
             if (filters.search) {
                 const searchLower = filters.search;
@@ -1065,6 +1079,15 @@ document.addEventListener('DOMContentLoaded', function() {
                     (submission.project_novelty && submission.project_novelty.toLowerCase().includes(searchLower));
                 
                 if (!matchesSearch) return false;
+            }
+            
+            // Apply award filter
+            if (filters.award) {
+                if (filters.award === 'awarded' && !submission.award) {
+                    return false;
+                } else if (filters.award === 'not-awarded' && submission.award) {
+                    return false;
+                }
             }
             
             return true;
@@ -1093,6 +1116,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (filters.domain) {
             hasFilters = true;
             addFilterChip('Domain: ' + filters.domain.replace(/_/g, ' '), 'domain');
+        }
+        
+        if (filters.award) {
+            hasFilters = true;
+            const awardLabel = filters.award === 'awarded' ? 'Award Winners Only' : 'Non-Award Winners';
+            addFilterChip('Award: ' + awardLabel, 'award');
         }
         
         if (hasFilters) {
@@ -1126,6 +1155,8 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementById('category-filter').value = '';
         } else if (filterType === 'domain') {
             document.getElementById('domain-filter').value = '';
+        } else if (filterType === 'award') {
+            document.getElementById('award-filter').value = '';
         }
         
         applyFilters();
@@ -1135,11 +1166,13 @@ document.addEventListener('DOMContentLoaded', function() {
         filters.search = '';
         filters.category = '';
         filters.domain = '';
+        filters.award = '';
         
         document.getElementById('search-input').value = '';
         document.getElementById('clear-search').classList.remove('visible');
         document.getElementById('category-filter').value = '';
         document.getElementById('domain-filter').value = '';
+        document.getElementById('award-filter').value = '';
         
         applyFilters();
     }
@@ -1219,6 +1252,12 @@ document.addEventListener('DOMContentLoaded', function() {
                     return category.replace(/_/g, ' ').replace(/\b\w/g, l => l.toUpperCase());
                 }
 
+                // Create award badge
+                let awardBadge = '';
+                if (submission.award) {
+                    awardBadge = `<div class="award-badge">${submission.award}</div>`;
+                }
+
                 // Create primary category badge
                 let primaryCategoryBadge = '';
                 if (submission.primary_category) {
@@ -1252,6 +1291,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 card.innerHTML = `
                     ${embedContent}
+                    ${awardBadge}
                     ${primaryCategoryBadge}
                     <h3>${submission.team_name}</h3>
                     <div class="submission-section">
