@@ -1360,13 +1360,15 @@ footer {
 
 /* --- Page Header for Sub-Pages --- */
 .page-header {
-    padding: 140px 48px 80px;
+    padding: 40px 48px 20px;
     background-color: #f2f7f9;
     text-align: center;
 }
 
 .page-header h1 {
-    font-size: 3rem;
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin: 0;
     background: linear-gradient(to right, #027bfc, #0259ce);
     -webkit-background-clip: text;
     background-clip: text;
@@ -1976,6 +1978,14 @@ footer {
     .page-header,
     .content-section {
         padding: 40px 20px;
+    }
+    
+    .page-header {
+        padding: 30px 20px 15px;
+    }
+    
+    .page-header h1 {
+        font-size: 1.5rem;
     }
 
     .submission-steps,
