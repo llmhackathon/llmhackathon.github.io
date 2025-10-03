@@ -1770,12 +1770,12 @@
         "award": null
     },
     {
-        "team_name": "VASPilot",
+        "team_name": "DFTPilot",
         "team_members": "Parida, Chiku (Technical University of Denmark - DTU); Aggarwal, Savyasanchi (University College London); Roy, Diptendu (Technical University of Denmark - DTU); Li, Bingcan ( University of Cambridge); Petersen, H., Martin (Technical University of Denmark - DTU); Low, Andre (Nanyang Technical University - NTU)",
         "submission_link": "https://www.linkedin.com/posts/diptendu-roy-bab284226_ai-materialsscience-hackathon-activity-7372418332953763840-b4xm?utm_source=share&utm_medium=member_android&rcm=ACoAADijIbMBCms1anaYSUJ0BD8IlKyCneYuCPk",
-        "description": "VASPilot is an innovative LLM-powered assistant designed to revolutionize materials simulations. It uniquely combines graph-based embeddings with textual encoding of VASP input files to deliver fast, reliable predictions, even for out-of-distribution structures. By leveraging a precomputed RAG database, it performs advanced similarity searches across structure, composition, and INCAR settings, offering actionable guidance to improve calculations. Users can visualize and interact with their structures and nearest neighbors, gaining deep, intuitive insights. Currently, VASPilot predicts bandgaps using a non-hallucinated multi-headed regression model, achieving R_ > 0.85 on stratified splits, with easy extensibility to other properties. By streamlining convergence testing, providing interpretable feedback, and accelerating property estimation, VASPilot can empowers researchers to conduct high-throughput simulations to explore novel compounds with speed, efficiency, and accessibility.",
-        "project_novelty": "This work extends prior materials simulation tools by combining graph and text embeddings with RAG for accurate predictions. During the hackathon, we built VASPilot\u00d5s RAG database, similarity search, and bandgap prediction pipeline.",
-        "code_link": "https://github.com/chiku-parida/VASPilot",
+        "description": "DFTPilot is an innovative LLM-powered assistant designed to revolutionize materials simulations. It uniquely combines graph-based embeddings with textual encoding of VASP input files to deliver fast, reliable predictions, even for out-of-distribution structures. By leveraging a precomputed RAG database, it performs advanced similarity searches across structure, composition, and INCAR settings, offering actionable guidance to improve calculations. Users can visualize and interact with their structures and nearest neighbors, gaining deep, intuitive insights. Currently, VASPilot predicts bandgaps using a non-hallucinated multi-headed regression model, achieving R_ > 0.85 on stratified splits, with easy extensibility to other properties. By streamlining convergence testing, providing interpretable feedback, and accelerating property estimation, VASPilot can empowers researchers to conduct high-throughput simulations to explore novel compounds with speed, efficiency, and accessibility.",
+        "project_novelty": "This work extends prior materials simulation tools by combining graph and text embeddings with RAG for accurate predictions. During the hackathon, we built DFTPilot\u00d5s RAG database, similarity search, and bandgap prediction pipeline.",
+        "code_link": "https://github.com/chiku-parida/DFTPilot",
         "models_used": "OpenAI, Hugging Face",
         "analytical_chem": "No",
         "primary_category": "property_prediction",
@@ -1784,7 +1784,7 @@
                 "materials"
             ]
         },
-        "award": null
+        "award": "Visionary Award"
     },
     {
         "team_name": "AssemblAI",
