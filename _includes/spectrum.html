@@ -1,0 +1,15 @@
+{% comment %}
+Emission-spectrum brand mark. Line positions are real: hydrogen Balmer series
+(410, 434, 486, 656 nm), magnesium triplet (~517 nm), and the sodium D doublet
+(589.0 / 589.6 nm — the amber that carries the brand), mapped 380–700 nm → 0–1000.
+Usage: {% include spectrum.html class="spectrum--glow spectrum--animated" %}
+{% endcomment %}
+<svg class="spectrum {{ include.class }}" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <line class="sp-violet" x1="94"  y1="0" x2="94"  y2="100" />
+    <line class="sp-blue"   x1="169" y1="0" x2="169" y2="100" />
+    <line class="sp-cyan"   x1="332" y1="0" x2="332" y2="100" />
+    <line class="sp-green"  x1="429" y1="0" x2="429" y2="100" />
+    <line class="sp-amber"  x1="653" y1="0" x2="653" y2="100" />
+    <line class="sp-amber"  x1="663" y1="0" x2="663" y2="100" />
+    <line class="sp-red"    x1="863" y1="0" x2="863" y2="100" />
+</svg>

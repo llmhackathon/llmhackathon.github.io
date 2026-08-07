@@ -1,24 +1,25 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}LLM, Hackathon, Materials Science, Chemistry, AI, Large Language Models, Innovation{% endif %}">
+<meta name="keywords" content="{% if page.keywords %}{{ page.keywords }}{% else %}OSI Hackathon, Open Scientific Intelligence, LLM, Hackathon, Materials Science, Chemistry, AI, Agents, Datasets, Scientific Software{% endif %}">
 <meta name="author" content="{{ site.author.name }}">
+<meta name="theme-color" content="#1c39bb">
 
 <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+
+<!-- Flag JS availability before first paint (scroll-reveal is JS-gated) -->
+<script>document.documentElement.classList.add('js');</script>
 
 <!-- Preconnect for performance -->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+<!-- Google Fonts: Inter (display/body) + Martian Mono (data voice) -->
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Martian+Mono:wght@400..700&display=swap" rel="stylesheet">
 
 <!-- Icon fonts -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
-
-<!-- CSS Frameworks -->
-<script src="https://cdn.tailwindcss.com"></script>
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -28,10 +29,12 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/images/recap-2025.png' | absolute_url }}">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+<meta name="twitter:image" content="{{ '/assets/images/recap-2025.png' | absolute_url }}">
 
 <!-- Additional page-specific styles -->
 {% if page.additional_css %}

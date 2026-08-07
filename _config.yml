@@ -1,14 +1,14 @@
-# Jekyll Configuration for LLM Hackathon Website
+# Jekyll Configuration for the OSI Hackathon Website
 
 # Site settings
-title: "LLM Hackathon for Applications in Materials Science & Chemistry"
-description: "A hybrid international hackathon connecting researchers from across the globe to explore and help solve the biggest problems in materials science and chemistry."
+title: "Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry"
+description: "A hybrid international hackathon connecting researchers from across the globe to build open scientific intelligence — LLMs, agents, datasets, models, and software — for the biggest problems in materials science and chemistry."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://llmhackathon.github.io" # the base hostname & protocol for your site
 
 # Author information
 author:
-  name: "LLM Hackathon Organizers"
+  name: "OSI Hackathon Organizers"
   email: "blaiszik@uchicago.edu"
 
 # Build settings
@@ -46,10 +46,15 @@ defaults:
 exclude:
   - README.md
   - CLAUDE.md
+  - PRODUCT.md
+  - DESIGN.md
+  - DEPLOYMENT.md
   - Gemfile
   - Gemfile.lock
   - node_modules
   - vendor
+  - backup
+  - "*.backup"
 
 # Include files
 include:
@@ -61,6 +66,9 @@ event:
   kickoff: "9:00 AM (CT), Sept 11"
   submission_deadline: "5:00 PM (CT), Sept 12"
   countdown_date: "September 11, 2025 12:00:00"
+  # Next edition teaser (dates not yet set)
+  next_edition: "October 2026"
+  next_edition_status: "dates TBA"
 
 # External links
 links:

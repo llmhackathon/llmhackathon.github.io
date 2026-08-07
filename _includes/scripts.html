@@ -1,5 +1,5 @@
 <script>
-    // Countdown Timer
+    // Countdown Timer (renders only if a #countdown element exists on the page)
     const countdown = () => {
         const countDate = new Date('{{ site.event.countdown_date }}').getTime();
         const now = new Date().getTime();
@@ -26,7 +26,6 @@
         }
     };
 
-    // Only run countdown if countdown element exists
     if (document.getElementById('countdown')) {
         setInterval(countdown, 1000);
     }
@@ -48,12 +47,28 @@
         }
     });
 
+    // Scroll reveal (progressive enhancement; content is visible without JS)
+    if ('IntersectionObserver' in window) {
+        const io = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('in-view');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+        document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+    } else {
+        document.querySelectorAll('.reveal').forEach(el => el.classList.add('in-view'));
+    }
+
     // Video Modal Functions
     function openVideoModal(videoId, title) {
         const modal = document.getElementById('videoModal');
         const videoFrame = document.getElementById('videoFrame');
         const videoTitle = document.getElementById('videoTitle');
-        
+
         videoFrame.src = `https://www.youtube.com/embed/${videoId}?autoplay=1`;
         videoTitle.textContent = title;
         modal.style.display = 'block';
@@ -63,20 +78,18 @@
     function closeVideoModal() {
         const modal = document.getElementById('videoModal');
         const videoFrame = document.getElementById('videoFrame');
-        
+
         modal.style.display = 'none';
         videoFrame.src = '';
         document.body.style.overflow = 'auto';
     }
 
-    // Close modal when pressing Escape key
     document.addEventListener('keydown', function(event) {
         if (event.key === 'Escape') {
             closeVideoModal();
         }
     });
 
-    // Make functions globally accessible
     window.openVideoModal = openVideoModal;
     window.closeVideoModal = closeVideoModal;
 
@@ -90,6 +103,12 @@
                     document.body.removeChild(loader);
                 }
             });
+            // Safety net: remove even if the transition never fires
+            setTimeout(() => {
+                if (document.body.contains(loader)) {
+                    document.body.removeChild(loader);
+                }
+            }, 1200);
         }
     });
 </script>

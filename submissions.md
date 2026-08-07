@@ -5,14 +5,18 @@ permalink: /submissions/
 ---
 
 <style>
+.content-section {
+    font-family: var(--font-display);
+}
+
 /* Search and Filter Section */
 .search-filter-section {
-    background: white;
-    border-radius: 16px;
+    background: var(--paper);
+    border-radius: var(--radius-md);
     padding: 30px;
     margin-bottom: 30px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
-    border: 1px solid #e8f0fe;
+    box-shadow: 0 1px 2px rgba(20,18,35,0.08), 0 12px 32px rgba(20,18,35,0.07);
+    border: 1px solid var(--line);
 }
 
 .search-box-container {
@@ -27,7 +31,7 @@ permalink: /submissions/
     transform: translateY(-50%);
     width: 20px;
     height: 20px;
-    color: #6b7280;
+    color: var(--ink-soft);
     pointer-events: none;
 }
 
@@ -35,21 +39,22 @@ permalink: /submissions/
     width: 100%;
     padding: 16px 50px 16px 50px;
     font-size: 1rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 12px;
+    border: 2px solid var(--line);
+    border-radius: var(--radius-md);
     transition: all 0.3s ease;
-    background: #fafbfc;
+    background: var(--paper-dim);
+    color: var(--ink);
 }
 
 #search-input:focus {
     outline: none;
-    border-color: #027ff7;
-    background: white;
-    box-shadow: 0 0 0 4px rgba(2, 127, 247, 0.1);
+    border-color: var(--amber);
+    background: var(--paper);
+    box-shadow: 0 0 0 4px color-mix(in oklch, var(--amber) 18%, transparent);
 }
 
 #search-input::placeholder {
-    color: #9ca3af;
+    color: var(--ink-soft);
 }
 
 .clear-search-btn {
@@ -60,7 +65,7 @@ permalink: /submissions/
     background: none;
     border: none;
     cursor: pointer;
-    color: #9ca3af;
+    color: var(--ink-soft);
     font-size: 20px;
     padding: 4px 8px;
     display: none;
@@ -68,7 +73,7 @@ permalink: /submissions/
 }
 
 .clear-search-btn:hover {
-    color: #374151;
+    color: var(--ink);
 }
 
 .clear-search-btn.visible {
@@ -90,10 +95,11 @@ permalink: /submissions/
 }
 
 .filter-group label {
+    font-family: var(--font-mono);
     display: block;
     font-size: 0.85rem;
     font-weight: 600;
-    color: #374151;
+    color: var(--ink);
     margin-bottom: 6px;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -103,26 +109,23 @@ permalink: /submissions/
     width: 100%;
     padding: 10px 16px;
     font-size: 0.9rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    background: white;
+    border: 2px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--paper);
+    color: var(--ink);
     cursor: pointer;
     transition: all 0.2s ease;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 12px center;
     padding-right: 36px;
 }
 
 .filter-group select:focus {
     outline: none;
-    border-color: #027ff7;
-    box-shadow: 0 0 0 3px rgba(2, 127, 247, 0.1);
+    border-color: var(--amber);
+    box-shadow: 0 0 0 3px color-mix(in oklch, var(--amber) 18%, transparent);
 }
 
 .filter-group select:hover {
-    border-color: #cbd5e1;
+    border-color: var(--amber);
 }
 
 .active-filters {
@@ -137,19 +140,19 @@ permalink: /submissions/
     display: inline-flex;
     align-items: center;
     gap: 6px;
-    background: linear-gradient(135deg, #027ff7, #0259ce);
-    color: white;
+    background: var(--void-panel);
+    color: var(--on-void);
     padding: 6px 12px;
-    border-radius: 20px;
+    border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 600;
     animation: slideIn 0.3s ease;
 }
 
 .active-filter-chip .remove-filter {
-    background: rgba(255, 255, 255, 0.25);
+    background: color-mix(in oklch, var(--on-void) 18%, transparent);
     border: none;
-    color: white;
+    color: var(--on-void);
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -163,15 +166,15 @@ permalink: /submissions/
 }
 
 .active-filter-chip .remove-filter:hover {
-    background: rgba(255, 255, 255, 0.4);
+    background: color-mix(in oklch, var(--on-void) 28%, transparent);
 }
 
 .clear-all-filters {
-    background: #f3f4f6;
-    color: #374151;
-    border: none;
+    background: var(--paper-dim);
+    color: var(--ink);
+    border: 1px solid var(--line);
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 999px;
     font-size: 0.85rem;
     font-weight: 600;
     cursor: pointer;
@@ -179,8 +182,9 @@ permalink: /submissions/
 }
 
 .clear-all-filters:hover {
-    background: #e5e7eb;
-    color: #111827;
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--amber);
 }
 
 @keyframes slideIn {
@@ -200,19 +204,20 @@ permalink: /submissions/
     align-items: center;
     padding: 16px 0;
     margin-bottom: 16px;
-    border-bottom: 2px solid #e5e7eb;
+    border-bottom: 2px solid var(--line);
 }
 
 .results-count {
     font-size: 1rem;
-    color: #374151;
+    color: var(--ink);
     font-weight: 600;
 }
 
 .results-count .count-number {
-    color: #027ff7;
+    font-family: var(--font-mono);
+    color: var(--amber-ink);
     font-size: 1.25rem;
-    font-weight: 700;
+    font-weight: 600;
 }
 
 .sort-group {
@@ -222,34 +227,32 @@ permalink: /submissions/
 }
 
 .sort-group label {
+    font-family: var(--font-mono);
     font-size: 0.9rem;
-    color: #6b7280;
+    color: var(--ink-soft);
     font-weight: 500;
 }
 
 .sort-group select {
     padding: 8px 32px 8px 12px;
     font-size: 0.9rem;
-    border: 2px solid #e5e7eb;
-    border-radius: 8px;
-    background: white;
+    border: 2px solid var(--line);
+    border-radius: var(--radius-sm);
+    background: var(--paper);
+    color: var(--ink);
     cursor: pointer;
     transition: all 0.2s ease;
-    appearance: none;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%236b7280' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
-    background-repeat: no-repeat;
-    background-position: right 10px center;
 }
 
 .sort-group select:focus {
     outline: none;
-    border-color: #027ff7;
+    border-color: var(--amber);
 }
 
 .no-results {
     text-align: center;
     padding: 60px 20px;
-    color: #6b7280;
+    color: var(--ink-soft);
 }
 
 .no-results-icon {
@@ -260,13 +263,13 @@ permalink: /submissions/
 
 .no-results h3 {
     font-size: 1.5rem;
-    color: #374151;
+    color: var(--ink);
     margin-bottom: 8px;
 }
 
 .no-results p {
     font-size: 1rem;
-    color: #6b7280;
+    color: var(--ink-soft);
 }
 
 /* Page Header */
@@ -276,9 +279,9 @@ permalink: /submissions/
     align-items: center;
     margin-bottom: 30px;
     padding: 24px 30px;
-    background: linear-gradient(135deg, #f8fbff 0%, #e6f2ff 100%);
-    border-radius: 16px;
-    border: 1px solid #e0efff;
+    background: var(--void);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line-on-void);
     flex-wrap: wrap;
     gap: 20px;
 }
@@ -293,23 +296,24 @@ permalink: /submissions/
 .stat-item {
     text-align: center;
     padding: 12px 20px;
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
-    border: 1px solid #e2e2e2;
+    background: var(--paper);
+    border-radius: var(--radius-sm);
+    border: 1px solid var(--line);
     min-width: 140px;
 }
 
 .stat-number {
+    font-family: var(--font-mono);
     font-size: 1.75rem;
-    font-weight: 700;
-    color: #027ff7;
+    font-weight: 600;
+    color: var(--amber-ink);
     margin-bottom: 4px;
 }
 
 .stat-label {
+    font-family: var(--font-mono);
     font-size: 0.8rem;
-    color: #666;
+    color: var(--ink-soft);
     font-weight: 500;
     text-transform: uppercase;
     letter-spacing: 0.5px;
@@ -319,23 +323,21 @@ permalink: /submissions/
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: linear-gradient(120deg, #2563eb, #0ea5e9);
-    color: white;
+    background: var(--amber);
+    color: #171226;
     padding: 14px 28px;
-    border-radius: 999px;
+    border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 0.95rem;
     text-decoration: none;
-    box-shadow: 0 8px 24px rgba(37, 99, 235, 0.3);
-    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+    transition: transform 0.25s ease, filter 0.25s ease;
     white-space: nowrap;
 }
 
 .header-awards-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 12px 32px rgba(14, 165, 233, 0.4);
+    transform: translateY(-1px);
     filter: brightness(1.05);
-    color: white;
+    color: #171226;
     text-decoration: none;
 }
 
@@ -346,12 +348,12 @@ permalink: /submissions/
 
 /* Submission Cards */
 .submission-card {
-    background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
-    border: 1px solid #e8f0fe;
-    border-radius: 20px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
     padding: 35px;
     margin-bottom: 32px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(20,18,35,0.08), 0 12px 32px rgba(20,18,35,0.07);
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -370,27 +372,14 @@ permalink: /submissions/
     }
 }
 
-.submission-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #027ff7, #0ea5e9, #6366f1);
-    border-radius: 20px 20px 0 0;
-}
-
 .submission-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 60px rgba(2, 127, 247, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
-    border-color: #027ff7;
-    background: #ffffff;
+    transform: translateY(-3px);
+    border-color: var(--amber);
 }
 
 /* Team Name */
 .submission-card h3 {
-    color: #1a1a1a;
+    color: var(--ink);
     margin-bottom: 16px;
     font-size: 1.5rem;
     font-weight: 700;
@@ -405,7 +394,7 @@ permalink: /submissions/
     left: 0;
     width: 60px;
     height: 3px;
-    background: linear-gradient(90deg, #027ff7, #6366f1);
+    background: var(--amber);
     border-radius: 2px;
 }
 
@@ -416,7 +405,7 @@ permalink: /submissions/
 
 .submission-section-title {
     font-weight: 600;
-    color: #374151;
+    color: var(--ink);
     margin-bottom: 8px;
     font-size: 0.95rem;
     text-transform: uppercase;
@@ -430,12 +419,12 @@ permalink: /submissions/
     content: '';
     width: 4px;
     height: 16px;
-    background: #027ff7;
+    background: var(--amber);
     border-radius: 2px;
 }
 
 .submission-content {
-    color: #4b5563;
+    color: var(--ink-soft);
     line-height: 1.6;
     font-size: 0.95rem;
 }
@@ -449,11 +438,11 @@ permalink: /submissions/
 }
 
 .submission-links .btn {
-    background: linear-gradient(135deg, #027ff7 0%, #0259ce 100%);
-    color: #ffffff;
+    background: var(--amber);
+    color: #171226;
     padding: 12px 24px;
     border: 0;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 14px;
     text-decoration: none;
@@ -465,33 +454,14 @@ permalink: /submissions/
     overflow: hidden;
 }
 
-.submission-links .btn::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.submission-links .btn:hover::before {
-    left: 100%;
-}
-
 .submission-links .btn:hover {
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(2, 127, 247, 0.4);
+    color: #171226;
+    filter: brightness(1.05);
+    transform: translateY(-1px);
 }
 
 .submission-links .btn:nth-child(2) {
-    background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);
-}
-
-.submission-links .btn:nth-child(2):hover {
-    box-shadow: 0 8px 24px rgba(107, 114, 128, 0.4);
+    background: var(--amber);
 }
 
 /* Chips and Tags */
@@ -504,8 +474,9 @@ permalink: /submissions/
 }
 
 .chips-label {
+    font-family: var(--font-mono);
     font-weight: 600;
-    color: #374151;
+    color: var(--ink);
     margin-right: 8px;
     font-size: 0.9rem;
     min-width: fit-content;
@@ -513,13 +484,13 @@ permalink: /submissions/
 
 /* Base chip styling - clean monochromatic approach */
 .chip {
-    background: #f8fafc;
-    color: #475569;
+    background: var(--paper-dim);
+    color: var(--ink-soft);
     padding: 6px 14px;
-    border-radius: 20px;
+    border-radius: 999px;
     font-size: 0.8rem;
     font-weight: 600;
-    border: 1px solid #e2e8f0;
+    border: 1px solid var(--line);
     transition: all 0.3s ease;
     text-transform: capitalize;
     white-space: nowrap;
@@ -527,38 +498,36 @@ permalink: /submissions/
 
 .chip:hover {
     transform: translateY(-1px);
-    background: #f1f5f9;
-    border-color: #cbd5e1;
-    box-shadow: 0 4px 12px rgba(71, 85, 105, 0.15);
+    background: var(--paper);
+    border-color: var(--amber);
 }
 
 /* Primary Category Badge */
 .primary-category {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-    color: white;
-    padding: 8px 16px;
-    border-radius: 24px;
-    font-size: 0.85rem;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.06em;
+    color: var(--amber-ink);
+    background: color-mix(in oklch, var(--amber) 14%, transparent);
+    border: 1px solid color-mix(in oklch, var(--amber) 40%, transparent);
+    border-radius: 999px;
+    padding: 4px 12px;
     display: inline-block;
     margin-bottom: 15px;
-    border: 1px solid #a855f7;
-    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
     text-decoration: none;
 }
 
 .primary-category:hover {
     transform: translateY(-1px);
-    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.4);
+    border-color: var(--amber);
 }
 
 /* Enhanced chip variants with subtle visual differentiation */
 .chip.domain-area {
-    background: #eff6ff;
-    color: #1e40af;
-    border-color: #dbeafe;
+    background: var(--paper-dim);
+    color: var(--ink-soft);
+    border-color: var(--line);
     position: relative;
 }
 
@@ -570,19 +539,19 @@ permalink: /submissions/
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
-    background: #3b82f6;
+    background: var(--amber);
     border-radius: 50%;
 }
 
 .chip.domain-area:hover {
-    background: #dbeafe;
-    color: #1d4ed8;
+    background: var(--paper);
+    color: var(--ink);
 }
 
 .chip.modality {
-    background: #f0f9ff;
-    color: #0284c7;
-    border-color: #e0f2fe;
+    background: var(--paper-dim);
+    color: var(--ink-soft);
+    border-color: var(--line);
     position: relative;
 }
 
@@ -594,26 +563,26 @@ permalink: /submissions/
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
-    background: #0ea5e9;
+    background: var(--amber);
     border-radius: 50%;
 }
 
 .chip.modality:hover {
-    background: #e0f2fe;
-    color: #0369a1;
+    background: var(--paper);
+    color: var(--ink);
 }
 
 .chip.model {
-    background: #f9fafb;
-    color: #374151;
-    border-color: #d1d5db;
+    background: var(--paper-dim);
+    color: var(--ink);
+    border-color: var(--line);
     font-weight: 700;
 }
 
 .chip.model:hover {
-    background: #f3f4f6;
-    color: #111827;
-    border-color: #9ca3af;
+    background: var(--paper);
+    color: var(--ink);
+    border-color: var(--amber);
 }
 
 /* Media Embeds */
@@ -623,10 +592,10 @@ permalink: /submissions/
     height: 0;
     overflow: hidden;
     max-width: 100%;
-    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+    background: var(--void);
     margin-bottom: 25px;
-    border-radius: 12px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--line-on-void);
 }
 
 .video-container iframe {
@@ -635,14 +604,14 @@ permalink: /submissions/
     left: 0;
     width: 100%;
     height: 100%;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
 }
 
 .linkedin-preview {
-    border: 2px solid #0077b5;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #0077b5 0%, #005885 50%, #004471 100%);
-    color: white;
+    border: 1px solid var(--line-on-void);
+    border-radius: var(--radius-md);
+    background: var(--void);
+    color: var(--on-void);
     padding: 24px;
     margin-bottom: 25px;
     text-decoration: none;
@@ -652,27 +621,11 @@ permalink: /submissions/
     overflow: hidden;
 }
 
-.linkedin-preview::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.1), transparent);
-    transition: left 0.6s;
-}
-
-.linkedin-preview:hover::before {
-    left: 100%;
-}
-
 .linkedin-preview:hover {
     transform: translateY(-3px);
-    box-shadow: 0 12px 32px rgba(0, 119, 181, 0.4);
-    color: white;
+    color: var(--on-void);
     text-decoration: none;
-    border-color: #0088cc;
+    border-color: var(--amber);
 }
 
 .linkedin-preview-header {
@@ -686,20 +639,18 @@ permalink: /submissions/
     height: 28px;
     margin-right: 12px;
     fill: currentColor;
-    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.2));
 }
 
 .linkedin-preview-text {
     font-size: 18px;
     font-weight: 700;
-    text-shadow: 0 1px 2px rgba(0,0,0,0.2);
 }
 
 .twitter-embed {
     margin-bottom: 25px;
-    border-radius: 12px;
+    border-radius: var(--radius-md);
     overflow: hidden;
-    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--line);
 }
 
 /* Responsive Design */
@@ -707,7 +658,7 @@ permalink: /submissions/
     .submission-card {
         padding: 24px;
         margin-bottom: 24px;
-        border-radius: 16px;
+        border-radius: var(--radius-md);
     }
     
     .submissions-header {
@@ -795,7 +746,7 @@ permalink: /submissions/
     align-items: center;
     height: 200px;
     font-size: 1.1rem;
-    color: #6b7280;
+    color: var(--ink-soft);
 }
 
 .loading::after {
@@ -803,8 +754,8 @@ permalink: /submissions/
     width: 20px;
     height: 20px;
     margin-left: 10px;
-    border: 2px solid #e5e7eb;
-    border-top: 2px solid #027ff7;
+    border: 2px solid var(--line);
+    border-top: 2px solid var(--amber);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }

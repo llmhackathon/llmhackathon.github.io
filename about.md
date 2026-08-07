@@ -1,13 +1,15 @@
 ---
 layout: page
 title: "About The Hackathon"
-description: "Learn more about the LLM Hackathon for Applications in Materials Science & Chemistry. Discover our mission, goals, and what makes this event unique."
-keywords: "About LLM Hackathon, Materials Science AI, Chemistry AI, Hackathon Mission, Event Goals"
+description: "Learn more about the Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry — formerly the LLM Hackathon. Discover our mission, goals, and what makes this event unique."
+keywords: "About OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials Science AI, Chemistry AI, Hackathon Mission, Event Goals"
 ---
 
-## LLM Hackathon for Applications in Materials Science & Chemistry
+## Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry
 
-Recently Large-language models (LLMs) have sparked the interest of many scientists for the possibility to enable previously intractable applications. To explore  possibilities in materials science and chemistry, we have organize an annual hackathon to showcase LLM applications in materials science and chemistry. In 2023, the results showed 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually which can be found in [**arXiv**](https://arxiv.org/abs/2411.15221).
+Large language models (LLMs) sparked the interest of many scientists for the possibility of enabling previously intractable applications. To explore those possibilities in materials science and chemistry, we organized an annual hackathon — the LLM Hackathon for Applications in Materials Science & Chemistry. In 2023, the results showed 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually, documented on [**arXiv**](https://arxiv.org/abs/2411.15221).
+
+Starting with the **October 2026** edition, the event becomes the **Open Scientific Intelligence (OSI) Hackathon**: the frontier has moved past language models alone, and so has the hackathon. LLMs, autonomous agents, datasets, benchmarks, models, and scientific software are all fair game.
 
 ## Organizing Team
 

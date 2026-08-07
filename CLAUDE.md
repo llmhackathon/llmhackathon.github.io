@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Jekyll-powered static website** for the **LLM Hackathon for Applications in Materials Science & Chemistry** - an international hybrid hackathon event. The website serves as the main information hub for participants, organizers, and site hosts.
+This is a **Jekyll-powered static website** for the **Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry** (formerly the LLM Hackathon, renamed for the October 2026 edition to cover LLMs, agents, datasets, models, and scientific software) - an international hybrid hackathon event. The website serves as the main information hub for participants, organizers, and site hosts. Historical pages (2023-2025 projects/awards) intentionally keep the old "LLM Hackathon" name.
 
 ## Architecture
 
@@ -62,15 +62,25 @@ This is a **Jekyll-powered static website** for the **LLM Hackathon for Applicat
 
 ### Styling Architecture
 
-- **CSS Framework**: Uses Tailwind CSS (via CDN) + custom CSS
-- **Typography**: Poppins (primary) and Roboto Mono (monospace) fonts from Google Fonts
-- **Responsive Design**: Mobile-first approach with breakpoints for tablets and desktop
-- **Color Scheme**: Blue gradient theme (`#027ff7` to `#0259ce`) with clean white/gray backgrounds
-- **Components**: Reusable card layouts for projects, resources, team members, and prizes
+- **Design system**: "Cobalt & Signal" — see `DESIGN.md` for the full spec. No CSS framework (Tailwind was removed); everything lives in `_sass/_main.scss` as OKLCH design tokens on `:root`.
+- **Typography**: Archivo (display + body, expanded widths for headings) and Martian Mono (data voice: stats, timestamps, badges) from Google Fonts
+- **Color Scheme**: Flat drenched cobalt (`--void*`) + true-white paper (`--paper*`), with signal yellow (`--amber`) as the single action color and cobalt (`--amber-ink`) as the text accent on white; emission-spectrum motif prints white+yellow on cobalt, full color on white. No gradients, no decorative underlines (links underline on hover only)
+- **Signature components**: spectrum bar include (`_includes/spectrum.html`), element tile, stats band, editions timeline
+- **Responsive Design**: fluid `clamp()` spacing/type, `auto-fit minmax()` grids, nav collapses ≤1350px
+- **Motion**: scroll reveals + hero entrance, all gated behind `prefers-reduced-motion`
 
 ## Development Commands
 
 ### Jekyll Development
+
+Local dev requires Ruby 3.4 (the `github-pages` gem is not compatible with Ruby 4.x).
+Homebrew `ruby@3.4` is installed and exported in `~/.zshrc`:
+
+```bash
+# ~/.zshrc already contains:
+# export PATH="/opt/homebrew/opt/ruby@3.4/bin:$PATH"
+# export PATH="$(/opt/homebrew/opt/ruby@3.4/bin/gem environment gemdir)/bin:$PATH"
+```
 
 ```bash
 # Install Jekyll and dependencies

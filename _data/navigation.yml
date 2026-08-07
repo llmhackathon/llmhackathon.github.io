@@ -40,4 +40,4 @@ footer:
     - name: "Sites"
       url: "/sites/"
     - name: "FAQ"
-      url: "/faq/"
+      url: "/#faq"

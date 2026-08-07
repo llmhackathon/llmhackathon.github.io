@@ -6,6 +6,7 @@ permalink: /awards/
 
 <style>
 .awards-wrapper {
+    font-family: var(--font-display);
     display: flex;
     flex-direction: column;
     gap: 48px;
@@ -14,12 +15,11 @@ permalink: /awards/
 .awards-intro {
     font-size: 1rem;
     line-height: 1.7;
-    color: #1e293b;
-    background: linear-gradient(135deg, rgba(37, 99, 235, 0.1) 0%, rgba(14, 165, 233, 0.14) 100%);
-    border: 1px solid rgba(148, 163, 184, 0.18);
-    border-radius: 20px;
+    color: var(--on-void);
+    background: var(--void);
+    border: 1px solid var(--line-on-void);
+    border-radius: var(--radius-md);
     padding: 32px;
-    box-shadow: 0 20px 55px rgba(15, 23, 42, 0.12);
 }
 
 .awards-section h2 {
@@ -28,7 +28,7 @@ permalink: /awards/
 }
 
 .awards-section p.section-copy {
-    color: #475569;
+    color: var(--ink-soft);
     margin-bottom: 28px;
     max-width: 760px;
 }
@@ -40,11 +40,11 @@ permalink: /awards/
 }
 
 .award-card {
-    background: linear-gradient(to bottom, #ffffff 0%, #fafbfc 100%);
-    border: 1px solid #e8f0fe;
-    border-radius: 16px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
     padding: 24px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05), 0 1px 3px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 1px 2px rgba(20,18,35,0.08), 0 12px 32px rgba(20,18,35,0.07);
     transition: all 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     position: relative;
     overflow: hidden;
@@ -52,41 +52,27 @@ permalink: /awards/
     flex-direction: column;
 }
 
-.award-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 5px;
-    background: linear-gradient(90deg, #027ff7, #0ea5e9, #6366f1);
-    border-radius: 20px 20px 0 0;
-}
-
 .award-card:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 20px 60px rgba(2, 127, 247, 0.15), 0 8px 24px rgba(0, 0, 0, 0.1);
-    border-color: #027ff7;
-    background: #ffffff;
+    transform: translateY(-3px);
+    border-color: var(--amber);
 }
 
 .award-rank {
-    background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
-    color: white;
-    padding: 6px 12px;
-    border-radius: 20px;
-    font-size: 0.75rem;
-    font-weight: 700;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
     text-transform: uppercase;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.06em;
+    color: var(--amber-ink);
+    background: color-mix(in oklch, var(--amber) 14%, transparent);
+    border: 1px solid color-mix(in oklch, var(--amber) 40%, transparent);
+    border-radius: 999px;
+    padding: 4px 12px;
     display: inline-block;
     margin-bottom: 12px;
-    border: 1px solid #a855f7;
-    box-shadow: 0 2px 8px rgba(139, 92, 246, 0.3);
 }
 
 .award-card h3 {
-    color: #1a1a1a;
+    color: var(--ink);
     margin-bottom: 12px;
     font-size: 1.25rem;
     font-weight: 700;
@@ -102,7 +88,7 @@ permalink: /awards/
     left: 0;
     width: 50px;
     height: 2px;
-    background: linear-gradient(90deg, #027ff7, #6366f1);
+    background: var(--amber);
     border-radius: 2px;
 }
 
@@ -112,8 +98,9 @@ permalink: /awards/
 }
 
 .award-section-title {
+    font-family: var(--font-mono);
     font-weight: 600;
-    color: #374151;
+    color: var(--ink);
     margin-bottom: 6px;
     font-size: 0.8rem;
     text-transform: uppercase;
@@ -127,18 +114,18 @@ permalink: /awards/
     content: '';
     width: 3px;
     height: 12px;
-    background: #027ff7;
+    background: var(--amber);
     border-radius: 2px;
 }
 
 .award-team {
-    color: #4b5563;
+    color: var(--ink-soft);
     line-height: 1.5;
     font-size: 0.875rem;
 }
 
 .award-description {
-    color: #4b5563;
+    color: var(--ink-soft);
     line-height: 1.5;
     font-size: 0.875rem;
     display: -webkit-box;
@@ -156,11 +143,11 @@ permalink: /awards/
 }
 
 .award-button {
-    background: linear-gradient(135deg, #027ff7 0%, #0259ce 100%);
-    color: #ffffff;
+    background: var(--amber);
+    color: #171226;
     padding: 10px 18px;
     border: 0;
-    border-radius: 8px;
+    border-radius: var(--radius-sm);
     font-weight: 600;
     font-size: 13px;
     text-decoration: none;
@@ -172,25 +159,10 @@ permalink: /awards/
     overflow: hidden;
 }
 
-.award-button::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.2), transparent);
-    transition: left 0.5s;
-}
-
-.award-button:hover::before {
-    left: 100%;
-}
-
 .award-button:hover {
-    color: #ffffff;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(2, 127, 247, 0.4);
+    color: #171226;
+    filter: brightness(1.05);
+    transform: translateY(-1px);
 }
 
 .award-button svg {
@@ -199,11 +171,11 @@ permalink: /awards/
 }
 
 .visionary-card {
-    background: #fff;
-    border: 1px solid rgba(226, 232, 240, 0.9);
-    border-radius: 18px;
+    background: var(--paper);
+    border: 1px solid var(--line);
+    border-radius: var(--radius-md);
     padding: 28px;
-    box-shadow: 0 16px 44px rgba(15, 23, 42, 0.1);
+    box-shadow: 0 1px 2px rgba(20,18,35,0.08), 0 12px 32px rgba(20,18,35,0.07);
 }
 
 .visionary-card ul {
@@ -217,13 +189,13 @@ permalink: /awards/
 .visionary-card li {
     margin: 0 0 8px 0;
     font-weight: 600;
-    color: #334155;
+    color: var(--ink);
 }
 
 .loading {
     text-align: center;
     padding: 40px;
-    color: #6b7280;
+    color: var(--ink-soft);
     font-size: 1rem;
 }
 
@@ -366,7 +338,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
             if (submission.code_link) {
                 linksHtml += `
-                    <a class="award-button" href="${submission.code_link}" target="_blank" rel="noopener" style="background: linear-gradient(135deg, #6b7280 0%, #4b5563 100%);">
+                    <a class="award-button" href="${submission.code_link}" target="_blank" rel="noopener" style="background: var(--amber);">
                         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
                             <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"/>
                         </svg>
