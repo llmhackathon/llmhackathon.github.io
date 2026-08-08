@@ -1,10 +1,9 @@
 /* ==========================================================================
-   LLM Hackathon — "Cobalt & Signal" design system
-   Swiss scientific-poster energy: flat drenched cobalt (the element!)
-   carries hero/headers/footer, true-white paper carries content, and
-   signal yellow (the sodium D line, 589 nm) is the single action color.
-   The emission-spectrum mark prints as white ticks + yellow doublet on
-   cobalt, and in full color on white.
+   OSI Hackathon — "Midnight & Aurora" design system
+   Night-sky scientific identity: midnight navy carries the brand bands,
+   a soft warm-to-cool ramp carries content. Accent roles are strict:
+   action blue = interactive, aurora family = data accents on midnight,
+   gold = honor-reserved (awards + the sodium-D doublet in the spectrum).
    ========================================================================== */
 
 * {
@@ -14,34 +13,54 @@
 }
 
 :root {
-    /* Surfaces — cobalt carries the brand; paper is true white */
-    --void: oklch(40% 0.21 263);         /* cobalt band */
-    --void-deep: oklch(35% 0.2 263);     /* deep cobalt (hero, footer) */
-    --void-panel: oklch(46% 0.21 263);   /* panel on cobalt */
-    --paper: oklch(99.2% 0.002 263);
-    --paper-dim: oklch(96.5% 0.009 263);
+    /* Midnight — the dark band */
+    --void: #141C36;            /* theme-midnight */
+    --void-deep: #0D1226;       /* theme-midnight-deep (hero, footer) */
+    --void-panel: #1D2A4F;      /* lifted midnight panel */
+    --paper: #FFFFFF;           /* theme-surface (cards) */
+    --paper-dim: #EEF1F8;       /* buttermilk-low, cool inset paper */
 
-    /* Ink */
-    --ink: oklch(18% 0.02 263);
-    --ink-soft: oklch(38% 0.018 263);
-    --line: oklch(89% 0.01 263);
-    --on-void: oklch(99% 0.004 263);
-    --on-void-soft: oklch(88% 0.045 263);
-    --line-on-void: oklch(100% 0 0 / 0.28);
+    /* Page background ramp */
+    --bg-top: #F6F6F2;
+    --bg-mid: #EDEDEA;
+    --bg-bot: #DFE3EE;
 
-    /* Signal yellow — the action color (sodium D, still) */
-    --amber: oklch(88% 0.175 95);
-    --amber-bright: oklch(92% 0.17 98);
-    --amber-ink: oklch(45% 0.24 264);    /* accent for text on paper = cobalt */
-    --amber-glow: oklch(88% 0.175 95 / 0.4);
+    /* Ink ramp */
+    --ink: #1E2A4A;
+    --ink-deep: #142042;
+    --ink-soft: #5C6470;        /* body-muted */
+    --ink-subtle: #667085;
+    --line: rgba(186, 193, 214, 0.65);   /* glass edge, hairline weight */
+    --on-void: #EEF1FB;
+    --on-void-soft: #9AA7CD;
+    --line-on-void: rgba(154, 167, 205, 0.3);
 
-    /* Spectral line palette (used as thin lines on white only) */
-    --sp-violet: oklch(58% 0.24 300);
-    --sp-blue: oklch(55% 0.22 262);
-    --sp-cyan: oklch(74% 0.13 212);
-    --sp-green: oklch(76% 0.19 150);
-    --sp-amber: oklch(84% 0.165 90);
-    --sp-red: oklch(58% 0.22 27);
+    /* Action blue — the interactive color */
+    --action: #3F5FBC;
+    --action-hover: #314C98;
+    --action-pressed: #263C79;
+    --action-glow: rgba(63, 95, 188, 0.3);
+    --cream: #FFFDF8;           /* primary foreground on action */
+
+    /* Gold — honor-reserved (awards, validated breakthroughs) */
+    --gold: #C79A4D;
+    --gold-hover: #B4873B;
+    --gold-soft: #EAD8AA;
+    --ink-gold: #7A4D14;
+
+    /* Aurora accents on midnight (legacy token names kept for reach) */
+    --amber: #8AA0E6;           /* periwinkle — data accents on midnight */
+    --amber-bright: #A9BBF0;
+    --amber-ink: #3F5FBC;       /* accent text on light = action blue */
+    --amber-glow: rgba(138, 160, 230, 0.4);
+
+    /* Spectral line palette → the aurora family (+ gold doublet, clay red) */
+    --sp-violet: #8B7CF6;
+    --sp-blue: #8AA0E6;
+    --sp-cyan: #5EC9E8;
+    --sp-green: #3FA3C4;
+    --sp-amber: #C79A4D;
+    --sp-red: #A66F44;
 
     /* Type */
     --font-display: "Inter", "Helvetica Neue", Arial, sans-serif;
@@ -79,7 +98,7 @@ body {
 body {
     font-family: var(--font-display);
     font-optical-sizing: auto;
-    background: var(--paper);
+    background: linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 55%, var(--bg-bot) 100%) fixed;
     color: var(--ink);
     line-height: 1.7;
     text-rendering: optimizeLegibility;
@@ -94,8 +113,9 @@ body {
     left: 0;
     width: 100%;
     z-index: var(--z-nav);
-    background: var(--amber);
-    color: var(--ink);
+    background: var(--void);
+    color: var(--on-void);
+    border-top: 1px solid var(--line-on-void);
     font-family: var(--font-mono);
     font-size: 0.68rem;
     font-weight: 600;
@@ -113,8 +133,8 @@ body {
 }
 
 ::selection {
-    background: var(--amber);
-    color: var(--ink);
+    background: var(--action);
+    color: var(--cream);
 }
 
 /* --- Base typography ------------------------------------------------- */
@@ -167,6 +187,20 @@ ol li, ul li { margin-bottom: 5px; }
 .ordered-list li { list-style: decimal; }
 .unordered-list li { list-style: lower-alpha; }
 .unordered-list-disc li { list-style: disc; }
+
+/* Visually hidden, still announced by screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(50%);
+    white-space: nowrap;
+    border: 0;
+}
 
 /* Mono utility voice: timestamps, wavelengths, stats */
 .mono-label {
@@ -221,8 +255,8 @@ ol li, ul li { margin-bottom: 5px; }
 .page-header .spectrum .sp-amber,
 .hero-spectrum .spectrum .sp-amber,
 .footer-spectrum .spectrum .sp-amber {
-    stroke: var(--amber);
-    filter: drop-shadow(0 0 5px var(--amber-glow));
+    stroke: var(--gold);
+    filter: drop-shadow(0 0 5px rgba(199, 154, 77, 0.45));
 }
 
 /* Ignition animation: lines scale up from the baseline once, staggered */
@@ -250,6 +284,226 @@ ol li, ul li { margin-bottom: 5px; }
         transform: scaleY(1);
         opacity: 1;
     }
+}
+
+/* --- Interactive lines: read one line at a time ---------------------- */
+
+.spectrum--interactive {
+    pointer-events: auto;
+}
+
+.spectrum--interactive line {
+    cursor: default;
+    opacity: 0.9;
+    transition: stroke-width 0.2s ease, opacity 0.2s ease, filter 0.2s ease;
+}
+
+.spectrum--interactive .sp-violet { color: var(--sp-violet); }
+.spectrum--interactive .sp-blue   { color: var(--sp-blue); }
+.spectrum--interactive .sp-cyan   { color: var(--sp-cyan); }
+.spectrum--interactive .sp-green  { color: var(--sp-green); }
+.spectrum--interactive .sp-amber  { color: var(--sp-amber); }
+.spectrum--interactive .sp-red    { color: var(--sp-red); }
+
+.spectrum--interactive line:hover {
+    stroke-width: 5;
+    opacity: 1;
+    filter: drop-shadow(0 0 6px currentColor);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .spectrum--interactive line,
+    .spectrum-label,
+    .spectrum-label .sl-tick,
+    .spectrum-label .sl-el {
+        transition: none;
+    }
+}
+
+/* --- Live doublet: the sodium D lines breathe ------------------------ */
+
+@media (prefers-reduced-motion: no-preference) {
+    .spectrum--live .sp-amber {
+        animation: spectrum-live 4s ease-in-out infinite alternate;
+    }
+
+    /* Ignite first, then hand off to the shimmer */
+    .spectrum--animated.spectrum--live .sp-amber {
+        animation: spectrum-ignite 0.9s cubic-bezier(0.16, 1, 0.3, 1) backwards,
+                   spectrum-live 4s ease-in-out infinite alternate;
+    }
+
+    /* shimmer must not start until its line's ignite ends (delay + 0.9s),
+       or the later-listed animation steals opacity mid-ignite */
+    .spectrum--animated.spectrum--live .sp-amber:nth-child(5) { animation-delay: 0.65s, 1.55s; }
+    .spectrum--animated.spectrum--live .sp-amber:nth-child(6) { animation-delay: 0.70s, 1.6s; }
+}
+
+@keyframes spectrum-live {
+    from {
+        opacity: 0.75;
+        filter: drop-shadow(0 0 3px rgba(199, 154, 77, 0.3));
+    }
+    to {
+        opacity: 1;
+        filter: drop-shadow(0 0 9px rgba(199, 154, 77, 0.6));
+    }
+}
+
+/* --- Labeled figure: the mark, annotated ----------------------------- */
+
+.spectrum-figure {
+    position: relative;
+    width: 100%;
+}
+
+.spectrum-figure .spectrum line {
+    stroke-width: 3.5;
+}
+
+.spectrum-labels {
+    position: relative;
+    height: 46px;
+    margin-top: 2px;
+}
+
+.spectrum-label {
+    position: absolute;
+    top: 0;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    line-height: 1.3;
+    letter-spacing: 0.04em;
+    /* no uppercase: Hβ, Mg, Na and "nm" are scientific notation, not styling */
+    text-transform: none;
+    color: var(--ink-soft);
+    white-space: nowrap;
+    cursor: default;
+    transition: color 0.2s ease;
+}
+
+.spectrum-label .sl-tick {
+    width: 1px;
+    height: 9px;
+    margin-bottom: 6px;
+    background: var(--line);
+    transition: background 0.2s ease, height 0.2s ease;
+}
+
+.spectrum-label .sl-el {
+    font-weight: 600;
+    color: var(--ink);
+    transition: color 0.2s ease;
+}
+
+.spectrum-label .sl-wl {
+    font-size: 0.56rem;
+}
+
+.spectrum-label:hover,
+.spectrum-label:hover .sl-el {
+    color: var(--amber-ink);
+}
+
+.spectrum-label:hover .sl-tick {
+    height: 14px;
+    background: currentColor;
+}
+
+/* Honor-Light: the sodium doublet is the one place gold is earned */
+.spectrum-label--na:hover,
+.spectrum-label--na:hover .sl-el {
+    color: var(--ink-gold);
+}
+
+/* Thin the annotation out before labels collide: first tighten, then drop
+   the crowded H-delta / H-gamma pair and Mg, keeping Hβ / Na / Hα */
+@media (max-width: 860px) {
+    .spectrum-label {
+        font-size: 0.58rem;
+        letter-spacing: 0.04em;
+    }
+
+    .spectrum-label .sl-wl {
+        font-size: 0.5rem;
+    }
+}
+
+@media (max-width: 640px) {
+    .spectrum-label--minor {
+        display: none;
+    }
+
+    .spectrum-labels {
+        height: 40px;
+    }
+}
+
+/* --- Spectral strip: the interlude that explains the mark ------------ */
+
+.spectral-strip {
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    padding: clamp(44px, 6vw, 76px) clamp(24px, 6vw, 48px);
+}
+
+.spectral-strip-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: clamp(16px, 2.5vw, 26px);
+    text-align: center;
+}
+
+.spectral-strip-kicker {
+    font-size: 0.72rem;
+    color: var(--ink-soft);
+    margin: 0;
+}
+
+.spectral-strip .spectrum-figure {
+    width: 100%;
+}
+
+.spectral-strip .spectrum {
+    height: clamp(64px, 8vw, 80px);
+}
+
+.spectral-strip-note {
+    max-width: 62ch;
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 0.98rem;
+}
+
+/* Atlas plate: the fingerprint, element by element */
+.spectral-atlas {
+    width: min(100%, 880px);
+    margin: clamp(10px, 1.6vw, 18px) auto 0;
+}
+
+.spectral-atlas img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-tile);
+}
+
+.spectral-atlas figcaption {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: var(--ink-soft);
+    margin-top: 12px;
+    text-align: center;
 }
 
 /* Wordmark spectrum: tiny bars beside the logo */
@@ -307,11 +561,11 @@ ol li, ul li { margin-bottom: 5px; }
     transform-origin: bottom;
 }
 
-.loader i:nth-child(1) { background: oklch(100% 0 0 / 0.75); }
-.loader i:nth-child(2) { background: oklch(100% 0 0 / 0.75); }
-.loader i:nth-child(3) { background: oklch(100% 0 0 / 0.75); }
-.loader i:nth-child(4) { background: var(--amber); }
-.loader i:nth-child(5) { background: oklch(100% 0 0 / 0.75); }
+.loader i:nth-child(1) { background: var(--sp-violet); }
+.loader i:nth-child(2) { background: var(--sp-blue); }
+.loader i:nth-child(3) { background: var(--sp-cyan); }
+.loader i:nth-child(4) { background: var(--gold); }
+.loader i:nth-child(5) { background: var(--sp-red); }
 
 @media (prefers-reduced-motion: no-preference) {
     .loader i {
@@ -407,8 +661,8 @@ ol li, ul li { margin-bottom: 5px; }
 }
 
 .nav-cta {
-    background: var(--amber);
-    color: var(--ink) !important;
+    background: var(--action);
+    color: var(--cream) !important;
     font-weight: 600;
     font-size: 0.92rem;
     padding: 9px 20px;
@@ -417,7 +671,7 @@ ol li, ul li { margin-bottom: 5px; }
 }
 
 .nav-cta:hover {
-    background: var(--amber-bright);
+    background: var(--action-hover);
     transform: translateY(-1px);
 }
 
@@ -519,7 +773,7 @@ ol li, ul li { margin-bottom: 5px; }
 
 main {
     padding-top: var(--navbar-height);
-    background: var(--paper);
+    background: transparent;
 }
 
 /* Dark page-header band gives every subpage the brand moment */
@@ -635,8 +889,8 @@ main {
 
 .cta-button,
 .cta-button-large {
-    background: var(--amber);
-    color: var(--void-deep);
+    background: var(--action);
+    color: var(--cream);
     font-weight: 600;
     border: 0;
     border-radius: var(--radius-sm);
@@ -658,10 +912,15 @@ main {
 
 .cta-button:hover,
 .cta-button-large:hover {
-    background: var(--amber-bright);
-    color: var(--void-deep);
+    background: var(--action-hover);
+    color: var(--cream);
     transform: translateY(-2px);
-    box-shadow: 0 10px 28px var(--amber-glow);
+    box-shadow: 0 10px 28px var(--action-glow);
+}
+
+.cta-button:active,
+.cta-button-large:active {
+    background: var(--action-pressed);
 }
 
 .secondary-cta {
@@ -853,7 +1112,7 @@ main {
     display: flex;
     flex-direction: column;
     position: relative;
-    box-shadow: 12px 12px 0 oklch(22% 0.14 263 / 0.85);
+    box-shadow: 12px 12px 0 rgba(13, 18, 38, 0.75);
 }
 
 .element-tile .tile-number {
@@ -940,6 +1199,22 @@ main {
     color: var(--amber);
     line-height: 1.1;
 }
+
+/* A spectral tick indexes each figure, cycling the aurora palette */
+.stat .stat-value::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 0.55em;
+    margin-right: 12px;
+    background: var(--sp-violet);
+    opacity: 0.95;
+}
+
+.stat:nth-child(2) .stat-value::before { background: var(--sp-blue); }
+.stat:nth-child(3) .stat-value::before { background: var(--sp-cyan); }
+.stat:nth-child(4) .stat-value::before { background: var(--sp-green); }
 
 .stat .stat-desc {
     color: var(--on-void-soft);
@@ -1082,6 +1357,21 @@ main {
     font-weight: 600;
     color: var(--ink);
 }
+
+/* Each year gets its own emission line, in spectral order */
+.editions-inner .edition-year::before {
+    content: "";
+    display: inline-block;
+    vertical-align: middle;
+    width: 3px;
+    height: 0.62em;
+    margin-right: 12px;
+    background: var(--sp-violet);
+}
+
+.editions-inner .edition-row:nth-of-type(2) .edition-year::before { background: var(--sp-blue); }
+.editions-inner .edition-row:nth-of-type(3) .edition-year::before { background: var(--sp-cyan); }
+.editions-inner .edition-row--next .edition-year::before { background: var(--action); }
 
 .edition-body h3 {
     font-size: 1.15rem;

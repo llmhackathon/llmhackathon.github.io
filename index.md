@@ -26,7 +26,7 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
         </div>
     </div>
     <div class="hero-spectrum">
-        {% include spectrum.html class="spectrum--glow spectrum--animated" %}
+        {% include spectrum.html class="spectrum--glow spectrum--animated spectrum--live" %}
     </div>
 </section>
 
@@ -48,6 +48,18 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
             <div class="stat-value">10+</div>
             <div class="stat-desc">on-site locations worldwide, plus virtual</div>
         </div>
+    </div>
+</section>
+
+<section class="spectral-strip" aria-label="The emission-line fingerprint behind the OSI Hackathon brand">
+    <div class="spectral-strip-inner reveal">
+        <p class="spectral-strip-kicker mono-label">The brand, spelled in light</p>
+        {% include spectrum.html class="spectrum--interactive" labeled=true %}
+        <p class="spectral-strip-note">Our mark is a real emission spectrum — hydrogen’s Balmer series, the magnesium b triplet, and the sodium D doublet that carries the gold — each line drawn at its true wavelength.</p>
+        <figure class="spectral-atlas">
+            <img src="{{ '/assets/images/spectra/emission-atlas.svg' | relative_url }}" alt="Emission atlas plate: hydrogen, magnesium, and sodium spectra drawn as glowing lines at their true wavelengths on a midnight background, above a shared 400–700 nanometre axis." loading="lazy">
+            <figcaption>The fingerprint, element by element</figcaption>
+        </figure>
     </div>
 </section>
 

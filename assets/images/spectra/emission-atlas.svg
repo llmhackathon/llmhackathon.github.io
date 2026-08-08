@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 760" role="img" aria-labelledby="title desc">
+  <title id="title">Emission atlas for hydrogen, magnesium, and sodium</title>
+  <desc id="desc">A precise visible-light emission atlas from 380 to 700 nanometers, with labeled Balmer lines, the magnesium b triplet, and the gold sodium D doublet.</desc>
+  <defs>
+    <filter id="line-glow" x="0" y="0" width="1200" height="760" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="7"/>
+    </filter>
+  </defs>
+
+  <rect x="0.5" y="0.5" width="1199" height="759" rx="8" fill="#0D1226" stroke="#9AA7CD" stroke-opacity="0.3"/>
+
+  <g font-family="'Martian Mono', Menlo, monospace">
+    <text x="60" y="72" fill="#EEF1FB" font-size="28" font-weight="600" letter-spacing="0.06em">EMISSION ATLAS</text>
+    <text x="60" y="105" fill="#9AA7CD" font-size="13" letter-spacing="0.06em">H · MG · NA — 380–700 NM</text>
+
+    <!-- Plot mapping: x = 120 + (wavelength - 380) / 320 * 1020. -->
+    <g fill="none" stroke="#EEF1FB" stroke-opacity="0.12" stroke-width="1">
+      <line x1="120" y1="240" x2="1140" y2="240"/>
+      <line x1="120" y1="410" x2="1140" y2="410"/>
+      <line x1="120" y1="580" x2="1140" y2="580"/>
+    </g>
+
+    <g fill="#9AA7CD" font-size="14" letter-spacing="0.06em">
+      <text x="60" y="196">HYDROGEN</text>
+      <text x="60" y="366">MAGNESIUM</text>
+      <text x="60" y="536">SODIUM</text>
+    </g>
+
+    <!-- Hydrogen Balmer series: 410.2, 434.0, 486.1, and 656.3 nm. -->
+    <g>
+      <g stroke-linecap="round">
+        <line x1="216.26" y1="202" x2="216.26" y2="278" stroke="#8B7CF6" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+        <line x1="292.13" y1="202" x2="292.13" y2="278" stroke="#8AA0E6" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+        <line x1="458.19" y1="202" x2="458.19" y2="278" stroke="#5EC9E8" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+        <line x1="1000.71" y1="202" x2="1000.71" y2="278" stroke="#A66F44" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+      </g>
+      <g stroke-width="4">
+        <line x1="216.26" y1="198" x2="216.26" y2="282" stroke="#8B7CF6"/>
+        <line x1="292.13" y1="198" x2="292.13" y2="282" stroke="#8AA0E6"/>
+        <line x1="458.19" y1="198" x2="458.19" y2="282" stroke="#5EC9E8"/>
+        <line x1="1000.71" y1="198" x2="1000.71" y2="282" stroke="#A66F44"/>
+      </g>
+      <g fill="#EEF1FB" fill-opacity="0.7" font-size="11" letter-spacing="0.03em" text-anchor="middle">
+        <text x="216.26" y="187">410.2 NM</text>
+        <text x="292.13" y="298">434.0 NM</text>
+        <text x="458.19" y="187">486.1 NM</text>
+        <text x="1000.71" y="298">656.3 NM</text>
+      </g>
+    </g>
+
+    <!-- Magnesium b triplet: 516.7, 517.3, and 518.4 nm. -->
+    <g>
+      <g stroke="#3FA3C4" stroke-linecap="round">
+        <line x1="555.73" y1="372" x2="555.73" y2="448" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+        <line x1="557.64" y1="372" x2="557.64" y2="448" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+        <line x1="561.15" y1="372" x2="561.15" y2="448" stroke-width="15" stroke-opacity="0.42" filter="url(#line-glow)"/>
+      </g>
+      <g stroke="#3FA3C4" stroke-width="3">
+        <line x1="555.73" y1="368" x2="555.73" y2="452"/>
+        <line x1="557.64" y1="368" x2="557.64" y2="452"/>
+        <line x1="561.15" y1="368" x2="561.15" y2="452"/>
+      </g>
+      <text x="558.15" y="468" fill="#EEF1FB" fill-opacity="0.7" font-size="11" letter-spacing="0.03em" text-anchor="middle">516.7 · 517.3 · 518.4 NM</text>
+    </g>
+
+    <!-- Sodium D doublet: 589.0 and 589.6 nm; gold is reserved for these lines. -->
+    <g>
+      <g stroke="#C79A4D" stroke-linecap="round">
+        <line x1="786.19" y1="542" x2="786.19" y2="618" stroke-width="17" stroke-opacity="0.48" filter="url(#line-glow)"/>
+        <line x1="788.10" y1="542" x2="788.10" y2="618" stroke-width="17" stroke-opacity="0.48" filter="url(#line-glow)"/>
+      </g>
+      <g stroke="#C79A4D" stroke-width="3">
+        <line x1="786.19" y1="538" x2="786.19" y2="622"/>
+        <line x1="788.10" y1="538" x2="788.10" y2="622"/>
+      </g>
+      <text x="787.15" y="638" fill="#EEF1FB" fill-opacity="0.7" font-size="11" letter-spacing="0.03em" text-anchor="middle">589.0 · 589.6 NM</text>
+    </g>
+
+    <!-- Shared wavelength axis. -->
+    <g stroke="#9AA7CD" stroke-opacity="0.55" stroke-width="1">
+      <line x1="120" y1="682" x2="1140" y2="682"/>
+      <line x1="183.75" y1="674" x2="183.75" y2="690"/>
+      <line x1="343.13" y1="674" x2="343.13" y2="690"/>
+      <line x1="502.50" y1="674" x2="502.50" y2="690"/>
+      <line x1="661.88" y1="674" x2="661.88" y2="690"/>
+      <line x1="821.25" y1="674" x2="821.25" y2="690"/>
+      <line x1="980.63" y1="674" x2="980.63" y2="690"/>
+      <line x1="1140" y1="674" x2="1140" y2="690"/>
+    </g>
+    <g fill="#9AA7CD" font-size="11" letter-spacing="0.04em" text-anchor="middle">
+      <text x="183.75" y="713">400</text>
+      <text x="343.13" y="713">450</text>
+      <text x="502.50" y="713">500</text>
+      <text x="661.88" y="713">550</text>
+      <text x="821.25" y="713">600</text>
+      <text x="980.63" y="713">650</text>
+      <text x="1140" y="713">700</text>
+    </g>
+    <text x="60" y="686" fill="#9AA7CD" font-size="10" letter-spacing="0.06em">WAVELENGTH · NM</text>
+  </g>
+</svg>

@@ -48,9 +48,9 @@ permalink: /submissions/
 
 #search-input:focus {
     outline: none;
-    border-color: var(--amber);
+    border-color: var(--action);
     background: var(--paper);
-    box-shadow: 0 0 0 4px color-mix(in oklch, var(--amber) 18%, transparent);
+    box-shadow: 0 0 0 4px color-mix(in oklch, var(--action) 18%, transparent);
 }
 
 #search-input::placeholder {
@@ -120,12 +120,12 @@ permalink: /submissions/
 
 .filter-group select:focus {
     outline: none;
-    border-color: var(--amber);
-    box-shadow: 0 0 0 3px color-mix(in oklch, var(--amber) 18%, transparent);
+    border-color: var(--action);
+    box-shadow: 0 0 0 3px color-mix(in oklch, var(--action) 18%, transparent);
 }
 
 .filter-group select:hover {
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 .active-filters {
@@ -184,7 +184,7 @@ permalink: /submissions/
 .clear-all-filters:hover {
     background: var(--paper);
     color: var(--ink);
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 @keyframes slideIn {
@@ -246,7 +246,7 @@ permalink: /submissions/
 
 .sort-group select:focus {
     outline: none;
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 .no-results {
@@ -323,8 +323,8 @@ permalink: /submissions/
     display: inline-flex;
     align-items: center;
     gap: 10px;
-    background: var(--amber);
-    color: #171226;
+    background: var(--action);
+    color: var(--cream);
     padding: 14px 28px;
     border-radius: var(--radius-sm);
     font-weight: 600;
@@ -337,7 +337,7 @@ permalink: /submissions/
 .header-awards-button:hover {
     transform: translateY(-1px);
     filter: brightness(1.05);
-    color: #171226;
+    color: var(--cream);
     text-decoration: none;
 }
 
@@ -374,7 +374,7 @@ permalink: /submissions/
 
 .submission-card:hover {
     transform: translateY(-3px);
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 /* Team Name */
@@ -394,7 +394,7 @@ permalink: /submissions/
     left: 0;
     width: 60px;
     height: 3px;
-    background: var(--amber);
+    background: var(--action);
     border-radius: 2px;
 }
 
@@ -419,7 +419,7 @@ permalink: /submissions/
     content: '';
     width: 4px;
     height: 16px;
-    background: var(--amber);
+    background: var(--action);
     border-radius: 2px;
 }
 
@@ -438,8 +438,8 @@ permalink: /submissions/
 }
 
 .submission-links .btn {
-    background: var(--amber);
-    color: #171226;
+    background: var(--action);
+    color: var(--cream);
     padding: 12px 24px;
     border: 0;
     border-radius: var(--radius-sm);
@@ -455,13 +455,13 @@ permalink: /submissions/
 }
 
 .submission-links .btn:hover {
-    color: #171226;
+    color: var(--cream);
     filter: brightness(1.05);
     transform: translateY(-1px);
 }
 
 .submission-links .btn:nth-child(2) {
-    background: var(--amber);
+    background: var(--action);
 }
 
 /* Chips and Tags */
@@ -499,7 +499,7 @@ permalink: /submissions/
 .chip:hover {
     transform: translateY(-1px);
     background: var(--paper);
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 /* Primary Category Badge */
@@ -508,9 +508,9 @@ permalink: /submissions/
     font-size: 0.72rem;
     text-transform: uppercase;
     letter-spacing: 0.06em;
-    color: var(--amber-ink);
-    background: color-mix(in oklch, var(--amber) 14%, transparent);
-    border: 1px solid color-mix(in oklch, var(--amber) 40%, transparent);
+    color: var(--ink-gold);
+    background: color-mix(in oklch, var(--gold) 18%, transparent);
+    border: 1px solid color-mix(in oklch, var(--gold) 50%, transparent);
     border-radius: 999px;
     padding: 4px 12px;
     display: inline-block;
@@ -520,7 +520,7 @@ permalink: /submissions/
 
 .primary-category:hover {
     transform: translateY(-1px);
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 /* Enhanced chip variants with subtle visual differentiation */
@@ -539,7 +539,7 @@ permalink: /submissions/
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
-    background: var(--amber);
+    background: var(--action);
     border-radius: 50%;
 }
 
@@ -563,7 +563,7 @@ permalink: /submissions/
     transform: translateY(-50%);
     width: 4px;
     height: 4px;
-    background: var(--amber);
+    background: var(--action);
     border-radius: 50%;
 }
 
@@ -582,7 +582,7 @@ permalink: /submissions/
 .chip.model:hover {
     background: var(--paper);
     color: var(--ink);
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 /* Media Embeds */
@@ -625,7 +625,7 @@ permalink: /submissions/
     transform: translateY(-3px);
     color: var(--on-void);
     text-decoration: none;
-    border-color: var(--amber);
+    border-color: var(--action);
 }
 
 .linkedin-preview-header {
@@ -755,7 +755,7 @@ permalink: /submissions/
     height: 20px;
     margin-left: 10px;
     border: 2px solid var(--line);
-    border-top: 2px solid var(--amber);
+    border-top: 2px solid var(--action);
     border-radius: 50%;
     animation: spin 1s linear infinite;
 }

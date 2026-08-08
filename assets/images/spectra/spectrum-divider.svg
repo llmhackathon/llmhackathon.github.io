@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 90" role="img" aria-labelledby="title desc">
+  <title id="title">Visible emission-line divider</title>
+  <desc id="desc">Hydrogen, magnesium, and sodium emission lines positioned from 380 to 700 nanometers.</desc>
+  <defs>
+    <filter id="gold-glow" x="0" y="0" width="1600" height="90" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+  </defs>
+
+  <!-- Full-width mapping: x = (wavelength - 380) / 320 * 1600. -->
+  <g fill="none" stroke-width="3">
+    <line x1="151" y1="0" x2="151" y2="90" stroke="#8B7CF6"/>
+    <line x1="270" y1="0" x2="270" y2="90" stroke="#8AA0E6"/>
+    <line x1="530.5" y1="0" x2="530.5" y2="90" stroke="#5EC9E8"/>
+    <line x1="683.5" y1="0" x2="683.5" y2="90" stroke="#3FA3C4"/>
+    <line x1="686.5" y1="0" x2="686.5" y2="90" stroke="#3FA3C4"/>
+    <line x1="692" y1="0" x2="692" y2="90" stroke="#3FA3C4"/>
+    <g stroke="#C79A4D">
+      <line x1="1045" y1="0" x2="1045" y2="90" stroke-width="9" stroke-opacity="0.18" filter="url(#gold-glow)"/>
+      <line x1="1048" y1="0" x2="1048" y2="90" stroke-width="9" stroke-opacity="0.18" filter="url(#gold-glow)"/>
+      <line x1="1045" y1="0" x2="1045" y2="90"/>
+      <line x1="1048" y1="0" x2="1048" y2="90"/>
+    </g>
+    <line x1="1381.5" y1="0" x2="1381.5" y2="90" stroke="#A66F44"/>
+  </g>
+
+  <g fill="#667085" font-family="'Martian Mono', Menlo, monospace" font-size="11" letter-spacing="0.04em">
+    <text x="539" y="84">486.1 NM</text>
+    <text x="1058" y="84">589.0 · 589.6 NM</text>
+    <text x="1372" y="84" text-anchor="end">656.3 NM</text>
+  </g>
+</svg>

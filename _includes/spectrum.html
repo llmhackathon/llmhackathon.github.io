@@ -1,15 +1,38 @@
 {% comment %}
 Emission-spectrum brand mark. Line positions are real: hydrogen Balmer series
 (410, 434, 486, 656 nm), magnesium triplet (~517 nm), and the sodium D doublet
-(589.0 / 589.6 nm — the amber that carries the brand), mapped 380–700 nm → 0–1000.
+(589.0 / 589.6 nm — the gold that carries the honor mark), mapped 380–700 nm → 0–1000.
+
+Params:
+  class    — extra classes on the <svg> (spectrum--glow, spectrum--animated,
+             spectrum--interactive, spectrum--live)
+  labeled  — truthy: wrap in .spectrum-figure and annotate each line with
+             element + wavelength in the mono voice
+
 Usage: {% include spectrum.html class="spectrum--glow spectrum--animated" %}
+       {% include spectrum.html class="spectrum--interactive" labeled=true %}
+
+Label x-positions below mirror the line x-positions (of 1000) as percentages.
 {% endcomment %}
-<svg class="spectrum {{ include.class }}" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
-    <line class="sp-violet" x1="94"  y1="0" x2="94"  y2="100" />
-    <line class="sp-blue"   x1="169" y1="0" x2="169" y2="100" />
-    <line class="sp-cyan"   x1="332" y1="0" x2="332" y2="100" />
-    <line class="sp-green"  x1="429" y1="0" x2="429" y2="100" />
-    <line class="sp-amber"  x1="653" y1="0" x2="653" y2="100" />
-    <line class="sp-amber"  x1="663" y1="0" x2="663" y2="100" />
-    <line class="sp-red"    x1="863" y1="0" x2="863" y2="100" />
-</svg>
+{% capture spectrum_svg %}<svg class="spectrum {{ include.class }}" viewBox="0 0 1000 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <line class="sp-violet" data-sp="H-delta" x1="94"  y1="0" x2="94"  y2="100" />
+    <line class="sp-blue"   data-sp="H-gamma" x1="169" y1="0" x2="169" y2="100" />
+    <line class="sp-cyan"   data-sp="H-beta"  x1="332" y1="0" x2="332" y2="100" />
+    <line class="sp-green"  data-sp="Mg"      x1="429" y1="0" x2="429" y2="100" />
+    <line class="sp-amber"  data-sp="Na-D2"   x1="653" y1="0" x2="653" y2="100" />
+    <line class="sp-amber"  data-sp="Na-D1"   x1="663" y1="0" x2="663" y2="100" />
+    <line class="sp-red"    data-sp="H-alpha" x1="863" y1="0" x2="863" y2="100" />
+</svg>{% endcapture %}{% if include.labeled %}<div class="spectrum-figure">
+    <p class="sr-only">Emission spectrum: hydrogen Balmer series (H-delta 410.2, H-gamma 434.0, H-beta 486.1, and H-alpha 656.3 nanometres), the magnesium b triplet near 517 nanometres, and the sodium D doublet at 589.0 and 589.6 nanometres.</p>
+    {{ spectrum_svg }}
+    <div class="spectrum-labels">
+        <span class="spectrum-label spectrum-label--minor" style="left: 9.4%;" title="Hydrogen Balmer delta, 410.2 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">H&#948;</span><span class="sl-wl">410 nm</span></span>
+        <span class="spectrum-label spectrum-label--minor" style="left: 16.9%;" title="Hydrogen Balmer gamma, 434.0 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">H&#947;</span><span class="sl-wl">434 nm</span></span>
+        <span class="spectrum-label" style="left: 33.2%;" title="Hydrogen Balmer beta, 486.1 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">H&#946;</span><span class="sl-wl">486 nm</span></span>
+        <span class="spectrum-label spectrum-label--minor" style="left: 42.9%;" title="Magnesium b triplet, about 517 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">Mg</span><span class="sl-wl">518 nm</span></span>
+        <span class="spectrum-label spectrum-label--na" style="left: 65.8%;" title="Sodium D doublet, 589.0 and 589.6 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">Na</span><span class="sl-wl">589 nm</span></span>
+        <span class="spectrum-label" style="left: 86.3%;" title="Hydrogen Balmer alpha, 656.3 nm"><span class="sl-tick" aria-hidden="true"></span><span class="sl-el">H&#945;</span><span class="sl-wl">656 nm</span></span>
+    </div>
+</div>
+{% else %}{{ spectrum_svg }}
+{% endif %}
