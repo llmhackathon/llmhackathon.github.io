@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-This is a **Jekyll-powered static website** for the **Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry** (formerly the LLM Hackathon, renamed for the October 2026 edition to cover LLMs, agents, datasets, models, and scientific software) - an international hybrid hackathon event. The website serves as the main information hub for participants, organizers, and site hosts. Historical pages (2023-2025 projects/awards) intentionally keep the old "LLM Hackathon" name.
+This is a **Jekyll-powered static website** for the **Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics** (formerly the LLM Hackathon for Materials Science & Chemistry, renamed for the October 21–22, 2026 edition to cover LLMs, agents, datasets, models, and scientific software across the physical sciences and mathematics) - an international hybrid hackathon event. The website serves as the main information hub for participants, organizers, and site hosts. Historical pages (2023-2025 projects/awards) intentionally keep the old "LLM Hackathon" name.
 
 ## Architecture
 
@@ -163,7 +163,8 @@ All structured content is managed through YAML files in `_data/`:
 
 ## Important URLs
 
-- Registration: https://lu.ma/hspoki8y
+- Registration (2026 edition): https://luma.com/ku88xh92
+- Registration (2025, archived — hardcoded in historical `sites/*.html`): https://lu.ma/hspoki8y
 - Slack Community: https://cutt.ly/llmhackathon-slack
 - Contact: blaiszik@uchicago.edu
 

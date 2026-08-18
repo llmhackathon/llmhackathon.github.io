@@ -61,6 +61,12 @@ The LLM Hackathon brings together the brightest minds from academia and industry
 
 ## Previous Hackathon Results
 
+### 2025 Hackathon
+
+120 projects were submitted across 16 on-site locations and virtual participation.
+
+**Publication:** [From Knowledge to Action: Outcomes of the 2025 Large Language Model (LLM) Hackathon for Applications in Materials Science and Chemistry](https://arxiv.org/abs/2605.03205) - _arXiv Preprint_
+
 ### 2024 Hackathon
 
 34 projects were submitted across 7 on-site locations and virtual participation.
@@ -137,7 +143,8 @@ University of Chicago and Argonne National Laboratory
 
 ## Important Links
 
-- **Registration:** [lu.ma/hspoki8y](https://lu.ma/hspoki8y)
+- **Registration (2026):** [luma.com/ku88xh92](https://luma.com/ku88xh92)
+- **Registration (2025, archived):** [lu.ma/hspoki8y](https://lu.ma/hspoki8y)
 - **Slack Community:** [cutt.ly/llm-hackathon-slack](https://cutt.ly/llmhackathon-slack)
 - **Contact:**
   - [blaiszik@uchicago.edu](mailto:blaiszik@uchicago.edu) [Dr. Ben Blaiszik],

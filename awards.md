@@ -22,6 +22,11 @@ permalink: /awards/
     padding: 32px;
 }
 
+.awards-intro p {
+    color: var(--on-void);
+    margin: 16px 0 0;
+}
+
 .awards-section h2 {
     font-size: 1.8rem;
     margin-bottom: 12px;
@@ -235,6 +240,7 @@ permalink: /awards/
 <div class="awards-wrapper">
     <div class="awards-intro">
         Congratulations to the Lila Prize winning teams for top-scoring overall projects! Please take a moment to celebrate the teams below, explore their project descriptions, and watch their demos. We will be posting these to the website and contacting teams shortly.
+        <p>The full 2025 write-up is on arXiv: <a href="https://arxiv.org/abs/2605.03205" target="_blank" rel="noopener noreferrer">From Knowledge to Action: Outcomes of the 2025 LLM Hackathon for Applications in Materials Science and Chemistry</a>.</p>
     </div>
 
     <section class="awards-section" aria-label="Lila Prize Winners">

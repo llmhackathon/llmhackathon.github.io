@@ -1,8 +1,8 @@
 # Jekyll Configuration for the OSI Hackathon Website
 
 # Site settings
-title: "Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry"
-description: "A hybrid international hackathon connecting researchers from across the globe to build open scientific intelligence — LLMs, agents, datasets, models, and software — for the biggest problems in materials science and chemistry."
+title: "Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics"
+description: "A hybrid international hackathon connecting researchers from across the globe to build open scientific intelligence — LLMs, agents, datasets, models, and software — for the biggest problems in the physical sciences and mathematics."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://llmhackathon.github.io" # the base hostname & protocol for your site
 
@@ -66,13 +66,13 @@ event:
   kickoff: "9:00 AM (CT), Sept 11"
   submission_deadline: "5:00 PM (CT), Sept 12"
   countdown_date: "September 11, 2025 12:00:00"
-  # Next edition teaser (dates not yet set)
-  next_edition: "October 2026"
-  next_edition_status: "dates TBA"
+  # Next edition
+  next_edition: "October 21–22, 2026"
 
 # External links
 links:
-  registration: "https://lu.ma/hspoki8y"
+  registration: "https://luma.com/ku88xh92"        # 2026 edition
+  registration_2025: "https://lu.ma/hspoki8y"     # archived — 2025 site pages link here
   slack: "https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-3df7bc0z5-I6odHw8eHaBbtHqsGxqz0Q"
   main_organizer_email: "blaiszik@uchicago.edu"
 

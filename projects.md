@@ -114,6 +114,6 @@ Our hackathons have explored diverse applications of LLMs across multiple domain
 
 Ready to contribute to the next generation of AI-powered scientific discovery?
 
-- **Register** for the {{ site.event.dates }} hackathon: [{{ site.links.registration }}]({{ site.links.registration }})
+- **Register** for the {{ site.event.next_edition }} hackathon: [{{ site.links.registration }}]({{ site.links.registration }})
 - **Join our community**: [Slack workspace]({{ site.links.slack }})
 - **Follow our progress**: Check back for updates on new projects and research

@@ -1,15 +1,15 @@
 ---
 layout: page
 title: "About The Hackathon"
-description: "Learn more about the Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry — formerly the LLM Hackathon. Discover our mission, goals, and what makes this event unique."
+description: "Learn more about the Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics — formerly the LLM Hackathon for Materials Science & Chemistry. Discover our mission, goals, and what makes this event unique."
 keywords: "About OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials Science AI, Chemistry AI, Hackathon Mission, Event Goals"
 ---
 
-## Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry
+## Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics
 
-Large language models (LLMs) sparked the interest of many scientists for the possibility of enabling previously intractable applications. To explore those possibilities in materials science and chemistry, we organized an annual hackathon — the LLM Hackathon for Applications in Materials Science & Chemistry. In 2023, the results showed 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually, documented on [**arXiv**](https://arxiv.org/abs/2411.15221).
+Large language models (LLMs) sparked the interest of many scientists for the possibility of enabling previously intractable applications. To explore those possibilities in materials science and chemistry, we organized an annual hackathon — the LLM Hackathon for Applications in Materials Science & Chemistry. In 2023, the results showed 14 examples of LLM applications published in [**Digital Discovery**](https://doi.org/10.1039/D3DD00113J). In 2024, 34 projects were submitted across 7 on-sites and virtually, documented on [**arXiv**](https://arxiv.org/abs/2411.15221). In 2025, 120 projects were submitted across 16 sites, documented in [**From Knowledge to Action**](https://arxiv.org/abs/2605.03205).
 
-Starting with the **October 2026** edition, the event becomes the **Open Scientific Intelligence (OSI) Hackathon**: the frontier has moved past language models alone, and so has the hackathon. LLMs, autonomous agents, datasets, benchmarks, models, and scientific software are all fair game.
+Starting with the **October 21–22, 2026** edition, the event becomes the **Open Scientific Intelligence (OSI) Hackathon**: the frontier has moved past language models alone, and so has the hackathon. The scope expands from materials science and chemistry to the **physical sciences and mathematics**, and LLMs, autonomous agents, datasets, benchmarks, models, and scientific software are all fair game.
 
 ## Organizing Team
 

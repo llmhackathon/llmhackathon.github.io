@@ -1,28 +1,26 @@
 ---
 layout: home
-title: "Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry"
-description: "The Open Scientific Intelligence (OSI) Hackathon returns October 2026. Formerly the LLM Hackathon — now covering agents, datasets, models, and scientific software for materials science and chemistry."
-keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials Science, Chemistry, AI, Agents, Datasets, Scientific Software, Hybrid Hackathon, October 2026"
+title: "Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics"
+description: "The Open Scientific Intelligence (OSI) Hackathon runs October 21–22, 2026. Formerly the LLM Hackathon for Materials Science & Chemistry — now covering agents, datasets, models, and scientific software across the physical sciences and mathematics."
+keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials Science, Chemistry, Physics, Mathematics, Physical Sciences, AI, Agents, Datasets, Scientific Software, Hybrid Hackathon, October 2026"
 ---
 
 <section id="home" class="hero">
     <div class="hero-content">
         <div class="hero-text">
-            <p class="hero-announce"><span class="pulse-dot" aria-hidden="true"></span>Next edition &middot; October 2026 &middot; dates TBA</p>
-            <h1>Open Scientific Intelligence Hackathon
-                <span class="h1-sub">The OSI Hackathon &middot; for Materials Science &amp; Chemistry</span>
-            </h1>
-            <p class="tagline">Now covering more ground than LLMs: agents, datasets, models, and scientific software — all fair game against the biggest problems in materials science and chemistry. Free, hybrid, and international.</p>
+            <p class="hero-announce"><span class="pulse-dot" aria-hidden="true"></span>Next edition &middot; October 21&ndash;22, 2026</p>
+            <h1>Open Scientific Intelligence Hackathon</h1>
+            <p class="tagline">Formerly the LLM Hackathon for Materials Science &amp; Chemistry — now open to the physical sciences and mathematics. Covering agents, LLMs, datasets, benchmarks, models, scientific software and more against the biggest problems. Free, hybrid, and international.</p>
             <div class="hero-actions">
-                <a rel="noopener noreferrer" href="{{ site.links.slack }}" target="_blank" class="cta-button-large">Join the Slack — be first to know</a>
-                <a href="{{ '/awards/' | relative_url }}" class="secondary-cta">See the 2025 awards</a>
+                <a rel="noopener noreferrer" href="{{ site.links.registration }}" target="_blank" class="cta-button-large">Register — October 21&ndash;22, 2026</a>
+                <a rel="noopener noreferrer" href="{{ site.links.slack }}" target="_blank" class="secondary-cta">Join the Slack</a>
             </div>
         </div>
-        <div class="element-tile" role="img" aria-label="Periodic-table style element tile announcing the October 2026 edition of the OSI Hackathon">
+        <div class="element-tile" role="img" aria-label="Periodic-table style element tile announcing the October 21–22, 2026 edition of the OSI Hackathon">
             <div class="tile-number"><span>26</span><span class="tile-mass">Oct</span></div>
             <div class="tile-symbol">Osi</div>
             <div class="tile-name">OSI Hackathon</div>
-            <div class="tile-detail">October 2026 &middot; dates TBA</div>
+            <div class="tile-detail">October 21&ndash;22, 2026</div>
         </div>
     </div>
     <div class="hero-spectrum">
@@ -34,32 +32,20 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
     <div class="stats-band-inner">
         <div class="stat">
             <div class="stat-value">4th</div>
-            <div class="stat-desc">edition returns October 2026</div>
+            <div class="stat-desc">edition &middot; October 21&ndash;22, 2026</div>
         </div>
         <div class="stat">
-            <div class="stat-value">34</div>
-            <div class="stat-desc">projects submitted in 2024 alone</div>
+            <div class="stat-value">120</div>
+            <div class="stat-desc">projects submitted in 2025 alone</div>
         </div>
         <div class="stat">
-            <div class="stat-value">2</div>
-            <div class="stat-desc">community papers — Digital Discovery &amp; arXiv</div>
+            <div class="stat-value">4</div>
+            <div class="stat-desc">community papers from past editions</div>
         </div>
         <div class="stat">
-            <div class="stat-value">10+</div>
+            <div class="stat-value">16</div>
             <div class="stat-desc">on-site locations worldwide, plus virtual</div>
         </div>
-    </div>
-</section>
-
-<section class="spectral-strip" aria-label="The emission-line fingerprint behind the OSI Hackathon brand">
-    <div class="spectral-strip-inner reveal">
-        <p class="spectral-strip-kicker mono-label">The brand, spelled in light</p>
-        {% include spectrum.html class="spectrum--interactive" labeled=true %}
-        <p class="spectral-strip-note">Our mark is a real emission spectrum — hydrogen’s Balmer series, the magnesium b triplet, and the sodium D doublet that carries the gold — each line drawn at its true wavelength.</p>
-        <figure class="spectral-atlas">
-            <img src="{{ '/assets/images/spectra/emission-atlas.svg' | relative_url }}" alt="Emission atlas plate: hydrogen, magnesium, and sodium spectra drawn as glowing lines at their true wavelengths on a midnight background, above a shared 400–700 nanometre axis." loading="lazy">
-            <figcaption>The fingerprint, element by element</figcaption>
-        </figure>
     </div>
 </section>
 
@@ -72,17 +58,17 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
         <h2>About the <span>hackathon</span></h2>
         <div class="event-status-banner">
             <span class="status-dot" aria-hidden="true"></span>
-            <span>2025 wrapped &middot; 2026 in planning</span>
+            <span>2025 wrapped &middot; 2026 set for October 21&ndash;22</span>
         </div>
-        <p>Every year, this hackathon brings together materials scientists, chemists, and AI researchers from around the world for an intense sprint: build something real, in teams, across time zones and on-site locations.</p>
-        <p>Three editions in, the frontier has moved past language models alone — so the event has too. As the <strong>Open Scientific Intelligence (OSI) Hackathon</strong>, the 2026 edition welcomes everything that makes science machines smarter: LLMs, autonomous agents, datasets, benchmarks, models, and scientific software.</p>
-        <p>The 2025 edition produced automated research assistants, novel data pipelines, and agentic lab workflows — explore them on the <a href="{{ '/awards/' | relative_url }}">awards page</a>. The next edition lands in <strong>October 2026</strong>; exact dates are being finalized. Join the <a rel="noopener noreferrer" target="_blank" href="{{ site.links.slack }}">Slack community</a> to hear first, find teammates, or propose hosting a site.</p>
+        <p>Every year, this hackathon brings together scientists, mathematicians, and AI researchers from around the world for an intense sprint: build something real, in teams, across time zones and on-site locations.</p>
+        <p>Three editions in, the frontier has moved past language models alone — so the event has expanded in scope. As the <strong>Open Scientific Intelligence (OSI) Hackathon</strong>, the 2026 edition expands from materials science and chemistry to the <strong>physical sciences and mathematics</strong>, and welcomes submissions in: LLMs, autonomous agents, datasets, benchmarks, models, scientific software, and more.</p>
+        <p>The 2025 edition produced automated research assistants, novel data pipelines, and agentic lab workflows — explore them on the <a href="{{ '/awards/' | relative_url }}">awards page</a>. The next edition runs <strong>October 21&ndash;22, 2026</strong> — <a rel="noopener noreferrer" target="_blank" href="{{ site.links.registration }}">registration is open</a>. Join the <a rel="noopener noreferrer" target="_blank" href="{{ site.links.slack }}">Slack community</a> to find teammates or propose hosting a site.</p>
     </div>
 </section>
 
 <section class="editions-section" aria-label="Past and upcoming editions">
     <div class="editions-inner reveal">
-        <h2>Four <span>editions</span> and counting</h2>
+        <h2>Three <span>editions</span> and counting</h2>
         <div class="edition-row">
             <div class="edition-year">2023</div>
             <div class="edition-body">
@@ -103,17 +89,17 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
             <div class="edition-year">2025</div>
             <div class="edition-body">
                 <h3>Agents arrive</h3>
-                <p>Agentic workflows, tool use, and lab automation took center stage across 10+ sites.</p>
+                <p>Agentic workflows, tool use, and lab automation took center stage — 120 projects across 16 sites, documented on arXiv.</p>
             </div>
-            <a class="edition-link" href="{{ '/awards/' | relative_url }}">See the awards &rarr;</a>
+            <a class="edition-link" href="https://arxiv.org/abs/2605.03205" target="_blank" rel="noopener noreferrer">Read the paper &rarr;</a>
         </div>
         <div class="edition-row edition-row--next">
             <div class="edition-year">2026</div>
             <div class="edition-body">
-                <h3>Next: the OSI Hackathon &middot; October 2026</h3>
-                <p>The event becomes the Open Scientific Intelligence Hackathon — beyond LLMs, agents, datasets, models, and scientific software are all fair game. Dates are being finalized and will be announced on Slack first.</p>
+                <h3>Next: the OSI Hackathon &middot; October 21&ndash;22, 2026</h3>
+                <p>The event becomes the Open Scientific Intelligence Hackathon — expanding to the physical sciences and mathematics, where LLMs, agents, datasets, models, and scientific software are all fair game. Registration is open now; the detailed schedule follows.</p>
             </div>
-            <a class="edition-link" rel="noopener noreferrer" target="_blank" href="{{ site.links.slack }}">Get notified &rarr;</a>
+            <a class="edition-link" rel="noopener noreferrer" target="_blank" href="{{ site.links.registration }}">Register &rarr;</a>
         </div>
     </div>
 </section>

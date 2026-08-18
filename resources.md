@@ -189,6 +189,16 @@ keywords: "Hackathon Resources, LLM Tools, Datasets, AI Documentation, Materials
     <h3>Examples & Reviews on LLMs in Materials & Chemistry</h3>
     <div class="resource-grid">
         <div class="resource-card">
+            <h4>From Knowledge to Action: Outcomes of the 2025 Large Language Model (LLM) Hackathon for
+                Applications in Materials Science and Chemistry</h4>
+            <p>Outcomes from the 3rd global hackathon, grouping community-built LLM applications into
+                knowledge-infrastructure systems and action systems, and tracing patterns such as
+                retrieval-augmented generation, structured knowledge representations, multimodal inputs, and
+                closed-loop laboratory workflows.</p>
+            <a href="https://arxiv.org/abs/2605.03205" target="_blank" rel="noopener"
+                aria-label="external-link"><i class="fas fa-external-link-alt"></i></a>
+        </div>
+        <div class="resource-card">
             <h4>Reflections from the 2024 Large Language Model (LLM) Hackathon for Applications in Materials
                 Science and Chemistry</h4>
             <p>In the 2nd global hackathon for LLMs applications for materials and chemistry 34 teams used large

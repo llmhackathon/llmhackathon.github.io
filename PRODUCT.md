@@ -6,11 +6,11 @@ brand
 
 ## Users
 
-Researchers, graduate students, and industry scientists in materials science and chemistry, browsing from a lab or office laptop during the workday. Job to be done: decide quickly whether this hackathon is credible and worth their time, then register / join Slack / find their nearest site. Secondary audiences: prospective site hosts and sponsors evaluating the event's legitimacy, and past participants looking up projects, awards, and papers.
+Researchers, graduate students, and industry scientists across the physical sciences and mathematics, browsing from a lab or office laptop during the workday. Job to be done: decide quickly whether this hackathon is credible and worth their time, then register / join Slack / find their nearest site. Secondary audiences: prospective site hosts and sponsors evaluating the event's legitimacy, and past participants looking up projects, awards, and papers.
 
 ## Product Purpose
 
-The canonical information hub for the annual Open Scientific Intelligence (OSI) Hackathon for Materials Science & Chemistry — formerly the LLM Hackathon (2023–2025), renamed for the October 2026 edition to cover LLMs, agents, datasets, models, and scientific software. A hybrid, international, free event that has produced peer-reviewed publications (Digital Discovery 2023, arXiv 2024/2025). The site announces upcoming editions (next: October 2026, dates TBA), archives past projects and awards under the historical name, and routes people to registration, Slack, and site locations. Success = a first-time visitor trusts the event within seconds and takes one action (join Slack / register interest).
+The canonical information hub for the annual Open Scientific Intelligence (OSI) Hackathon for the Physical Sciences & Mathematics — formerly the LLM Hackathon for Materials Science & Chemistry (2023–2025), renamed and broadened for the October 21–22, 2026 edition to cover LLMs, agents, datasets, models, and scientific software across the physical sciences and mathematics. A hybrid, international, free event that has produced peer-reviewed publications (Digital Discovery 2023, arXiv 2024/2025). The site announces upcoming editions (next: October 21–22, 2026), archives past projects and awards under the historical name, and routes people to registration, Slack, and site locations. Success = a first-time visitor trusts the event within seconds and takes one action (join Slack / register interest).
 
 ## Brand Personality
 
