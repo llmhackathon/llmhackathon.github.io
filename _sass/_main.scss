@@ -2069,6 +2069,34 @@ main {
 }
 
 /* ==========================================================================
+   Sponsor callout — the "we're looking for sponsors" ask on sponsors.md.
+   Left accent bar in action blue marks it as a call to act, not just to read.
+   ========================================================================== */
+
+.sponsor-callout {
+    background-color: var(--paper-dim);
+    border: 1px solid var(--line);
+    border-left: 4px solid var(--action);
+    border-radius: var(--radius-md);
+    padding: 28px 32px;
+    margin: 32px 0 48px;
+    max-width: 640px;
+}
+
+.sponsor-callout h3 {
+    margin: 0 0 10px;
+}
+
+.sponsor-callout p {
+    color: var(--ink-soft);
+    margin: 0 0 20px;
+}
+
+.sponsor-callout .cta-button {
+    display: inline-flex;
+}
+
+/* ==========================================================================
    Sites page
    ========================================================================== */
 

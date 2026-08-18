@@ -1,5 +1,8 @@
-# Sponsor/Partner information
-partners:
+# Sponsor/Partner information, split by edition.
+# 2026 partners so far are also 2025 partners returning — kept as separate
+# lists (rather than a "returning" flag) since a name can drop off or a new
+# 2026-only sponsor can be added without touching the 2025 record.
+sponsors_2025:
   - name: "LILA"
     logo: "/assets/images/sponsors/LILA_Logo.png"
     alt: "LILA Logo"
@@ -40,6 +43,22 @@ partners:
     logo: "/assets/images/sponsors/greendynamics.png"
     alt: "Green Dynamics"
     url: "https://www.greendynamics.com.au"
+
+# Confirmed so far for the 2026 edition — this list grows as sponsorship
+# conversations close; see the callout on the sponsors page.
+sponsors_2026:
+  - name: "HuggingFace"
+    logo: "/assets/images/sponsors/HF_Logo.svg"
+    alt: "HuggingFace Logo"
+    url: "https://huggingface.co"
+  - name: "Fum"
+    logo: "/assets/images/sponsors/fum.png"
+    alt: "Fum Logo"
+    url: "https://www.fum.tech"
+  - name: "National Science Foundation"
+    logo: "/assets/images/sponsors/NSF_logo.png"
+    alt: "NSF Logo"
+    url: "https://www.nsf.gov"
 
 # Additional sponsors that appear in other contexts
 all_sponsors:

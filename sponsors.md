@@ -1,19 +1,35 @@
 ---
 layout: page
 title: "Sponsors & Partners"
-description: "Meet our sponsors and partners supporting the LLM Hackathon for Applications in Materials Science & Chemistry."
-keywords: "LLM Hackathon Sponsors, Partners, LILA, HuggingFace, AIChemy"
+description: "2026 and 2025 sponsors of the Open Scientific Intelligence (OSI) Hackathon, plus how to become a 2026 partner."
+keywords: "OSI Hackathon Sponsors, Partners, NSF, HuggingFace, Fum, LILA, AIChemy"
 ---
 
+## 2026 partners
+
+Confirmed so far for the October 21&ndash;22, 2026 edition &mdash; this list grows as conversations close.
+
 <div class="sponsor-logos">
-    {% for sponsor in site.data.sponsors.partners %}
+    {% for sponsor in site.data.sponsors.sponsors_2026 %}
     <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
     {% endfor %}
 </div>
 
-## Partner Information
+<div class="sponsor-callout">
+    <h3>We're looking for 2026 sponsors</h3>
+    <p>Sponsorship funds prizes, site logistics, and the community papers that come out of every edition. If your organization wants in on the Open Scientific Intelligence Hackathon, we'd like to hear from you.</p>
+    <a href="mailto:{{ site.links.main_organizer_email }}" class="cta-button">Reach out: {{ site.links.main_organizer_email }}</a>
+</div>
 
-Our hackathon is supported by leading organizations in the AI and materials science communities:
+## 2025 partners
+
+The organizations who supported the 2025 edition:
+
+<div class="sponsor-logos">
+    {% for sponsor in site.data.sponsors.sponsors_2025 %}
+    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+    {% endfor %}
+</div>
 
 - **LILA (Learning in Artificial Intelligence and Applications)** - Supporting AI research and applications
 - **HuggingFace** - The leading platform for machine learning and AI models
@@ -23,7 +39,3 @@ Our hackathon is supported by leading organizations in the AI and materials scie
 - **NSF** - Independent federal agency supporting science and engineering in all 50 states and U.S. territories.
 - **Abstrax Tech** - Crafting innovative terpene-driven, functional flavor solutions through peer-reviewed research.
 - **biostate.AI** - Transforming healthcare through next-generation RNAseq and GenAI.
-
-## Sponsorship Opportunities
-
-Interested in sponsoring future events? Contact us at [{{ site.links.main_organizer_email }}](mailto:{{ site.links.main_organizer_email }}) to learn about partnership opportunities.

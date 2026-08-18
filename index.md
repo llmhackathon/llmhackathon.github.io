@@ -142,12 +142,13 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
 
 <section id="sponsors" class="sponsors-section">
     <div class="reveal">
-    <h2 style="text-align:left;">Our <span>partners</span></h2>
+    <h2 style="text-align:left;">2025 <span>partners</span></h2>
     <div class="sponsor-logos">
-        {% for sponsor in site.data.sponsors.partners %}
+        {% for sponsor in site.data.sponsors.sponsors_2025 %}
         <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
         {% endfor %}
     </div>
+    <p style="text-align:center; margin: 28px auto 0; color: var(--ink-soft);">2026 sponsorship is open — <a href="{{ '/sponsors/' | relative_url }}">see who's on board and how to join them</a>.</p>
     </div>
 </section>
 
