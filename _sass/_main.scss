@@ -1874,13 +1874,13 @@ main {
     color: var(--ink-soft);
 }
 
-.resource-card a {
+.resource-card a:not(.site-register-btn) {
     font-weight: 600;
     color: var(--amber-ink);
     text-decoration: none;
 }
 
-.resource-card a:hover {
+.resource-card a:not(.site-register-btn):hover {
     text-decoration: underline;
     text-decoration-thickness: 1.5px;
     text-underline-offset: 3px;
