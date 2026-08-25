@@ -19,4 +19,4 @@ The Durham in-person event will be held at **Duke University**.
 
 For Durham-specific questions, please reach out to **Defne Circi** at [defne.circi@duke.edu](mailto:defne.circi@duke.edu).
 
-## [Click Here to Register](https://docs.google.com/forms/d/1H3TnPE2ItUAyzkkqAgtIxJ3aGiuN6HS0FTJEa818HaA)
+Registration details coming soon!
