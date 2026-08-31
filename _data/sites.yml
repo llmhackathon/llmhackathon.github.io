@@ -67,7 +67,7 @@ locations_2025:
     organizer_email: "brandon.lines@utoronto.ca"
     country: "Canada"
     region: "North America"
-    registration_link: https://forms.cloud.microsoft/Pages/ResponsePage.aspx?id=JsKqeAMvTUuQN7RtVsVSEOBgyd5wkQpDooqLuJ_8rg9UNDUwMVlQMU4zVFpERTlBQUxDRzcyUU0zVi4u
+    registration_link:
 
   - name: "Durham, NC, USA"
     slug: "durham"
@@ -76,7 +76,7 @@ locations_2025:
     organizer_email: "defne.circi@duke.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://docs.google.com/forms/d/1H3TnPE2ItUAyzkkqAgtIxJ3aGiuN6HS0FTJEa818HaA
+    registration_link:
 
   - name: "Knoxville, TN, USA"
     slug: "tennessee"
@@ -85,7 +85,7 @@ locations_2025:
     organizer_email: "ssanch18@vols.utk.edu, sergei2@utk.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://forms.gle/YiTarbfop6Nd3Fac7
+    registration_link:
 
   # - name: "Pittsburgh, USA"
   #   slug: "pittsburgh"
@@ -112,7 +112,7 @@ locations_2025:
     organizer_email: "sayoudaq@kfupm.edu.sa"
     country: "KSA"
     region: "Asia-Pacific"
-    registration_link: https://forms.office.com/Pages/ResponsePage.aspx?id=iLC0KX3SKUG5-YY3tZ6ks7D2xcI1axdPrX5xshVqq0JURFBOOVlGNktIOVBNSjlUTTVTWDlTS0ZHSS4u
+    registration_link:
 
   - name: "West Lafayette, IN, USA"
     slug: "west-lafayette"
@@ -121,7 +121,7 @@ locations_2025:
     organizer_email: "jverduzc@purdue.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://www.eventbrite.com/e/llm-hackathon-for-applications-in-materials-science-chemistry-tickets-1510910336489?utm-campaign=social&utm-content=attendeeshare&utm-medium=discovery&utm-term=listing&utm-source=cp&aff=ebdsshcopyurl
+    registration_link:
 
   - name: "Baltimore, MD, USA"
     slug: "baltimore"
@@ -130,7 +130,7 @@ locations_2025:
     organizer_email: "elbert@jhu.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://bit.ly/2025_JHU_LLM_Hackathon_Registration
+    registration_link:
 
   - name: "Lemont, IL, USA"
     slug: "argonne"
@@ -165,7 +165,7 @@ locations_2025:
     organizer_email: "napo.nduma22@imperial.ac.uk"
     country: "UK"
     region: "Europe"
-    registration_link: https://ir7x6hf97aq.typeform.com/to/WCilhQ8a
+    registration_link:
 
   - name: "Oxford, UK"
     slug: "oxford"
@@ -174,7 +174,7 @@ locations_2025:
     organizer_email: "wojtek.treyde@sjc.ox.ac.uk"
     country: "UK"
     region: "Europe"
-    registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeivA-5L9uHjyaMouIdqOrgoGuZQPwhMgDZVGImVyso7_m6eA/viewform?usp=dialog
+    registration_link:
 
   - name: "Berlin, Germany"
     slug: "berlin"
@@ -183,7 +183,7 @@ locations_2025:
     organizer_email: "jose.marquez@physik.hu-berlin.de"
     country: "Germany"
     region: "Europe"
-    registration_link: https://events.fairmat-nfdi.eu/event/44/
+    registration_link:
 
   - name: "Leipzig, Germany"
     slug: "leipzig"
@@ -211,7 +211,7 @@ locations_2025:
     organizer_email: "sophiejg@mit.edu"
     country: "USA"
     region: "North America"
-    registration_link: https://luma.com/2sv74wi8
+    registration_link:
 
 # Site requirements and hosting information
 hosting:
