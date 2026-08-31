@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Oxford"
+edition: 2025
 description: "Details about the Oxford site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Oxford."
 keywords: "Oxford Hackathon, University of Oxford, LLM Event Oxford, In-person Hackathon Site"
 ---

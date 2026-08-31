@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Baltimore"
+edition: 2025
 description: "Details about the Baltimore site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Baltimore."
 keywords: "Baltimore Hackathon, Johns Hopkins University, LLM Event Baltimore, In-person Hackathon Site"
 ---

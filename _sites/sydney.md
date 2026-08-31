@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Sydney"
+edition: 2025
 description: "Details about the Sydney site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Sydney."
 keywords: "Sydney Hackathon, University of New South Wales, LLM Event Sydney, In-person Hackathon Site"
 ---

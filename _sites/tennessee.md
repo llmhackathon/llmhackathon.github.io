@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Tennessee"
+edition: 2025
 description: "Details about the UTennesee site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Durham."
 keywords: "Tennessee Hackathon, University of Tennessee, LLM Event Tennessee, In-person Hackathon Site"
 ---

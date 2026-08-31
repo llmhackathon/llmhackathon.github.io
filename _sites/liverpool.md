@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Liverpool"
+edition: 2025
 description: "Details about the Liverpool site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Liverpool."
 keywords: "Liverpool Hackathon, University of Liverpool, LLM Event Liverpool, In-person Hackathon Site"
 ---

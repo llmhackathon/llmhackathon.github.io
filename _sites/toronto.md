@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Toronto"
+edition: 2025
 description: "Details about the Toronto site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Toronto."
 keywords: "Toronto Hackathon, University of Toronto, LLM Event Toronto, In-person Hackathon Site"
 ---

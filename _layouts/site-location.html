@@ -4,11 +4,20 @@ layout: default
 
 <section class="page-header">
     <div class="page-header-inner">
+        {% if page.edition %}
+        <p class="site-edition-eyebrow">{% if page.edition == 2026 %}2026 edition &middot; October 21&ndash;22, 2026{% else %}{{ page.edition }} edition &middot; archive{% endif %}</p>
+        {% endif %}
         <h1>{{ page.title }} Site</h1>
     </div>
     {% include spectrum.html class="spectrum--glow" %}
 </section>
 
 <section class="content-section">
+    {% if page.edition and page.edition != 2026 %}
+    <div class="archive-banner">
+        <p><strong>This is an archived {{ page.edition }} site page.</strong> It documents the September 11&ndash;12, {{ page.edition }} LLM Hackathon; any registration links on this page are closed.</p>
+        <p>For the October 21&ndash;22, 2026 Open Scientific Intelligence Hackathon, see the <a href="{{ '/sites/' | relative_url }}">2026 sites</a> and <a rel="noopener noreferrer" target="_blank" href="{{ site.links.registration }}">register here</a>.</p>
+    </div>
+    {% endif %}
     {{ content }}
 </section>

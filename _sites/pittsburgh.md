@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Pittsburgh"
+edition: 2025
 description: "Details about the Pittsburgh site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Pittsburgh."
 keywords: "Pittsburgh Hackathon, Carnegie Mellon University, LLM Event Pittsburgh, In-person Hackathon Site"
 ---

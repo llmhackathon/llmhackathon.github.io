@@ -17,9 +17,16 @@
 <!-- Google Fonts: Inter (display/body) + Martian Mono (data voice) -->
 <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900&family=Martian+Mono:wght@400..700&display=swap" rel="stylesheet">
 
-<!-- Icon fonts -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+<!-- Icon font. Icons are decorative accents beside text labels, so this is
+     loaded off the critical path: the media="print" swap makes the browser
+     fetch it without blocking first paint. (RemixIcon was dropped — 138 KB of
+     render-blocking CSS with no "ri-" class anywhere in the site.) -->
+<link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      media="print" onload="this.media='all';this.onload=null">
+<noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</noscript>
 
 <!-- Custom CSS -->
 <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}?v={{ site.time | date: '%s' }}">
@@ -29,12 +36,12 @@
 <meta property="og:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 <meta property="og:type" content="website">
 <meta property="og:url" content="{{ page.url | absolute_url }}">
-<meta property="og:image" content="{{ '/assets/images/recap-2025.png' | absolute_url }}">
+<meta property="og:image" content="{{ '/assets/images/recap-2025.jpg' | absolute_url }}">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
 <meta name="twitter:description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
-<meta name="twitter:image" content="{{ '/assets/images/recap-2025.png' | absolute_url }}">
+<meta name="twitter:image" content="{{ '/assets/images/recap-2025.jpg' | absolute_url }}">
 
 <!-- Additional page-specific styles -->
 {% if page.additional_css %}

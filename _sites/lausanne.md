@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Lausanne"
+edition: 2025
 description: "Details about the Lausanne site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Lausanne."
 keywords: "Lausanne Hackathon, EPFL, LLM Event Lausanne, In-person Hackathon Site"
 ---

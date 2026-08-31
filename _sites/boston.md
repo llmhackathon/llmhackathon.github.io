@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Boston"
+edition: 2025
 description: "Details about the Boston site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Boston."
 keywords: "Boston Hackathon, MIT, LLM Event Boston, In-person Hackathon Site"
 ---

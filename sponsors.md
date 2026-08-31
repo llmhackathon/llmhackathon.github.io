@@ -11,7 +11,7 @@ Confirmed so far for the October 21&ndash;22, 2026 edition &mdash; this list gro
 
 <div class="sponsor-logos">
     {% for sponsor in site.data.sponsors.sponsors_2026 %}
-    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
     {% endfor %}
 </div>
 
@@ -27,7 +27,7 @@ The organizations who supported the 2025 edition:
 
 <div class="sponsor-logos">
     {% for sponsor in site.data.sponsors.sponsors_2025 %}
-    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+    <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
     {% endfor %}
 </div>
 

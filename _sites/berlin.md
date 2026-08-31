@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Berlin"
+edition: 2025
 description: "Details about the Berlin site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Berlin."
 keywords: "Berlin Hackathon, Center for Materials Science Berlin, LLM Event Berlin, In-person Hackathon Site"
 additional_css: |

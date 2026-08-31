@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Champaign"
+edition: 2025
 description: "Details about the Champaign site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Champaign."
 keywords: "Champaign Hackathon, University of Illinois, LLM Event Champaign, In-person Hackathon Site"
 ---

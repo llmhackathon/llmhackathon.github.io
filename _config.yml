@@ -55,6 +55,14 @@ exclude:
   - vendor
   - backup
   - "*.backup"
+  # Heavy image originals: kept in the repo as masters, but not deployed.
+  # The site serves the optimized derivative (recap-2025.webp, .jpg fallback);
+  # the other three are only referenced by the excluded index.html.backup.
+  # Together these were ~8.6 MB of never-requested payload on GitHub Pages.
+  - assets/images/recap-2025.png
+  - assets/images/date-calendar.png
+  - assets/images/hero-image.png
+  - assets/images/hero-alt.png
 
 # Include files
 include:

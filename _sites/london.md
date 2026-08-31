@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "London"
+edition: 2025
 description: "Details about the London site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in London."
 keywords: "London Hackathon, Imperial College London, LLM Event London, In-person Hackathon Site"
 ---

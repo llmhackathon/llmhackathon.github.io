@@ -1,5 +1,65 @@
-# Site location data for the LLM Hackathon
-locations:
+# Site location data, split by edition.
+#
+# locations_2026     — confirmed on-site hubs for the Oct 21-22, 2026 OSI Hackathon.
+# preliminary_2026   — cities/hosts in planning for 2026; venue, organizer, and
+#                      registration details are not settled yet, so these render
+#                      as plain "in planning" tiles with no detail page.
+# locations_2025     — archive of the September 11-12, 2025 edition. Kept for the
+#                      record; their site pages carry a 2025-archive banner and
+#                      their registration links are intentionally not shown.
+
+# ---------------------------------------------------------------------------
+# 2026 edition — October 21-22, 2026
+# ---------------------------------------------------------------------------
+locations_2026:
+  - name: "Durham, NC, USA"
+    slug: "duke"
+    institution: "Duke University"
+    organizer_name: "Defne Çirci"
+    organizer_email: "defne.circi@duke.edu"
+    country: "USA"
+    region: "North America"
+    registration_link: https://forms.cloud.microsoft/pages/responsepage.aspx?id=TsVyyzFKnk2xSh6jbfrJTDE4TAn5guBEpK225MxblgBUNjY3Q0JaMjBDRldSRVU2SkVGOEQ1TjFQOC4u&origin=QRCode&route=shorturl
+
+# Cities and hosts in planning for 2026 — listed so participants can see where
+# the map is heading. No organizer/venue/registration details yet.
+preliminary_2026:
+  - name: "Baltimore, MD, USA"
+    institution: "Johns Hopkins University"
+    region: "North America"
+  - name: "Boston, MA, USA"
+    institution: "Massachusetts Institute of Technology"
+    region: "North America"
+  - name: "Chicago, IL, USA"
+    institution: "University of Chicago"
+    region: "North America"
+  - name: "Lemont, IL, USA"
+    institution: "Argonne National Laboratory"
+    region: "North America"
+  - name: "Madison, WI, USA"
+    institution: "University of Wisconsin&ndash;Madison"
+    region: "North America"
+  - name: "New York, NY, USA"
+    region: "North America"
+  - name: "Raleigh, NC, USA"
+    institution: "NC State University"
+    region: "North America"
+  - name: "San Francisco, CA, USA"
+    region: "North America"
+  - name: "Toronto, ON, Canada"
+    institution: "University of Toronto"
+    region: "North America"
+  - name: "Singapore"
+    region: "Asia-Pacific"
+  - name: "Sydney, Australia"
+    region: "Asia-Pacific"
+  - name: "Auckland, New Zealand"
+    region: "Asia-Pacific"
+
+# ---------------------------------------------------------------------------
+# 2025 edition archive — September 11-12, 2025
+# ---------------------------------------------------------------------------
+locations_2025:
   - name: "Toronto, ON, Canada"
     slug: "toronto"
     institution: "University of Toronto"

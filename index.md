@@ -51,7 +51,12 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
 
 <section id="about" class="about-section">
     <figure class="about-image reveal">
-        <img src="{{ '/assets/images/recap-2025.png' | relative_url }}" alt="Macro render of a glowing crystalline molecular lattice lit in sodium-amber and violet.">
+        <picture>
+            <source srcset="{{ '/assets/images/recap-2025.webp' | relative_url }}" type="image/webp">
+            <img src="{{ '/assets/images/recap-2025.jpg' | relative_url }}"
+                 alt="Macro render of a glowing crystalline molecular lattice lit in sodium-amber and violet."
+                 width="1200" height="800" loading="lazy" decoding="async">
+        </picture>
         <figcaption>Where language models meet the lattice</figcaption>
     </figure>
     <div class="about-content reveal">
@@ -145,7 +150,7 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
     <h2 style="text-align:left;">2025 <span>partners</span></h2>
     <div class="sponsor-logos">
         {% for sponsor in site.data.sponsors.sponsors_2025 %}
-        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
+        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
         {% endfor %}
     </div>
     <p style="text-align:center; margin: 28px auto 0; color: var(--ink-soft);">2026 sponsorship is open — <a href="{{ '/sponsors/' | relative_url }}">see who's on board and how to join them</a>.</p>

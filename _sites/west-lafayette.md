@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "West Lafayette"
+edition: 2025
 description: "Details about the West Lafayette site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in West Lafayette."
 keywords: "West Lafayette Hackathon, Purdue University, LLM Event West Lafayette, In-person Hackathon Site"
 additional_css: |

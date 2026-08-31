@@ -66,7 +66,7 @@ never appears on buttons or generic accents; it marks honors only.
 
 ## Imagery
 
-- `assets/images/recap-2025.png` — crystalline-lattice macro render in blue/gold (also the OG/social image).
+- `assets/images/recap-2025.webp` (with `.jpg` fallback, which is also the OG/social image) — crystalline-lattice macro render in blue/gold. The 1536px `.png` master is kept in the repo but excluded from the build.
 - `assets/images/spectra/emission-atlas.svg` — midnight "Emission Atlas" plate: H / Mg / Na rows with glowing lines at true wavelengths over a 400–700 nm axis (used in the home spectral strip).
 - `assets/images/spectra/spectrum-divider.svg` — slim transparent nine-line divider for light surfaces (available, unused by default).
 - The hero is deliberately image-free: midnight + type + tile carries it.

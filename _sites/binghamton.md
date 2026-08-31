@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Binghamton"
+edition: 2025
 description: "Details about the Binghamton site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Binghamton."
 keywords: "Binghamton Hackathon, SUNY Binghamton, LLM Event Binghamton, In-person Hackathon Site"
 ---

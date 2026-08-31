@@ -1,6 +1,7 @@
 ---
 layout: site-location
 title: "Lemont"
+edition: 2025
 description: "Details about the Lemont site for the LLM Hackathon. Find venue information, local schedule, and specific instructions for participants in Lemont."
 keywords: "Lemont Hackathon, Argonne National Laboratory, LLM Event Lemont, In-person Hackathon Site"
 ---

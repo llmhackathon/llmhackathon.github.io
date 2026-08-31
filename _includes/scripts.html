@@ -93,22 +93,28 @@
     window.openVideoModal = openVideoModal;
     window.closeVideoModal = closeVideoModal;
 
-    // Loader
-    window.addEventListener('load', () => {
+    // Loader.
+    //
+    // This used to hide on window 'load', which waits for EVERY subresource —
+    // images, icon webfonts, third-party CDNs. One slow CDN meant the overlay
+    // sat there for seconds with the page fully rendered underneath it. The
+    // loader only exists to cover the gap before our own CSS applies, and that
+    // stylesheet is render-blocking, so the DOM being parsed is the right cue.
+    const hideLoader = () => {
         const loader = document.querySelector('.loader-wrapper');
-        if (loader) {
-            loader.classList.add('loader-hidden');
-            loader.addEventListener('transitionend', () => {
-                if (document.body.contains(loader)) {
-                    document.body.removeChild(loader);
-                }
-            });
-            // Safety net: remove even if the transition never fires
-            setTimeout(() => {
-                if (document.body.contains(loader)) {
-                    document.body.removeChild(loader);
-                }
-            }, 1200);
-        }
-    });
+        if (!loader || loader.classList.contains('loader-hidden')) return;
+
+        loader.classList.add('loader-hidden');
+        loader.addEventListener('transitionend', () => loader.remove());
+        // Safety net: remove even if the transition never fires
+        setTimeout(() => loader.remove(), 1200);
+    };
+
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', hideLoader);
+    } else {
+        hideLoader();
+    }
+    // Last-resort ceiling; the CSS failsafe animation also covers a JS failure.
+    setTimeout(hideLoader, 2500);
 </script>
