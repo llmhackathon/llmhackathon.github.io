@@ -77,12 +77,8 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
     <h3 class="region-heading">{{ region }}</h3>
     <div class="resource-grid">
         {% for location in region_sites %}
-        {% assign location_url = '/sites/' | append: location.slug | append: '/' %}
-        {% assign location_page = site.sites | where: "url", location_url | first %}
         <div class="resource-card site-card site-card--archived">
-            <h4 class="site-card-title">
-                {% if location_page %}<a href="{{ location_url | relative_url }}" class="site-card-title-link">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}
-            </h4>
+            <h4 class="site-card-title">{{ location.name }}</h4>
             <p class="site-card-institution">{{ location.institution }}</p>
             <div class="site-card-footer">
                 <div class="site-card-contact">

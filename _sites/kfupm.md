@@ -19,5 +19,3 @@ The KFUPM in-person event will be held at **King Fahd University of Petroleum an
 ## Contact
 
 For KFUPM-specific questions, please reach out to **Abduljabar Alsayoud** at [sayoudaq@kfupm.edu.sa](mailto:sayoudaq@kfupm.edu.sa).
-
-Registration details coming soon!

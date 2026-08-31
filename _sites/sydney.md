@@ -19,5 +19,3 @@ The Sydney in-person event will be held at **University of New South Wales**.
 ## Contact
 
 For Sydney-specific questions, please reach out to **Tong Xie** at [tong.xie@unsw.edu.au](mailto:tong.xie@unsw.edu.au).
-
-Registration details coming soon!

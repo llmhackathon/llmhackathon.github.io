@@ -19,5 +19,3 @@ The Berlin in-person event will be held at the **Center for Materials Science Be
 ## Contact
 
 For Berlin-specific questions, please reach out to **Pepe Marquez** at [jose.marquez@physik.hu-berlin.de](mailto:jose.marquez@physik.hu-berlin.de).
-
-Registration details coming soon!

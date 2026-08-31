@@ -19,5 +19,3 @@ The West Lafayette in-person event will be held at the prestigious **Purdue Univ
 ## Contact
 
 For West Lafayette-specific questions, please reach out to **Juan Carlos Verduzco** at [jverduzc@purdue.edu](mailto:jverduzc@purdue.edu).
-
-Registration details coming soon!

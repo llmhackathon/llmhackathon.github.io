@@ -19,5 +19,3 @@ The Liverpool in-person event will be held at the **University of Liverpool**.
 ## Contact
 
 For Liverpool-specific questions, please reach out to **Ben Alston** at [Ben.Alston@liverpool.ac.uk](mailto:Ben.Alston@liverpool.ac.uk).
-
-Registration details coming soon!

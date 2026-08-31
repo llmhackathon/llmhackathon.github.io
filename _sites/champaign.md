@@ -19,5 +19,3 @@ The Champaign in-person event will be held at the **University of Illinois at Ur
 ## Contact
 
 For Champaign-specific questions, please reach out to **Pranav Krishnan** at [pranav12@illinois.edu](mailto:pranav12@illinois.edu).
-
-Registration details coming soon!

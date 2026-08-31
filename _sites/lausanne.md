@@ -19,5 +19,3 @@ The Lausanne in-person event will be held at **École Polytechnique Fédérale d
 ## Contact
 
 For Lausanne-specific questions, please reach out to **Philippe Schwaller** at [philippe.schwaller@epfl.ch](mailto:philippe.schwaller@epfl.ch).
-
-Registration details coming soon!

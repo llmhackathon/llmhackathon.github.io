@@ -19,5 +19,3 @@ The Boston in-person event will be held at the **Massachusetts Institute of Tech
 ## Contact
 
 For Boston-specific questions, please reach out to **Sophie Guo** at [sophiejg@mit.edu](mailto:sophiejg@mit.edu).
-
-Registration details coming soon!

@@ -19,5 +19,3 @@ The Leipzig in-person event will be held at **Max-Planck-Gesellschaft**.
 ## Contact
 
 For Leipzig-specific questions, please reach out to **Sandor Brockhauser** at [sandor.brockhauser@cbs.mpg.de](mailto:sandor.brockhauser@cbs.mpg.de).
-
-Registration details coming soon!

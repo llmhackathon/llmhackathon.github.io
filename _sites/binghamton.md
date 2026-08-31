@@ -19,5 +19,3 @@ The Binghamton in-person event will be held at **SUNY Binghamton**.
 ## Contact
 
 For Binghamton-specific questions, please reach out to **Shehtab Zaman** at [szaman5@binghamton.edu](mailto:szaman5@binghamton.edu).
-
-Registration details coming soon!

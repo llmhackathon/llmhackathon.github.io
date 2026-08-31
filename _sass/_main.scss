@@ -2318,8 +2318,13 @@ main {
     opacity: 0.78;
 }
 
+/* These no longer link anywhere, so they must not borrow the clickable card's
+   lift and action-blue border. Only the dim lifts, to aid reading on hover. */
 .site-card--archived:hover {
     opacity: 1;
+    transform: none;
+    box-shadow: none;
+    border-color: var(--line);
 }
 
 /* Banner at the top of an archived site page */

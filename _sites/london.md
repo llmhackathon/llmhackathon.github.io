@@ -19,5 +19,3 @@ The London in-person event will be held at **Imperial College London**.
 ## Contact
 
 For London-specific questions, please reach out to **Ry Nduma** at [napo.nduma22@imperial.ac.uk](mailto:napo.nduma22@imperial.ac.uk).
-
-Registration details coming soon!

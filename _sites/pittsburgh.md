@@ -19,5 +19,3 @@ The Pittsburgh in-person event will be held at **Carnegie Mellon University**.
 ## Contact
 
 For Pittsburgh-specific questions, please reach out to **Olexandr Isayev** at [olexandr@cmu.edu](mailto:olexandr@cmu.edu).
-
-Registration details coming soon!

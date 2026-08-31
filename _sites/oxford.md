@@ -19,5 +19,3 @@ The Oxford in-person event will be held at the **Physical and Theoretical Chemis
 ## Contact
 
 For Oxford-specific questions, please reach out to **Wojtek Treyde** at [wojtek.treyde@sjc.ox.ac.uk](mailto:wojtek.treyde@sjc.ox.ac.uk).
-
-Registration details coming soon!

@@ -19,5 +19,3 @@ The Raleigh in-person event will be held at **NC State**.
 ## Contact
 
 For Raleigh-specific questions, please reach out to **Yara Yingling** at [yara_yingling@ncstate.edu](mailto:yara_yingling@ncstate.edu).
-
-Registration details coming soon!

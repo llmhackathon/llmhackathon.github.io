@@ -19,5 +19,3 @@ The in-person event will be held at **The University of Tennessee**.
 ## Contact
 
 For Tennessee-specific questions, please reach out to **Sheryl Sanchez** at [ssanch18@vols.utk.edu](mailto:ssanch18@vols.utk.edu) or **Sergei Kalinin** at [sergei2@utk.edu](mailto:sergei2@utk.edu).
-
-Registration details coming soon!

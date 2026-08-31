@@ -19,5 +19,3 @@ The Baltimore in-person event will be held at **Johns Hopkins University**.
 ## Contact
 
 For Baltimore-specific questions, please reach out to **David Elbert** at [elbert@jhu.edu](mailto:elbert@jhu.edu).
-
-Registration details coming soon!

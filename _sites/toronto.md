@@ -19,5 +19,3 @@ The Toronto in-person event will be held at the **Acceleration Consortium of Uni
 ## Contact
 
 For Toronto-specific questions, please reach out to **Brandon Lines** at [brandon.lines@utoronto.ca](mailto:brandon.lines@utoronto.ca).
-
-Registration details coming soon!
