@@ -12,6 +12,17 @@
 # 2026 edition — October 21-22, 2026
 # ---------------------------------------------------------------------------
 locations_2026:
+  # North America
+  - name: "Brooklyn, NY, USA"
+    institution: "NYU Global AI Frontier Lab &middot; One MetroTech Center, 22nd Floor"
+    country: "USA"
+    region: "North America"
+
+  - name: "Denver, CO, USA"
+    institution: "University of Colorado Denver"
+    country: "USA"
+    region: "North America"
+
   - name: "Durham, NC, USA"
     slug: "duke"
     institution: "Duke University"
@@ -20,6 +31,57 @@ locations_2026:
     country: "USA"
     region: "North America"
     registration_link: https://forms.cloud.microsoft/pages/responsepage.aspx?id=TsVyyzFKnk2xSh6jbfrJTDE4TAn5guBEpK225MxblgBUNjY3Q0JaMjBDRldSRVU2SkVGOEQ1TjFQOC4u&origin=QRCode&route=shorturl
+
+  - name: "Knoxville, TN, USA"
+    institution: "University of Tennessee, Knoxville"
+    country: "USA"
+    region: "North America"
+
+  - name: "New York, NY, USA"
+    institution: "Columbia University Irving Medical Center"
+    country: "USA"
+    region: "North America"
+
+  - name: "Raleigh, NC, USA"
+    institution: "NC State University"
+    country: "USA"
+    region: "North America"
+
+  - name: "Tempe, AZ, USA"
+    country: "USA"
+    region: "North America"
+
+  - name: "Toronto, ON, Canada"
+    institution: "University of Toronto"
+    country: "Canada"
+    region: "North America"
+
+  - name: "West Lafayette, IN, USA"
+    institution: "Purdue University"
+    country: "USA"
+    region: "North America"
+
+  # Europe
+  - name: "Bochum, Germany"
+    institution: "Ruhr University Bochum"
+    country: "Germany"
+    region: "Europe"
+
+  - name: "Copenhagen, Denmark"
+    institution: "Co-working office"
+    country: "Denmark"
+    region: "Europe"
+
+  # Asia-Pacific
+  - name: "Auckland, New Zealand"
+    institution: "University of Auckland"
+    country: "New Zealand"
+    region: "Asia-Pacific"
+
+  - name: "Singapore"
+    institution: "CREATE (Campus for Research Excellence and Technological Enterprise)"
+    country: "Singapore"
+    region: "Asia-Pacific"
 
 # Cities and hosts in planning for 2026 — listed so participants can see where
 # the map is heading. No organizer/venue/registration details yet.
@@ -39,21 +101,9 @@ preliminary_2026:
   - name: "Madison, WI, USA"
     institution: "University of Wisconsin&ndash;Madison"
     region: "North America"
-  - name: "New York, NY, USA"
-    region: "North America"
-  - name: "Raleigh, NC, USA"
-    institution: "NC State University"
-    region: "North America"
   - name: "San Francisco, CA, USA"
     region: "North America"
-  - name: "Toronto, ON, Canada"
-    institution: "University of Toronto"
-    region: "North America"
-  - name: "Singapore"
-    region: "Asia-Pacific"
   - name: "Sydney, Australia"
-    region: "Asia-Pacific"
-  - name: "Auckland, New Zealand"
     region: "Asia-Pacific"
 
 # ---------------------------------------------------------------------------

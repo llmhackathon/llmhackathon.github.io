@@ -34,7 +34,7 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
             <h4 class="site-card-title">
                 {% if location_page %}<a href="{{ location_url | relative_url }}" class="site-card-title-link">{{ location.name }}</a>{% else %}{{ location.name }}{% endif %}
             </h4>
-            <p class="site-card-institution">{{ location.institution }}</p>
+            {% if location.institution %}<p class="site-card-institution">{{ location.institution }}</p>{% endif %}
             <div class="site-card-footer">
                 {% if location.organizer_name %}
                 <div class="site-card-contact">
