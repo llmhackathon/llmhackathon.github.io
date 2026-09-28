@@ -48,6 +48,7 @@ locations_2026:
     region: "North America"
 
   - name: "Tempe, AZ, USA"
+    institution: "Arizona State University"
     country: "USA"
     region: "North America"
 
