@@ -68,15 +68,17 @@ locations_2026:
     region: "Europe"
 
   - name: "Copenhagen, Denmark"
-    institution: "Co-working office"
+    institution: "The Shack Co-working Space"
     country: "Denmark"
     region: "Europe"
+    registration_link: https://luma.com/sjh06ojt
 
   # Asia-Pacific
   - name: "Auckland, New Zealand"
     institution: "University of Auckland"
     country: "New Zealand"
     region: "Asia-Pacific"
+    registration_link: https://forms.cloud.microsoft/r/JQCAFqHdZ4
 
   - name: "Singapore"
     institution: "CREATE (Campus for Research Excellence and Technological Enterprise)"
