@@ -81,6 +81,15 @@ locations_2026:
     region: "Asia-Pacific"
     registration_link: https://forms.cloud.microsoft/r/JQCAFqHdZ4
 
+  - name: "Pune, India"
+    slug: "csir-ncl"
+    institution: "CSIR-National Chemical Laboratory (CSIR-NCL)"
+    organizer_name: "Piyush R. Maharana"
+    organizer_email: "piyushmaharana15@gmail.com"
+    country: "India"
+    region: "Asia-Pacific"
+    registration_link: https://forms.gle/xwxszWZfnaH19GwS7
+
   - name: "Singapore"
     institution: "CREATE (Campus for Research Excellence and Technological Enterprise)"
     country: "Singapore"
