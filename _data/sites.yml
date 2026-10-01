@@ -70,8 +70,10 @@ locations_2026:
     region: "North America"
 
   - name: "San Francisco, CA, USA"
+    organizer_name: "Trishala Jain"
     country: "USA"
     region: "North America"
+    registration_link: https://partiful.com/e/CB6SCO5DbLTXG9TXBITX
 
   - name: "Tempe, AZ, USA"
     institution: "Arizona State University"

@@ -40,7 +40,7 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
                 <div class="site-card-contact">
                     <span class="site-card-label">Local organizer</span>
                     <span class="site-card-organizer">{{ location.organizer_name }}</span>
-                    <a class="site-card-email" href="mailto:{{ location.organizer_email }}">{{ location.organizer_email }}</a>
+                    {% if location.organizer_email %}<a class="site-card-email" href="mailto:{{ location.organizer_email }}">{{ location.organizer_email }}</a>{% endif %}
                 </div>
                 {% endif %}
                 {% if location.registration_link %}
