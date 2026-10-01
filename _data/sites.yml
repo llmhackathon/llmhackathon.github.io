@@ -91,6 +91,8 @@ locations_2026:
   # South America
   - name: "Santo André, SP, Brazil"
     institution: "Universidade Federal do ABC (UFABC)"
+    organizer_name: "Arthur da Silva Sousa Santos"
+    organizer_email: "santos.arthur@aluno.ufabc.edu.br"
     country: "Brazil"
     region: "South America"
     registration_link: https://ufabc-osi-hackathon.pokerns16.chatgpt.site/
