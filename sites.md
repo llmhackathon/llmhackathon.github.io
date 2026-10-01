@@ -52,18 +52,6 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
         </div>
         {% endfor %}
     </div>
-
-    <h3 class="region-heading">In planning for 2026</h3>
-    <p class="sites-edition-lede">These locations are lining up hosts and venues. Details and site registration will appear here once they're set &mdash; if you're near one of them and want to help run it, <a href="mailto:{{ site.links.main_organizer_email }}">get in touch</a>.</p>
-    <div class="resource-grid site-grid--planned">
-        {% for location in site.data.sites.preliminary_2026 %}
-        <div class="resource-card site-card site-card--planned">
-            <span class="site-status-tag">In planning</span>
-            <h4 class="site-card-title">{{ location.name }}</h4>
-            {% if location.institution %}<p class="site-card-institution">{{ location.institution }}</p>{% endif %}
-        </div>
-        {% endfor %}
-    </div>
 </div>
 
 <div id="locations-2025" class="sites-archive" style="scroll-margin-top: 100px;">

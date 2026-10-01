@@ -1,9 +1,6 @@
 # Site location data, split by edition.
 #
 # locations_2026     — confirmed on-site hubs for the Oct 21-22, 2026 OSI Hackathon.
-# preliminary_2026   — cities/hosts in planning for 2026; venue, organizer, and
-#                      registration details are not settled yet, so these render
-#                      as plain "in planning" tiles with no detail page.
 # locations_2025     — archive of the September 11-12, 2025 edition. Kept for the
 #                      record; their site pages carry a 2025-archive banner and
 #                      their registration links are intentionally not shown.
@@ -13,8 +10,23 @@
 # ---------------------------------------------------------------------------
 locations_2026:
   # North America
+  - name: "Baltimore, MD, USA"
+    institution: "Johns Hopkins University"
+    country: "USA"
+    region: "North America"
+
+  - name: "Boston, MA, USA"
+    institution: "Massachusetts Institute of Technology"
+    country: "USA"
+    region: "North America"
+
   - name: "Brooklyn, NY, USA"
     institution: "NYU Global AI Frontier Lab &middot; One MetroTech Center, 22nd Floor"
+    country: "USA"
+    region: "North America"
+
+  - name: "Chicago, IL, USA"
+    institution: "University of Chicago"
     country: "USA"
     region: "North America"
 
@@ -37,6 +49,16 @@ locations_2026:
     country: "USA"
     region: "North America"
 
+  - name: "Lemont, IL, USA"
+    institution: "Argonne National Laboratory"
+    country: "USA"
+    region: "North America"
+
+  - name: "Madison, WI, USA"
+    institution: "University of Wisconsin&ndash;Madison"
+    country: "USA"
+    region: "North America"
+
   - name: "New York, NY, USA"
     institution: "Columbia University Irving Medical Center"
     country: "USA"
@@ -44,6 +66,10 @@ locations_2026:
 
   - name: "Raleigh, NC, USA"
     institution: "NC State University"
+    country: "USA"
+    region: "North America"
+
+  - name: "San Francisco, CA, USA"
     country: "USA"
     region: "North America"
 
@@ -61,6 +87,13 @@ locations_2026:
     institution: "Purdue University"
     country: "USA"
     region: "North America"
+
+  # South America
+  - name: "Santo André, SP, Brazil"
+    institution: "Universidade Federal do ABC (UFABC)"
+    country: "Brazil"
+    region: "South America"
+    registration_link: https://ufabc-osi-hackathon.pokerns16.chatgpt.site/
 
   # Europe
   - name: "Bochum, Germany"
@@ -91,31 +124,13 @@ locations_2026:
     registration_link: https://forms.gle/xwxszWZfnaH19GwS7
 
   - name: "Singapore"
-    institution: "CREATE (Campus for Research Excellence and Technological Enterprise)"
+    institution: "Berkeley Education Alliance for Research in Singapore (BEARS) &amp; Nanyang Technological University (NTU) &middot; 1 Create Way, Singapore 138602"
     country: "Singapore"
     region: "Asia-Pacific"
+    registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeS6oDjwIQrODXqdfBUcU4nYHajjJyVqoo1UG8NeRZCtfqYqw/viewform?usp=dialog
 
-# Cities and hosts in planning for 2026 — listed so participants can see where
-# the map is heading. No organizer/venue/registration details yet.
-preliminary_2026:
-  - name: "Baltimore, MD, USA"
-    institution: "Johns Hopkins University"
-    region: "North America"
-  - name: "Boston, MA, USA"
-    institution: "Massachusetts Institute of Technology"
-    region: "North America"
-  - name: "Chicago, IL, USA"
-    institution: "University of Chicago"
-    region: "North America"
-  - name: "Lemont, IL, USA"
-    institution: "Argonne National Laboratory"
-    region: "North America"
-  - name: "Madison, WI, USA"
-    institution: "University of Wisconsin&ndash;Madison"
-    region: "North America"
-  - name: "San Francisco, CA, USA"
-    region: "North America"
   - name: "Sydney, Australia"
+    country: "Australia"
     region: "Asia-Pacific"
 
 # ---------------------------------------------------------------------------
