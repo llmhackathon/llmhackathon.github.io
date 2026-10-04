@@ -145,7 +145,7 @@ University of Chicago and Argonne National Laboratory
 
 - **Registration (2026):** [luma.com/ku88xh92](https://luma.com/ku88xh92)
 - **Registration (2025, archived):** [lu.ma/hspoki8y](https://lu.ma/hspoki8y)
-- **Slack Community:** [cutt.ly/llm-hackathon-slack](https://cutt.ly/llmhackathon-slack)
+- **Slack Community:** [Join our Slack](https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-4c046lidd-qTNHooaS7NLiT8~mD5dmFg)
 - **Contact:**
   - [blaiszik@uchicago.edu](mailto:blaiszik@uchicago.edu) [Dr. Ben Blaiszik],
   - [contact@aritraroy.live](mailto:contact@aritraroy.live) [Aritra Roy]
