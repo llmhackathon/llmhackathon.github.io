@@ -120,6 +120,14 @@ locations_2026:
     region: "Asia-Pacific"
     registration_link: https://forms.cloud.microsoft/r/JQCAFqHdZ4
 
+  - name: "New Delhi, India"
+    institution: "Indian Institute of Technology Delhi (IIT Delhi)"
+    organizer_name: "Harshit Bisht"
+    organizer_email: "aiz258455@iitd.ac.in"
+    country: "India"
+    region: "Asia-Pacific"
+    registration_link: https://forms.gle/JF1Tmxpqz2AxJ6uo7
+
   - name: "Pune, India"
     slug: "csir-ncl"
     institution: "CSIR-National Chemical Laboratory (CSIR-NCL)"
