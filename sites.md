@@ -25,9 +25,13 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
         </p>
     </div>
 
-    <h3 class="region-heading">Confirmed sites</h3>
+    {% assign regions = "North America,South America,Europe,Asia-Pacific" | split: "," %}
+    {% for region in regions %}
+    {% assign region_sites = site.data.sites.locations_2026 | where: "region", region %}
+    {% if region_sites.size > 0 %}
+    <h3 class="region-heading">{{ region }}</h3>
     <div class="resource-grid site-grid--confirmed">
-        {% for location in site.data.sites.locations_2026 %}
+        {% for location in region_sites %}
         {% assign location_url = '/sites/' | append: location.slug | append: '/' %}
         {% assign location_page = site.sites | where: "url", location_url | first %}
         <div class="resource-card site-card">
@@ -52,6 +56,8 @@ keywords: "Hackathon Locations, Hackathon Hosting, Duke, Singapore, Toronto, Chi
         </div>
         {% endfor %}
     </div>
+    {% endif %}
+    {% endfor %}
 </div>
 
 <div id="locations-2025" class="sites-archive" style="scroll-margin-top: 100px;">
