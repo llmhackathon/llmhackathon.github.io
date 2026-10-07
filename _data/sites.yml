@@ -11,9 +11,11 @@
 locations_2026:
   # North America
   - name: "Baltimore, MD, USA"
-    institution: "Johns Hopkins University"
+    institution: "Johns Hopkins University &middot; Homewood Campus"
+    organizer_name: "David Elbert, Mohd Zaki"
     country: "USA"
     region: "North America"
+    registration_link: https://www.eventbrite.com/e/2002956530902?aff=oddtdtcreator
 
   - name: "Boston, MA, USA"
     institution: "Massachusetts Institute of Technology"
@@ -62,9 +64,11 @@ locations_2026:
     region: "North America"
 
   - name: "New York, NY, USA"
-    institution: "Columbia University Irving Medical Center"
+    institution: "Columbia University Irving Medical Center &middot; 630 W 168th St, New York, NY 10032"
+    organizer_name: "Caralie Chrisco"
     country: "USA"
     region: "North America"
+    registration_link: https://luma.com/heljsz7s
 
   - name: "Raleigh, NC, USA"
     institution: "NC State University"
@@ -115,10 +119,11 @@ locations_2026:
 
   # Asia-Pacific
   - name: "Auckland, New Zealand"
-    institution: "University of Auckland"
+    institution: "University of Auckland &middot; Drug discovery focus, open to all"
+    organizer_name: "Nick Jones"
     country: "New Zealand"
     region: "Asia-Pacific"
-    registration_link: https://forms.cloud.microsoft/r/JQCAFqHdZ4
+    registration_link: https://drai-inn.github.io/osi-hackathon-auckland/
 
   - name: "New Delhi, India"
     institution: "Indian Institute of Technology Delhi (IIT Delhi)"
