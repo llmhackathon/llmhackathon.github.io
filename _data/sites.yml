@@ -98,9 +98,11 @@ locations_2026:
     region: "North America"
 
   - name: "West Lafayette, IN, USA"
-    institution: "Purdue University"
+    institution: "Purdue University &middot; ICoN NSF PCL"
+    organizer_name: "Juan Verduzco, Ale Strachan"
     country: "USA"
     region: "North America"
+    registration_link: https://purdue.ca1.qualtrics.com/jfe/form/SV_1SUAUTxzzeJb3f0
 
   # South America
   - name: "Santo André, SP, Brazil"
