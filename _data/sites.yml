@@ -106,6 +106,12 @@ locations_2026:
     registration_link: https://ufabc-osi-hackathon.pokerns16.chatgpt.site/
 
   # Europe
+  - name: "Berlin, Germany"
+    organizer_name: "Dunia, FAIRmat, Kevin Jablonka"
+    country: "Germany"
+    region: "Europe"
+    registration_link: https://luma.com/1ykmpq40
+
   - name: "Bochum, Germany"
     institution: "Ruhr University Bochum"
     country: "Germany"
@@ -149,8 +155,10 @@ locations_2026:
     registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeS6oDjwIQrODXqdfBUcU4nYHajjJyVqoo1UG8NeRZCtfqYqw/viewform?usp=dialog
 
   - name: "Sydney, Australia"
+    institution: "UNSW"
     country: "Australia"
     region: "Asia-Pacific"
+    registration_link: https://luma.com/r81hqc5c
 
 # ---------------------------------------------------------------------------
 # 2025 edition archive — September 11-12, 2025
