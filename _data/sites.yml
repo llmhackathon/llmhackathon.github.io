@@ -10,6 +10,12 @@
 # ---------------------------------------------------------------------------
 locations_2026:
   # North America
+  - name: "Ann Arbor, MI, USA"
+    institution: "University of Michigan"
+    country: "USA"
+    region: "North America"
+    registration_link: https://docs.google.com/spreadsheets/d/10cCkXiqpd9vg16QmKe67hwEmTlRFtwoqixh03RS-mPQ/edit?usp=sharing
+
   - name: "Baltimore, MD, USA"
     institution: "Johns Hopkins University &middot; Homewood Campus"
     organizer_name: "David Elbert, Mohd Zaki"
@@ -113,9 +119,10 @@ locations_2026:
     registration_link: https://luma.com/1ykmpq40
 
   - name: "Bochum, Germany"
-    institution: "Ruhr University Bochum"
+    institution: "Interdisciplinary Centre for Advanced Materials Simulation (ICAMS) &middot; Ruhr University Bochum"
     country: "Germany"
     region: "Europe"
+    registration_link: https://forms.gle/VJ5VZJS44aoTtuxR6
 
   - name: "Copenhagen, Denmark"
     institution: "The Shack Co-working Space"
