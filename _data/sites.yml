@@ -164,7 +164,9 @@ locations_2026:
     registration_link: https://docs.google.com/forms/d/e/1FAIpQLSeS6oDjwIQrODXqdfBUcU4nYHajjJyVqoo1UG8NeRZCtfqYqw/viewform?usp=dialog
 
   - name: "Sydney, Australia"
-    institution: "UNSW"
+    institution: "UNSW, High St, Kensington NSW 2052, Australia"
+    organizer_name: "Tong Xie"
+    organizer_email: "tong.xie@unsw.edu.au"
     country: "Australia"
     region: "Asia-Pacific"
     registration_link: https://luma.com/r81hqc5c
