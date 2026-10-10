@@ -222,12 +222,12 @@ locations_2025:
 
   - name: "KFUPM, KSA"
     slug: "kfupm"
-    institution: "KFUPM"
+    institution: "King Fahd University of Petroleum and Minerals (KFUPM), Dhahran, Saudi Arabia"
     organizer_name: "Abduljabar Alsayoud"
     organizer_email: "sayoudaq@kfupm.edu.sa"
     country: "KSA"
     region: "Asia-Pacific"
-    registration_link:
+    registration_link: https://luma.com/3uwnuj9r
 
   - name: "West Lafayette, IN, USA"
     slug: "west-lafayette"
