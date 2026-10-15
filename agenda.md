@@ -8,25 +8,25 @@ keywords: "OSI Hackathon Schedule, Event Timeline, Agenda, October 2026"
 ## {{ site.event.next_edition }}
 
 <div class="event-status-banner">
-    <span class="status-dot status-dot--pending" aria-hidden="true"></span>
-    <span>Dates confirmed &middot; agenda TBA</span>
+    <span class="status-dot" aria-hidden="true"></span>
+    <span>Dates confirmed &middot; submissions due Oct 22, 7:00 PM CT</span>
 </div>
 
-The fourth edition — now the **Open Scientific Intelligence (OSI) Hackathon** — runs **Wednesday–Thursday, October 21–22, 2026**, hybrid and worldwide. Kick-off time, mentorship blocks, and the submission deadline are still being finalized. They will be published here and announced in [Slack]({{ site.links.slack }}) first. Registration is open now.
+The fourth edition — now the **Open Scientific Intelligence (OSI) Hackathon** — runs **Wednesday–Thursday, October 21–22, 2026**, hybrid and worldwide. Teams start at their preferred local time on October 21, and every team worldwide submits by the same deadline: **October 22, 7:00 PM CT (5:00 PM PT)**. Updates are announced in [Slack]({{ site.links.slack }}) first.
 
 <div class="schedule-timeline">
     <div class="schedule-item">
-        <div class="schedule-time">Day 1 &middot; Wed, Oct 21 &middot; TBA</div>
+        <div class="schedule-time">Day 1 &middot; Wed, Oct 21 &middot; your local time</div>
         <div class="schedule-details">
             <h4>Kick-off, teaming, hacking begins</h4>
-            <p>Opening session, team formation across sites and virtually, then straight into building. Times to be announced.</p>
+            <p>Teams can start at their preferred local time on October 21. The kick-off video is provided virtually. Some sites may run morning programming; virtual hub builders go straight to teaming and building.</p>
         </div>
     </div>
     <div class="schedule-item">
-        <div class="schedule-time">Day 2 &middot; Thu, Oct 22 &middot; TBA</div>
+        <div class="schedule-time">Day 2 &middot; Thu, Oct 22 &middot; due 7:00 PM CT</div>
         <div class="schedule-details">
             <h4>Build day and final submissions</h4>
-            <p>Focused development with mentors on hand, followed by the project submission deadline. Times to be announced.</p>
+            <p>Focused development with mentors available on Slack and in Zoom. Project submissions are due by October 22, 7:00 PM CT (5:00 PM PT; 00:00 UTC Oct 23), worldwide.</p>
         </div>
     </div>
     <div class="schedule-item">
@@ -40,47 +40,39 @@ The fourth edition — now the **Open Scientific Intelligence (OSI) Hackathon** 
 
 <div class="hero-actions">
     <a rel="noopener noreferrer" target="_blank" href="{{ site.links.registration }}" class="cta-button">Register for October 21&ndash;22, 2026</a>
-    <a rel="noopener noreferrer" target="_blank" href="{{ site.links.slack }}" class="secondary-cta secondary-cta--light">Get the schedule first &mdash; join Slack</a>
+    <a rel="noopener noreferrer" target="_blank" href="{{ site.links.slack }}" class="secondary-cta secondary-cta--light">Join Slack</a>
 </div>
 
 ## What to Expect
 
 ### Day 1: Getting Started
-- **Welcome & Networking**: Meet fellow participants and organizers
-- **Project Brainstorming**: Explore ideas and form teams
-- **Technical Setup**: Access to computational resources and data
-- **Mentorship**: Connect with experienced researchers and industry professionals
+- **Welcome & Networking**: Watch the virtual kick-off video if you haven't already. Meet fellow participants and organizers at local sites; virtual hub participants meet on Slack and Miro.
+- **Project Brainstorming**: Explore ideas and form teams on site or virtually. This is a non-guided activity.
+- **Technical Setup**: Make sure you have access to computational resources and data. Sign up for any provided credits before the event so setup doesn't eat into build time.
+- **Mentorship**: Connect with experienced researchers and industry professionals on Slack and Zoom. Mentors are available throughout the day.
 
 ### Day 2: Development & Presentation
-- **Intensive Development**: Focus time for building your project
-- **Final Submissions**: Complete and submit your work
-- **Project Showcases**: Present your innovations to judges and peers
-- **Awards Ceremony**: Recognition for outstanding contributions
+- **Intensive Development**: Focus time for building your project.
+- **Finalize Submissions**: Complete and submit your work by October 22, 7:00 PM CT (5:00 PM PT). A submission is a social media post, which can include a video demo or presentation of your results (up to 4 minutes) and a write-up (up to 1 page).
 
-## Resources Available
-
-During the event, participants will have access to:
-- High-performance computing resources
-- Curated datasets across the physical sciences and mathematics
-- Documentation and tutorials for LLM, agent, and scientific software APIs
-- Expert mentorship and technical support
-- Collaboration tools and communication channels
+### After the Event
+- **Awards Ceremony**: Judges score the projects, and outstanding contributions are recognized.
 
 ## Time Zones
 
-All times listed are in Central Time (CT). International participants should note:
-- **UTC**: Add 6 hours to CT times
-- **GMT**: Add 6 hours to CT times  
-- **EST**: Add 1 hour to CT times
-- **PST**: Subtract 2 hours from CT times
+Teams start on October 21 at whatever local time suits them. The one fixed time is the submission deadline: **October 22, 7:00 PM Central Time (CDT, UTC−5)**, which is 5:00 PM Pacific. In other time zones that is:
+- **UTC**: 00:00, Oct 23
+- **Eastern (EDT)**: 8:00 PM, Oct 22
+- **Central European (CEST)**: 2:00 AM, Oct 23
+- **Sydney (AEDT)**: 11:00 AM, Oct 23
 
-For participants at international sites, local organizers will coordinate timing and provide location-specific schedules.
+Local organizers will share any site-specific schedules.
 
 ---
 
 ## Previous Edition: {{ site.event.dates }}
 
-*Kept here for reference while the 2026 agenda is being defined — the 2026 schedule will follow a similar shape.*
+*Kept here for reference.*
 
 <div class="schedule-timeline">
     {% for item in site.data.schedule.items %}

@@ -78,8 +78,11 @@ locations_2026:
 
   - name: "Raleigh, NC, USA"
     institution: "NC State University"
+    organizer_name: "Yara Yingling"
+    organizer_email: "yara_yingling@ncstate.edu"
     country: "USA"
     region: "North America"
+    registration_link: https://ncsu-osi-hackathon-materials-2026.github.io/
 
   - name: "San Francisco, CA, USA"
     organizer_name: "Trishala Jain"
