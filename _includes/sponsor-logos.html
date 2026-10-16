@@ -1,0 +1,14 @@
+{%- comment -%}
+  Sponsor logo row. Usage: include sponsor-logos.html with
+  sponsors=site.data.sponsors.sponsors_2026 (any per-year list).
+  Optional: class="..." appended to the wrapper.
+{%- endcomment -%}
+<div class="sponsor-logos{% if include.class %} {{ include.class }}{% endif %}">
+    {%- for sponsor in include.sponsors %}
+    {%- if sponsor.url and sponsor.url != '#' %}
+    <a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.name }}"><img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"></a>
+    {%- else %}
+    <span title="{{ sponsor.name }}"><img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"></span>
+    {%- endif %}
+    {%- endfor %}
+</div>

@@ -1053,6 +1053,31 @@ main {
     max-width: 16ch;
 }
 
+.hero-title {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.hero-presenter {
+    font-size: clamp(0.95rem, 1.5vw, 1.15rem);
+    color: var(--on-void-soft);
+    line-height: 1.4;
+    margin: 0;
+}
+
+.hero-presenter a {
+    color: var(--on-void);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.hero-presenter a:hover,
+.hero-presenter a:focus-visible {
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 .hero .tagline {
     font-size: clamp(1rem, 1.4vw, 1.15rem);
     color: var(--on-void-soft);
@@ -1440,17 +1465,193 @@ main {
     margin: 40px auto 0;
 }
 
+.sponsor-logos a,
+.sponsor-logos span {
+    display: inline-flex;
+    align-items: center;
+}
+
 .sponsor-logos img {
+    width: auto;
     max-width: 160px;
     height: auto;
+    max-height: 64px;
+    object-fit: contain;
     filter: grayscale(100%);
     opacity: 0.62;
     transition: filter 0.25s ease, opacity 0.25s ease;
 }
 
-.sponsor-logos img:hover {
+.sponsor-logos img:hover,
+.sponsor-logos a:focus-visible img {
     filter: grayscale(0%);
     opacity: 1;
+}
+
+/* ==========================================================================
+   Sponsors band — homepage, directly under the stats band. The presenting
+   sponsor leads on the left; the rest sit in a hairline-ruled tile grid that
+   echoes the stats band's dividers.
+   ========================================================================== */
+
+.sponsors-band {
+    background: var(--paper);
+    border-bottom: 1px solid var(--line);
+    padding: clamp(40px, 6vw, 64px) clamp(24px, 6vw, 64px);
+}
+
+.sponsors-band-inner {
+    max-width: 1160px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(220px, 0.32fr) minmax(0, 1fr);
+    gap: clamp(28px, 4vw, 56px);
+    align-items: center;
+}
+
+.sponsors-band-lead {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.sponsors-band h2.sponsors-band-label {
+    font-family: var(--font-mono);
+    font-size: 0.78rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--amber-ink);
+    margin: 0 0 6px;
+}
+
+.sponsors-band-presented {
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+    margin: 0;
+}
+
+.sponsors-band-presenting {
+    display: inline-flex;
+}
+
+.sponsors-band-presenting img {
+    display: block;
+    width: 100%;
+    max-width: 280px;
+    height: auto;
+}
+
+.sponsors-band-grid {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    /* Rules drawn per tile (not as the grid background) so a short last
+       row leaves blank paper instead of a grey block */
+    gap: 1px;
+    padding: 1px;
+}
+
+.sponsors-band-grid li {
+    margin: 0;
+    box-shadow: 0 0 0 1px var(--line);
+}
+
+.sponsors-band-grid a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 92px;
+    padding: 16px 18px;
+    transition: background-color 0.2s ease;
+}
+
+.sponsors-band-grid a:hover,
+.sponsors-band-grid a:focus-visible {
+    background: var(--paper-dim);
+}
+
+.sponsors-band-grid img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 40px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    opacity: 0.8;
+    transition: filter 0.25s ease, opacity 0.25s ease;
+}
+
+/* Square seals and stacked lockups read too small at wordmark height */
+.sponsors-band-grid img.is-tall {
+    max-height: 60px;
+}
+
+/* Pale artwork washes out once desaturated; pull it down to ink weight */
+.sponsors-band-grid img.is-light {
+    filter: grayscale(100%) brightness(0.45);
+}
+
+.sponsors-band-grid a:hover img,
+.sponsors-band-grid a:focus-visible img {
+    filter: grayscale(0%);
+    opacity: 1;
+}
+
+/* Organizer sits under the whole sponsor set — credited, but not a sponsor */
+.sponsors-band-foot {
+    grid-column: 1 / -1;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px 32px;
+    padding-top: clamp(20px, 3vw, 28px);
+    border-top: 1px solid var(--line);
+}
+
+.sponsors-band-organizer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    margin: 0;
+    font-size: 0.9rem;
+    color: var(--ink-soft);
+}
+
+.sponsors-band-organizer a {
+    display: inline-flex;
+}
+
+.sponsors-band-organizer img {
+    display: block;
+    width: auto;
+    height: 34px;
+}
+
+.sponsors-band-more {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 960px) {
+    .sponsors-band-inner {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 700px) {
+    .sponsors-band-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sponsors-band-grid a {
+        height: 80px;
+    }
 }
 
 /* ==========================================================================
@@ -2088,6 +2289,24 @@ main {
    Sponsor callout — the "we're looking for sponsors" ask on sponsors.md.
    Left accent bar in action blue marks it as a call to act, not just to read.
    ========================================================================== */
+
+/* Organizer credit under the 2026 sponsor list on sponsors.md */
+.sponsor-organizer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 10px 18px;
+    margin: 28px 0 0;
+    padding-top: 20px;
+    border-top: 1px solid var(--line);
+    color: var(--ink-soft);
+}
+
+.sponsor-organizer img {
+    display: block;
+    width: auto;
+    height: 34px;
+}
 
 .sponsor-callout {
     background-color: var(--paper-dim);

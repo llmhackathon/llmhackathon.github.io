@@ -9,7 +9,10 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
     <div class="hero-content">
         <div class="hero-text">
             <p class="hero-announce"><span class="pulse-dot" aria-hidden="true"></span>Next edition &middot; October 21&ndash;22, 2026</p>
-            <h1>Open Scientific Intelligence Hackathon</h1>
+            <div class="hero-title">
+                <h1>The Open Scientific Intelligence Hackathon</h1>
+                <p class="hero-presenter">presented by the <a href="https://materialsdiscovery.ul.org" target="_blank" rel="noopener noreferrer">Materials Discovery Research Institute</a></p>
+            </div>
             <p class="tagline">Formerly the LLM Hackathon for Materials Science &amp; Chemistry — now open to the physical sciences and mathematics. Covering agents, LLMs, datasets, benchmarks, models, scientific software and more against the biggest problems. Free, hybrid, and international.</p>
             <div class="hero-actions">
                 <a rel="noopener noreferrer" href="{{ site.links.registration }}" target="_blank" class="cta-button-large">Register — October 21&ndash;22, 2026</a>
@@ -45,6 +48,32 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
         <div class="stat">
             <div class="stat-value">16</div>
             <div class="stat-desc">on-site locations worldwide, plus virtual</div>
+        </div>
+    </div>
+</section>
+
+<section id="sponsors" class="sponsors-band" aria-labelledby="sponsors-band-title">
+    <div class="sponsors-band-inner">
+        {% assign presenting = site.data.sponsors.sponsors_2026 | first %}
+        <div class="sponsors-band-lead">
+            <h2 id="sponsors-band-title" class="sponsors-band-label">2026 sponsors</h2>
+            <p class="sponsors-band-presented">Presented by</p>
+            <a class="sponsors-band-presenting" href="{{ presenting.url }}" target="_blank" rel="noopener noreferrer" title="{{ presenting.name }}">
+                <img src="{{ presenting.logo | relative_url }}" alt="{{ presenting.alt }}" decoding="async">
+            </a>
+        </div>
+        <ul class="sponsors-band-grid">
+            {% for sponsor in site.data.sponsors.sponsors_2026 offset:1 %}
+            <li><a href="{{ sponsor.url }}" target="_blank" rel="noopener noreferrer" title="{{ sponsor.name }}"><img{% if sponsor.tall or sponsor.light %} class="{% if sponsor.tall %}is-tall{% endif %}{% if sponsor.light %} is-light{% endif %}"{% endif %} src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"></a></li>
+            {% endfor %}
+        </ul>
+        {% assign organizer = site.data.sponsors.organizer %}
+        <div class="sponsors-band-foot">
+            <p class="sponsors-band-organizer">
+                <span>Organizing institution</span>
+                <a href="{{ organizer.url }}" target="_blank" rel="noopener noreferrer" title="{{ organizer.name }}"><img src="{{ organizer.logo | relative_url }}" alt="{{ organizer.alt }}" loading="lazy" decoding="async"></a>
+            </p>
+            <p class="sponsors-band-more"><a href="{{ '/sponsors/' | relative_url }}">All sponsors, past and present &rarr;</a></p>
         </div>
     </div>
 </section>
@@ -145,15 +174,11 @@ keywords: "OSI Hackathon, Open Scientific Intelligence, LLM Hackathon, Materials
     </div>
 </div>
 
-<section id="sponsors" class="sponsors-section">
+<section id="sponsors-2025" class="sponsors-section">
     <div class="reveal">
-    <h2 style="text-align:left;">2025 <span>partners</span></h2>
-    <div class="sponsor-logos">
-        {% for sponsor in site.data.sponsors.sponsors_2025 %}
-        <img src="{{ sponsor.logo | relative_url }}" alt="{{ sponsor.alt }}" loading="lazy" decoding="async"{% if sponsor.url and sponsor.url != '#' %} onclick="window.open('{{ sponsor.url }}', '_blank')" style="cursor: pointer;"{% endif %}>
-        {% endfor %}
-    </div>
-    <p style="text-align:center; margin: 28px auto 0; color: var(--ink-soft);">2026 sponsorship is open — <a href="{{ '/sponsors/' | relative_url }}">see who's on board and how to join them</a>.</p>
+    <h2 style="text-align:left;">2025 <span>sponsors</span></h2>
+    {% include sponsor-logos.html sponsors=site.data.sponsors.sponsors_2025 %}
+    <p style="text-align:center; margin: 28px auto 0; color: var(--ink-soft);">Thank you to everyone who supported the 2025 edition &mdash; <a href="{{ '/sponsors/' | relative_url }}">see all sponsors and how to get involved</a>.</p>
     </div>
 </section>
 
