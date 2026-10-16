@@ -67,27 +67,3 @@ Teams start on October 21 at whatever local time suits them. The one fixed time 
 - **Sydney (AEDT)**: 11:00 AM, Oct 23
 
 Local organizers will share any site-specific schedules.
-
----
-
-## Previous Edition: {{ site.event.dates }}
-
-*Kept here for reference.*
-
-<div class="schedule-timeline">
-    {% for item in site.data.schedule.items %}
-    <div class="schedule-item">
-        <div class="schedule-time">{{ item.time }}</div>
-        <div class="schedule-details">
-            <h4>{{ item.title }}</h4>
-            <p>{{ item.description }}</p>
-        </div>
-    </div>
-    {% endfor %}
-</div>
-
-### 2025 Deadlines
-
-- **Registration Deadline**: September 11, 2025
-- **Project Submission**: {{ site.event.submission_deadline }}
-- **Final Presentations**: September 12, 2025
