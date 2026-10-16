@@ -2,7 +2,7 @@
 layout: page
 title: "Sponsors & Partners"
 description: "2026 and 2025 sponsors of the Open Scientific Intelligence (OSI) Hackathon, presented by the Materials Discovery Research Institute, plus how to become a partner."
-keywords: "OSI Hackathon Sponsors, Partners, Materials Discovery Research Institute, UL Research Institutes, Valency, NVIDIA, Hugging Face, Labric, Adaption, Green Dynamics, NSF, NIST, Globus"
+keywords: "OSI Hackathon Sponsors, Partners, Materials Discovery Research Institute, UL Research Institutes, Valency, NVIDIA, Hugging Face, Labric, Adaption, marimo, Green Dynamics, NSF, NIST, Globus"
 ---
 
 ## 2026 sponsors

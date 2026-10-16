@@ -1548,7 +1548,7 @@ main {
     margin: 0;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-columns: repeat(4, minmax(0, 1fr));
     /* Rules drawn per tile (not as the grid background) so a short last
        row leaves blank paper instead of a grey block */
     gap: 1px;
