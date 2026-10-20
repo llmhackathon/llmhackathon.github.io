@@ -30,11 +30,6 @@ locations_2026:
     region: "North America"
     registration_link: https://luma.com/in2fl5vx
 
-  - name: "Brooklyn, NY, USA"
-    institution: "NYU Global AI Frontier Lab &middot; One MetroTech Center, 22nd Floor"
-    country: "USA"
-    region: "North America"
-
   - name: "Chicago, IL, USA"
     institution: "University of Chicago"
     country: "USA"
