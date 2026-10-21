@@ -371,7 +371,7 @@ jobs:
 - **Jekyll Documentation**: https://jekyllrb.com/docs/
 - **GitHub Pages Documentation**: https://docs.github.com/en/pages
 - **Repository Issues**: Create an issue in the GitHub repository for site-specific problems
-- **Community Support**: Join our [Slack community](https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-4c046lidd-qTNHooaS7NLiT8~mD5dmFg)
+- **Community Support**: Join our [Slack community](https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-4dsn9b9z7-CDjsS8sc2OSBq_8DB7lWkg)
 
 ---
 

@@ -165,7 +165,7 @@ All structured content is managed through YAML files in `_data/`:
 
 - Registration (2026 edition): https://luma.com/ku88xh92
 - Registration (2025, archived — hardcoded in historical `sites/*.html`): https://lu.ma/hspoki8y
-- Slack Community: https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-4c046lidd-qTNHooaS7NLiT8~mD5dmFg
+- Slack Community: https://join.slack.com/t/llmsformateri-0lw8517/shared_invite/zt-4dsn9b9z7-CDjsS8sc2OSBq_8DB7lWkg
 - Contact: blaiszik@uchicago.edu
 
 ## Git Workflow
